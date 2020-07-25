@@ -1,14 +1,17 @@
 'use strict';
 
+const PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
+
 class Book extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       expanded: false,
       fetched: false,
-      avgRating: -1,
-      ratingsCount: -1,
-      numPages: -1,
+      avgRating: '',
+      ratingsCount: '',
+      numPages: '',
+      origPubYear: '',
     };
   }
 
@@ -21,21 +24,36 @@ class Book extends React.Component {
       return;
     }
 
-    this._fetchBookId(title, author)
-      .then(bookId => {
-        console.log(bookId);
-        this._fetchBookMetadata(bookId);
-      });
+    this._fetchBookMetadata(title, author);
 
     this.setState({
       fetched: true
     });
   }
 
+  _fetchBookMetadata(title, author) {
+    return this._fetchBookId(title, author)
+      .then(bookId => {
+        const url = `https://www.goodreads.com/book/show/${bookId}.xml?key=${config.GOODREADS_API_KEY}`;
+        return this._fetch(url)
+          .then(response => response.text())
+          .then(txt => {
+            let parser = new DOMParser();
+            let xmlDoc = parser.parseFromString(txt, 'text/xml');
+            let book = xmlDoc.getElementsByTagName('book')[0];
+            this.setState({
+              avgRating: this._extractFirstTagValue(book, 'average_rating'),
+              ratingsCount: this._extractFirstTagValue(book, 'ratings_count'),
+              numPages: this._extractFirstTagValue(book, 'num_pages'),
+              origPubYear: this._extractFirstTagValue(book, 'original_publication_year'),
+            });
+          });
+      });
+  }
+
   _fetchBookId(title, author) {
-    const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
     const url = `https://www.goodreads.com/search.xml?key=${config.GOODREADS_API_KEY}&q=${title}`;
-    return fetch(proxyUrl + url)
+    return this._fetch(url)
       .then(response => response.text())
       .then(txt => {
         let parser = new DOMParser();
@@ -46,24 +64,12 @@ class Book extends React.Component {
       });
   }
 
-  _fetchBookMetadata(bookId) {
-    const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-    const url = `https://www.goodreads.com/book/show/${bookId}.xml?key=${config.GOODREADS_API_KEY}`;
-    return fetch(proxyUrl + url)
-      .then(response => response.text())
-      .then(txt => {
-        let parser = new DOMParser();
-        let xmlDoc = parser.parseFromString(txt, 'text/xml');
-        let book = xmlDoc.getElementsByTagName('book')[0];
-        let avgRating = book.getElementsByTagName('average_rating')[0].childNodes[0].nodeValue;
-        let ratingsCount = book.getElementsByTagName('ratings_count')[0].childNodes[0].nodeValue;
-        let numPages = book.getElementsByTagName('num_pages')[0].childNodes[0].nodeValue;
-        this.setState({
-          avgRating: avgRating,
-          ratingsCount: ratingsCount,
-          numPages: numPages,
-        });
-      });
+  _fetch(url) {
+    return fetch(PROXY_URL + url);
+  }
+
+  _extractFirstTagValue(xml, tagName) {
+    return xml.getElementsByTagName(tagName)[0].childNodes[0].nodeValue;
   }
 
   render() {
@@ -74,8 +80,9 @@ class Book extends React.Component {
       details = (
         <div className='book-details'>
           <span>Rating: {this.state.avgRating}</span>
-          <span>Ratings count: {this.state.ratingsCount}</span>
+          <span>Num ratings: {this.state.ratingsCount}</span>
           <span>Num pages: {this.state.numPages}</span>
+          <span>Year: {this.state.origPubYear}</span>
         </div>
       );
     }
