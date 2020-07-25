@@ -23,11 +23,30 @@ class Library extends React.Component {
     };
   }
 
+  fetchMetadata(title, author) {
+    const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+    const url = `https://www.goodreads.com/search.xml?key=${config.GOODREADS_API_KEY}&q=${title}`;
+    fetch(proxyUrl + url)
+      .then(response => response.text())
+      .then(txt => {
+        let parser = new DOMParser();
+        let xmlDoc = parser.parseFromString(txt, 'text/xml');
+        let firstResult = xmlDoc.getElementsByTagName('work')[0];
+        let avgRating = firstResult.getElementsByTagName('average_rating')[0].childNodes[0].nodeValue;
+        console.log(firstResult);
+        let bookId = firstResult.getElementsByTagName('best_book')[0].getElementsByTagName('id')[0].childNodes[0].nodeValue;
+        console.log(bookId);
+      });
+
+    //alert(title + ' ' + author.lastName + ', ' + author.firstName);
+  }
+
   render() {
+    let self = this;
     let bookList = this.state.books.map(book => {
       let displayText = `${book.title} (${book.author.lastName}, ${book.author.firstName})`;
       return (
-        <li key={displayText} className='book'>
+        <li className='book-item' key={displayText} onClick={() => self.fetchMetadata(book.title, book.author)}>
           {displayText}
         </li>
       );

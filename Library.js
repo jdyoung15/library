@@ -35,13 +35,35 @@ var Library = function (_React$Component) {
   }
 
   _createClass(Library, [{
+    key: 'fetchMetadata',
+    value: function fetchMetadata(title, author) {
+      var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+      var url = 'https://www.goodreads.com/search.xml?key=' + config.GOODREADS_API_KEY + '&q=' + title;
+      fetch(proxyUrl + url).then(function (response) {
+        return response.text();
+      }).then(function (txt) {
+        var parser = new DOMParser();
+        var xmlDoc = parser.parseFromString(txt, 'text/xml');
+        var firstResult = xmlDoc.getElementsByTagName('work')[0];
+        var avgRating = firstResult.getElementsByTagName('average_rating')[0].childNodes[0].nodeValue;
+        console.log(firstResult);
+        var bookId = firstResult.getElementsByTagName('best_book')[0].getElementsByTagName('id')[0].childNodes[0].nodeValue;
+        console.log(bookId);
+      });
+
+      //alert(title + ' ' + author.lastName + ', ' + author.firstName);
+    }
+  }, {
     key: 'render',
     value: function render() {
+      var self = this;
       var bookList = this.state.books.map(function (book) {
         var displayText = book.title + ' (' + book.author.lastName + ', ' + book.author.firstName + ')';
         return React.createElement(
           'li',
-          { key: displayText, className: 'book' },
+          { className: 'book-item', key: displayText, onClick: function onClick() {
+              return self.fetchMetadata(book.title, book.author);
+            } },
           displayText
         );
       });
