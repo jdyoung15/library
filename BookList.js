@@ -8,45 +8,29 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Library = function (_React$Component) {
-  _inherits(Library, _React$Component);
+var BookList = function (_React$Component) {
+  _inherits(BookList, _React$Component);
 
-  function Library(props) {
-    _classCallCheck(this, Library);
+  function BookList(props) {
+    _classCallCheck(this, BookList);
 
-    var _this = _possibleConstructorReturn(this, (Library.__proto__ || Object.getPrototypeOf(Library)).call(this, props));
-
-    _this.state = {
-      books: [{
-        author: {
-          lastName: 'Abagnale',
-          firstName: 'Frank'
-        },
-        title: 'Catch Me If You Can'
-      }, {
-        author: {
-          lastName: 'Abbot',
-          firstName: 'Edwin'
-        },
-        title: 'Flatland'
-      }]
-    };
-    return _this;
+    return _possibleConstructorReturn(this, (BookList.__proto__ || Object.getPrototypeOf(BookList)).call(this, props));
   }
 
-  _createClass(Library, [{
+  _createClass(BookList, [{
     key: 'render',
     value: function render() {
+      var bookList = this.props.books.map(function (book) {
+        return React.createElement(Book, { title: book.title, author: book.author, key: book.title });
+      });
+
       return React.createElement(
         'ul',
         { className: 'book-list' },
-        React.createElement(BookList, { books: this.state.books })
+        bookList
       );
     }
   }]);
 
-  return Library;
+  return BookList;
 }(React.Component);
-
-var domContainer = document.querySelector('#root');
-ReactDOM.render(React.createElement(Library, null), domContainer);
