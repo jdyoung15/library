@@ -35,23 +35,44 @@ var Library = function (_React$Component) {
   }
 
   _createClass(Library, [{
-    key: 'fetchMetadata',
-    value: function fetchMetadata(title, author) {
+    key: '_fetchMetadata',
+    value: function _fetchMetadata(title, author) {
+      var _this2 = this;
+
+      this._fetchBookId(title, author).then(function (bookId) {
+        console.log(bookId);
+        _this2._fetchBookMetadata(bookId);
+      });
+    }
+  }, {
+    key: '_fetchBookId',
+    value: function _fetchBookId(title, author) {
       var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
       var url = 'https://www.goodreads.com/search.xml?key=' + config.GOODREADS_API_KEY + '&q=' + title;
-      fetch(proxyUrl + url).then(function (response) {
+      return fetch(proxyUrl + url).then(function (response) {
         return response.text();
       }).then(function (txt) {
         var parser = new DOMParser();
         var xmlDoc = parser.parseFromString(txt, 'text/xml');
         var firstResult = xmlDoc.getElementsByTagName('work')[0];
-        var avgRating = firstResult.getElementsByTagName('average_rating')[0].childNodes[0].nodeValue;
-        console.log(firstResult);
         var bookId = firstResult.getElementsByTagName('best_book')[0].getElementsByTagName('id')[0].childNodes[0].nodeValue;
-        console.log(bookId);
+        return bookId;
       });
-
-      //alert(title + ' ' + author.lastName + ', ' + author.firstName);
+    }
+  }, {
+    key: '_fetchBookMetadata',
+    value: function _fetchBookMetadata(bookId) {
+      var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+      var url = 'https://www.goodreads.com/book/show/' + bookId + '.xml?key=' + config.GOODREADS_API_KEY;
+      return fetch(proxyUrl + url).then(function (response) {
+        return response.text();
+      }).then(function (txt) {
+        var parser = new DOMParser();
+        var xmlDoc = parser.parseFromString(txt, 'text/xml');
+        var book = xmlDoc.getElementsByTagName('book')[0];
+        var avgRating = book.getElementsByTagName('average_rating')[0].childNodes[0].nodeValue;
+        console.log(avgRating);
+      });
     }
   }, {
     key: 'render',
@@ -62,7 +83,7 @@ var Library = function (_React$Component) {
         return React.createElement(
           'li',
           { className: 'book-item', key: displayText, onClick: function onClick() {
-              return self.fetchMetadata(book.title, book.author);
+              return self._fetchMetadata(book.title, book.author);
             } },
           displayText
         );

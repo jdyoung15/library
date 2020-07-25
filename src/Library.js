@@ -23,22 +23,40 @@ class Library extends React.Component {
     };
   }
 
-  fetchMetadata(title, author) {
+  _fetchMetadata(title, author) {
+    this._fetchBookId(title, author)
+      .then(bookId => {
+        console.log(bookId);
+        this._fetchBookMetadata(bookId);
+      });
+  }
+
+  _fetchBookId(title, author) {
     const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
     const url = `https://www.goodreads.com/search.xml?key=${config.GOODREADS_API_KEY}&q=${title}`;
-    fetch(proxyUrl + url)
+    return fetch(proxyUrl + url)
       .then(response => response.text())
       .then(txt => {
         let parser = new DOMParser();
         let xmlDoc = parser.parseFromString(txt, 'text/xml');
         let firstResult = xmlDoc.getElementsByTagName('work')[0];
-        let avgRating = firstResult.getElementsByTagName('average_rating')[0].childNodes[0].nodeValue;
-        console.log(firstResult);
         let bookId = firstResult.getElementsByTagName('best_book')[0].getElementsByTagName('id')[0].childNodes[0].nodeValue;
-        console.log(bookId);
+        return bookId;
       });
+  }
 
-    //alert(title + ' ' + author.lastName + ', ' + author.firstName);
+  _fetchBookMetadata(bookId) {
+    const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+    const url = `https://www.goodreads.com/book/show/${bookId}.xml?key=${config.GOODREADS_API_KEY}`;
+    return fetch(proxyUrl + url)
+      .then(response => response.text())
+      .then(txt => {
+        let parser = new DOMParser();
+        let xmlDoc = parser.parseFromString(txt, 'text/xml');
+        let book = xmlDoc.getElementsByTagName('book')[0];
+        let avgRating = book.getElementsByTagName('average_rating')[0].childNodes[0].nodeValue;
+        console.log(avgRating);
+      });
   }
 
   render() {
@@ -46,7 +64,7 @@ class Library extends React.Component {
     let bookList = this.state.books.map(book => {
       let displayText = `${book.title} (${book.author.lastName}, ${book.author.firstName})`;
       return (
-        <li className='book-item' key={displayText} onClick={() => self.fetchMetadata(book.title, book.author)}>
+        <li className='book-item' key={displayText} onClick={() => self._fetchMetadata(book.title, book.author)}>
           {displayText}
         </li>
       );
