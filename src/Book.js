@@ -124,7 +124,7 @@ class Book extends React.Component {
 
   render() {
     const author = this.props.author;
-    const hdrText = `${this.props.title} (${author.lastName}, ${author.firstName})`;
+    const hdrText = `${this.props.title} (${author.lastName ? author.lastName + ', ' : ''}${author.firstName})`;
     let details;
     if (this.state.expanded) {
       details = (
