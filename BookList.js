@@ -21,7 +21,7 @@ var BookList = function (_React$Component) {
     key: 'render',
     value: function render() {
       var bookList = this.props.books.map(function (book) {
-        return React.createElement(Book, { title: book.title, author: book.author, key: book.title });
+        return React.createElement(Book, { title: book.title, author: book.author, series: book.series, key: book.title });
       });
 
       return React.createElement(

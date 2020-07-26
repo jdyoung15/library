@@ -1,5 +1,6 @@
 const initialBookData = [
   {
+    "series": "", 
     "author": {
       "lastName": "Tyler", 
       "firstName": "Steven"
@@ -7,6 +8,7 @@ const initialBookData = [
     "title": "Does the Noise in My Head Bother You"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Vonnegut", 
       "firstName": "Kurt"
@@ -14,6 +16,7 @@ const initialBookData = [
     "title": "Breakfast of Champions"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Thackeray", 
       "firstName": "William Makepeace"
@@ -21,6 +24,7 @@ const initialBookData = [
     "title": "Vanity Fair"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Verne", 
       "firstName": "Jules"
@@ -28,6 +32,7 @@ const initialBookData = [
     "title": "Collected Works of Jules Verne"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Vogler", 
       "firstName": "Christopher"
@@ -35,6 +40,7 @@ const initialBookData = [
     "title": "The Writer's Journey"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Verne", 
       "firstName": "Jules"
@@ -42,6 +48,7 @@ const initialBookData = [
     "title": "Twenty Thousand Leagues Under the Sea"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Vonnegut", 
       "firstName": "Kurt"
@@ -49,6 +56,7 @@ const initialBookData = [
     "title": "Slaughterhouse Five"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Taubes", 
       "firstName": "Gary"
@@ -56,6 +64,7 @@ const initialBookData = [
     "title": "Good Calories, Bad Calories"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Twain", 
       "firstName": "Mark"
@@ -63,6 +72,7 @@ const initialBookData = [
     "title": "A Connecticut Yankee in King Arthur's Court"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Vonnegut", 
       "firstName": "Kurt"
@@ -70,6 +80,7 @@ const initialBookData = [
     "title": "Deadeye Dick"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Thompson", 
       "firstName": "Hunter S."
@@ -77,6 +88,7 @@ const initialBookData = [
     "title": "The Great Shark Hunt"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Vonnegut", 
       "firstName": "Kurt"
@@ -84,6 +96,7 @@ const initialBookData = [
     "title": "Cat's Cradle"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Tolkien", 
       "firstName": "J.R.R."
@@ -91,6 +104,7 @@ const initialBookData = [
     "title": "The Silmarillion"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Toole", 
       "firstName": "John Kennedy"
@@ -98,6 +112,7 @@ const initialBookData = [
     "title": "A Confederacy of Dunces"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Tolle", 
       "firstName": "Eckhart"
@@ -105,6 +120,7 @@ const initialBookData = [
     "title": "A New Earth"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Tobias", 
       "firstName": "Ronald"
@@ -112,6 +128,7 @@ const initialBookData = [
     "title": "20 Master Plots and How To Build Them"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Tan", 
       "firstName": "Amy"
@@ -119,6 +136,7 @@ const initialBookData = [
     "title": "The Bonesetter's Daughter"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Thompson", 
       "firstName": "Hunter S."
@@ -126,6 +144,7 @@ const initialBookData = [
     "title": "The Rum Diary"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Tan", 
       "firstName": "Amy"
@@ -133,6 +152,7 @@ const initialBookData = [
     "title": "The Joy Luck Club"
   }, 
   {
+    "series": "Monkeewrench 02", 
     "author": {
       "lastName": "Tracy", 
       "firstName": "P.J."
@@ -140,6 +160,7 @@ const initialBookData = [
     "title": "Live Bait"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Tzu", 
       "firstName": "Sun"
@@ -147,6 +168,7 @@ const initialBookData = [
     "title": "The Art of War"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Vonnegut", 
       "firstName": "Kurt"
@@ -154,6 +176,7 @@ const initialBookData = [
     "title": "Mother Night"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Twain", 
       "firstName": "Mark"
@@ -161,6 +184,7 @@ const initialBookData = [
     "title": "The Adventures of Huckleberry Finn"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Thoreau", 
       "firstName": "Henry David"
@@ -168,6 +192,7 @@ const initialBookData = [
     "title": "Walden"
   }, 
   {
+    "series": "Rabbit 04", 
     "author": {
       "lastName": "Updike", 
       "firstName": "John"
@@ -175,6 +200,7 @@ const initialBookData = [
     "title": "Rabbit at Rest"
   }, 
   {
+    "series": "Rabbit 02", 
     "author": {
       "lastName": "Updike", 
       "firstName": "John"
@@ -182,6 +208,7 @@ const initialBookData = [
     "title": "Rabbit Redux"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Thompson", 
       "firstName": "Hunter S."
@@ -189,6 +216,7 @@ const initialBookData = [
     "title": "Fear and Loathing in Las Vegas"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "", 
       "firstName": "Virgil"
@@ -196,6 +224,7 @@ const initialBookData = [
     "title": "The Aeneid"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Tolkien", 
       "firstName": "J.R.R."
@@ -203,6 +232,7 @@ const initialBookData = [
     "title": "The Children of Hurin"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Verne", 
       "firstName": "Jules"
@@ -210,6 +240,7 @@ const initialBookData = [
     "title": "A Journey to the Center of the Earth"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Tolkien", 
       "firstName": "J.R.R."
@@ -217,6 +248,7 @@ const initialBookData = [
     "title": "The Hobbit"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Vonnegut", 
       "firstName": "Kurt"
@@ -224,6 +256,7 @@ const initialBookData = [
     "title": "Galapagos"
   }, 
   {
+    "series": "Rabbit 01", 
     "author": {
       "lastName": "Updike", 
       "firstName": "John"
@@ -231,6 +264,7 @@ const initialBookData = [
     "title": "Rabbit, Run"
   }, 
   {
+    "series": "Rabbit 03", 
     "author": {
       "lastName": "Updike", 
       "firstName": "John"
@@ -238,6 +272,7 @@ const initialBookData = [
     "title": "Rabbit is Rich"
   }, 
   {
+    "series": "Monkeewrench 01", 
     "author": {
       "lastName": "Tracy", 
       "firstName": "P.J."
@@ -245,6 +280,7 @@ const initialBookData = [
     "title": "Want to Play"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Taubes", 
       "firstName": "Gary"
@@ -252,6 +288,7 @@ const initialBookData = [
     "title": "Why We Get Fat and What To Do About It"
   }, 
   {
+    "series": "The Lord of the Rings 03", 
     "author": {
       "lastName": "Tolkien", 
       "firstName": "J.R.R."
@@ -259,6 +296,7 @@ const initialBookData = [
     "title": "The Return of the King"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Tarkington", 
       "firstName": "Booth"
@@ -266,6 +304,7 @@ const initialBookData = [
     "title": "The Magnificent Ambersons"
   }, 
   {
+    "series": "Monkeewrench 03", 
     "author": {
       "lastName": "Tracy", 
       "firstName": "P.J."
@@ -273,6 +312,7 @@ const initialBookData = [
     "title": "Dead Run"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Vonnegut", 
       "firstName": "Kurt"
@@ -280,6 +320,7 @@ const initialBookData = [
     "title": "Player Piano"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Vonnegut", 
       "firstName": "Kurt"
@@ -287,6 +328,7 @@ const initialBookData = [
     "title": "A Man Without a Country"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Vinge", 
       "firstName": "Vernor"
@@ -294,6 +336,7 @@ const initialBookData = [
     "title": "A Fire Upon the Deep"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Truby", 
       "firstName": "John"
@@ -301,6 +344,7 @@ const initialBookData = [
     "title": "The Anatomy of Story"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "", 
       "firstName": "Voltaire"
@@ -308,6 +352,7 @@ const initialBookData = [
     "title": "Candide"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Twain", 
       "firstName": "Mark"
@@ -315,6 +360,7 @@ const initialBookData = [
     "title": "The Adventures of Tom Sawyer"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Thorne", 
       "firstName": "David"
@@ -322,6 +368,7 @@ const initialBookData = [
     "title": "The Internet is a Playground"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Taibbi", 
       "firstName": "Matt"
@@ -329,6 +376,7 @@ const initialBookData = [
     "title": "The Great Derangement"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Vinge", 
       "firstName": "Vernor"
@@ -336,6 +384,7 @@ const initialBookData = [
     "title": "A Deepness in the Sky"
   }, 
   {
+    "series": "The Lord of the Rings 02", 
     "author": {
       "lastName": "Tolkien", 
       "firstName": "J.R.R."
@@ -343,6 +392,7 @@ const initialBookData = [
     "title": "The Two Towers"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Verghese", 
       "firstName": "Abraham"
@@ -350,6 +400,7 @@ const initialBookData = [
     "title": "Cutting for Stone"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Twain", 
       "firstName": "Mark"
@@ -357,6 +408,7 @@ const initialBookData = [
     "title": "The Prince and the Pauper"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Twain", 
       "firstName": "Mark"
@@ -364,6 +416,7 @@ const initialBookData = [
     "title": "Autobiography of Mark Twain"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Taibbi", 
       "firstName": "Matt"
@@ -371,6 +424,7 @@ const initialBookData = [
     "title": "Griftopia"
   }, 
   {
+    "series": "The Lord of the Rings 01", 
     "author": {
       "lastName": "Tolkien", 
       "firstName": "J.R.R."
@@ -378,6 +432,7 @@ const initialBookData = [
     "title": "The Fellowship of the Ring"
   }, 
   {
+    "series": "Monkeewrench 04", 
     "author": {
       "lastName": "Tracy", 
       "firstName": "P.J."
@@ -385,6 +440,7 @@ const initialBookData = [
     "title": "Snow Blind"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Thompson", 
       "firstName": "Hunter S."
@@ -392,6 +448,7 @@ const initialBookData = [
     "title": "Hell's Angels"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Tolle", 
       "firstName": "Eckhart"
@@ -399,6 +456,7 @@ const initialBookData = [
     "title": "The Power of Now"
   }, 
   {
+    "series": "Bones 03", 
     "author": {
       "lastName": "Reichs", 
       "firstName": "Kathy"
@@ -406,6 +464,7 @@ const initialBookData = [
     "title": "Deadly Decisions"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Rutherfurd", 
       "firstName": "Edward"
@@ -413,6 +472,7 @@ const initialBookData = [
     "title": "New York"
   }, 
   {
+    "series": "Percy Jackson 2", 
     "author": {
       "lastName": "Riordan", 
       "firstName": "Rick"
@@ -420,6 +480,7 @@ const initialBookData = [
     "title": "The Sea of Monsters"
   }, 
   {
+    "series": "In Death 17", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -427,6 +488,7 @@ const initialBookData = [
     "title": "Imitation in Death"
   }, 
   {
+    "series": "In Death 05", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -434,6 +496,7 @@ const initialBookData = [
     "title": "Ceremony in Death"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Rand", 
       "firstName": "Ayn"
@@ -441,6 +504,7 @@ const initialBookData = [
     "title": "Atlas Shrugged"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Quinn", 
       "firstName": "Daniel"
@@ -448,6 +512,7 @@ const initialBookData = [
     "title": "Ishmael"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "", 
       "firstName": "Religion"
@@ -455,6 +520,7 @@ const initialBookData = [
     "title": "The Quran"
   }, 
   {
+    "series": "In Death 30", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -462,6 +528,7 @@ const initialBookData = [
     "title": "Fantasy in Death"
   }, 
   {
+    "series": "Bones 04", 
     "author": {
       "lastName": "Reichs", 
       "firstName": "Kathy"
@@ -469,6 +536,7 @@ const initialBookData = [
     "title": "Fatal Voyage"
   }, 
   {
+    "series": "Percy Jackson 5", 
     "author": {
       "lastName": "Riordan", 
       "firstName": "Rick"
@@ -476,6 +544,7 @@ const initialBookData = [
     "title": "The Last Olympian"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Roth", 
       "firstName": "Philip"
@@ -483,6 +552,7 @@ const initialBookData = [
     "title": "American Pastoral"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Rossi", 
       "firstName": "Portia de"
@@ -490,6 +560,7 @@ const initialBookData = [
     "title": "Unbearable Lightness, A Story of Loss and Gain"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Rowling", 
       "firstName": "J.K."
@@ -497,6 +568,7 @@ const initialBookData = [
     "title": "Blood Prince"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Rittenberg", 
       "firstName": "Ann"
@@ -504,6 +576,7 @@ const initialBookData = [
     "title": "Your First Novel"
   }, 
   {
+    "series": "Bones 05", 
     "author": {
       "lastName": "Reichs", 
       "firstName": "Kathy"
@@ -511,6 +584,7 @@ const initialBookData = [
     "title": "Grave Secrets"
   }, 
   {
+    "series": "The Vampire Chronicles 09", 
     "author": {
       "lastName": "Rice", 
       "firstName": "Anne"
@@ -518,6 +592,7 @@ const initialBookData = [
     "title": "Blackwood Farm"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Rand", 
       "firstName": "Ayn"
@@ -525,6 +600,7 @@ const initialBookData = [
     "title": "Anthem"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Remarque", 
       "firstName": "Erich Maria"
@@ -532,6 +608,7 @@ const initialBookData = [
     "title": "All Quiet on the Western Front"
   }, 
   {
+    "series": "The Vampire Chronicles 03", 
     "author": {
       "lastName": "Rice", 
       "firstName": "Anne"
@@ -539,6 +616,7 @@ const initialBookData = [
     "title": "The Queen of the Damned"
   }, 
   {
+    "series": "In Death 19", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -546,6 +624,7 @@ const initialBookData = [
     "title": "Visions in Death"
   }, 
   {
+    "series": "Bones 01", 
     "author": {
       "lastName": "Reichs", 
       "firstName": "Kathy"
@@ -553,6 +632,7 @@ const initialBookData = [
     "title": "Deja Dead"
   }, 
   {
+    "series": "Harry Potter 01", 
     "author": {
       "lastName": "Rowling", 
       "firstName": "J.K."
@@ -560,6 +640,7 @@ const initialBookData = [
     "title": "Harry Potter and the Sorcerer's Stone"
   }, 
   {
+    "series": "The Kane Chronicles 02", 
     "author": {
       "lastName": "Riordan", 
       "firstName": "Rick"
@@ -567,6 +648,7 @@ const initialBookData = [
     "title": "Throne of Fire"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Roach", 
       "firstName": "Mary"
@@ -574,6 +656,7 @@ const initialBookData = [
     "title": "Packing for Mars"
   }, 
   {
+    "series": "Harry Potter 05", 
     "author": {
       "lastName": "Rowling", 
       "firstName": "J.K."
@@ -581,6 +664,7 @@ const initialBookData = [
     "title": "Harry Potter and the Order of the Phoenix"
   }, 
   {
+    "series": "In Death 18", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -588,6 +672,7 @@ const initialBookData = [
     "title": "Divided in Death"
   }, 
   {
+    "series": "Harry Potter 07", 
     "author": {
       "lastName": "Rowling", 
       "firstName": "J.K."
@@ -595,6 +680,7 @@ const initialBookData = [
     "title": "Harry Potter and the Deathly Hallows"
   }, 
   {
+    "series": "In Death 24", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -602,6 +688,7 @@ const initialBookData = [
     "title": "Innocent in Death"
   }, 
   {
+    "series": "The Vampire Chronicles 08", 
     "author": {
       "lastName": "Rice", 
       "firstName": "Anne"
@@ -609,6 +696,7 @@ const initialBookData = [
     "title": "Blood and Gold"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Rutherfurd", 
       "firstName": "Edward"
@@ -616,6 +704,7 @@ const initialBookData = [
     "title": "London"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Rumsfeld", 
       "firstName": "Donald"
@@ -623,6 +712,7 @@ const initialBookData = [
     "title": "Known and Unknown"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Rushdie", 
       "firstName": "Salman"
@@ -630,6 +720,7 @@ const initialBookData = [
     "title": "The Satanic Verses"
   }, 
   {
+    "series": "Percy Jackson 3", 
     "author": {
       "lastName": "Riordan", 
       "firstName": "Rick"
@@ -637,6 +728,7 @@ const initialBookData = [
     "title": "The Titan's Curse"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Riordan", 
       "firstName": "Rick"
@@ -644,6 +736,7 @@ const initialBookData = [
     "title": "The Red Pyramid"
   }, 
   {
+    "series": "The Vampire Chronicles 06", 
     "author": {
       "lastName": "Rice", 
       "firstName": "Anne"
@@ -651,6 +744,7 @@ const initialBookData = [
     "title": "The Vampire Armand"
   }, 
   {
+    "series": "Bones 10", 
     "author": {
       "lastName": "Reichs", 
       "firstName": "Kathy"
@@ -658,6 +752,7 @@ const initialBookData = [
     "title": "Bones to Ashes"
   }, 
   {
+    "series": "In Death 02", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -665,6 +760,7 @@ const initialBookData = [
     "title": "Glory in Death"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Rutherfurd", 
       "firstName": "Edward"
@@ -672,6 +768,7 @@ const initialBookData = [
     "title": "The Forest"
   }, 
   {
+    "series": "In Death 04", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -679,6 +776,7 @@ const initialBookData = [
     "title": "Rapture in Death"
   }, 
   {
+    "series": "Bones 12", 
     "author": {
       "lastName": "Reichs", 
       "firstName": "Kathy"
@@ -686,6 +784,7 @@ const initialBookData = [
     "title": "206 Bones"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Richards", 
       "firstName": "Keith"
@@ -693,6 +792,7 @@ const initialBookData = [
     "title": "Life"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Roy", 
       "firstName": "Arundhati"
@@ -700,6 +800,7 @@ const initialBookData = [
     "title": "The God of Small Things"
   }, 
   {
+    "series": "Percy Jackson 1", 
     "author": {
       "lastName": "Riordan", 
       "firstName": "Rick"
@@ -707,6 +808,7 @@ const initialBookData = [
     "title": "The Lightning Thief"
   }, 
   {
+    "series": "Bones 06", 
     "author": {
       "lastName": "Reichs", 
       "firstName": "Kathy"
@@ -714,6 +816,7 @@ const initialBookData = [
     "title": "Bare Bones"
   }, 
   {
+    "series": "In Death 31", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -721,6 +824,7 @@ const initialBookData = [
     "title": "Indulgence in Death"
   }, 
   {
+    "series": "In Death 13", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -728,6 +832,7 @@ const initialBookData = [
     "title": "Seduction in Death"
   }, 
   {
+    "series": "In Death 32", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -735,6 +840,7 @@ const initialBookData = [
     "title": "Treachery in Death"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Roach", 
       "firstName": "Mary"
@@ -742,6 +848,7 @@ const initialBookData = [
     "title": "Stiff, The Curious Lives of Human Cadavers"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Rath", 
       "firstName": "Tom"
@@ -749,6 +856,7 @@ const initialBookData = [
     "title": "StrengthsFinder 2.0"
   }, 
   {
+    "series": "Bones 14", 
     "author": {
       "lastName": "Reichs", 
       "firstName": "Kathy"
@@ -756,6 +864,7 @@ const initialBookData = [
     "title": "Virals"
   }, 
   {
+    "series": "In Death 15", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -763,6 +872,7 @@ const initialBookData = [
     "title": "Purity in Death"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Roth", 
       "firstName": "Philip"
@@ -770,6 +880,7 @@ const initialBookData = [
     "title": "Portnoy's Complaint"
   }, 
   {
+    "series": "Bones 02", 
     "author": {
       "lastName": "Reichs", 
       "firstName": "Kathy"
@@ -777,6 +888,7 @@ const initialBookData = [
     "title": "Death Du Jour"
   }, 
   {
+    "series": "In Death 09", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -784,6 +896,7 @@ const initialBookData = [
     "title": "Loyalty in Death"
   }, 
   {
+    "series": "In Death 10", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -791,6 +904,7 @@ const initialBookData = [
     "title": "Witness in Death"
   }, 
   {
+    "series": "In Death 28", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -798,6 +912,7 @@ const initialBookData = [
     "title": "Promises in Death"
   }, 
   {
+    "series": "The Vampire Chronicles 07", 
     "author": {
       "lastName": "Rice", 
       "firstName": "Anne"
@@ -805,6 +920,7 @@ const initialBookData = [
     "title": "Merrick"
   }, 
   {
+    "series": "In Death 23", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -812,6 +928,7 @@ const initialBookData = [
     "title": "Born in Death"
   }, 
   {
+    "series": "The Vampire Chronicles 04", 
     "author": {
       "lastName": "Rice", 
       "firstName": "Anne"
@@ -819,6 +936,7 @@ const initialBookData = [
     "title": "The Tale of the Body Thief"
   }, 
   {
+    "series": "In Death 01", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -826,6 +944,7 @@ const initialBookData = [
     "title": "Naked in Death"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Rand", 
       "firstName": "Ayn"
@@ -833,6 +952,7 @@ const initialBookData = [
     "title": "The Fountainhead"
   }, 
   {
+    "series": "In Death 26", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -840,6 +960,7 @@ const initialBookData = [
     "title": "Strangers in Death"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Roth", 
       "firstName": "Philip"
@@ -847,6 +968,7 @@ const initialBookData = [
     "title": "The Human Stain"
   }, 
   {
+    "series": "In Death 27", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -854,6 +976,7 @@ const initialBookData = [
     "title": "Salvation in Death"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Ricks", 
       "firstName": "Thomas"
@@ -861,6 +984,7 @@ const initialBookData = [
     "title": "Fiasco, The American Military Adventure in Iraq"
   }, 
   {
+    "series": "In Death 07", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -868,6 +992,7 @@ const initialBookData = [
     "title": "Holiday in Death"
   }, 
   {
+    "series": "In Death 12", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -875,6 +1000,7 @@ const initialBookData = [
     "title": "Betrayal in Death"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Rand", 
       "firstName": "Ayn"
@@ -882,6 +1008,7 @@ const initialBookData = [
     "title": "We the Living"
   }, 
   {
+    "series": "In Death 16", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -889,6 +1016,7 @@ const initialBookData = [
     "title": "Portrait in Death"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "", 
       "firstName": "Religion"
@@ -896,6 +1024,7 @@ const initialBookData = [
     "title": "The Bible"
   }, 
   {
+    "series": "Bones 09", 
     "author": {
       "lastName": "Reichs", 
       "firstName": "Kathy"
@@ -903,6 +1032,7 @@ const initialBookData = [
     "title": "Break No Bones"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Rosnay", 
       "firstName": "Tatiana"
@@ -910,6 +1040,7 @@ const initialBookData = [
     "title": "Sarah's Key"
   }, 
   {
+    "series": "The Vampire Chronicles 02", 
     "author": {
       "lastName": "Rice", 
       "firstName": "Anne"
@@ -917,6 +1048,7 @@ const initialBookData = [
     "title": "The Vampire Lestat"
   }, 
   {
+    "series": "In Death 22", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -924,6 +1056,7 @@ const initialBookData = [
     "title": "Memory in Death"
   }, 
   {
+    "series": "In Death 03", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -931,6 +1064,7 @@ const initialBookData = [
     "title": "Immortal in Death"
   }, 
   {
+    "series": "Percy Jackson 4", 
     "author": {
       "lastName": "Riordan", 
       "firstName": "Rick"
@@ -938,6 +1072,7 @@ const initialBookData = [
     "title": "The Battle of the Labyrinth"
   }, 
   {
+    "series": "In Death 08", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -945,6 +1080,7 @@ const initialBookData = [
     "title": "Conspiracy in Death"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Robinson", 
       "firstName": "Marilynne"
@@ -952,6 +1088,7 @@ const initialBookData = [
     "title": "Gilead"
   }, 
   {
+    "series": "The Vampire Chronicles 10", 
     "author": {
       "lastName": "Rice", 
       "firstName": "Anne"
@@ -959,6 +1096,7 @@ const initialBookData = [
     "title": "Blood Canticle"
   }, 
   {
+    "series": "In Death 14", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -966,6 +1104,7 @@ const initialBookData = [
     "title": "Reunion in Death"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Rachman", 
       "firstName": "Tom"
@@ -973,6 +1112,7 @@ const initialBookData = [
     "title": "The Imperfectionists"
   }, 
   {
+    "series": "Bones 13", 
     "author": {
       "lastName": "Reichs", 
       "firstName": "Kathy"
@@ -980,6 +1120,7 @@ const initialBookData = [
     "title": "Spider Bones"
   }, 
   {
+    "series": "In Death 29", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -987,6 +1128,7 @@ const initialBookData = [
     "title": "Kindred in Death"
   }, 
   {
+    "series": "In Death 06", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -994,6 +1136,7 @@ const initialBookData = [
     "title": "Vengeance in Death"
   }, 
   {
+    "series": "The Vampire Chronicles 05", 
     "author": {
       "lastName": "Rice", 
       "firstName": "Anne"
@@ -1001,6 +1144,7 @@ const initialBookData = [
     "title": "Memnoch the Devil"
   }, 
   {
+    "series": "Bones 11", 
     "author": {
       "lastName": "Reichs", 
       "firstName": "Kathy"
@@ -1008,6 +1152,7 @@ const initialBookData = [
     "title": "Devil Bones"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Rutherfurd", 
       "firstName": "Edward"
@@ -1015,6 +1160,7 @@ const initialBookData = [
     "title": "Sarum"
   }, 
   {
+    "series": "Harry Potter 02", 
     "author": {
       "lastName": "Rowling", 
       "firstName": "J.K."
@@ -1022,6 +1168,7 @@ const initialBookData = [
     "title": "Harry Potter and the Chamber of Secrets"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Rawles", 
       "firstName": "James Wesley"
@@ -1029,6 +1176,7 @@ const initialBookData = [
     "title": "How to Survive the End of the World as We Know It"
   }, 
   {
+    "series": "Bones 07", 
     "author": {
       "lastName": "Reichs", 
       "firstName": "Kathy"
@@ -1036,6 +1184,7 @@ const initialBookData = [
     "title": "Monday Mourning"
   }, 
   {
+    "series": "Kingkiller Chronicles 01", 
     "author": {
       "lastName": "Rothfuss", 
       "firstName": "Patrick"
@@ -1043,6 +1192,7 @@ const initialBookData = [
     "title": "The Name of the Wind"
   }, 
   {
+    "series": "The Vampire Chronicles 01", 
     "author": {
       "lastName": "Rice", 
       "firstName": "Anne"
@@ -1050,6 +1200,7 @@ const initialBookData = [
     "title": "Interview with the Vampire"
   }, 
   {
+    "series": "In Death 21", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -1057,6 +1208,7 @@ const initialBookData = [
     "title": "Origin in Death"
   }, 
   {
+    "series": "Bones 08", 
     "author": {
       "lastName": "Reichs", 
       "firstName": "Kathy"
@@ -1064,6 +1216,7 @@ const initialBookData = [
     "title": "Cross Bones"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Riordan", 
       "firstName": "Rick"
@@ -1071,6 +1224,7 @@ const initialBookData = [
     "title": "The Lost Hero"
   }, 
   {
+    "series": "Harry Potter 03", 
     "author": {
       "lastName": "Rowling", 
       "firstName": "J.K."
@@ -1078,6 +1232,7 @@ const initialBookData = [
     "title": "Harry Potter and the Prisoner of Azkaban"
   }, 
   {
+    "series": "Harry Potter 04", 
     "author": {
       "lastName": "Rowling", 
       "firstName": "J.K."
@@ -1085,6 +1240,7 @@ const initialBookData = [
     "title": "Harry Potter and the Goblet Of Fire"
   }, 
   {
+    "series": "Kingkiller Chronicles 02", 
     "author": {
       "lastName": "Rothfuss", 
       "firstName": "Patrick"
@@ -1092,6 +1248,7 @@ const initialBookData = [
     "title": "The Wise Man's Fear"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Rowling", 
       "firstName": "J.K."
@@ -1099,6 +1256,7 @@ const initialBookData = [
     "title": "The Tales of Beedle the Bard"
   }, 
   {
+    "series": "In Death 20", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -1106,6 +1264,7 @@ const initialBookData = [
     "title": "Survivor in Death"
   }, 
   {
+    "series": "In Death 25", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -1113,6 +1272,7 @@ const initialBookData = [
     "title": "Creation in Death"
   }, 
   {
+    "series": "In Death 11", 
     "author": {
       "lastName": "Robb", 
       "firstName": "J.D."
@@ -1120,6 +1280,7 @@ const initialBookData = [
     "title": "Judgment in Death"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Rand", 
       "firstName": "Ayn"
@@ -1127,6 +1288,7 @@ const initialBookData = [
     "title": "The Virtue of Selfishness"
   }, 
   {
+    "series": "Prydain 05", 
     "author": {
       "lastName": "Alexander", 
       "firstName": "Lloyd"
@@ -1134,6 +1296,7 @@ const initialBookData = [
     "title": "The High King"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "", 
       "firstName": "Aesop"
@@ -1141,6 +1304,7 @@ const initialBookData = [
     "title": "Aesop's Fables"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Adams", 
       "firstName": "Douglas"
@@ -1148,6 +1312,7 @@ const initialBookData = [
     "title": "Time of the Soul"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Ambrose", 
       "firstName": "Stephen E."
@@ -1155,6 +1320,7 @@ const initialBookData = [
     "title": "Citizen Soldiers"
   }, 
   {
+    "series": "Prydain 04", 
     "author": {
       "lastName": "Alexander", 
       "firstName": "Lloyd"
@@ -1162,6 +1328,7 @@ const initialBookData = [
     "title": "Taran Wanderer"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Agee", 
       "firstName": "James"
@@ -1169,6 +1336,7 @@ const initialBookData = [
     "title": "A Death In The Family"
   }, 
   {
+    "series": "Incarnations 02", 
     "author": {
       "lastName": "Anthony", 
       "firstName": "Piers"
@@ -1176,6 +1344,7 @@ const initialBookData = [
     "title": "Bearing an Hourglass"
   }, 
   {
+    "series": "Earth's Children 05", 
     "author": {
       "lastName": "Auel", 
       "firstName": "Jean M."
@@ -1183,6 +1352,7 @@ const initialBookData = [
     "title": "The Shelters of Stone"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Achebe", 
       "firstName": "Chinua"
@@ -1190,6 +1360,7 @@ const initialBookData = [
     "title": "Things Fall Apart"
   }, 
   {
+    "series": "Incarnations 03", 
     "author": {
       "lastName": "Anthony", 
       "firstName": "Piers"
@@ -1197,6 +1368,7 @@ const initialBookData = [
     "title": "With a Tangled Skein"
   }, 
   {
+    "series": "Incarnations 04", 
     "author": {
       "lastName": "Anthony", 
       "firstName": "Piers"
@@ -1204,6 +1376,7 @@ const initialBookData = [
     "title": "Wielding a Red Sword"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Austen", 
       "firstName": "Jane"
@@ -1211,6 +1384,7 @@ const initialBookData = [
     "title": "Sense and Sensibility"
   }, 
   {
+    "series": "Incarnations 08", 
     "author": {
       "lastName": "Anthony", 
       "firstName": "Piers"
@@ -1218,6 +1392,7 @@ const initialBookData = [
     "title": "Under a Velvet Cloak"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Atwood", 
       "firstName": "Margaret"
@@ -1225,6 +1400,7 @@ const initialBookData = [
     "title": "Alias Grace"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Albom", 
       "firstName": "Mitch"
@@ -1232,6 +1408,7 @@ const initialBookData = [
     "title": "The Five People You Meet In Heaven"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Atwood", 
       "firstName": "Margaret"
@@ -1239,6 +1416,7 @@ const initialBookData = [
     "title": "The Handmaid's Tale"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Abbot", 
       "firstName": "Edwin"
@@ -1246,6 +1424,7 @@ const initialBookData = [
     "title": "Flatland"
   }, 
   {
+    "series": "First Law 02", 
     "author": {
       "lastName": "Abercrombie", 
       "firstName": "Joe"
@@ -1253,6 +1432,7 @@ const initialBookData = [
     "title": "Before They Are Hanged"
   }, 
   {
+    "series": "Incarnations 05", 
     "author": {
       "lastName": "Anthony", 
       "firstName": "Piers"
@@ -1260,6 +1440,7 @@ const initialBookData = [
     "title": "Being a Green Mother"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Austen", 
       "firstName": "Jane"
@@ -1267,6 +1448,7 @@ const initialBookData = [
     "title": "Persuasion"
   }, 
   {
+    "series": "Hitchhiker 03", 
     "author": {
       "lastName": "Adams", 
       "firstName": "Douglas"
@@ -1274,6 +1456,7 @@ const initialBookData = [
     "title": "Life, the Universe and Everything"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Ambrose", 
       "firstName": "Hugh"
@@ -1281,6 +1464,7 @@ const initialBookData = [
     "title": "The Pacific"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Archer", 
       "firstName": "Jeffrey"
@@ -1288,6 +1472,7 @@ const initialBookData = [
     "title": "Kane and Abel"
   }, 
   {
+    "series": "Foundation 03", 
     "author": {
       "lastName": "Asmiov", 
       "firstName": "Isaac"
@@ -1295,6 +1480,7 @@ const initialBookData = [
     "title": "Second Foundation"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Albom", 
       "firstName": "Mitch"
@@ -1302,6 +1488,7 @@ const initialBookData = [
     "title": "Tuesdays With Morrie"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Austen", 
       "firstName": "Jane"
@@ -1309,6 +1496,7 @@ const initialBookData = [
     "title": "Emma"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Austen", 
       "firstName": "Jane"
@@ -1316,6 +1504,7 @@ const initialBookData = [
     "title": "Pride and Prejudice"
   }, 
   {
+    "series": "Prydain 03", 
     "author": {
       "lastName": "Alexander", 
       "firstName": "Lloyd"
@@ -1323,6 +1512,7 @@ const initialBookData = [
     "title": "The Castle of Llyr"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Atwood", 
       "firstName": "Margaret"
@@ -1330,6 +1520,7 @@ const initialBookData = [
     "title": "Oryx and Crake"
   }, 
   {
+    "series": "Hitchhiker 05", 
     "author": {
       "lastName": "Adams", 
       "firstName": "Douglas"
@@ -1337,6 +1528,7 @@ const initialBookData = [
     "title": "Mostly Harmless"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Austen", 
       "firstName": "Jane"
@@ -1344,6 +1536,7 @@ const initialBookData = [
     "title": "Northanger Abbey"
   }, 
   {
+    "series": "Earth's Children 06", 
     "author": {
       "lastName": "Auel", 
       "firstName": "Jean M."
@@ -1351,6 +1544,7 @@ const initialBookData = [
     "title": "The Land of Painted Caves"
   }, 
   {
+    "series": "Earth's Children 04", 
     "author": {
       "lastName": "Auel", 
       "firstName": "Jean M."
@@ -1358,6 +1552,7 @@ const initialBookData = [
     "title": "The Plains of Passage"
   }, 
   {
+    "series": "Incarnations 07", 
     "author": {
       "lastName": "Anthony", 
       "firstName": "Piers"
@@ -1365,6 +1560,7 @@ const initialBookData = [
     "title": "And Eternity"
   }, 
   {
+    "series": "Earth's Children 02", 
     "author": {
       "lastName": "Auel", 
       "firstName": "Jean M."
@@ -1372,6 +1568,7 @@ const initialBookData = [
     "title": "The Valley of Horses"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Armstrong", 
       "firstName": "Karen"
@@ -1379,6 +1576,7 @@ const initialBookData = [
     "title": "A History of God"
   }, 
   {
+    "series": "Earth's Children 01", 
     "author": {
       "lastName": "Auel", 
       "firstName": "Jean M."
@@ -1386,6 +1584,7 @@ const initialBookData = [
     "title": "The Clan of the Cave Bear"
   }, 
   {
+    "series": "Prydain 02", 
     "author": {
       "lastName": "Alexander", 
       "firstName": "Lloyd"
@@ -1393,6 +1592,7 @@ const initialBookData = [
     "title": "The Black Cauldron"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Avery", 
       "firstName": "Denis"
@@ -1400,6 +1600,7 @@ const initialBookData = [
     "title": "The Man Who Broke Into Auschwitz"
   }, 
   {
+    "series": "Hitchhiker 04", 
     "author": {
       "lastName": "Adams", 
       "firstName": "Douglas"
@@ -1407,6 +1608,7 @@ const initialBookData = [
     "title": "So Long, and Thanks For All the Fish"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Adams", 
       "firstName": "Richard"
@@ -1414,6 +1616,7 @@ const initialBookData = [
     "title": "Shardik"
   }, 
   {
+    "series": "Incarnations 06", 
     "author": {
       "lastName": "Anthony", 
       "firstName": "Piers"
@@ -1421,6 +1624,7 @@ const initialBookData = [
     "title": "For Love of Evil"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Abagnale", 
       "firstName": "Frank W."
@@ -1428,6 +1632,7 @@ const initialBookData = [
     "title": "Catch Me If You Can"
   }, 
   {
+    "series": "Prydain 01", 
     "author": {
       "lastName": "Alexander", 
       "firstName": "Lloyd"
@@ -1435,6 +1640,7 @@ const initialBookData = [
     "title": "The Book of Three"
   }, 
   {
+    "series": "Foundation 07", 
     "author": {
       "lastName": "Asmiov", 
       "firstName": "Isaac"
@@ -1442,6 +1648,7 @@ const initialBookData = [
     "title": "Forward the Foundation"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Austen", 
       "firstName": "Jane"
@@ -1449,6 +1656,7 @@ const initialBookData = [
     "title": "Mansfield Park"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Andersen", 
       "firstName": "Hans Christian"
@@ -1456,6 +1664,7 @@ const initialBookData = [
     "title": "Fairy Tales"
   }, 
   {
+    "series": "Hitchhiker 01", 
     "author": {
       "lastName": "Adams", 
       "firstName": "Douglas"
@@ -1463,6 +1672,7 @@ const initialBookData = [
     "title": "The Hitchhiker's Guide to the Galaxy"
   }, 
   {
+    "series": "Incarnations 01", 
     "author": {
       "lastName": "Anthony", 
       "firstName": "Piers"
@@ -1470,6 +1680,7 @@ const initialBookData = [
     "title": "On a Pale Horse"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Archer", 
       "firstName": "Jeffrey"
@@ -1477,6 +1688,7 @@ const initialBookData = [
     "title": "Not a Penny More, Not a Penny Less"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Alcott", 
       "firstName": "Louisa May"
@@ -1484,6 +1696,7 @@ const initialBookData = [
     "title": "Little Women"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Atwood", 
       "firstName": "Margaret"
@@ -1491,6 +1704,7 @@ const initialBookData = [
     "title": "The Blind Assassin"
   }, 
   {
+    "series": "Foundation 01", 
     "author": {
       "lastName": "Asmiov", 
       "firstName": "Isaac"
@@ -1498,6 +1712,7 @@ const initialBookData = [
     "title": "Foundation"
   }, 
   {
+    "series": "Foundation 05", 
     "author": {
       "lastName": "Asmiov", 
       "firstName": "Isaac"
@@ -1505,6 +1720,7 @@ const initialBookData = [
     "title": "Foundation and Earth"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Archer", 
       "firstName": "Jeffrey"
@@ -1512,6 +1728,7 @@ const initialBookData = [
     "title": "A Prisoner of Birth"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Atkinson", 
       "firstName": "Kate"
@@ -1519,6 +1736,7 @@ const initialBookData = [
     "title": "Started Early, Took My Dog"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Adams", 
       "firstName": "Douglas"
@@ -1526,6 +1744,7 @@ const initialBookData = [
     "title": "Last Chance to See"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Adams", 
       "firstName": "Richard"
@@ -1533,6 +1752,7 @@ const initialBookData = [
     "title": "Watership Down"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Asimov", 
       "firstName": "Isaac"
@@ -1540,6 +1760,7 @@ const initialBookData = [
     "title": "I, Robot.pdf"
   }, 
   {
+    "series": "Foundation 02", 
     "author": {
       "lastName": "Asmiov", 
       "firstName": "Isaac"
@@ -1547,6 +1768,7 @@ const initialBookData = [
     "title": "Foundation and Empire"
   }, 
   {
+    "series": "Foundation 04", 
     "author": {
       "lastName": "Asmiov", 
       "firstName": "Isaac"
@@ -1554,6 +1776,7 @@ const initialBookData = [
     "title": "Foundation's Edge"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Ambrose", 
       "firstName": "Stephen E."
@@ -1561,6 +1784,7 @@ const initialBookData = [
     "title": "Band of Brothers"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Abercrombie", 
       "firstName": "Joe"
@@ -1568,6 +1792,7 @@ const initialBookData = [
     "title": "The Heroes"
   }, 
   {
+    "series": "Dirk Gently 01", 
     "author": {
       "lastName": "Adams", 
       "firstName": "Douglas"
@@ -1575,6 +1800,7 @@ const initialBookData = [
     "title": "Dirk Gently's Holistic Detective Agency"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Alighieri", 
       "firstName": "Dante"
@@ -1582,6 +1808,7 @@ const initialBookData = [
     "title": "The Divine Comedy"
   }, 
   {
+    "series": "Earth's Children 03", 
     "author": {
       "lastName": "Auel", 
       "firstName": "Jean M."
@@ -1589,6 +1816,7 @@ const initialBookData = [
     "title": "The Mammoth Hunters"
   }, 
   {
+    "series": "Foundation 06", 
     "author": {
       "lastName": "Asmiov", 
       "firstName": "Isaac"
@@ -1596,6 +1824,7 @@ const initialBookData = [
     "title": "Prelude to Foundation"
   }, 
   {
+    "series": "First Law 01", 
     "author": {
       "lastName": "Abercrombie", 
       "firstName": "Joe"
@@ -1603,6 +1832,7 @@ const initialBookData = [
     "title": "The Blade Itself"
   }, 
   {
+    "series": "Hitchhiker 02", 
     "author": {
       "lastName": "Adams", 
       "firstName": "Douglas"
@@ -1610,6 +1840,7 @@ const initialBookData = [
     "title": "The Restaurant at the End of the Universe"
   }, 
   {
+    "series": "First Law 03", 
     "author": {
       "lastName": "Abercrombie", 
       "firstName": "Joe"
@@ -1617,6 +1848,7 @@ const initialBookData = [
     "title": "Last Argument of Kings"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Atwood", 
       "firstName": "Margaret"
@@ -1624,6 +1856,7 @@ const initialBookData = [
     "title": "The Year of the Flood"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Barker", 
       "firstName": "Clive"
@@ -1631,6 +1864,7 @@ const initialBookData = [
     "title": "Imajica"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Benson", 
       "firstName": "Amber"
@@ -1638,6 +1872,7 @@ const initialBookData = [
     "title": "Cat's Claw"
   }, 
   {
+    "series": "Harry Dresden 02", 
     "author": {
       "lastName": "Butcher", 
       "firstName": "Jim"
@@ -1645,6 +1880,7 @@ const initialBookData = [
     "title": "Fool Moon"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Barclay", 
       "firstName": "Linwood"
@@ -1652,6 +1888,7 @@ const initialBookData = [
     "title": "No Time for Goodbye"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Bradbury", 
       "firstName": "Ray"
@@ -1659,6 +1896,7 @@ const initialBookData = [
     "title": "Fahrenheit 451"
   }, 
   {
+    "series": "Harry Dresden 04", 
     "author": {
       "lastName": "Butcher", 
       "firstName": "Jim"
@@ -1666,6 +1904,7 @@ const initialBookData = [
     "title": "Summer Knight"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Brooks", 
       "firstName": "Geraldine"
@@ -1673,6 +1912,7 @@ const initialBookData = [
     "title": "Caleb's Crossing"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Barry", 
       "firstName": "Max"
@@ -1680,6 +1920,7 @@ const initialBookData = [
     "title": "Jennifer Government"
   }, 
   {
+    "series": "Harry Dresden 06", 
     "author": {
       "lastName": "Butcher", 
       "firstName": "Jim"
@@ -1687,6 +1928,7 @@ const initialBookData = [
     "title": "Blood Rites"
   }, 
   {
+    "series": "Harry Dresden 09", 
     "author": {
       "lastName": "Butcher", 
       "firstName": "Jim"
@@ -1694,6 +1936,7 @@ const initialBookData = [
     "title": "White Night"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Butler", 
       "firstName": "Octavia"
@@ -1701,6 +1944,7 @@ const initialBookData = [
     "title": "Wild Seed"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Bradbury", 
       "firstName": "Ray"
@@ -1708,6 +1952,7 @@ const initialBookData = [
     "title": "Zen in the Art of Writing"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Banks", 
       "firstName": "Ian M."
@@ -1715,6 +1960,7 @@ const initialBookData = [
     "title": "The Wasp Factory"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Brady", 
       "firstName": "Frank"
@@ -1722,6 +1968,7 @@ const initialBookData = [
     "title": "Endgame"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Brooks", 
       "firstName": "Max"
@@ -1729,6 +1976,7 @@ const initialBookData = [
     "title": "World War Z"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Burroughs", 
       "firstName": "Augusten"
@@ -1736,6 +1984,7 @@ const initialBookData = [
     "title": "Running with Scissors"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Berg", 
       "firstName": "Elizabeth"
@@ -1743,6 +1992,7 @@ const initialBookData = [
     "title": "The Pull of the Moon"
   }, 
   {
+    "series": "Mercy 02", 
     "author": {
       "lastName": "Briggs", 
       "firstName": "Patricia"
@@ -1750,6 +2000,7 @@ const initialBookData = [
     "title": "Blood Bound"
   }, 
   {
+    "series": "Culture 04", 
     "author": {
       "lastName": "Banks", 
       "firstName": "Ian M."
@@ -1757,6 +2008,7 @@ const initialBookData = [
     "title": "Excession"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Baigent", 
       "firstName": "Michael"
@@ -1764,6 +2016,7 @@ const initialBookData = [
     "title": "Holy Blood, Holy Grail"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Bryson", 
       "firstName": "Bill"
@@ -1771,6 +2024,7 @@ const initialBookData = [
     "title": "Made in America"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Brown", 
       "firstName": "Dan"
@@ -1778,6 +2032,7 @@ const initialBookData = [
     "title": "Digital Fortress"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Bulgakov", 
       "firstName": "Mikhail"
@@ -1785,6 +2040,7 @@ const initialBookData = [
     "title": "The Master and Margarita"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Banks", 
       "firstName": "Ian M."
@@ -1792,6 +2048,7 @@ const initialBookData = [
     "title": "The Algebraist"
   }, 
   {
+    "series": "Harry Dresden 11", 
     "author": {
       "lastName": "Butcher", 
       "firstName": "Jim"
@@ -1799,6 +2056,7 @@ const initialBookData = [
     "title": "Turn Coat"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Bryson", 
       "firstName": "Bill"
@@ -1806,6 +2064,7 @@ const initialBookData = [
     "title": "A Walk in the Woods"
   }, 
   {
+    "series": "Harry Dresden 08", 
     "author": {
       "lastName": "Butcher", 
       "firstName": "Jim"
@@ -1813,6 +2072,7 @@ const initialBookData = [
     "title": "Proven Guilty"
   }, 
   {
+    "series": "Mercy 01", 
     "author": {
       "lastName": "Briggs", 
       "firstName": "Patricia"
@@ -1820,6 +2080,7 @@ const initialBookData = [
     "title": "Moon Called"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Barry", 
       "firstName": "Dave"
@@ -1827,6 +2088,7 @@ const initialBookData = [
     "title": "Dave Barry's Only Travel Guide You'll Ever Need"
   }, 
   {
+    "series": "Culture 05", 
     "author": {
       "lastName": "Banks", 
       "firstName": "Ian M."
@@ -1834,6 +2096,7 @@ const initialBookData = [
     "title": "Inversions"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Baum", 
       "firstName": "L. Frank"
@@ -1841,6 +2104,7 @@ const initialBookData = [
     "title": "The Wonderful Wizard of Oz"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Brin", 
       "firstName": "David"
@@ -1848,6 +2112,7 @@ const initialBookData = [
     "title": "The Postman"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Binchy", 
       "firstName": "Maeve"
@@ -1855,6 +2120,7 @@ const initialBookData = [
     "title": "Circle of Friends"
   }, 
   {
+    "series": "Culture 06", 
     "author": {
       "lastName": "Banks", 
       "firstName": "Ian M."
@@ -1862,6 +2128,7 @@ const initialBookData = [
     "title": "Look to Windward"
   }, 
   {
+    "series": "Codex Alera 06", 
     "author": {
       "lastName": "Butcher", 
       "firstName": "Jim"
@@ -1869,6 +2136,7 @@ const initialBookData = [
     "title": "First Lord's Fury"
   }, 
   {
+    "series": "Culture 03", 
     "author": {
       "lastName": "Banks", 
       "firstName": "Ian M."
@@ -1876,6 +2144,7 @@ const initialBookData = [
     "title": "Use of Weapons"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Burroughs", 
       "firstName": "William"
@@ -1883,6 +2152,7 @@ const initialBookData = [
     "title": "Naked Lunch"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Bush", 
       "firstName": "George W."
@@ -1890,6 +2160,7 @@ const initialBookData = [
     "title": "Decision Points"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Barker", 
       "firstName": "Clive"
@@ -1897,6 +2168,7 @@ const initialBookData = [
     "title": "The Damnation Game"
   }, 
   {
+    "series": "Culture 07", 
     "author": {
       "lastName": "Banks", 
       "firstName": "Ian M."
@@ -1904,6 +2176,7 @@ const initialBookData = [
     "title": "Matter"
   }, 
   {
+    "series": "02", 
     "author": {
       "lastName": "Bourne", 
       "firstName": "J.L."
@@ -1911,6 +2184,7 @@ const initialBookData = [
     "title": "Beyond Exile"
   }, 
   {
+    "series": "Codex Alera 02", 
     "author": {
       "lastName": "Butcher", 
       "firstName": "Jim"
@@ -1918,6 +2192,7 @@ const initialBookData = [
     "title": "Academ's Fury"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Barry", 
       "firstName": "Dave"
@@ -1925,6 +2200,7 @@ const initialBookData = [
     "title": "Big Trouble"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Brockway", 
       "firstName": "Robert"
@@ -1932,6 +2208,7 @@ const initialBookData = [
     "title": "Everything Is Going to Kill Everybody"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Benchley", 
       "firstName": "Peter"
@@ -1939,6 +2216,7 @@ const initialBookData = [
     "title": "Jaws"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Brooks", 
       "firstName": "David"
@@ -1946,6 +2224,7 @@ const initialBookData = [
     "title": "The Social Animal"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Brooks", 
       "firstName": "Max"
@@ -1953,6 +2232,7 @@ const initialBookData = [
     "title": "The Zombie Survival Guide"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Binchy", 
       "firstName": "Maeve"
@@ -1960,6 +2240,7 @@ const initialBookData = [
     "title": "Echoes"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Binchy", 
       "firstName": "Maeve"
@@ -1967,6 +2248,7 @@ const initialBookData = [
     "title": "Heart and Soul"
   }, 
   {
+    "series": "Harry Dresden 03", 
     "author": {
       "lastName": "Butcher", 
       "firstName": "Jim"
@@ -1974,6 +2256,7 @@ const initialBookData = [
     "title": "Grave Peril"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Brooks", 
       "firstName": "Terry"
@@ -1981,6 +2264,7 @@ const initialBookData = [
     "title": "The Sword of Shannara"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Barclay", 
       "firstName": "Linwood"
@@ -1988,6 +2272,7 @@ const initialBookData = [
     "title": "Fear the Worst"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Bradbury", 
       "firstName": "Ray"
@@ -1995,6 +2280,7 @@ const initialBookData = [
     "title": "Something Wicked This Way Comes"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Berg", 
       "firstName": "Elizabeth"
@@ -2002,6 +2288,7 @@ const initialBookData = [
     "title": "Open House"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Bukowski", 
       "firstName": "Charles"
@@ -2009,6 +2296,7 @@ const initialBookData = [
     "title": "Women"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Birbiglia", 
       "firstName": "Mike"
@@ -2016,6 +2304,7 @@ const initialBookData = [
     "title": "Sleepwalk With Me, and Other Painfully True Stories"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Binchy", 
       "firstName": "Maeve"
@@ -2023,6 +2312,7 @@ const initialBookData = [
     "title": "Whitethorn Woods"
   }, 
   {
+    "series": "Harry Dresden 10", 
     "author": {
       "lastName": "Butcher", 
       "firstName": "Jim"
@@ -2030,6 +2320,7 @@ const initialBookData = [
     "title": "Small Favor"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Banks", 
       "firstName": "Ian M."
@@ -2037,6 +2328,7 @@ const initialBookData = [
     "title": "The Crow Road"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Bryson", 
       "firstName": "Bill"
@@ -2044,6 +2336,7 @@ const initialBookData = [
     "title": "I'm a Stranger Here Myself"
   }, 
   {
+    "series": "Culture 02", 
     "author": {
       "lastName": "Banks", 
       "firstName": "Ian M."
@@ -2051,6 +2344,7 @@ const initialBookData = [
     "title": "The Player of Games"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Brown", 
       "firstName": "Dan"
@@ -2058,6 +2352,7 @@ const initialBookData = [
     "title": "The Da Vinci Code"
   }, 
   {
+    "series": "Codex Alera 05", 
     "author": {
       "lastName": "Butcher", 
       "firstName": "Jim"
@@ -2065,6 +2360,7 @@ const initialBookData = [
     "title": "Princeps' Fury"
   }, 
   {
+    "series": "Mercy 05", 
     "author": {
       "lastName": "Briggs", 
       "firstName": "Patricia"
@@ -2072,6 +2368,7 @@ const initialBookData = [
     "title": "Silver Borne"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Bester", 
       "firstName": "Alfred"
@@ -2079,6 +2376,7 @@ const initialBookData = [
     "title": "The Demolished Man"
   }, 
   {
+    "series": "Harry Dresden 12", 
     "author": {
       "lastName": "Butcher", 
       "firstName": "Jim"
@@ -2086,6 +2384,7 @@ const initialBookData = [
     "title": "Changes"
   }, 
   {
+    "series": "Harry Dresden 05", 
     "author": {
       "lastName": "Butcher", 
       "firstName": "Jim"
@@ -2093,6 +2392,7 @@ const initialBookData = [
     "title": "Death Masks"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Bellow", 
       "firstName": "Saul"
@@ -2100,6 +2400,7 @@ const initialBookData = [
     "title": "Humboldt's Gift"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Bester", 
       "firstName": "Alfred"
@@ -2107,6 +2408,7 @@ const initialBookData = [
     "title": "The Stars My Destination"
   }, 
   {
+    "series": "01", 
     "author": {
       "lastName": "Bourne", 
       "firstName": "J.L."
@@ -2114,6 +2416,7 @@ const initialBookData = [
     "title": "Day By Day Armageddon"
   }, 
   {
+    "series": "Prince of Nothing 01", 
     "author": {
       "lastName": "Bakker", 
       "firstName": "R. Scott"
@@ -2121,6 +2424,7 @@ const initialBookData = [
     "title": "The Darkness That Comes Before"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Bradbury", 
       "firstName": "Ray"
@@ -2128,6 +2432,7 @@ const initialBookData = [
     "title": "The Martian Chronicles"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Burgess", 
       "firstName": "Anthony"
@@ -2135,6 +2440,7 @@ const initialBookData = [
     "title": "A Clockwork Orange"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Bradbury", 
       "firstName": "Ray"
@@ -2142,6 +2448,7 @@ const initialBookData = [
     "title": "The Illustrated Man"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Binchy", 
       "firstName": "Maeve"
@@ -2149,6 +2456,7 @@ const initialBookData = [
     "title": "Tara Road"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Brands", 
       "firstName": "H.W."
@@ -2156,6 +2464,7 @@ const initialBookData = [
     "title": "The First American"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Binchy", 
       "firstName": "Maeve"
@@ -2163,6 +2472,7 @@ const initialBookData = [
     "title": "Minding Frankie"
   }, 
   {
+    "series": "Harry Dresden 07", 
     "author": {
       "lastName": "Butcher", 
       "firstName": "Jim"
@@ -2170,6 +2480,7 @@ const initialBookData = [
     "title": "Dead Beat"
   }, 
   {
+    "series": "Mercy 06", 
     "author": {
       "lastName": "Briggs", 
       "firstName": "Patricia"
@@ -2177,6 +2488,7 @@ const initialBookData = [
     "title": "River Marked"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Bryson", 
       "firstName": "Bill"
@@ -2184,6 +2496,7 @@ const initialBookData = [
     "title": "A Short History of Nearly Everything"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Binchy", 
       "firstName": "Maeve"
@@ -2191,6 +2504,7 @@ const initialBookData = [
     "title": "The Glass Lake"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Bronte", 
       "firstName": "Charlotte"
@@ -2198,6 +2512,7 @@ const initialBookData = [
     "title": "Jane Eyre"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Barbery", 
       "firstName": "Muriel"
@@ -2205,6 +2520,7 @@ const initialBookData = [
     "title": "The Elegance of the Hedgehog"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Bowden", 
       "firstName": "Mark"
@@ -2212,6 +2528,7 @@ const initialBookData = [
     "title": "Black Hawk Down"
   }, 
   {
+    "series": "Codex Alera 01", 
     "author": {
       "lastName": "Butcher", 
       "firstName": "Jim"
@@ -2219,6 +2536,7 @@ const initialBookData = [
     "title": "Furies of Calderon"
   }, 
   {
+    "series": "Culture 08", 
     "author": {
       "lastName": "Banks", 
       "firstName": "Ian M."
@@ -2226,6 +2544,7 @@ const initialBookData = [
     "title": "Surface Detail"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Berg", 
       "firstName": "Elizabeth"
@@ -2233,6 +2552,7 @@ const initialBookData = [
     "title": "Joy School"
   }, 
   {
+    "series": "Prince of Nothing 02", 
     "author": {
       "lastName": "Bakker", 
       "firstName": "R. Scott"
@@ -2240,6 +2560,7 @@ const initialBookData = [
     "title": "The Warrior Prophet"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Brett", 
       "firstName": "Peter V."
@@ -2247,6 +2568,7 @@ const initialBookData = [
     "title": "The Warded Man"
   }, 
   {
+    "series": "Harry Dresden 01", 
     "author": {
       "lastName": "Butcher", 
       "firstName": "Jim"
@@ -2254,6 +2576,7 @@ const initialBookData = [
     "title": "Storm Front"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Benson", 
       "firstName": "Amber"
@@ -2261,6 +2584,7 @@ const initialBookData = [
     "title": "Serpent's Storm"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Bacigalupi", 
       "firstName": "Paolo"
@@ -2268,6 +2592,7 @@ const initialBookData = [
     "title": "The Windup Girl"
   }, 
   {
+    "series": "Codex Alera 03", 
     "author": {
       "lastName": "Butcher", 
       "firstName": "Jim"
@@ -2275,6 +2600,7 @@ const initialBookData = [
     "title": "Cursor's Fury"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Ballard", 
       "firstName": "J.G."
@@ -2282,6 +2608,7 @@ const initialBookData = [
     "title": "Crash"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Banks", 
       "firstName": "Ian M."
@@ -2289,6 +2616,7 @@ const initialBookData = [
     "title": "Transition"
   }, 
   {
+    "series": "Prince of Nothing 03", 
     "author": {
       "lastName": "Bakker", 
       "firstName": "R. Scott"
@@ -2296,6 +2624,7 @@ const initialBookData = [
     "title": "The Thousandfold Thought"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Benson", 
       "firstName": "Amber"
@@ -2303,6 +2632,7 @@ const initialBookData = [
     "title": "Death's Daughter"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Baldacci", 
       "firstName": "David"
@@ -2310,6 +2640,7 @@ const initialBookData = [
     "title": "The Winner"
   }, 
   {
+    "series": "Self", 
     "author": {
       "lastName": "Browne", 
       "firstName": "Renni"
@@ -2317,6 +2648,7 @@ const initialBookData = [
     "title": "Editing for Fiction Writers"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Brown", 
       "firstName": "Dan"
@@ -2324,6 +2656,7 @@ const initialBookData = [
     "title": "The Lost Symbol"
   }, 
   {
+    "series": "Mercy 04", 
     "author": {
       "lastName": "Briggs", 
       "firstName": "Patricia"
@@ -2331,6 +2664,7 @@ const initialBookData = [
     "title": "Bone Crossed"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Barclay", 
       "firstName": "Linwood"
@@ -2338,6 +2672,7 @@ const initialBookData = [
     "title": "Never Look Away"
   }, 
   {
+    "series": "Mercy 03", 
     "author": {
       "lastName": "Briggs", 
       "firstName": "Patricia"
@@ -2345,6 +2680,7 @@ const initialBookData = [
     "title": "Iron Kissed"
   }, 
   {
+    "series": "Culture 01", 
     "author": {
       "lastName": "Banks", 
       "firstName": "Ian M."
@@ -2352,6 +2688,7 @@ const initialBookData = [
     "title": "Consider Phlebas"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Brown", 
       "firstName": "Dan"
@@ -2359,6 +2696,7 @@ const initialBookData = [
     "title": "Angels and Demons"
   }, 
   {
+    "series": "Codex Alera 04", 
     "author": {
       "lastName": "Butcher", 
       "firstName": "Jim"
@@ -2366,6 +2704,7 @@ const initialBookData = [
     "title": "Captain's Fury"
   }, 
   {
+    "series": "Harry Dresden 13", 
     "author": {
       "lastName": "Butcher", 
       "firstName": "Jim"
@@ -2373,6 +2712,7 @@ const initialBookData = [
     "title": "Side Jobs"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Brown", 
       "firstName": "Dan"
@@ -2380,6 +2720,7 @@ const initialBookData = [
     "title": "Deception Point"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Leonard", 
       "firstName": "Elmore"
@@ -2387,6 +2728,7 @@ const initialBookData = [
     "title": "Freaky Deaky"
   }, 
   {
+    "series": "Jason Bourne 01", 
     "author": {
       "lastName": "Ludlum", 
       "firstName": "Robert"
@@ -2394,6 +2736,7 @@ const initialBookData = [
     "title": "The Bourne Identity"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Littell", 
       "firstName": "Jonathan"
@@ -2401,6 +2744,7 @@ const initialBookData = [
     "title": "The Kindly Ones"
   }, 
   {
+    "series": "King Raven 01", 
     "author": {
       "lastName": "Lawhead", 
       "firstName": "Stephen R."
@@ -2408,6 +2752,7 @@ const initialBookData = [
     "title": "Hood"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Leonard", 
       "firstName": "Elmore"
@@ -2415,6 +2760,7 @@ const initialBookData = [
     "title": "Out of Sight"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Levitt", 
       "firstName": "Steven D."
@@ -2422,6 +2768,7 @@ const initialBookData = [
     "title": "Superfreakonomics"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Le Carre", 
       "firstName": "John"
@@ -2429,6 +2776,7 @@ const initialBookData = [
     "title": "The Spy Who Came in from the Cold"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Loewen", 
       "firstName": "James"
@@ -2436,6 +2784,7 @@ const initialBookData = [
     "title": "Lies My Teacher Told Me"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Leyner", 
       "firstName": "Mark"
@@ -2443,6 +2792,7 @@ const initialBookData = [
     "title": "Why Do Men Have Nipples, Hundreds of Questions You'd Only Ask a Doctor After Your Third Martini"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lukeman", 
       "firstName": "Noah"
@@ -2450,6 +2800,7 @@ const initialBookData = [
     "title": "The First Five Pages"
   }, 
   {
+    "series": "01", 
     "author": {
       "lastName": "Larsson", 
       "firstName": "Stieg"
@@ -2457,6 +2808,7 @@ const initialBookData = [
     "title": "The Girl with the Dragon Tattoo"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lansing", 
       "firstName": "Alfred"
@@ -2464,6 +2816,7 @@ const initialBookData = [
     "title": "Endurance"
   }, 
   {
+    "series": "Jason Bourne 02", 
     "author": {
       "lastName": "Ludlum", 
       "firstName": "Robert"
@@ -2471,6 +2824,7 @@ const initialBookData = [
     "title": "The Bourne Supremacy"
   }, 
   {
+    "series": "Pendragon Cycle 06", 
     "author": {
       "lastName": "Lawhead", 
       "firstName": "Stephen R."
@@ -2478,6 +2832,7 @@ const initialBookData = [
     "title": "Avalon"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Letts", 
       "firstName": "Billie"
@@ -2485,6 +2840,7 @@ const initialBookData = [
     "title": "Where the Heart Is"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Liss", 
       "firstName": "David"
@@ -2492,6 +2848,7 @@ const initialBookData = [
     "title": "The Coffee Trader"
   }, 
   {
+    "series": "Pendragon Cycle 04", 
     "author": {
       "lastName": "Lawhead", 
       "firstName": "Stephen R."
@@ -2499,6 +2856,7 @@ const initialBookData = [
     "title": "Pendragon"
   }, 
   {
+    "series": "7", 
     "author": {
       "lastName": "Lewis", 
       "firstName": "C.S."
@@ -2506,6 +2864,7 @@ const initialBookData = [
     "title": "The Last Battle"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Leonard", 
       "firstName": "Elmore"
@@ -2513,6 +2872,7 @@ const initialBookData = [
     "title": "Riding the Rap"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Larson", 
       "firstName": "Erik"
@@ -2520,6 +2880,7 @@ const initialBookData = [
     "title": "Devil in the White City"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Leckie", 
       "firstName": "Robert"
@@ -2527,6 +2888,7 @@ const initialBookData = [
     "title": "Helmet for My Pillow, From Parris Island to the Pacific"
   }, 
   {
+    "series": "Pendragon Cycle 05", 
     "author": {
       "lastName": "Lawhead", 
       "firstName": "Stephen R."
@@ -2534,6 +2896,7 @@ const initialBookData = [
     "title": "Grail"
   }, 
   {
+    "series": "02", 
     "author": {
       "lastName": "Larsson", 
       "firstName": "Stieg"
@@ -2541,6 +2904,7 @@ const initialBookData = [
     "title": "The Girl Who Played with Fire"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lewis", 
       "firstName": "Michael"
@@ -2548,6 +2912,7 @@ const initialBookData = [
     "title": "The Blind Side"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Leonard", 
       "firstName": "Elmore"
@@ -2555,6 +2920,7 @@ const initialBookData = [
     "title": "Get Shorty"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lehane", 
       "firstName": "Dennis"
@@ -2562,6 +2928,7 @@ const initialBookData = [
     "title": "Darkness, Take My Hand"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lehane", 
       "firstName": "Dennis"
@@ -2569,6 +2936,7 @@ const initialBookData = [
     "title": "Mystic River"
   }, 
   {
+    "series": "5", 
     "author": {
       "lastName": "Lewis", 
       "firstName": "C.S."
@@ -2576,6 +2944,7 @@ const initialBookData = [
     "title": "The Voyage of the Dawn Treader"
   }, 
   {
+    "series": "Gentlemen Bastards 01", 
     "author": {
       "lastName": "Lynch", 
       "firstName": "Scott"
@@ -2583,6 +2952,7 @@ const initialBookData = [
     "title": "The Lies of Locke Lamora"
   }, 
   {
+    "series": "King Raven 03", 
     "author": {
       "lastName": "Lawhead", 
       "firstName": "Stephen R."
@@ -2590,6 +2960,7 @@ const initialBookData = [
     "title": "Tuck"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lehane", 
       "firstName": "Dennis"
@@ -2597,6 +2968,7 @@ const initialBookData = [
     "title": "A Drink Before the War"
   }, 
   {
+    "series": "Jason Bourne 03", 
     "author": {
       "lastName": "Ludlum", 
       "firstName": "Robert"
@@ -2604,6 +2976,7 @@ const initialBookData = [
     "title": "The Bourne Ultimatum"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Leonard", 
       "firstName": "Elmore"
@@ -2611,6 +2984,7 @@ const initialBookData = [
     "title": "Jackie Brown"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lawrence", 
       "firstName": "D.H."
@@ -2618,6 +2992,7 @@ const initialBookData = [
     "title": "Lady Chatterley's Lover"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lewis", 
       "firstName": "Michael"
@@ -2625,6 +3000,7 @@ const initialBookData = [
     "title": "The Big Short, Inside the Doomsday Machine"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lowry", 
       "firstName": "Lois"
@@ -2632,6 +3008,7 @@ const initialBookData = [
     "title": "The Giver"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lethem", 
       "firstName": "Jonathan"
@@ -2639,6 +3016,7 @@ const initialBookData = [
     "title": "Motherless Brooklyn"
   }, 
   {
+    "series": "Pendragon Cycle 02", 
     "author": {
       "lastName": "Lawhead", 
       "firstName": "Stephen R."
@@ -2646,6 +3024,7 @@ const initialBookData = [
     "title": "Merlin"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "L'Engle", 
       "firstName": "Madeleine"
@@ -2653,6 +3032,7 @@ const initialBookData = [
     "title": "A Wrinkle in Time"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Leary", 
       "firstName": "Denis"
@@ -2660,6 +3040,7 @@ const initialBookData = [
     "title": "Why We Suck"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lehane", 
       "firstName": "Dennis"
@@ -2667,6 +3048,7 @@ const initialBookData = [
     "title": "Shutter Island"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Liss", 
       "firstName": "David"
@@ -2674,6 +3056,7 @@ const initialBookData = [
     "title": "A Conspiracy of Paper"
   }, 
   {
+    "series": "Dexter 01", 
     "author": {
       "lastName": "Lindsay", 
       "firstName": "Jeff"
@@ -2681,6 +3064,7 @@ const initialBookData = [
     "title": "Darkly Dreaming Dexter"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Laurie", 
       "firstName": "Hugh"
@@ -2688,6 +3072,7 @@ const initialBookData = [
     "title": "The Gun Seller"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lehane", 
       "firstName": "Dennis"
@@ -2695,6 +3080,7 @@ const initialBookData = [
     "title": "Gone, Baby, Gone"
   }, 
   {
+    "series": "2", 
     "author": {
       "lastName": "Lewis", 
       "firstName": "C.S."
@@ -2702,6 +3088,7 @@ const initialBookData = [
     "title": "The Lion, The Witch and The Wardrobe"
   }, 
   {
+    "series": "Gentlemen Bastards 02", 
     "author": {
       "lastName": "Lynch", 
       "firstName": "Scott"
@@ -2709,6 +3096,7 @@ const initialBookData = [
     "title": "Red Seas Under Red Skies"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lahiri", 
       "firstName": "Jhumpa"
@@ -2716,6 +3104,7 @@ const initialBookData = [
     "title": "Interpreter of Maladies"
   }, 
   {
+    "series": "Dexter 03", 
     "author": {
       "lastName": "Lindsay", 
       "firstName": "Jeff"
@@ -2723,6 +3112,7 @@ const initialBookData = [
     "title": "Dexter in the Dark"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lehane", 
       "firstName": "Dennis"
@@ -2730,6 +3120,7 @@ const initialBookData = [
     "title": "The Given Day"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Liss", 
       "firstName": "David"
@@ -2737,6 +3128,7 @@ const initialBookData = [
     "title": "The Whiskey Rebel"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lehane", 
       "firstName": "Dennis"
@@ -2744,6 +3136,7 @@ const initialBookData = [
     "title": "Sacred"
   }, 
   {
+    "series": "King Raven 02", 
     "author": {
       "lastName": "Lawhead", 
       "firstName": "Stephen R."
@@ -2751,6 +3144,7 @@ const initialBookData = [
     "title": "Scarlet"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lovecraft", 
       "firstName": "H.P."
@@ -2758,6 +3152,7 @@ const initialBookData = [
     "title": "Definitive H.P. Lovecraft"
   }, 
   {
+    "series": "3", 
     "author": {
       "lastName": "Lewis", 
       "firstName": "C.S."
@@ -2765,6 +3160,7 @@ const initialBookData = [
     "title": "The Horse And His Boy"
   }, 
   {
+    "series": "Dexter 02", 
     "author": {
       "lastName": "Lindsay", 
       "firstName": "Jeff"
@@ -2772,6 +3168,7 @@ const initialBookData = [
     "title": "Dearly Devoted Dexter"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lawrence", 
       "firstName": "D.H."
@@ -2779,6 +3176,7 @@ const initialBookData = [
     "title": "Sons and Lovers"
   }, 
   {
+    "series": "03", 
     "author": {
       "lastName": "Larsson", 
       "firstName": "Stieg"
@@ -2786,6 +3184,7 @@ const initialBookData = [
     "title": "The Girl Who Kicked the Hornet's Nest"
   }, 
   {
+    "series": "Three", 
     "author": {
       "lastName": "Leonard", 
       "firstName": "Elmore"
@@ -2793,6 +3192,7 @@ const initialBookData = [
     "title": "Ten to Yuma and Other Stories"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "London", 
       "firstName": "Jack"
@@ -2800,6 +3200,7 @@ const initialBookData = [
     "title": "The Call of the Wild and White Fang"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Leonard", 
       "firstName": "Elmore"
@@ -2807,6 +3208,7 @@ const initialBookData = [
     "title": "Cuba Libre"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lamb", 
       "firstName": "Wally"
@@ -2814,6 +3216,7 @@ const initialBookData = [
     "title": "I Know This Much Is True"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lowry", 
       "firstName": "Malcolm"
@@ -2821,6 +3224,7 @@ const initialBookData = [
     "title": "Under the Volcano"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Leckie", 
       "firstName": "Robert"
@@ -2828,6 +3232,7 @@ const initialBookData = [
     "title": "Okinawa, The Last Battle of World War II"
   }, 
   {
+    "series": "Pendragon Cycle 03", 
     "author": {
       "lastName": "Lawhead", 
       "firstName": "Stephen R."
@@ -2835,6 +3240,7 @@ const initialBookData = [
     "title": "Arthur"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Leonard", 
       "firstName": "Elmore"
@@ -2842,6 +3248,7 @@ const initialBookData = [
     "title": "Tishomingo Blues"
   }, 
   {
+    "series": "Dexter 04", 
     "author": {
       "lastName": "Lindsay", 
       "firstName": "Jeff"
@@ -2849,6 +3256,7 @@ const initialBookData = [
     "title": "Dexter by Design"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lindquist", 
       "firstName": "John Avjide"
@@ -2856,6 +3264,7 @@ const initialBookData = [
     "title": "Let the Right One In"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Larson", 
       "firstName": "Erik"
@@ -2863,6 +3272,7 @@ const initialBookData = [
     "title": "In the Garden of Beasts"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lerner", 
       "firstName": "Betsy"
@@ -2870,6 +3280,7 @@ const initialBookData = [
     "title": "The Forest for the Trees"
   }, 
   {
+    "series": "6", 
     "author": {
       "lastName": "Lewis", 
       "firstName": "C.S."
@@ -2877,6 +3288,7 @@ const initialBookData = [
     "title": "The Silver Chair"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Leonard", 
       "firstName": "Elmore"
@@ -2884,6 +3296,7 @@ const initialBookData = [
     "title": "Be Cool"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Liss", 
       "firstName": "David"
@@ -2891,6 +3304,7 @@ const initialBookData = [
     "title": "The Devil's Company"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Landstrom", 
       "firstName": "Sam"
@@ -2898,6 +3312,7 @@ const initialBookData = [
     "title": "MetaGame"
   }, 
   {
+    "series": "Dexter 05", 
     "author": {
       "lastName": "Lindsay", 
       "firstName": "Jeff"
@@ -2905,6 +3320,7 @@ const initialBookData = [
     "title": "Dexter is Delicious"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lander", 
       "firstName": "Christian"
@@ -2912,6 +3328,7 @@ const initialBookData = [
     "title": "Stuff White People Like"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lamb", 
       "firstName": "Wally"
@@ -2919,6 +3336,7 @@ const initialBookData = [
     "title": "The Hour I First Believed"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Le Carre", 
       "firstName": "John"
@@ -2926,6 +3344,7 @@ const initialBookData = [
     "title": "Tinker, Tailor, Soldier, Spy"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Levitt", 
       "firstName": "Steven D."
@@ -2933,6 +3352,7 @@ const initialBookData = [
     "title": "Freakonomics"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lehane", 
       "firstName": "Dennis"
@@ -2940,6 +3360,7 @@ const initialBookData = [
     "title": "Prayers for Rain"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lehane", 
       "firstName": "Dennis"
@@ -2947,6 +3368,7 @@ const initialBookData = [
     "title": "Moonlight Mile"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lowe", 
       "firstName": "Rob"
@@ -2954,6 +3376,7 @@ const initialBookData = [
     "title": "Stories I Only Tell My Friends"
   }, 
   {
+    "series": "4", 
     "author": {
       "lastName": "Lewis", 
       "firstName": "C.S."
@@ -2961,6 +3384,7 @@ const initialBookData = [
     "title": "Prince Caspian"
   }, 
   {
+    "series": "Pendragon Cycle 01", 
     "author": {
       "lastName": "Lawhead", 
       "firstName": "Stephen R."
@@ -2968,6 +3392,7 @@ const initialBookData = [
     "title": "Taliesin"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Lee", 
       "firstName": "Harper"
@@ -2975,6 +3400,7 @@ const initialBookData = [
     "title": "To Kill a Mockingbird`"
   }, 
   {
+    "series": "1", 
     "author": {
       "lastName": "Lewis", 
       "firstName": "C.S."
@@ -2982,6 +3408,7 @@ const initialBookData = [
     "title": "The Magician's Nephew"
   }, 
   {
+    "series": "Harry Bosch 10", 
     "author": {
       "lastName": "Connelly", 
       "firstName": "Michael"
@@ -2989,6 +3416,7 @@ const initialBookData = [
     "title": "The Narrows"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Crichton", 
       "firstName": "Michael"
@@ -2996,6 +3424,7 @@ const initialBookData = [
     "title": "Congo"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Coben", 
       "firstName": "Harlan"
@@ -3003,6 +3432,7 @@ const initialBookData = [
     "title": "The Innocent"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Cooper", 
       "firstName": "James Fennimore"
@@ -3010,6 +3440,7 @@ const initialBookData = [
     "title": "The Last of the Mohicans"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Chernow", 
       "firstName": "Ron"
@@ -3017,6 +3448,7 @@ const initialBookData = [
     "title": "Washington"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Crane", 
       "firstName": "Stephen"
@@ -3024,6 +3456,7 @@ const initialBookData = [
     "title": "The Red Badge of Courage"
   }, 
   {
+    "series": "Myron 03", 
     "author": {
       "lastName": "Coben", 
       "firstName": "Harlan"
@@ -3031,6 +3464,7 @@ const initialBookData = [
     "title": "Fade Away"
   }, 
   {
+    "series": "Scarpetta 08", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Patricia"
@@ -3038,6 +3472,7 @@ const initialBookData = [
     "title": "Unnatural.Exprosure"
   }, 
   {
+    "series": "Saxon 01", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Bernard"
@@ -3045,6 +3480,7 @@ const initialBookData = [
     "title": "The Last Kingdom"
   }, 
   {
+    "series": "Harry Bosch 08", 
     "author": {
       "lastName": "Connelly", 
       "firstName": "Michael"
@@ -3052,6 +3488,7 @@ const initialBookData = [
     "title": "City of Bones"
   }, 
   {
+    "series": "Elvis Cole 06", 
     "author": {
       "lastName": "Crais", 
       "firstName": "Robert"
@@ -3059,6 +3496,7 @@ const initialBookData = [
     "title": "Sunset Express"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Cussler", 
       "firstName": "Clive"
@@ -3066,6 +3504,7 @@ const initialBookData = [
     "title": "Inca Gold"
   }, 
   {
+    "series": "Jack Reacher 05", 
     "author": {
       "lastName": "Child", 
       "firstName": "Lee"
@@ -3073,6 +3512,7 @@ const initialBookData = [
     "title": "Echo Burning"
   }, 
   {
+    "series": "Ender 01.5", 
     "author": {
       "lastName": "Card", 
       "firstName": "Orson Scott"
@@ -3080,6 +3520,7 @@ const initialBookData = [
     "title": "Ender in Exile"
   }, 
   {
+    "series": "Elvis Cole 08", 
     "author": {
       "lastName": "Crais", 
       "firstName": "Robert"
@@ -3087,6 +3528,7 @@ const initialBookData = [
     "title": "L.A. Requiem"
   }, 
   {
+    "series": "Myron 07", 
     "author": {
       "lastName": "Coben", 
       "firstName": "Harlan"
@@ -3094,6 +3536,7 @@ const initialBookData = [
     "title": "Darkest Fear"
   }, 
   {
+    "series": "Grail Quest 02", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Bernard"
@@ -3101,6 +3544,7 @@ const initialBookData = [
     "title": "Vagabond"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Crichton", 
       "firstName": "Michael"
@@ -3108,6 +3552,7 @@ const initialBookData = [
     "title": "The Lost World"
   }, 
   {
+    "series": "Saxon 05", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Bernard"
@@ -3115,6 +3560,7 @@ const initialBookData = [
     "title": "The Burning Land"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Clavell", 
       "firstName": "James"
@@ -3122,6 +3568,7 @@ const initialBookData = [
     "title": "Shogun"
   }, 
   {
+    "series": "Myron 06", 
     "author": {
       "lastName": "Coben", 
       "firstName": "Harlan"
@@ -3129,6 +3576,7 @@ const initialBookData = [
     "title": "The Final Detail"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Colfer", 
       "firstName": "Eoin"
@@ -3136,6 +3584,7 @@ const initialBookData = [
     "title": "Artemis Fowl"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Crichton", 
       "firstName": "Michael"
@@ -3143,6 +3592,7 @@ const initialBookData = [
     "title": "Prey"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Carr", 
       "firstName": "Caleb"
@@ -3150,6 +3600,7 @@ const initialBookData = [
     "title": "The Alienist"
   }, 
   {
+    "series": "The Dark is Rising 05", 
     "author": {
       "lastName": "Cooper", 
       "firstName": "Susan"
@@ -3157,6 +3608,7 @@ const initialBookData = [
     "title": "Silver on the Tree"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Chandler", 
       "firstName": "Raymond"
@@ -3164,6 +3616,7 @@ const initialBookData = [
     "title": "The Big Sleep"
   }, 
   {
+    "series": "Ender 08", 
     "author": {
       "lastName": "Card", 
       "firstName": "Orson Scott"
@@ -3171,6 +3624,7 @@ const initialBookData = [
     "title": "Shadow of the Giant"
   }, 
   {
+    "series": "The Hunger Games 01", 
     "author": {
       "lastName": "Collins", 
       "firstName": "Suzanne"
@@ -3178,6 +3632,7 @@ const initialBookData = [
     "title": "The Hunger Games"
   }, 
   {
+    "series": "Jack Reacher 03", 
     "author": {
       "lastName": "Child", 
       "firstName": "Lee"
@@ -3185,6 +3640,7 @@ const initialBookData = [
     "title": "Tripwire"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Clancy", 
       "firstName": "Tom"
@@ -3192,6 +3648,7 @@ const initialBookData = [
     "title": "Rainbow Six"
   }, 
   {
+    "series": "Mickey Haller 04", 
     "author": {
       "lastName": "Connelly", 
       "firstName": "Michael"
@@ -3199,6 +3656,7 @@ const initialBookData = [
     "title": "The Fifth Witness"
   }, 
   {
+    "series": "Elvis Cole 11", 
     "author": {
       "lastName": "Crais", 
       "firstName": "Robert"
@@ -3206,6 +3664,7 @@ const initialBookData = [
     "title": "Chasing Darkness"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Crais", 
       "firstName": "Robert"
@@ -3213,6 +3672,7 @@ const initialBookData = [
     "title": "Demolition Angel"
   }, 
   {
+    "series": "Saxon 03", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Bernard"
@@ -3220,6 +3680,7 @@ const initialBookData = [
     "title": "The Lords of the North"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Clancy", 
       "firstName": "Tom"
@@ -3227,6 +3688,7 @@ const initialBookData = [
     "title": "The Hunt for Red October"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Clarke", 
       "firstName": "Arthur C."
@@ -3234,6 +3696,7 @@ const initialBookData = [
     "title": "Childhood's End"
   }, 
   {
+    "series": "Jack Reacher 14", 
     "author": {
       "lastName": "Child", 
       "firstName": "Lee"
@@ -3241,6 +3704,7 @@ const initialBookData = [
     "title": "61 Hours"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Chabon", 
       "firstName": "Michael"
@@ -3248,6 +3712,7 @@ const initialBookData = [
     "title": "The Amazing Adventures of Kavalier and Clay"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Chomsky", 
       "firstName": "Noam"
@@ -3255,6 +3720,7 @@ const initialBookData = [
     "title": "The Chomsky Reader"
   }, 
   {
+    "series": "Grail Quest 03", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Bernard"
@@ -3262,6 +3728,7 @@ const initialBookData = [
     "title": "Heretic"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Conrad", 
       "firstName": "Joseph"
@@ -3269,6 +3736,7 @@ const initialBookData = [
     "title": "Heart Of Darkness"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Connolly", 
       "firstName": "John"
@@ -3276,6 +3744,7 @@ const initialBookData = [
     "title": "The Gates"
   }, 
   {
+    "series": "Jack Reacher 10", 
     "author": {
       "lastName": "Child", 
       "firstName": "Lee"
@@ -3283,6 +3752,7 @@ const initialBookData = [
     "title": "The Hard Way"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Coben", 
       "firstName": "Harlan"
@@ -3290,6 +3760,7 @@ const initialBookData = [
     "title": "Play Dead"
   }, 
   {
+    "series": "Harry Bosch 06", 
     "author": {
       "lastName": "Connelly", 
       "firstName": "Michael"
@@ -3297,6 +3768,7 @@ const initialBookData = [
     "title": "Angels Flight"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Chua", 
       "firstName": "Amy"
@@ -3304,6 +3776,7 @@ const initialBookData = [
     "title": "Battle Hymn of the Tiger Mother"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Crais", 
       "firstName": "Robert"
@@ -3311,6 +3784,7 @@ const initialBookData = [
     "title": "The Two Minute Rule"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Castaneda", 
       "firstName": "Carlos"
@@ -3318,6 +3792,7 @@ const initialBookData = [
     "title": "The Teachings of Don Juan"
   }, 
   {
+    "series": "Scarpetta 05", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Patricia"
@@ -3325,6 +3800,7 @@ const initialBookData = [
     "title": "The Body Farm"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Crais", 
       "firstName": "Robert"
@@ -3332,6 +3808,7 @@ const initialBookData = [
     "title": "Hostage"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Coben", 
       "firstName": "Harlan"
@@ -3339,6 +3816,7 @@ const initialBookData = [
     "title": "Live Wire"
   }, 
   {
+    "series": "Saxon 02", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Bernard"
@@ -3346,6 +3824,7 @@ const initialBookData = [
     "title": "The Pale Horseman"
   }, 
   {
+    "series": "Ender 07", 
     "author": {
       "lastName": "Card", 
       "firstName": "Orson Scott"
@@ -3353,6 +3832,7 @@ const initialBookData = [
     "title": "Shadow Puppets"
   }, 
   {
+    "series": "Scarpetta 07", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Patricia"
@@ -3360,6 +3840,7 @@ const initialBookData = [
     "title": "Cause of Death"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Carlin", 
       "firstName": "George"
@@ -3367,6 +3848,7 @@ const initialBookData = [
     "title": "Last Words"
   }, 
   {
+    "series": "Jack Reacher 13", 
     "author": {
       "lastName": "Child", 
       "firstName": "Lee"
@@ -3374,6 +3856,7 @@ const initialBookData = [
     "title": "Gone Tomorrow"
   }, 
   {
+    "series": "Scarpetta 16", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Patricia"
@@ -3381,6 +3864,7 @@ const initialBookData = [
     "title": "Scarpetta"
   }, 
   {
+    "series": "Ender 01", 
     "author": {
       "lastName": "Card", 
       "firstName": "Orson Scott"
@@ -3388,6 +3872,7 @@ const initialBookData = [
     "title": "Ender's Game"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Coben", 
       "firstName": "Harlan"
@@ -3395,6 +3880,7 @@ const initialBookData = [
     "title": "Caught"
   }, 
   {
+    "series": "The Hunger Games 03", 
     "author": {
       "lastName": "Collins", 
       "firstName": "Suzanne"
@@ -3402,6 +3888,7 @@ const initialBookData = [
     "title": "Mockingjay"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Cather", 
       "firstName": "Willa"
@@ -3409,6 +3896,7 @@ const initialBookData = [
     "title": "My Antonia"
   }, 
   {
+    "series": "Scarpetta 09", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Patricia"
@@ -3416,6 +3904,7 @@ const initialBookData = [
     "title": "Point of Origin"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Cook", 
       "firstName": "Glen"
@@ -3423,6 +3912,7 @@ const initialBookData = [
     "title": "The Black Company"
   }, 
   {
+    "series": "Jack Reacher 12", 
     "author": {
       "lastName": "Child", 
       "firstName": "Lee"
@@ -3430,6 +3920,7 @@ const initialBookData = [
     "title": "Nothing to Lose"
   }, 
   {
+    "series": "Myron 02", 
     "author": {
       "lastName": "Coben", 
       "firstName": "Harlan"
@@ -3437,6 +3928,7 @@ const initialBookData = [
     "title": "Drop Shot"
   }, 
   {
+    "series": "Scarpetta 14", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Patricia"
@@ -3444,6 +3936,7 @@ const initialBookData = [
     "title": "Predator"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Clancy", 
       "firstName": "Tom"
@@ -3451,6 +3944,7 @@ const initialBookData = [
     "title": "Executive Orders"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Cheever", 
       "firstName": "John"
@@ -3458,6 +3952,7 @@ const initialBookData = [
     "title": "The Stories of John Cheever"
   }, 
   {
+    "series": "The Dark is Rising 01", 
     "author": {
       "lastName": "Cooper", 
       "firstName": "Susan"
@@ -3465,6 +3960,7 @@ const initialBookData = [
     "title": "Over Sea, Under Stone"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Crichton", 
       "firstName": "Michael"
@@ -3472,6 +3968,7 @@ const initialBookData = [
     "title": "The Andromeda Strain"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Carlin", 
       "firstName": "George"
@@ -3479,6 +3976,7 @@ const initialBookData = [
     "title": "When Will Jesus Bring the Pork Chops"
   }, 
   {
+    "series": "Warlord 01", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Bernard"
@@ -3486,6 +3984,7 @@ const initialBookData = [
     "title": "The Winter King"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Clarke", 
       "firstName": "Arthur C."
@@ -3493,6 +3992,7 @@ const initialBookData = [
     "title": "2001 A Space Odyssey"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Connelly", 
       "firstName": "Michael"
@@ -3500,6 +4000,7 @@ const initialBookData = [
     "title": "The Poet"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Card", 
       "firstName": "Orson Scott"
@@ -3507,6 +4008,7 @@ const initialBookData = [
     "title": "Seventh Son"
   }, 
   {
+    "series": "Harry Bosch 02", 
     "author": {
       "lastName": "Connelly", 
       "firstName": "Michael"
@@ -3514,6 +4016,7 @@ const initialBookData = [
     "title": "The Black Ice"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Connolly", 
       "firstName": "John"
@@ -3521,6 +4024,7 @@ const initialBookData = [
     "title": "The Book Of Lost Things"
   }, 
   {
+    "series": "Harry Bosch 13", 
     "author": {
       "lastName": "Connelly", 
       "firstName": "Michael"
@@ -3528,6 +4032,7 @@ const initialBookData = [
     "title": "The Overlook"
   }, 
   {
+    "series": "Myron 01", 
     "author": {
       "lastName": "Coben", 
       "firstName": "Harlan"
@@ -3535,6 +4040,7 @@ const initialBookData = [
     "title": "Deal Breaker"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Crichton", 
       "firstName": "Michael"
@@ -3542,6 +4048,7 @@ const initialBookData = [
     "title": "Timeline"
   }, 
   {
+    "series": "Mickey Haller 01", 
     "author": {
       "lastName": "Connelly", 
       "firstName": "Michael"
@@ -3549,6 +4056,7 @@ const initialBookData = [
     "title": "The Lincoln Lawyer"
   }, 
   {
+    "series": "Harry Bosch 04", 
     "author": {
       "lastName": "Connelly", 
       "firstName": "Michael"
@@ -3556,6 +4064,7 @@ const initialBookData = [
     "title": "The Last Coyote"
   }, 
   {
+    "series": "Scarpetta 13", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Patricia"
@@ -3563,6 +4072,7 @@ const initialBookData = [
     "title": "Trace"
   }, 
   {
+    "series": "Scarpetta 01", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Patricia"
@@ -3570,6 +4080,7 @@ const initialBookData = [
     "title": "Postmortem"
   }, 
   {
+    "series": "Elvis Cole 05", 
     "author": {
       "lastName": "Crais", 
       "firstName": "Robert"
@@ -3577,6 +4088,7 @@ const initialBookData = [
     "title": "Voodoo River"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Connelly", 
       "firstName": "Michael"
@@ -3584,6 +4096,7 @@ const initialBookData = [
     "title": "The Scarecrow"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Crichton", 
       "firstName": "Michael"
@@ -3591,6 +4104,7 @@ const initialBookData = [
     "title": "Next"
   }, 
   {
+    "series": "Grail Quest 01", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Bernard"
@@ -3598,6 +4112,7 @@ const initialBookData = [
     "title": "The Archer's Tale"
   }, 
   {
+    "series": "Elvis Cole 03", 
     "author": {
       "lastName": "Crais", 
       "firstName": "Robert"
@@ -3605,6 +4120,7 @@ const initialBookData = [
     "title": "Lullaby Town"
   }, 
   {
+    "series": "Harry Bosch 14", 
     "author": {
       "lastName": "Connelly", 
       "firstName": "Michael"
@@ -3612,6 +4128,7 @@ const initialBookData = [
     "title": "9 Dragons"
   }, 
   {
+    "series": "Ender 02", 
     "author": {
       "lastName": "Card", 
       "firstName": "Orson Scott"
@@ -3619,6 +4136,7 @@ const initialBookData = [
     "title": "Speaker for the Dead"
   }, 
   {
+    "series": "Saxon 04", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Bernard"
@@ -3626,6 +4144,7 @@ const initialBookData = [
     "title": "Sword Song"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Cleave", 
       "firstName": "Chris"
@@ -3633,6 +4152,7 @@ const initialBookData = [
     "title": "Little Bee"
   }, 
   {
+    "series": "Scarpetta 17", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Patricia"
@@ -3640,6 +4160,7 @@ const initialBookData = [
     "title": "The Scarpetta Factor"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Castle", 
       "firstName": "Richard"
@@ -3647,6 +4168,7 @@ const initialBookData = [
     "title": "Heat Wave"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Carolla", 
       "firstName": "Adam"
@@ -3654,6 +4176,7 @@ const initialBookData = [
     "title": "In Fifty Years We'll All Be Chicks"
   }, 
   {
+    "series": "Scarpetta 11", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Patricia"
@@ -3661,6 +4184,7 @@ const initialBookData = [
     "title": "Last Precinct"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Christie", 
       "firstName": "Agatha"
@@ -3668,6 +4192,7 @@ const initialBookData = [
     "title": "And Then There Were None"
   }, 
   {
+    "series": "Harry Bosch 07", 
     "author": {
       "lastName": "Connelly", 
       "firstName": "Michael"
@@ -3675,6 +4200,7 @@ const initialBookData = [
     "title": "A Darkness More Than Night"
   }, 
   {
+    "series": "Joe Pike 01", 
     "author": {
       "lastName": "Crais", 
       "firstName": "Robert"
@@ -3682,6 +4208,7 @@ const initialBookData = [
     "title": "The Watchman"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Carnegie", 
       "firstName": "Dale"
@@ -3689,6 +4216,7 @@ const initialBookData = [
     "title": "How To Win Friends and Influence People"
   }, 
   {
+    "series": "Jack Reacher 06", 
     "author": {
       "lastName": "Child", 
       "firstName": "Lee"
@@ -3696,6 +4224,7 @@ const initialBookData = [
     "title": "Without Fail"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Cross", 
       "firstName": "David"
@@ -3703,6 +4232,7 @@ const initialBookData = [
     "title": "I Drink for a Reason"
   }, 
   {
+    "series": "The Dark is Rising 03", 
     "author": {
       "lastName": "Cooper", 
       "firstName": "Susan"
@@ -3710,6 +4240,7 @@ const initialBookData = [
     "title": "Greenwitch"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Coben", 
       "firstName": "Harlan"
@@ -3717,6 +4248,7 @@ const initialBookData = [
     "title": "The Woods"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Cullen", 
       "firstName": "Dave"
@@ -3724,6 +4256,7 @@ const initialBookData = [
     "title": "Columbine"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Cussler", 
       "firstName": "Clive"
@@ -3731,6 +4264,7 @@ const initialBookData = [
     "title": "Shock Wave"
   }, 
   {
+    "series": "Myron 09", 
     "author": {
       "lastName": "Coben", 
       "firstName": "Harlan"
@@ -3738,6 +4272,7 @@ const initialBookData = [
     "title": "Long Lost"
   }, 
   {
+    "series": "Jack Reacher 07", 
     "author": {
       "lastName": "Child", 
       "firstName": "Lee"
@@ -3745,6 +4280,7 @@ const initialBookData = [
     "title": "Persuader"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Carlin", 
       "firstName": "George"
@@ -3752,6 +4288,7 @@ const initialBookData = [
     "title": "Napalm and Silly Putty"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Crichton", 
       "firstName": "Michael"
@@ -3759,6 +4296,7 @@ const initialBookData = [
     "title": "Airframe"
   }, 
   {
+    "series": "Myron 08", 
     "author": {
       "lastName": "Coben", 
       "firstName": "Harlan"
@@ -3766,6 +4304,7 @@ const initialBookData = [
     "title": "Promise Me"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Coben", 
       "firstName": "Harlan"
@@ -3773,6 +4312,7 @@ const initialBookData = [
     "title": "Hold Tight"
   }, 
   {
+    "series": "Ender 03", 
     "author": {
       "lastName": "Card", 
       "firstName": "Orson Scott"
@@ -3780,6 +4320,7 @@ const initialBookData = [
     "title": "Xenocide"
   }, 
   {
+    "series": "Jack Reacher 04", 
     "author": {
       "lastName": "Child", 
       "firstName": "Lee"
@@ -3787,6 +4328,7 @@ const initialBookData = [
     "title": "Running Blind"
   }, 
   {
+    "series": "Mickey Haller 02", 
     "author": {
       "lastName": "Connelly", 
       "firstName": "Michael"
@@ -3794,6 +4336,7 @@ const initialBookData = [
     "title": "The Brass Verdict"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Crichton", 
       "firstName": "Michael"
@@ -3801,6 +4344,7 @@ const initialBookData = [
     "title": "Sphere"
   }, 
   {
+    "series": "The Dark is Rising 02", 
     "author": {
       "lastName": "Cooper", 
       "firstName": "Susan"
@@ -3808,6 +4352,7 @@ const initialBookData = [
     "title": "The Dark is Rising"
   }, 
   {
+    "series": "Scarpetta 02", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Patricia"
@@ -3815,6 +4360,7 @@ const initialBookData = [
     "title": "Body of Evidence"
   }, 
   {
+    "series": "Scarpetta 06", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Patricia"
@@ -3822,6 +4368,7 @@ const initialBookData = [
     "title": "From Potters Field"
   }, 
   {
+    "series": "Harry Bosch 01", 
     "author": {
       "lastName": "Connelly", 
       "firstName": "Michael"
@@ -3829,6 +4376,7 @@ const initialBookData = [
     "title": "The Black Echo"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Connolly", 
       "firstName": "John"
@@ -3836,6 +4384,7 @@ const initialBookData = [
     "title": "Every Dead Thing"
   }, 
   {
+    "series": "Harry Bosch 11", 
     "author": {
       "lastName": "Connelly", 
       "firstName": "Michael"
@@ -3843,6 +4392,7 @@ const initialBookData = [
     "title": "The Closers"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Connelly", 
       "firstName": "Michael"
@@ -3850,6 +4400,7 @@ const initialBookData = [
     "title": "Void Moon"
   }, 
   {
+    "series": "Jack Reacher 08", 
     "author": {
       "lastName": "Child", 
       "firstName": "Lee"
@@ -3857,6 +4408,7 @@ const initialBookData = [
     "title": "The Enemy"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Crichton", 
       "firstName": "Michael"
@@ -3864,6 +4416,7 @@ const initialBookData = [
     "title": "Pirate Latitudes"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Clancy", 
       "firstName": "Tom"
@@ -3871,6 +4424,7 @@ const initialBookData = [
     "title": "The Sum of All Fears"
   }, 
   {
+    "series": "Scarpetta 15", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Patricia"
@@ -3878,6 +4432,7 @@ const initialBookData = [
     "title": "Book of the Dead"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Clancy", 
       "firstName": "Tom"
@@ -3885,6 +4440,7 @@ const initialBookData = [
     "title": "Patriot Games"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Carlin", 
       "firstName": "George"
@@ -3892,6 +4448,7 @@ const initialBookData = [
     "title": "Brain Droppings"
   }, 
   {
+    "series": "Myron 05", 
     "author": {
       "lastName": "Coben", 
       "firstName": "Harlan"
@@ -3899,6 +4456,7 @@ const initialBookData = [
     "title": "One False Move"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Colbert", 
       "firstName": "Stephen"
@@ -3906,6 +4464,7 @@ const initialBookData = [
     "title": "I Am America (And So Can You!)"
   }, 
   {
+    "series": "Elvis Cole 01", 
     "author": {
       "lastName": "Crais", 
       "firstName": "Robert"
@@ -3913,6 +4472,7 @@ const initialBookData = [
     "title": "The Monkey's Raincoat"
   }, 
   {
+    "series": "Jack Reacher 01", 
     "author": {
       "lastName": "Child", 
       "firstName": "Lee"
@@ -3920,6 +4480,7 @@ const initialBookData = [
     "title": "Killing Floor"
   }, 
   {
+    "series": "Warlord 03", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Bernard"
@@ -3927,6 +4488,7 @@ const initialBookData = [
     "title": "Excalibur"
   }, 
   {
+    "series": "Elvis Cole 02", 
     "author": {
       "lastName": "Crais", 
       "firstName": "Robert"
@@ -3934,6 +4496,7 @@ const initialBookData = [
     "title": "Stalking the Angel"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "", 
       "firstName": "Cracked.com"
@@ -3941,6 +4504,7 @@ const initialBookData = [
     "title": "You Might Be a Zombie and Other Bad News"
   }, 
   {
+    "series": "Alice's Adventures in Wonderland and Through the Looking", 
     "author": {
       "lastName": "Carroll", 
       "firstName": "Lewis"
@@ -3948,6 +4512,7 @@ const initialBookData = [
     "title": "Glass"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Connelly", 
       "firstName": "Michael"
@@ -3955,6 +4520,7 @@ const initialBookData = [
     "title": "Blood Work"
   }, 
   {
+    "series": "Ender 06", 
     "author": {
       "lastName": "Card", 
       "firstName": "Orson Scott"
@@ -3962,6 +4528,7 @@ const initialBookData = [
     "title": "Shadow of the Hegemon"
   }, 
   {
+    "series": "Elvis Cole 07", 
     "author": {
       "lastName": "Crais", 
       "firstName": "Robert"
@@ -3969,6 +4536,7 @@ const initialBookData = [
     "title": "Indigo Slam"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Crichton", 
       "firstName": "Michael"
@@ -3976,6 +4544,7 @@ const initialBookData = [
     "title": "Eaters of the Dead"
   }, 
   {
+    "series": "Ender 04", 
     "author": {
       "lastName": "Card", 
       "firstName": "Orson Scott"
@@ -3983,6 +4552,7 @@ const initialBookData = [
     "title": "Children of the Mind"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Coben", 
       "firstName": "Harlan"
@@ -3990,6 +4560,7 @@ const initialBookData = [
     "title": "Just One Look"
   }, 
   {
+    "series": "Myron 04", 
     "author": {
       "lastName": "Coben", 
       "firstName": "Harlan"
@@ -3997,6 +4568,7 @@ const initialBookData = [
     "title": "Back Spin"
   }, 
   {
+    "series": "The Dark is Rising 04", 
     "author": {
       "lastName": "Cooper", 
       "firstName": "Susan"
@@ -4004,6 +4576,7 @@ const initialBookData = [
     "title": "The Grey King"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Carver", 
       "firstName": "Raymond"
@@ -4011,6 +4584,7 @@ const initialBookData = [
     "title": "Where I'm Calling From"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Coelho", 
       "firstName": "Paulo"
@@ -4018,6 +4592,7 @@ const initialBookData = [
     "title": "The Alchemist"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Crichton", 
       "firstName": "Michael"
@@ -4025,6 +4600,7 @@ const initialBookData = [
     "title": "Disclosure"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Collins", 
       "firstName": "Wilkie"
@@ -4032,6 +4608,7 @@ const initialBookData = [
     "title": "The Woman in White"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Cash", 
       "firstName": "Johnny"
@@ -4039,6 +4616,7 @@ const initialBookData = [
     "title": "Cash, The Autobiography"
   }, 
   {
+    "series": "Jack Reacher 02", 
     "author": {
       "lastName": "Child", 
       "firstName": "Lee"
@@ -4046,6 +4624,7 @@ const initialBookData = [
     "title": "Die Trying"
   }, 
   {
+    "series": "Scarpetta 10", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Patricia"
@@ -4053,6 +4632,7 @@ const initialBookData = [
     "title": "Black Notice"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Clancy", 
       "firstName": "Tom"
@@ -4060,6 +4640,7 @@ const initialBookData = [
     "title": "Clear and Present Danger"
   }, 
   {
+    "series": "Harry Bosch 03", 
     "author": {
       "lastName": "Connelly", 
       "firstName": "Michael"
@@ -4067,6 +4648,7 @@ const initialBookData = [
     "title": "The Concrete Blonde"
   }, 
   {
+    "series": "Ender 05", 
     "author": {
       "lastName": "Card", 
       "firstName": "Orson Scott"
@@ -4074,6 +4656,7 @@ const initialBookData = [
     "title": "Ender's Shadow"
   }, 
   {
+    "series": "Jack Reacher 11", 
     "author": {
       "lastName": "Child", 
       "firstName": "Lee"
@@ -4081,6 +4664,7 @@ const initialBookData = [
     "title": "Bad Luck and Trouble"
   }, 
   {
+    "series": "Harry Bosch 09", 
     "author": {
       "lastName": "Connelly", 
       "firstName": "Michael"
@@ -4088,6 +4672,7 @@ const initialBookData = [
     "title": "Lost Light"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Coben", 
       "firstName": "Harlan"
@@ -4095,6 +4680,7 @@ const initialBookData = [
     "title": "Gone for Good"
   }, 
   {
+    "series": "The Hunger Games 02", 
     "author": {
       "lastName": "Collins", 
       "firstName": "Suzanne"
@@ -4102,6 +4688,7 @@ const initialBookData = [
     "title": "Catching Fire"
   }, 
   {
+    "series": "Jack Reacher 09", 
     "author": {
       "lastName": "Child", 
       "firstName": "Lee"
@@ -4109,6 +4696,7 @@ const initialBookData = [
     "title": "One Shot"
   }, 
   {
+    "series": "Scarpetta 03", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Patricia"
@@ -4116,6 +4704,7 @@ const initialBookData = [
     "title": "All That Remains"
   }, 
   {
+    "series": "Elvis Cole 04", 
     "author": {
       "lastName": "Crais", 
       "firstName": "Robert"
@@ -4123,6 +4712,7 @@ const initialBookData = [
     "title": "Free Fall"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Coleridge", 
       "firstName": "Samuel Taylor"
@@ -4130,6 +4720,7 @@ const initialBookData = [
     "title": "The Rime of the Ancient Mariner"
   }, 
   {
+    "series": "Elvis Cole 10", 
     "author": {
       "lastName": "Crais", 
       "firstName": "Robert"
@@ -4137,6 +4728,7 @@ const initialBookData = [
     "title": "The Forgotten Man"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Crichton", 
       "firstName": "Michael"
@@ -4144,6 +4736,7 @@ const initialBookData = [
     "title": "Jurassic Park"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Christie", 
       "firstName": "Agatha"
@@ -4151,6 +4744,7 @@ const initialBookData = [
     "title": "Murder on the Orient Express"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Castle", 
       "firstName": "Richard"
@@ -4158,6 +4752,7 @@ const initialBookData = [
     "title": "Naked Heat"
   }, 
   {
+    "series": "Joe Pike 02", 
     "author": {
       "lastName": "Crais", 
       "firstName": "Robert"
@@ -4165,6 +4760,7 @@ const initialBookData = [
     "title": "The First Rule"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Coben", 
       "firstName": "Harlan"
@@ -4172,6 +4768,7 @@ const initialBookData = [
     "title": "Tell No One"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Connelly", 
       "firstName": "Michael"
@@ -4179,6 +4776,7 @@ const initialBookData = [
     "title": "Chasing the Dime"
   }, 
   {
+    "series": "Harry Bosch 12", 
     "author": {
       "lastName": "Connelly", 
       "firstName": "Michael"
@@ -4186,6 +4784,7 @@ const initialBookData = [
     "title": "Echo Park"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Chadwick", 
       "firstName": "Elizabeth"
@@ -4193,6 +4792,7 @@ const initialBookData = [
     "title": "The Greatest Knight"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Covey", 
       "firstName": "Stephen R."
@@ -4200,6 +4800,7 @@ const initialBookData = [
     "title": "Seven Habits of Highly Effective People"
   }, 
   {
+    "series": "Scarpetta 18", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Patricia"
@@ -4207,6 +4808,7 @@ const initialBookData = [
     "title": "Port Mortuary"
   }, 
   {
+    "series": "Scarpetta 04", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Patricia"
@@ -4214,6 +4816,7 @@ const initialBookData = [
     "title": "Cruel and Unusual"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Cronin", 
       "firstName": "Justin"
@@ -4221,6 +4824,7 @@ const initialBookData = [
     "title": "The Passage"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Crichton", 
       "firstName": "Michael"
@@ -4228,6 +4832,7 @@ const initialBookData = [
     "title": "State of Fear"
   }, 
   {
+    "series": "Mickey Haller 03", 
     "author": {
       "lastName": "Connelly", 
       "firstName": "Michael"
@@ -4235,6 +4840,7 @@ const initialBookData = [
     "title": "The Reversal"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Bernard"
@@ -4242,6 +4848,7 @@ const initialBookData = [
     "title": "Azincourt"
   }, 
   {
+    "series": "Warlord 02", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Bernard"
@@ -4249,6 +4856,7 @@ const initialBookData = [
     "title": "Enemy of God"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Clinton", 
       "firstName": "Bill"
@@ -4256,6 +4864,7 @@ const initialBookData = [
     "title": "My Life"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Coben", 
       "firstName": "Harlan"
@@ -4263,6 +4872,7 @@ const initialBookData = [
     "title": "No Second Chance"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Chekhov", 
       "firstName": "Anton"
@@ -4270,6 +4880,7 @@ const initialBookData = [
     "title": "Selected Stores of Anton Chekhov"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Cussler", 
       "firstName": "Clive"
@@ -4277,6 +4888,7 @@ const initialBookData = [
     "title": "Flood Tide"
   }, 
   {
+    "series": "Jack Reacher 15", 
     "author": {
       "lastName": "Child", 
       "firstName": "Lee"
@@ -4284,6 +4896,7 @@ const initialBookData = [
     "title": "Worth Dying For.azw"
   }, 
   {
+    "series": "Harry Bosch 05", 
     "author": {
       "lastName": "Connelly", 
       "firstName": "Michael"
@@ -4291,6 +4904,7 @@ const initialBookData = [
     "title": "Trunk Music"
   }, 
   {
+    "series": "Scarpetta 12", 
     "author": {
       "lastName": "Cornwell", 
       "firstName": "Patricia"
@@ -4298,6 +4912,7 @@ const initialBookData = [
     "title": "Blow Fly"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Coetzee", 
       "firstName": "J.M."
@@ -4305,6 +4920,7 @@ const initialBookData = [
     "title": "Disgrace"
   }, 
   {
+    "series": "Elvis Cole 09", 
     "author": {
       "lastName": "Crais", 
       "firstName": "Robert"
@@ -4312,6 +4928,7 @@ const initialBookData = [
     "title": "The Last Detective"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Jacques", 
       "firstName": "Brian"
@@ -4319,6 +4936,7 @@ const initialBookData = [
     "title": "Lord Brocktree"
   }, 
   {
+    "series": "Wheel of Time 12", 
     "author": {
       "lastName": "Jordan", 
       "firstName": "Robert"
@@ -4326,6 +4944,7 @@ const initialBookData = [
     "title": "The Gathering Storm"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Jacobs", 
       "firstName": "A.J."
@@ -4333,6 +4952,7 @@ const initialBookData = [
     "title": "The Year of Living Biblically"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Jacques", 
       "firstName": "Brian"
@@ -4340,6 +4960,7 @@ const initialBookData = [
     "title": "Mariel of Redwall"
   }, 
   {
+    "series": "Wheel of Time 08", 
     "author": {
       "lastName": "Jordan", 
       "firstName": "Robert"
@@ -4347,6 +4968,7 @@ const initialBookData = [
     "title": "The Path of Daggers"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Jacobsen", 
       "firstName": "Annie"
@@ -4354,6 +4976,7 @@ const initialBookData = [
     "title": "Area 51"
   }, 
   {
+    "series": "Wheel of Time 07", 
     "author": {
       "lastName": "Jordan", 
       "firstName": "Robert"
@@ -4361,6 +4984,7 @@ const initialBookData = [
     "title": "A Crown of Swords"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Irving", 
       "firstName": "John"
@@ -4368,6 +4992,7 @@ const initialBookData = [
     "title": "Last Night in Twisted River"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Junger", 
       "firstName": "Alejandro"
@@ -4375,6 +5000,7 @@ const initialBookData = [
     "title": "Clean"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Jacques", 
       "firstName": "Brian"
@@ -4382,6 +5008,7 @@ const initialBookData = [
     "title": "Triss"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Jacques", 
       "firstName": "Brian"
@@ -4389,6 +5016,7 @@ const initialBookData = [
     "title": "The Pearls of Lutra"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Joyce", 
       "firstName": "James"
@@ -4396,6 +5024,7 @@ const initialBookData = [
     "title": "Dubliners"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Jacques", 
       "firstName": "Brian"
@@ -4403,6 +5032,7 @@ const initialBookData = [
     "title": "Marlfox"
   }, 
   {
+    "series": "Wheel of Time 02", 
     "author": {
       "lastName": "Jordan", 
       "firstName": "Robert"
@@ -4410,6 +5040,7 @@ const initialBookData = [
     "title": "The Great Hunt"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "James", 
       "firstName": "Henry"
@@ -4417,6 +5048,7 @@ const initialBookData = [
     "title": "Daisy Miller and Other Stories"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Junger", 
       "firstName": "Sebastian"
@@ -4424,6 +5056,7 @@ const initialBookData = [
     "title": "War"
   }, 
   {
+    "series": "Wheel of Time 09", 
     "author": {
       "lastName": "Jordan", 
       "firstName": "Robert"
@@ -4431,6 +5064,7 @@ const initialBookData = [
     "title": "Winter's Heart"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Jacques", 
       "firstName": "Brian"
@@ -4438,6 +5072,7 @@ const initialBookData = [
     "title": "Mossflower"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Jackson", 
       "firstName": "Shirley"
@@ -4445,6 +5080,7 @@ const initialBookData = [
     "title": "The Lottery"
   }, 
   {
+    "series": "Wheel of Time 04", 
     "author": {
       "lastName": "Jordan", 
       "firstName": "Robert"
@@ -4452,6 +5088,7 @@ const initialBookData = [
     "title": "The Shadow Rising"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Jacques", 
       "firstName": "Brian"
@@ -4459,6 +5096,7 @@ const initialBookData = [
     "title": "Salamandastron"
   }, 
   {
+    "series": "Wheel of Time 10", 
     "author": {
       "lastName": "Jordan", 
       "firstName": "Robert"
@@ -4466,6 +5104,7 @@ const initialBookData = [
     "title": "Crossroads of Twilight"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Jacques", 
       "firstName": "Brian"
@@ -4473,6 +5112,7 @@ const initialBookData = [
     "title": "The Taggerung"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Juster", 
       "firstName": "Norton"
@@ -4480,6 +5120,7 @@ const initialBookData = [
     "title": "The Phantom Tollbooth"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Irving", 
       "firstName": "Washington"
@@ -4487,6 +5128,7 @@ const initialBookData = [
     "title": "The Legend of Sleepy Hollow"
   }, 
   {
+    "series": "Z", 
     "author": {
       "lastName": "", 
       "firstName": "Jay"
@@ -4494,6 +5136,7 @@ const initialBookData = [
     "title": "Decoded"
   }, 
   {
+    "series": "Wheel of Time 01", 
     "author": {
       "lastName": "Jordan", 
       "firstName": "Robert"
@@ -4501,6 +5144,7 @@ const initialBookData = [
     "title": "The Eye of the World"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Jeremy", 
       "firstName": "Ron"
@@ -4508,6 +5152,7 @@ const initialBookData = [
     "title": "The Hardest (Working) Man in Showbiz"
   }, 
   {
+    "series": "Wheel of Time 06", 
     "author": {
       "lastName": "Jordan", 
       "firstName": "Robert"
@@ -4515,6 +5160,7 @@ const initialBookData = [
     "title": "The Fires of Heaven"
   }, 
   {
+    "series": "Wheel of Time 05", 
     "author": {
       "lastName": "Jordan", 
       "firstName": "Robert"
@@ -4522,6 +5168,7 @@ const initialBookData = [
     "title": "Lord of Chaos"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Jacobs", 
       "firstName": "A.J."
@@ -4529,6 +5176,7 @@ const initialBookData = [
     "title": "All"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Jacques", 
       "firstName": "Brian"
@@ -4536,6 +5184,7 @@ const initialBookData = [
     "title": "Martin the Warrior"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Irving", 
       "firstName": "John"
@@ -4543,6 +5192,7 @@ const initialBookData = [
     "title": "A Prayer for Owen Meany"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Joyce", 
       "firstName": "James"
@@ -4550,6 +5200,7 @@ const initialBookData = [
     "title": "Ulysses"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Jacques", 
       "firstName": "Brian"
@@ -4557,6 +5208,7 @@ const initialBookData = [
     "title": "Redwall"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Jacques", 
       "firstName": "Brian"
@@ -4564,6 +5216,7 @@ const initialBookData = [
     "title": "The Outcast of Redwall"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Jacques", 
       "firstName": "Brian"
@@ -4571,6 +5224,7 @@ const initialBookData = [
     "title": "Mattimeo"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Jones", 
       "firstName": "Edward P."
@@ -4578,6 +5232,7 @@ const initialBookData = [
     "title": "The Known World"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Jensen", 
       "firstName": "Carsten"
@@ -4585,6 +5240,7 @@ const initialBookData = [
     "title": "We, the Drowned"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Judd", 
       "firstName": "Ashley"
@@ -4592,6 +5248,7 @@ const initialBookData = [
     "title": "All That is Bitter and Sweet"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Jacques", 
       "firstName": "Brian"
@@ -4599,6 +5256,7 @@ const initialBookData = [
     "title": "The Bellmaker"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Ishiguro", 
       "firstName": "Kazuo"
@@ -4606,6 +5264,7 @@ const initialBookData = [
     "title": "Never Let Me Go"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Jacques", 
       "firstName": "Brian"
@@ -4613,6 +5272,7 @@ const initialBookData = [
     "title": "The Long Patrol"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "July", 
       "firstName": "Miranda"
@@ -4620,6 +5280,7 @@ const initialBookData = [
     "title": "No One Belongs Here More Than You"
   }, 
   {
+    "series": "Wheel of Time 11", 
     "author": {
       "lastName": "Jordan", 
       "firstName": "Robert"
@@ -4627,6 +5288,7 @@ const initialBookData = [
     "title": "Knife of Dreams"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Junger", 
       "firstName": "Sebastian"
@@ -4634,6 +5296,7 @@ const initialBookData = [
     "title": "The Perfect Storm"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Jensen", 
       "firstName": "Derrick"
@@ -4641,6 +5304,7 @@ const initialBookData = [
     "title": "Endgame Vol. 1"
   }, 
   {
+    "series": "Wheel of Time 03", 
     "author": {
       "lastName": "Jordan", 
       "firstName": "Robert"
@@ -4648,6 +5312,7 @@ const initialBookData = [
     "title": "The Dragon Reborn"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Jennings", 
       "firstName": "Gary"
@@ -4655,6 +5320,7 @@ const initialBookData = [
     "title": "Aztec"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Joyce", 
       "firstName": "James"
@@ -4662,6 +5328,7 @@ const initialBookData = [
     "title": "A Portrait of the Artist As a Young Man"
   }, 
   {
+    "series": "Wheel of Time 00", 
     "author": {
       "lastName": "Jordan", 
       "firstName": "Robert"
@@ -4669,6 +5336,7 @@ const initialBookData = [
     "title": "New Spring"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Jacques", 
       "firstName": "Brian"
@@ -4676,6 +5344,7 @@ const initialBookData = [
     "title": "The Legend of Luke"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4683,6 +5352,7 @@ const initialBookData = [
     "title": "Misery"
   }, 
   {
+    "series": "The Dark Tower 02", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4690,6 +5360,7 @@ const initialBookData = [
     "title": "The Drawing of the Three"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Keyes", 
       "firstName": "Marian"
@@ -4697,6 +5368,7 @@ const initialBookData = [
     "title": "Watermelon"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Kinsella", 
       "firstName": "Sophie"
@@ -4704,6 +5376,7 @@ const initialBookData = [
     "title": "Can You Keep a Secret"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dean"
@@ -4711,6 +5384,7 @@ const initialBookData = [
     "title": "The Face"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4718,6 +5392,7 @@ const initialBookData = [
     "title": "The Eyes of the Dragon"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4725,6 +5400,7 @@ const initialBookData = [
     "title": "UR"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Kinsella", 
       "firstName": "Sophie"
@@ -4732,6 +5408,7 @@ const initialBookData = [
     "title": "Shopaholic and Sister"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4739,6 +5416,7 @@ const initialBookData = [
     "title": "The Talisman"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Keyes", 
       "firstName": "Marian"
@@ -4746,6 +5424,7 @@ const initialBookData = [
     "title": "Rachel's Holiday"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dean"
@@ -4753,6 +5432,7 @@ const initialBookData = [
     "title": "Velocity"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4760,6 +5440,7 @@ const initialBookData = [
     "title": "Rage"
   }, 
   {
+    "series": "Fionavar 03", 
     "author": {
       "lastName": "Kay", 
       "firstName": "Guy Gavriel"
@@ -4767,6 +5448,7 @@ const initialBookData = [
     "title": "The Darkest Road"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4774,6 +5456,7 @@ const initialBookData = [
     "title": "Cujo"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dean"
@@ -4781,6 +5464,7 @@ const initialBookData = [
     "title": "False Memory"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4788,6 +5472,7 @@ const initialBookData = [
     "title": "Firestarter"
   }, 
   {
+    "series": "The Dark Tower 07", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4795,6 +5480,7 @@ const initialBookData = [
     "title": "The Dark Tower"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4802,6 +5488,7 @@ const initialBookData = [
     "title": "Duma Key"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4809,6 +5496,7 @@ const initialBookData = [
     "title": "Four Past Midnight"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dean"
@@ -4816,6 +5504,7 @@ const initialBookData = [
     "title": "Your Heart Belongs to Me"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4823,6 +5512,7 @@ const initialBookData = [
     "title": "Pet Sematary"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Kingsolver", 
       "firstName": "Barbara"
@@ -4830,6 +5520,7 @@ const initialBookData = [
     "title": "The Poisonwood Bible"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Kay", 
       "firstName": "Guy Gavriel"
@@ -4837,6 +5528,7 @@ const initialBookData = [
     "title": "Tigana"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4844,6 +5536,7 @@ const initialBookData = [
     "title": "Dolores Claiborne"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dean"
@@ -4851,6 +5544,7 @@ const initialBookData = [
     "title": "Watchers"
   }, 
   {
+    "series": "The Dark Tower 05", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4858,6 +5552,7 @@ const initialBookData = [
     "title": "Wolves of the Calla"
   }, 
   {
+    "series": "Odd Thomas 03", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dean"
@@ -4865,6 +5560,7 @@ const initialBookData = [
     "title": "Brother Odd"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4872,6 +5568,7 @@ const initialBookData = [
     "title": "Insomnia"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4879,6 +5576,7 @@ const initialBookData = [
     "title": "The Running Man"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4886,6 +5584,7 @@ const initialBookData = [
     "title": "The Dark Half"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Krauss", 
       "firstName": "Nicole"
@@ -4893,6 +5592,7 @@ const initialBookData = [
     "title": "Great House"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dean"
@@ -4900,6 +5600,7 @@ const initialBookData = [
     "title": "Seize the Night"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4907,6 +5608,7 @@ const initialBookData = [
     "title": "Night Shift"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dean"
@@ -4914,6 +5616,7 @@ const initialBookData = [
     "title": "From the Corner of His Eye"
   }, 
   {
+    "series": "The Dark Tower 03", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4921,6 +5624,7 @@ const initialBookData = [
     "title": "The Waste Lands"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Kaku", 
       "firstName": "Michio"
@@ -4928,6 +5632,7 @@ const initialBookData = [
     "title": "Physics of the Impossible"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4935,6 +5640,7 @@ const initialBookData = [
     "title": "The Shining"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4942,6 +5648,7 @@ const initialBookData = [
     "title": "Desperation"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dean"
@@ -4949,6 +5656,7 @@ const initialBookData = [
     "title": "The Taking"
   }, 
   {
+    "series": "The Dark Tower 01", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4956,6 +5664,7 @@ const initialBookData = [
     "title": "The Gunslinger"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4963,6 +5672,7 @@ const initialBookData = [
     "title": "The Gren Mile"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Kafka", 
       "firstName": "Franz"
@@ -4970,6 +5680,7 @@ const initialBookData = [
     "title": "The Metamorphosis and Other Stories"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4977,6 +5688,7 @@ const initialBookData = [
     "title": "Hearts In Atlantis"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Krakauer", 
       "firstName": "Jon"
@@ -4984,6 +5696,7 @@ const initialBookData = [
     "title": "Where Men Win Glory"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4991,6 +5704,7 @@ const initialBookData = [
     "title": "Dreamcatcher"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -4998,6 +5712,7 @@ const initialBookData = [
     "title": "The Dead Zone"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dean"
@@ -5005,6 +5720,7 @@ const initialBookData = [
     "title": "Strangers"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5012,6 +5728,7 @@ const initialBookData = [
     "title": "Lisey's Story"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dean"
@@ -5019,6 +5736,7 @@ const initialBookData = [
     "title": "Tick Tock"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Krakauer", 
       "firstName": "Jon"
@@ -5026,6 +5744,7 @@ const initialBookData = [
     "title": "Into the Wild"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Kinsella", 
       "firstName": "Sophie"
@@ -5033,6 +5752,7 @@ const initialBookData = [
     "title": "Shopaholic Takes Manhattan"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Keyes", 
       "firstName": "Marian"
@@ -5040,6 +5760,7 @@ const initialBookData = [
     "title": "Sushi for Beginners"
   }, 
   {
+    "series": "Odd Thomas 04", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dean"
@@ -5047,6 +5768,7 @@ const initialBookData = [
     "title": "Odd Hours"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5054,6 +5776,7 @@ const initialBookData = [
     "title": "Thinner"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Kerouac", 
       "firstName": "Jack"
@@ -5061,6 +5784,7 @@ const initialBookData = [
     "title": "On The Road"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Kerouac", 
       "firstName": "Jack"
@@ -5068,6 +5792,7 @@ const initialBookData = [
     "title": "The Dharma Bums"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dean"
@@ -5075,6 +5800,7 @@ const initialBookData = [
     "title": "Relentless"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5082,6 +5808,7 @@ const initialBookData = [
     "title": "From a Buick 8"
   }, 
   {
+    "series": "The Dark Tower 06", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5089,6 +5816,7 @@ const initialBookData = [
     "title": "Song of Susannah"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5096,6 +5824,7 @@ const initialBookData = [
     "title": "The Long Walk"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Keyes", 
       "firstName": "Marian"
@@ -5103,6 +5832,7 @@ const initialBookData = [
     "title": "The Other Side of the Story"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Kinsella", 
       "firstName": "Sophie"
@@ -5110,6 +5840,7 @@ const initialBookData = [
     "title": "Remember Me"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5117,6 +5848,7 @@ const initialBookData = [
     "title": "The Colorado Kid"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5124,6 +5856,7 @@ const initialBookData = [
     "title": "The Regulators"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dean"
@@ -5131,6 +5864,7 @@ const initialBookData = [
     "title": "One Door Away From Heaven"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5138,6 +5872,7 @@ const initialBookData = [
     "title": "The Girl Who Loved Tom Gordon"
   }, 
   {
+    "series": "Fionavar 02", 
     "author": {
       "lastName": "Kay", 
       "firstName": "Guy Gavriel"
@@ -5145,6 +5880,7 @@ const initialBookData = [
     "title": "The Wandering Fire"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dean"
@@ -5152,6 +5888,7 @@ const initialBookData = [
     "title": "The Darkest Evening of the Year"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dean"
@@ -5159,6 +5896,7 @@ const initialBookData = [
     "title": "Mr. Murder"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dean"
@@ -5166,6 +5904,7 @@ const initialBookData = [
     "title": "Fear Nothing"
   }, 
   {
+    "series": "Odd Thomas 02", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dean"
@@ -5173,6 +5912,7 @@ const initialBookData = [
     "title": "Forever Odd"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5180,6 +5920,7 @@ const initialBookData = [
     "title": "Full Dark, No Stars"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Kinsella", 
       "firstName": "Sophie"
@@ -5187,6 +5928,7 @@ const initialBookData = [
     "title": "Confessions of a Shopaholic"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5194,6 +5936,7 @@ const initialBookData = [
     "title": "Just After Sunset"
   }, 
   {
+    "series": "Odd Thomas 01", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dean"
@@ -5201,6 +5944,7 @@ const initialBookData = [
     "title": "Odd Thomas"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dean"
@@ -5208,6 +5952,7 @@ const initialBookData = [
     "title": "Demon Seed"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Klein", 
       "firstName": "Naomi"
@@ -5215,6 +5960,7 @@ const initialBookData = [
     "title": "The Shock Doctrine"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5222,6 +5968,7 @@ const initialBookData = [
     "title": "The Stand"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Kesey", 
       "firstName": "Ken"
@@ -5229,6 +5976,7 @@ const initialBookData = [
     "title": "One Flew Over the Cuckoo's Nest"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dean"
@@ -5236,6 +5984,7 @@ const initialBookData = [
     "title": "Sole Survivor"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5243,6 +5992,7 @@ const initialBookData = [
     "title": "Carrie"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dean"
@@ -5250,6 +6000,7 @@ const initialBookData = [
     "title": "The Door to December"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Kershaw", 
       "firstName": "Ian"
@@ -5257,6 +6008,7 @@ const initialBookData = [
     "title": "Hitler"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dean"
@@ -5264,6 +6016,7 @@ const initialBookData = [
     "title": "Intensity"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Krakauer", 
       "firstName": "Jon"
@@ -5271,6 +6024,7 @@ const initialBookData = [
     "title": "Under the Banner of Heaven"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5278,6 +6032,7 @@ const initialBookData = [
     "title": "Nightmares and Dreamscapes"
   }, 
   {
+    "series": "The Lions of Al", 
     "author": {
       "lastName": "Kay", 
       "firstName": "Guy Gavriel"
@@ -5285,6 +6040,7 @@ const initialBookData = [
     "title": "Rassan"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Kinsella", 
       "firstName": "Sophie"
@@ -5292,6 +6048,7 @@ const initialBookData = [
     "title": "Shopaholic and Baby"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5299,6 +6056,7 @@ const initialBookData = [
     "title": "Everything's Eventual"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Kafka", 
       "firstName": "Franz"
@@ -5306,6 +6064,7 @@ const initialBookData = [
     "title": "The Trial"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5313,6 +6072,7 @@ const initialBookData = [
     "title": "Cycle of the Werewolf"
   }, 
   {
+    "series": "The Dark Tower 04", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5320,6 +6080,7 @@ const initialBookData = [
     "title": "Wizard and Glass"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5327,6 +6088,7 @@ const initialBookData = [
     "title": "Different Seasons"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5334,6 +6096,7 @@ const initialBookData = [
     "title": "Cell"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Kingsbury", 
       "firstName": "Karen"
@@ -5341,6 +6104,7 @@ const initialBookData = [
     "title": "Unlocked"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5348,6 +6112,7 @@ const initialBookData = [
     "title": "Under the Dome"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5355,6 +6120,7 @@ const initialBookData = [
     "title": "Roadwork"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5362,6 +6128,7 @@ const initialBookData = [
     "title": "The Tommyknockers"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dean"
@@ -5369,6 +6136,7 @@ const initialBookData = [
     "title": "The Husband"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Keyes", 
       "firstName": "Marian"
@@ -5376,6 +6144,7 @@ const initialBookData = [
     "title": "Last Chance Saloon"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5383,6 +6152,7 @@ const initialBookData = [
     "title": "Christine"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Klosterman", 
       "firstName": "Chuck"
@@ -5390,6 +6160,7 @@ const initialBookData = [
     "title": "Eating the Dinosaur"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5397,6 +6168,7 @@ const initialBookData = [
     "title": "Skeleton Crew"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Kroese", 
       "firstName": "Robert"
@@ -5404,6 +6176,7 @@ const initialBookData = [
     "title": "Mercury Falls"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5411,6 +6184,7 @@ const initialBookData = [
     "title": "Bag of Bones"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dead"
@@ -5418,6 +6192,7 @@ const initialBookData = [
     "title": "By the Light of the Moon"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5425,6 +6200,7 @@ const initialBookData = [
     "title": "Rose Madder"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Kinsella", 
       "firstName": "Sophie"
@@ -5432,6 +6208,7 @@ const initialBookData = [
     "title": "Shopaholic Ties the Knot"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Keyes", 
       "firstName": "Marian"
@@ -5439,6 +6216,7 @@ const initialBookData = [
     "title": "Lucy Sullivan is Getting Married"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Kiyosaki", 
       "firstName": "Robert"
@@ -5446,6 +6224,7 @@ const initialBookData = [
     "title": "Rich Dad, Poor Dad"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Koontz", 
       "firstName": "Dean"
@@ -5453,6 +6232,7 @@ const initialBookData = [
     "title": "Midnight"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5460,6 +6240,7 @@ const initialBookData = [
     "title": "Black House"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5467,6 +6248,7 @@ const initialBookData = [
     "title": "Salem's Lot"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Keyes", 
       "firstName": "Marian"
@@ -5474,6 +6256,7 @@ const initialBookData = [
     "title": "Anybody Out There"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5481,6 +6264,7 @@ const initialBookData = [
     "title": "It"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Kostova", 
       "firstName": "Elizabeth"
@@ -5488,6 +6272,7 @@ const initialBookData = [
     "title": "The Historian"
   }, 
   {
+    "series": "Fionavar 01", 
     "author": {
       "lastName": "Kay", 
       "firstName": "Guy Gavriel"
@@ -5495,6 +6280,7 @@ const initialBookData = [
     "title": "The Summer Tree"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "King", 
       "firstName": "Stephen"
@@ -5502,6 +6288,7 @@ const initialBookData = [
     "title": "Gerald's Game"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Orwell", 
       "firstName": "George"
@@ -5509,6 +6296,7 @@ const initialBookData = [
     "title": "1984"
   }, 
   {
+    "series": "Discworld 08", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -5516,6 +6304,7 @@ const initialBookData = [
     "title": "Guards! Guards!"
   }, 
   {
+    "series": "Spenser 33", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -5523,6 +6312,7 @@ const initialBookData = [
     "title": "School Days"
   }, 
   {
+    "series": "Aubrey Maturin 19", 
     "author": {
       "lastName": "O'Brian", 
       "firstName": "Patrick"
@@ -5530,6 +6320,7 @@ const initialBookData = [
     "title": "The Hundred Days"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Puzo", 
       "firstName": "Mario"
@@ -5537,6 +6328,7 @@ const initialBookData = [
     "title": "The Godfather"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Palahniuk", 
       "firstName": "Chuck"
@@ -5544,6 +6336,7 @@ const initialBookData = [
     "title": "Fight Club"
   }, 
   {
+    "series": "Spenser 11", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -5551,6 +6344,7 @@ const initialBookData = [
     "title": "Valediction"
   }, 
   {
+    "series": "Pendergast 01", 
     "author": {
       "lastName": "Preston", 
       "firstName": "Douglas"
@@ -5558,6 +6352,7 @@ const initialBookData = [
     "title": "Relic"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Paul", 
       "firstName": "Ron"
@@ -5565,6 +6360,7 @@ const initialBookData = [
     "title": "Liberty Defined"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Patterson", 
       "firstName": "James"
@@ -5572,6 +6368,7 @@ const initialBookData = [
     "title": "Suzanne's Diary for Nicholas"
   }, 
   {
+    "series": "Discworld 18", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -5579,6 +6376,7 @@ const initialBookData = [
     "title": "Maskerade"
   }, 
   {
+    "series": "Spenser 29", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -5586,6 +6384,7 @@ const initialBookData = [
     "title": "Widow's Walk"
   }, 
   {
+    "series": "Stone 08", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -5593,6 +6392,7 @@ const initialBookData = [
     "title": "Night and Day"
   }, 
   {
+    "series": "Aubrey Maturin 04", 
     "author": {
       "lastName": "O'Brian", 
       "firstName": "Patrick"
@@ -5600,6 +6400,7 @@ const initialBookData = [
     "title": "The Mauritius Command"
   }, 
   {
+    "series": "Discworld 09", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -5607,6 +6408,7 @@ const initialBookData = [
     "title": "Eric"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Patterson", 
       "firstName": "James"
@@ -5614,6 +6416,7 @@ const initialBookData = [
     "title": "London Bridges"
   }, 
   {
+    "series": "Stone 05", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -5621,6 +6424,7 @@ const initialBookData = [
     "title": "Sea Change"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Priest", 
       "firstName": "Cherie"
@@ -5628,6 +6432,7 @@ const initialBookData = [
     "title": "Boneshaker"
   }, 
   {
+    "series": "Aubrey Maturin 12", 
     "author": {
       "lastName": "O'Brian", 
       "firstName": "Patrick"
@@ -5635,6 +6440,7 @@ const initialBookData = [
     "title": "The Letter Of Marque"
   }, 
   {
+    "series": "Discworld 25", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -5642,6 +6448,7 @@ const initialBookData = [
     "title": "The Truth"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Paul", 
       "firstName": "Ron"
@@ -5649,6 +6456,7 @@ const initialBookData = [
     "title": "The Revolution"
   }, 
   {
+    "series": "Spenser 09", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -5656,6 +6464,7 @@ const initialBookData = [
     "title": "Ceremony"
   }, 
   {
+    "series": "Discworld 19", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -5663,6 +6472,7 @@ const initialBookData = [
     "title": "Feet of Clay"
   }, 
   {
+    "series": "Spenser 08", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -5670,6 +6480,7 @@ const initialBookData = [
     "title": "A Savage Place"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Patterson", 
       "firstName": "James"
@@ -5677,6 +6488,7 @@ const initialBookData = [
     "title": "Hide and Seek"
   }, 
   {
+    "series": "Aubrey Maturin 11", 
     "author": {
       "lastName": "O'Brian", 
       "firstName": "Patrick"
@@ -5684,6 +6496,7 @@ const initialBookData = [
     "title": "The Reverse Of The Medal"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Portis", 
       "firstName": "Charles"
@@ -5691,6 +6504,7 @@ const initialBookData = [
     "title": "True Grit"
   }, 
   {
+    "series": "Stone 06", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -5698,6 +6512,7 @@ const initialBookData = [
     "title": "High Profile"
   }, 
   {
+    "series": "Stone 01", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -5705,6 +6520,7 @@ const initialBookData = [
     "title": "Night Passage"
   }, 
   {
+    "series": "Discworld 06", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -5712,6 +6528,7 @@ const initialBookData = [
     "title": "Wyrd Sisters"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Preston", 
       "firstName": "Douglas"
@@ -5719,6 +6536,7 @@ const initialBookData = [
     "title": "Mount Dragon"
   }, 
   {
+    "series": "Aubrey Maturin 18", 
     "author": {
       "lastName": "O'Brian", 
       "firstName": "Patrick"
@@ -5726,6 +6544,7 @@ const initialBookData = [
     "title": "The Yellow Admiral"
   }, 
   {
+    "series": "Aubrey Maturin 06", 
     "author": {
       "lastName": "O'Brian", 
       "firstName": "Patrick"
@@ -5733,6 +6552,7 @@ const initialBookData = [
     "title": "The Fortune of War"
   }, 
   {
+    "series": "Discworld 31", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -5740,6 +6560,7 @@ const initialBookData = [
     "title": "Monstrous Regiment"
   }, 
   {
+    "series": "Discworld 02", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -5747,6 +6568,7 @@ const initialBookData = [
     "title": "The Light Fantastic"
   }, 
   {
+    "series": "Spenser 37", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -5754,6 +6576,7 @@ const initialBookData = [
     "title": "The Professional"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Palahniuk", 
       "firstName": "Chuck"
@@ -5761,6 +6584,7 @@ const initialBookData = [
     "title": "Rant"
   }, 
   {
+    "series": "Discworld 38", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -5768,6 +6592,7 @@ const initialBookData = [
     "title": "I Shall Wear Midnight"
   }, 
   {
+    "series": "Spenser 25", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -5775,6 +6600,7 @@ const initialBookData = [
     "title": "Sudden Mischief"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Pollan", 
       "firstName": "Michael"
@@ -5782,6 +6608,7 @@ const initialBookData = [
     "title": "The Omnivore's Dilemma"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Patterson", 
       "firstName": "James"
@@ -5789,6 +6616,7 @@ const initialBookData = [
     "title": "Pop Goes the Weasel"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Orwell", 
       "firstName": "George"
@@ -5796,6 +6624,7 @@ const initialBookData = [
     "title": "Animal Farm"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Potzsch", 
       "firstName": "Oliver"
@@ -5803,6 +6632,7 @@ const initialBookData = [
     "title": "The Hangman's Daughter"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Patterson", 
       "firstName": "James"
@@ -5810,6 +6640,7 @@ const initialBookData = [
     "title": "Along Came a Spider"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Palahniuk", 
       "firstName": "Chuck"
@@ -5817,6 +6648,7 @@ const initialBookData = [
     "title": "Pygmy"
   }, 
   {
+    "series": "Spenser 06", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -5824,6 +6656,7 @@ const initialBookData = [
     "title": "Looking for Rachel Wallace"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Patterson", 
       "firstName": "James"
@@ -5831,6 +6664,7 @@ const initialBookData = [
     "title": "Cradle and All"
   }, 
   {
+    "series": "Aubrey Maturin 07", 
     "author": {
       "lastName": "O'Brian", 
       "firstName": "Patrick"
@@ -5838,6 +6672,7 @@ const initialBookData = [
     "title": "The Surgeon's Mate"
   }, 
   {
+    "series": "Spenser 20", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -5845,6 +6680,7 @@ const initialBookData = [
     "title": "Paper Doll"
   }, 
   {
+    "series": "His Dark Materials 03", 
     "author": {
       "lastName": "Pullman", 
       "firstName": "Philip"
@@ -5852,6 +6688,7 @@ const initialBookData = [
     "title": "The Amber Spyglass"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Palahniuk", 
       "firstName": "Chuck"
@@ -5859,6 +6696,7 @@ const initialBookData = [
     "title": "Lullaby"
   }, 
   {
+    "series": "Discworld 17", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -5866,6 +6704,7 @@ const initialBookData = [
     "title": "Interesting Times"
   }, 
   {
+    "series": "Discworld 28", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -5873,6 +6712,7 @@ const initialBookData = [
     "title": "The Amazing Maurice and His Educated Rodents"
   }, 
   {
+    "series": "Gideon Crew 01", 
     "author": {
       "lastName": "Preston", 
       "firstName": "Douglas"
@@ -5880,6 +6720,7 @@ const initialBookData = [
     "title": "Gideon's Sword"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Palahniuk", 
       "firstName": "Chuck"
@@ -5887,6 +6728,7 @@ const initialBookData = [
     "title": "Invisible Monsters"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Obama", 
       "firstName": "Barack"
@@ -5894,6 +6736,7 @@ const initialBookData = [
     "title": "The Audacity of Hope"
   }, 
   {
+    "series": "Discworld 23", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -5901,6 +6744,7 @@ const initialBookData = [
     "title": "Carpe Jugulum"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Palahniuk", 
       "firstName": "Chuck"
@@ -5908,6 +6752,7 @@ const initialBookData = [
     "title": "Haunted"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Penny", 
       "firstName": "Louise"
@@ -5915,6 +6760,7 @@ const initialBookData = [
     "title": "Still Life"
   }, 
   {
+    "series": "Discworld 32", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -5922,6 +6768,7 @@ const initialBookData = [
     "title": "A Hat Full Of Sky"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Preston", 
       "firstName": "Douglas"
@@ -5929,6 +6776,7 @@ const initialBookData = [
     "title": "Thunderhead"
   }, 
   {
+    "series": "Stone 04", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -5936,6 +6784,7 @@ const initialBookData = [
     "title": "Stone Cold"
   }, 
   {
+    "series": "Stone 03", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -5943,6 +6792,7 @@ const initialBookData = [
     "title": "Death in Paradise"
   }, 
   {
+    "series": "Discworld 24", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -5950,6 +6800,7 @@ const initialBookData = [
     "title": "The Fifth Elephant"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Patterson", 
       "firstName": "James"
@@ -5957,6 +6808,7 @@ const initialBookData = [
     "title": "Four Blind Mice"
   }, 
   {
+    "series": "Aubrey Maturin 02", 
     "author": {
       "lastName": "O'Brian", 
       "firstName": "Patrick"
@@ -5964,6 +6816,7 @@ const initialBookData = [
     "title": "Post Captain"
   }, 
   {
+    "series": "Aubrey Maturin 14", 
     "author": {
       "lastName": "O'Brian", 
       "firstName": "Patrick"
@@ -5971,6 +6824,7 @@ const initialBookData = [
     "title": "The Nutmeg Of Consolation"
   }, 
   {
+    "series": "Stone 07", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -5978,6 +6832,7 @@ const initialBookData = [
     "title": "Stranger in Paradise"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Plath", 
       "firstName": "Sylvia"
@@ -5985,6 +6840,7 @@ const initialBookData = [
     "title": "The Bell Jar"
   }, 
   {
+    "series": "Spenser 02", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -5992,6 +6848,7 @@ const initialBookData = [
     "title": "God Save the Child"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Pynchon", 
       "firstName": "Thomas"
@@ -5999,6 +6856,7 @@ const initialBookData = [
     "title": "Gravity's Rainbow"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Palin", 
       "firstName": "Sarah"
@@ -6006,6 +6864,7 @@ const initialBookData = [
     "title": "Going Rogue"
   }, 
   {
+    "series": "Discworld 27", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -6013,6 +6872,7 @@ const initialBookData = [
     "title": "The Last Hero"
   }, 
   {
+    "series": "Spenser 17", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6020,6 +6880,7 @@ const initialBookData = [
     "title": "Stardust"
   }, 
   {
+    "series": "Aubrey Maturin 20", 
     "author": {
       "lastName": "O'Brian", 
       "firstName": "Patrick"
@@ -6027,6 +6888,7 @@ const initialBookData = [
     "title": "Blue at the Mizzen"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Patterson", 
       "firstName": "James"
@@ -6034,6 +6896,7 @@ const initialBookData = [
     "title": "Violets Are Blue"
   }, 
   {
+    "series": "Spenser 23", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6041,6 +6904,7 @@ const initialBookData = [
     "title": "Chance"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Palahniuk", 
       "firstName": "Chuck"
@@ -6048,6 +6912,7 @@ const initialBookData = [
     "title": "Diary"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Pynchon", 
       "firstName": "Thomas"
@@ -6055,6 +6920,7 @@ const initialBookData = [
     "title": "The Crying of Lot 49"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Palahniuk", 
       "firstName": "Chuck"
@@ -6062,6 +6928,7 @@ const initialBookData = [
     "title": "Survivor"
   }, 
   {
+    "series": "Aubrey Maturin 09", 
     "author": {
       "lastName": "O'Brian", 
       "firstName": "Patrick"
@@ -6069,6 +6936,7 @@ const initialBookData = [
     "title": "Treason's Harbour"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Paine", 
       "firstName": "Thomas"
@@ -6076,6 +6944,7 @@ const initialBookData = [
     "title": "Common Sense and The Rights of Man"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "", 
       "firstName": "Plato"
@@ -6083,6 +6952,7 @@ const initialBookData = [
     "title": "The Republic"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "O'Connor", 
       "firstName": "Flannery"
@@ -6090,6 +6960,7 @@ const initialBookData = [
     "title": "Everything That Rises Must Converge"
   }, 
   {
+    "series": "The Inheritance Cycle 01", 
     "author": {
       "lastName": "Paolini", 
       "firstName": "Christopher"
@@ -6097,6 +6968,7 @@ const initialBookData = [
     "title": "Eragon"
   }, 
   {
+    "series": "Spenser 26", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6104,6 +6976,7 @@ const initialBookData = [
     "title": "Hush Money"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Palahniuk", 
       "firstName": "Chuck"
@@ -6111,6 +6984,7 @@ const initialBookData = [
     "title": "Choke"
   }, 
   {
+    "series": "Spenser 19", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6118,6 +6992,7 @@ const initialBookData = [
     "title": "Double Deuce"
   }, 
   {
+    "series": "Aubrey Maturin 10", 
     "author": {
       "lastName": "O'Brian", 
       "firstName": "Patrick"
@@ -6125,6 +7000,7 @@ const initialBookData = [
     "title": "The Far Side of the World"
   }, 
   {
+    "series": "Spenser 03", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6132,6 +7008,7 @@ const initialBookData = [
     "title": "Mortal Stakes"
   }, 
   {
+    "series": "Spenser 16", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6139,6 +7016,7 @@ const initialBookData = [
     "title": "Playmates"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Patterson", 
       "firstName": "James"
@@ -6146,6 +7024,7 @@ const initialBookData = [
     "title": "Jack and Jill"
   }, 
   {
+    "series": "Discworld 04", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -6153,6 +7032,7 @@ const initialBookData = [
     "title": "Mort"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "O'Brian", 
       "firstName": "Patrick"
@@ -6160,6 +7040,7 @@ const initialBookData = [
     "title": "Dark Sea"
   }, 
   {
+    "series": "Pendergast 10", 
     "author": {
       "lastName": "Preston", 
       "firstName": "Douglas"
@@ -6167,6 +7048,7 @@ const initialBookData = [
     "title": "Fever Dream"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Patterson", 
       "firstName": "James"
@@ -6174,6 +7056,7 @@ const initialBookData = [
     "title": "Mary, Mary"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Pressfield", 
       "firstName": "Steven"
@@ -6181,6 +7064,7 @@ const initialBookData = [
     "title": "Gates of Fire"
   }, 
   {
+    "series": "Spenser 32", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6188,6 +7072,7 @@ const initialBookData = [
     "title": "Cold Service"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Patterson", 
       "firstName": "James"
@@ -6195,6 +7080,7 @@ const initialBookData = [
     "title": "Cat and Mouse"
   }, 
   {
+    "series": "Pendergast 06", 
     "author": {
       "lastName": "Preston", 
       "firstName": "Douglas"
@@ -6202,6 +7088,7 @@ const initialBookData = [
     "title": "Dance of Death"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Proust", 
       "firstName": "Marcel"
@@ -6209,6 +7096,7 @@ const initialBookData = [
     "title": "Swann's Way"
   }, 
   {
+    "series": "Discworld 20", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -6216,6 +7104,7 @@ const initialBookData = [
     "title": "Hogfather"
   }, 
   {
+    "series": "Pendergast 08", 
     "author": {
       "lastName": "Preston", 
       "firstName": "Douglas"
@@ -6223,6 +7112,7 @@ const initialBookData = [
     "title": "The Wheel of Darkness"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Poe", 
       "firstName": "Edgar Allan"
@@ -6230,6 +7120,7 @@ const initialBookData = [
     "title": "Essential Tales and Poems"
   }, 
   {
+    "series": "Tell", 
     "author": {
       "lastName": "Palahniuk", 
       "firstName": "Chuck"
@@ -6237,6 +7128,7 @@ const initialBookData = [
     "title": "All"
   }, 
   {
+    "series": "Stone 09", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6244,6 +7136,7 @@ const initialBookData = [
     "title": "Split Image"
   }, 
   {
+    "series": "Pendergast 02", 
     "author": {
       "lastName": "Preston", 
       "firstName": "Douglas"
@@ -6251,6 +7144,7 @@ const initialBookData = [
     "title": "Reliquary"
   }, 
   {
+    "series": "Spenser 15", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6258,6 +7152,7 @@ const initialBookData = [
     "title": "Crimson Joy"
   }, 
   {
+    "series": "Pendergast 09", 
     "author": {
       "lastName": "Preston", 
       "firstName": "Douglas"
@@ -6265,6 +7160,7 @@ const initialBookData = [
     "title": "Cemetery Dance"
   }, 
   {
+    "series": "Spenser 34", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6272,6 +7168,7 @@ const initialBookData = [
     "title": "Hundred Dollar Baby"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Preston", 
       "firstName": "Richard"
@@ -6279,6 +7176,7 @@ const initialBookData = [
     "title": "The Cobra Event"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Palahniuk", 
       "firstName": "Chuck"
@@ -6286,6 +7184,7 @@ const initialBookData = [
     "title": "Fugitives and Refugees"
   }, 
   {
+    "series": "Discworld 22", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -6293,6 +7192,7 @@ const initialBookData = [
     "title": "The Last Continent"
   }, 
   {
+    "series": "Spenser 27", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6300,6 +7200,7 @@ const initialBookData = [
     "title": "Hugger Mugger"
   }, 
   {
+    "series": "Spenser 10", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6307,6 +7208,7 @@ const initialBookData = [
     "title": "The Widening Gyre"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Patterson", 
       "firstName": "James"
@@ -6314,6 +7216,7 @@ const initialBookData = [
     "title": "Roses Are Red"
   }, 
   {
+    "series": "His Dark Materials 02", 
     "author": {
       "lastName": "Pullman", 
       "firstName": "Philip"
@@ -6321,6 +7224,7 @@ const initialBookData = [
     "title": "The Subtle Knife"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Patchett", 
       "firstName": "Ann"
@@ -6328,6 +7232,7 @@ const initialBookData = [
     "title": "Bel Canto"
   }, 
   {
+    "series": "Discworld 07", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -6335,6 +7240,7 @@ const initialBookData = [
     "title": "Pyramids"
   }, 
   {
+    "series": "Discworld 36", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -6342,6 +7248,7 @@ const initialBookData = [
     "title": "Making Money"
   }, 
   {
+    "series": "Aubrey Maturin 13", 
     "author": {
       "lastName": "O'Brian", 
       "firstName": "Patrick"
@@ -6349,6 +7256,7 @@ const initialBookData = [
     "title": "The Thirteen Gun Salute"
   }, 
   {
+    "series": "Discworld 33", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -6356,6 +7264,7 @@ const initialBookData = [
     "title": "Going Postal"
   }, 
   {
+    "series": "His Dark Materials 01", 
     "author": {
       "lastName": "Pullman", 
       "firstName": "Philip"
@@ -6363,6 +7272,7 @@ const initialBookData = [
     "title": "The Golden Compass"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Pelecanos", 
       "firstName": "George"
@@ -6370,6 +7280,7 @@ const initialBookData = [
     "title": "Drama City"
   }, 
   {
+    "series": "Stone 02", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6377,6 +7288,7 @@ const initialBookData = [
     "title": "Trouble in Paradise"
   }, 
   {
+    "series": "Discworld 16", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -6384,6 +7296,7 @@ const initialBookData = [
     "title": "Soul Music"
   }, 
   {
+    "series": "Aubrey Maturin 08", 
     "author": {
       "lastName": "O'Brian", 
       "firstName": "Patrick"
@@ -6391,6 +7304,7 @@ const initialBookData = [
     "title": "The Ionian Mission"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Pollan", 
       "firstName": "Michael"
@@ -6398,6 +7312,7 @@ const initialBookData = [
     "title": "The Botany of Desire"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Perlstein", 
       "firstName": "Rick"
@@ -6405,6 +7320,7 @@ const initialBookData = [
     "title": "Nixonland"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Patterson", 
       "firstName": "James"
@@ -6412,6 +7328,7 @@ const initialBookData = [
     "title": "3rd Degree"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "O'Connor", 
       "firstName": "Flannery"
@@ -6419,6 +7336,7 @@ const initialBookData = [
     "title": "Wise Blood"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Pirsig", 
       "firstName": "Robert M."
@@ -6426,6 +7344,7 @@ const initialBookData = [
     "title": "Zen and the Art of Motorcycle Maintenance"
   }, 
   {
+    "series": "Pendergast 03", 
     "author": {
       "lastName": "Preston", 
       "firstName": "Douglas"
@@ -6433,6 +7352,7 @@ const initialBookData = [
     "title": "The Cabinent of Curiosities"
   }, 
   {
+    "series": "Pendergast 07", 
     "author": {
       "lastName": "Preston", 
       "firstName": "Douglas"
@@ -6440,6 +7360,7 @@ const initialBookData = [
     "title": "The Book of the Dead"
   }, 
   {
+    "series": "Spenser 18", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6447,6 +7368,7 @@ const initialBookData = [
     "title": "Pastime"
   }, 
   {
+    "series": "Spenser 36", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6454,6 +7376,7 @@ const initialBookData = [
     "title": "Rough Weather"
   }, 
   {
+    "series": "Discworld 01", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -6461,6 +7384,7 @@ const initialBookData = [
     "title": "The Colour of Magic"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Paul", 
       "firstName": "Ron"
@@ -6468,6 +7392,7 @@ const initialBookData = [
     "title": "End the Fed"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Osbourne", 
       "firstName": "Ozzy"
@@ -6475,6 +7400,7 @@ const initialBookData = [
     "title": "I Am Ozzy"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Patterson", 
       "firstName": "James"
@@ -6482,6 +7408,7 @@ const initialBookData = [
     "title": "1st to Die"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Palahniuk", 
       "firstName": "Chuck"
@@ -6489,6 +7416,7 @@ const initialBookData = [
     "title": "Snuff"
   }, 
   {
+    "series": "Spenser 01", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6496,6 +7424,7 @@ const initialBookData = [
     "title": "The Godwulf Manuscript"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Picoult", 
       "firstName": "Jodi"
@@ -6503,6 +7432,7 @@ const initialBookData = [
     "title": "The Pact"
   }, 
   {
+    "series": "Pendergast 05", 
     "author": {
       "lastName": "Preston", 
       "firstName": "Douglas"
@@ -6510,6 +7440,7 @@ const initialBookData = [
     "title": "Brimstone"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Patterson", 
       "firstName": "James"
@@ -6517,6 +7448,7 @@ const initialBookData = [
     "title": "Witch and Wizard"
   }, 
   {
+    "series": "Discworld 15", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -6524,6 +7456,7 @@ const initialBookData = [
     "title": "Men at Arms"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Patterson", 
       "firstName": "James"
@@ -6531,6 +7464,7 @@ const initialBookData = [
     "title": "Beach Road"
   }, 
   {
+    "series": "Discworld 35", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -6538,6 +7472,7 @@ const initialBookData = [
     "title": "Wintersmith"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Patterson", 
       "firstName": "James"
@@ -6545,6 +7480,7 @@ const initialBookData = [
     "title": "The Beach House"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Prose", 
       "firstName": "Francine"
@@ -6552,6 +7488,7 @@ const initialBookData = [
     "title": "Reading Like a Writer"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "O'Neill", 
       "firstName": "Joseph"
@@ -6559,6 +7496,7 @@ const initialBookData = [
     "title": "Netherland"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Preston", 
       "firstName": "Douglas"
@@ -6566,6 +7504,7 @@ const initialBookData = [
     "title": "The Ice Limit"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Pollan", 
       "firstName": "Michael"
@@ -6573,6 +7512,7 @@ const initialBookData = [
     "title": "In Defense of Food"
   }, 
   {
+    "series": "Aubrey Maturin 03", 
     "author": {
       "lastName": "O'Brian", 
       "firstName": "Patrick"
@@ -6580,6 +7520,7 @@ const initialBookData = [
     "title": "H.M.S. Surprise"
   }, 
   {
+    "series": "Discworld 12", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -6587,6 +7528,7 @@ const initialBookData = [
     "title": "Witches Abroad"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Patterson", 
       "firstName": "James"
@@ -6594,6 +7536,7 @@ const initialBookData = [
     "title": "The Lake House"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Pausch", 
       "firstName": "Randy"
@@ -6601,6 +7544,7 @@ const initialBookData = [
     "title": "The Last Lecture"
   }, 
   {
+    "series": "Discworld 05", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -6608,6 +7552,7 @@ const initialBookData = [
     "title": "Sourcery"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Picoult", 
       "firstName": "Jodi"
@@ -6615,6 +7560,7 @@ const initialBookData = [
     "title": "Nineteen Minutes"
   }, 
   {
+    "series": "Discworld 30", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -6622,6 +7568,7 @@ const initialBookData = [
     "title": "The Wee Free Men"
   }, 
   {
+    "series": "Discworld 34", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -6629,6 +7576,7 @@ const initialBookData = [
     "title": "Thud!"
   }, 
   {
+    "series": "Discworld 21", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -6636,6 +7584,7 @@ const initialBookData = [
     "title": "Jingo"
   }, 
   {
+    "series": "Aubrey Maturin 01", 
     "author": {
       "lastName": "O'Brian", 
       "firstName": "Patrick"
@@ -6643,6 +7592,7 @@ const initialBookData = [
     "title": "Master and Commander"
   }, 
   {
+    "series": "Spenser 22", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6650,6 +7600,7 @@ const initialBookData = [
     "title": "Thin Air"
   }, 
   {
+    "series": "Discworld 14", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -6657,6 +7608,7 @@ const initialBookData = [
     "title": "Lords and Ladies"
   }, 
   {
+    "series": "Spenser 21", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6664,6 +7616,7 @@ const initialBookData = [
     "title": "Walking Shadow"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Patterson", 
       "firstName": "James"
@@ -6671,6 +7624,7 @@ const initialBookData = [
     "title": "2nd Chance"
   }, 
   {
+    "series": "Discworld 26", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -6678,6 +7632,7 @@ const initialBookData = [
     "title": "Thief of Time"
   }, 
   {
+    "series": "Spenser 04", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6685,6 +7640,7 @@ const initialBookData = [
     "title": "Promised Land"
   }, 
   {
+    "series": "The Inheritance Cycle 03", 
     "author": {
       "lastName": "Paolini", 
       "firstName": "Christopher"
@@ -6692,6 +7648,7 @@ const initialBookData = [
     "title": "Brisingr"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Picoult", 
       "firstName": "Jodi"
@@ -6699,6 +7656,7 @@ const initialBookData = [
     "title": "My Sister's Keeper"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Obreht", 
       "firstName": "Tea"
@@ -6706,6 +7664,7 @@ const initialBookData = [
     "title": "The Tiger's Wife"
   }, 
   {
+    "series": "Spenser 28", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6713,6 +7672,7 @@ const initialBookData = [
     "title": "Potshot"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Preston", 
       "firstName": "Richard"
@@ -6720,6 +7680,7 @@ const initialBookData = [
     "title": "The Hot Zone"
   }, 
   {
+    "series": "Spenser 07", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6727,6 +7688,7 @@ const initialBookData = [
     "title": "Early Autumn"
   }, 
   {
+    "series": "Spenser 14", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6734,6 +7696,7 @@ const initialBookData = [
     "title": "Pale Kings and Princes"
   }, 
   {
+    "series": "Aubrey Maturin 05", 
     "author": {
       "lastName": "O'Brian", 
       "firstName": "Patrick"
@@ -6741,6 +7704,7 @@ const initialBookData = [
     "title": "Desolation Island"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Pierre", 
       "firstName": "DBC"
@@ -6748,6 +7712,7 @@ const initialBookData = [
     "title": "Vernon God Little"
   }, 
   {
+    "series": "Spenser 35", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6755,6 +7720,7 @@ const initialBookData = [
     "title": "Now and Then"
   }, 
   {
+    "series": "Discworld 10", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -6762,6 +7728,7 @@ const initialBookData = [
     "title": "Moving Pictures"
   }, 
   {
+    "series": "Discworld 03", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -6769,6 +7736,7 @@ const initialBookData = [
     "title": "Equal Rites"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Patterson", 
       "firstName": "James"
@@ -6776,6 +7744,7 @@ const initialBookData = [
     "title": "Kiss the Girls"
   }, 
   {
+    "series": "The Inheritance Cycle 02", 
     "author": {
       "lastName": "Paolini", 
       "firstName": "Christopher"
@@ -6783,6 +7752,7 @@ const initialBookData = [
     "title": "Eldest"
   }, 
   {
+    "series": "Spenser 12", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6790,6 +7760,7 @@ const initialBookData = [
     "title": "A Catskill Eagle"
   }, 
   {
+    "series": "Spenser 38", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6797,6 +7768,7 @@ const initialBookData = [
     "title": "Painted Ladies"
   }, 
   {
+    "series": "Spenser 05", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6804,6 +7776,7 @@ const initialBookData = [
     "title": "The Judas Goat"
   }, 
   {
+    "series": "Discworld 11", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -6811,6 +7784,7 @@ const initialBookData = [
     "title": "Reaper Man"
   }, 
   {
+    "series": "Discworld 37", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -6818,6 +7792,7 @@ const initialBookData = [
     "title": "Unseen Academicals"
   }, 
   {
+    "series": "Aubrey Maturin 15", 
     "author": {
       "lastName": "O'Brian", 
       "firstName": "Patrick"
@@ -6825,6 +7800,7 @@ const initialBookData = [
     "title": "Clarissa Oakes"
   }, 
   {
+    "series": "Spenser 31", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6832,6 +7808,7 @@ const initialBookData = [
     "title": "Bad Business"
   }, 
   {
+    "series": "Aubrey Maturin 17", 
     "author": {
       "lastName": "O'Brian", 
       "firstName": "Patrick"
@@ -6839,6 +7816,7 @@ const initialBookData = [
     "title": "The Commodore"
   }, 
   {
+    "series": "Discworld 29", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -6846,6 +7824,7 @@ const initialBookData = [
     "title": "Night Watch"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Patterson", 
       "firstName": "James"
@@ -6853,6 +7832,7 @@ const initialBookData = [
     "title": "The Big Bad Wolf"
   }, 
   {
+    "series": "Pendergast 04", 
     "author": {
       "lastName": "Preston", 
       "firstName": "Douglas"
@@ -6860,6 +7840,7 @@ const initialBookData = [
     "title": "Still Life With Crows"
   }, 
   {
+    "series": "Spenser 30", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6867,6 +7848,7 @@ const initialBookData = [
     "title": "Back Story"
   }, 
   {
+    "series": "Spenser 13", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6874,6 +7856,7 @@ const initialBookData = [
     "title": "Taming a Sea Horse"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Percy", 
       "firstName": "Walker"
@@ -6881,6 +7864,7 @@ const initialBookData = [
     "title": "Lost in the Cosmos"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Patterson", 
       "firstName": "James"
@@ -6888,6 +7872,7 @@ const initialBookData = [
     "title": "When the Wind Blows"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Patterson", 
       "firstName": "James"
@@ -6895,6 +7880,7 @@ const initialBookData = [
     "title": "Cross"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Patterson", 
       "firstName": "James"
@@ -6902,6 +7888,7 @@ const initialBookData = [
     "title": "Judge and Jury"
   }, 
   {
+    "series": "Discworld 13", 
     "author": {
       "lastName": "Pratchett", 
       "firstName": "Terry"
@@ -6909,6 +7896,7 @@ const initialBookData = [
     "title": "Small Gods"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Pelecanos", 
       "firstName": "George"
@@ -6916,6 +7904,7 @@ const initialBookData = [
     "title": "Shame the Devil"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Pynchon", 
       "firstName": "Thomas"
@@ -6923,6 +7912,7 @@ const initialBookData = [
     "title": "V"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Oswalt", 
       "firstName": "Patton"
@@ -6930,6 +7920,7 @@ const initialBookData = [
     "title": "Zombie Spaceship Wasteland"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Preston", 
       "firstName": "Douglas"
@@ -6937,6 +7928,7 @@ const initialBookData = [
     "title": "Riptide"
   }, 
   {
+    "series": "Spenser 24", 
     "author": {
       "lastName": "Parker", 
       "firstName": "Robert B"
@@ -6944,6 +7936,7 @@ const initialBookData = [
     "title": "Small Vices"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hawking", 
       "firstName": "Stephen"
@@ -6951,6 +7944,7 @@ const initialBookData = [
     "title": "The Grand Design"
   }, 
   {
+    "series": "Rachel Morgan 05", 
     "author": {
       "lastName": "Harrison", 
       "firstName": "Kim"
@@ -6958,6 +7952,7 @@ const initialBookData = [
     "title": "For a Few Demons More"
   }, 
   {
+    "series": "The Farseer Trilogy 02", 
     "author": {
       "lastName": "Hobb", 
       "firstName": "Robin"
@@ -6965,6 +7960,7 @@ const initialBookData = [
     "title": "Royal Assassin"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Harkness", 
       "firstName": "Deborah"
@@ -6972,6 +7968,7 @@ const initialBookData = [
     "title": "A Discovery of Witches"
   }, 
   {
+    "series": "Hitch", 
     "author": {
       "lastName": "Hitchens", 
       "firstName": "Christopher"
@@ -6979,6 +7976,7 @@ const initialBookData = [
     "title": "22"
   }, 
   {
+    "series": "Sookie Stackhouse 11", 
     "author": {
       "lastName": "Harris", 
       "firstName": "Charlaine"
@@ -6986,6 +7984,7 @@ const initialBookData = [
     "title": "Dead Reckoning"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hiaasen", 
       "firstName": "Carl"
@@ -6993,6 +7992,7 @@ const initialBookData = [
     "title": "Double Whammy"
   }, 
   {
+    "series": "Anita Blake 03", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7000,6 +8000,7 @@ const initialBookData = [
     "title": "Circus of the Damned"
   }, 
   {
+    "series": "Anita Blake 18", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7007,6 +8008,7 @@ const initialBookData = [
     "title": "Flirt"
   }, 
   {
+    "series": "Rachel Morgan 01", 
     "author": {
       "lastName": "Harrison", 
       "firstName": "Kim"
@@ -7014,6 +8016,7 @@ const initialBookData = [
     "title": "Dead Witch Walking"
   }, 
   {
+    "series": "Bob Lee Swagger 01", 
     "author": {
       "lastName": "Hunter", 
       "firstName": "Stephen"
@@ -7021,6 +8024,7 @@ const initialBookData = [
     "title": "Point Of Impact"
   }, 
   {
+    "series": "Meredith Gentry 02", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7028,6 +8032,7 @@ const initialBookData = [
     "title": "A Caress of Twilight"
   }, 
   {
+    "series": "Hannibal 02", 
     "author": {
       "lastName": "Harris", 
       "firstName": "Thomas"
@@ -7035,6 +8040,7 @@ const initialBookData = [
     "title": "The Silence of the Lambs"
   }, 
   {
+    "series": "Rachel Morgan 02", 
     "author": {
       "lastName": "Harrison", 
       "firstName": "Kim"
@@ -7042,6 +8048,7 @@ const initialBookData = [
     "title": "The Good, The Bad, and the Undead"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Handler", 
       "firstName": "Chelsea"
@@ -7049,6 +8056,7 @@ const initialBookData = [
     "title": "Lies That Chelsea Handler Told Me"
   }, 
   {
+    "series": "Catch", 
     "author": {
       "lastName": "Heller", 
       "firstName": "Joseph"
@@ -7056,6 +8064,7 @@ const initialBookData = [
     "title": "22"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hosseini", 
       "firstName": "Khaled"
@@ -7063,6 +8072,7 @@ const initialBookData = [
     "title": "A Thousand Splendid Suns"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "", 
       "firstName": "Homer"
@@ -7070,6 +8080,7 @@ const initialBookData = [
     "title": "The Odyssey"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hemingway", 
       "firstName": "Ernest"
@@ -7077,6 +8088,7 @@ const initialBookData = [
     "title": "A Farewell to Arms"
   }, 
   {
+    "series": "Anita Blake 14", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7084,6 +8096,7 @@ const initialBookData = [
     "title": "Danse Macabre"
   }, 
   {
+    "series": "Anita Blake 04", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7091,6 +8104,7 @@ const initialBookData = [
     "title": "The Lunatic Cafe"
   }, 
   {
+    "series": "Sookie Stackhouse 08", 
     "author": {
       "lastName": "Harris", 
       "firstName": "Charlaine"
@@ -7098,6 +8112,7 @@ const initialBookData = [
     "title": "From Dead to Worse"
   }, 
   {
+    "series": "Meredith Gentry 04", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7105,6 +8120,7 @@ const initialBookData = [
     "title": "A Stroke of Midnight"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hiaasen", 
       "firstName": "Carl"
@@ -7112,6 +8128,7 @@ const initialBookData = [
     "title": "Basket Case"
   }, 
   {
+    "series": "Henry Thompson 02", 
     "author": {
       "lastName": "Huston", 
       "firstName": "Charlie"
@@ -7119,6 +8136,7 @@ const initialBookData = [
     "title": "Six Bad Things"
   }, 
   {
+    "series": "Sookie Stackhouse 03", 
     "author": {
       "lastName": "Harris", 
       "firstName": "Charlaine"
@@ -7126,6 +8144,7 @@ const initialBookData = [
     "title": "Club Dead"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hitchens", 
       "firstName": "Christopher"
@@ -7133,6 +8152,7 @@ const initialBookData = [
     "title": "The Portable Atheist"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Handler", 
       "firstName": "Chelsea"
@@ -7140,6 +8160,7 @@ const initialBookData = [
     "title": "My Horizontal Life, A Collection of One Night Stands"
   }, 
   {
+    "series": "Anita Blake 12", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7147,6 +8168,7 @@ const initialBookData = [
     "title": "Incubus Dreams"
   }, 
   {
+    "series": "Anita Blake 09", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7154,6 +8176,7 @@ const initialBookData = [
     "title": "Obsidian Butterfly"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hiaasen", 
       "firstName": "Carl"
@@ -7161,6 +8184,7 @@ const initialBookData = [
     "title": "Stormy Weather"
   }, 
   {
+    "series": "Sookie Stackhouse 05", 
     "author": {
       "lastName": "Harris", 
       "firstName": "Charlaine"
@@ -7168,6 +8192,7 @@ const initialBookData = [
     "title": "Dead as a Doornail"
   }, 
   {
+    "series": "Rachel Morgan 07", 
     "author": {
       "lastName": "Harrison", 
       "firstName": "Kim"
@@ -7175,6 +8200,7 @@ const initialBookData = [
     "title": "White Witch Black Curse"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Haley", 
       "firstName": "Alex"
@@ -7182,6 +8208,7 @@ const initialBookData = [
     "title": "Roots"
   }, 
   {
+    "series": "Dune 06", 
     "author": {
       "lastName": "Herbert", 
       "firstName": "Frank"
@@ -7189,6 +8216,7 @@ const initialBookData = [
     "title": "Chapterhouse Dune"
   }, 
   {
+    "series": "Anita Blake 11", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7196,6 +8224,7 @@ const initialBookData = [
     "title": "Cerulean Sins"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hiaasen", 
       "firstName": "Carl"
@@ -7203,6 +8232,7 @@ const initialBookData = [
     "title": "Skinny Dip"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hirsi Ali", 
       "firstName": "Ayaan"
@@ -7210,6 +8240,7 @@ const initialBookData = [
     "title": "Infidel"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hosseini", 
       "firstName": "Khaled"
@@ -7217,6 +8248,7 @@ const initialBookData = [
     "title": "The Kite Runner"
   }, 
   {
+    "series": "Henry Thompson 03", 
     "author": {
       "lastName": "Huston", 
       "firstName": "Charlie"
@@ -7224,6 +8256,7 @@ const initialBookData = [
     "title": "A Dangerous Man"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Halpern", 
       "firstName": "Justin"
@@ -7231,6 +8264,7 @@ const initialBookData = [
     "title": "Shit My Dad Says"
   }, 
   {
+    "series": "Rain Wilds Chronicles 02", 
     "author": {
       "lastName": "Hobb", 
       "firstName": "Robin"
@@ -7238,6 +8272,7 @@ const initialBookData = [
     "title": "Dragon Haven"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hemingway", 
       "firstName": "Ernest"
@@ -7245,6 +8280,7 @@ const initialBookData = [
     "title": "A Moveable Feast"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Harris", 
       "firstName": "Sam"
@@ -7252,6 +8288,7 @@ const initialBookData = [
     "title": "The Moral Landscape"
   }, 
   {
+    "series": "The Farseer Trilogy 01", 
     "author": {
       "lastName": "Hobb", 
       "firstName": "Robin"
@@ -7259,6 +8296,7 @@ const initialBookData = [
     "title": "Assassin's Apprentice"
   }, 
   {
+    "series": "Sookie Stackhouse 09", 
     "author": {
       "lastName": "Harris", 
       "firstName": "Charlaine"
@@ -7266,6 +8304,7 @@ const initialBookData = [
     "title": "Dead and Gone"
   }, 
   {
+    "series": "The Liveship Traders 02", 
     "author": {
       "lastName": "Hobb", 
       "firstName": "Robin"
@@ -7273,6 +8312,7 @@ const initialBookData = [
     "title": "Mad Ship"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hinton", 
       "firstName": "S.E."
@@ -7280,6 +8320,7 @@ const initialBookData = [
     "title": "The Outsiders"
   }, 
   {
+    "series": "Anita Blake 07", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7287,6 +8328,7 @@ const initialBookData = [
     "title": "Burnt Offerings"
   }, 
   {
+    "series": "The Liveship Traders 03", 
     "author": {
       "lastName": "Hobb", 
       "firstName": "Robin"
@@ -7294,6 +8336,7 @@ const initialBookData = [
     "title": "Ship of Destiny"
   }, 
   {
+    "series": "Heart", 
     "author": {
       "lastName": "Hill", 
       "firstName": "Joe"
@@ -7301,6 +8344,7 @@ const initialBookData = [
     "title": "Shaped Box"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Huffington", 
       "firstName": "Arianna"
@@ -7308,6 +8352,7 @@ const initialBookData = [
     "title": "Third World America"
   }, 
   {
+    "series": "Sookie Stackhouse 10", 
     "author": {
       "lastName": "Harris", 
       "firstName": "Charlaine"
@@ -7315,6 +8360,7 @@ const initialBookData = [
     "title": "Dead in the Family"
   }, 
   {
+    "series": "Anita Blake 13", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7322,6 +8368,7 @@ const initialBookData = [
     "title": "Micah"
   }, 
   {
+    "series": "Anita Blake 17", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7329,6 +8376,7 @@ const initialBookData = [
     "title": "Skin Trade"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hawking", 
       "firstName": "Stephen"
@@ -7336,6 +8384,7 @@ const initialBookData = [
     "title": "A Brief History of Time"
   }, 
   {
+    "series": "Hannibal 03", 
     "author": {
       "lastName": "Harris", 
       "firstName": "Thomas"
@@ -7343,6 +8392,7 @@ const initialBookData = [
     "title": "Hannibal"
   }, 
   {
+    "series": "Anita Blake 10", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7350,6 +8400,7 @@ const initialBookData = [
     "title": "Narcissus in Chains"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hedges", 
       "firstName": "Chris"
@@ -7357,6 +8408,7 @@ const initialBookData = [
     "title": "Death of the Liberal Class"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Huston", 
       "firstName": "Charlie"
@@ -7364,6 +8416,7 @@ const initialBookData = [
     "title": "The Mystic Arts of Erasing All Signs of Death"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hawthorne", 
       "firstName": "Nathaniel"
@@ -7371,6 +8424,7 @@ const initialBookData = [
     "title": "The Scarlet Letter"
   }, 
   {
+    "series": "Joe Pitt 03", 
     "author": {
       "lastName": "Huston", 
       "firstName": "Charlie"
@@ -7378,6 +8432,7 @@ const initialBookData = [
     "title": "Half the Blood of Brooklyn"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hardy", 
       "firstName": "Thomas"
@@ -7385,6 +8440,7 @@ const initialBookData = [
     "title": "Tess of the D'Urbervilles"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Huston", 
       "firstName": "Charlie"
@@ -7392,6 +8448,7 @@ const initialBookData = [
     "title": "The Shotgun Rule"
   }, 
   {
+    "series": "Anita Blake 06", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7399,6 +8456,7 @@ const initialBookData = [
     "title": "The Killing Dance"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Harris", 
       "firstName": "Robert"
@@ -7406,6 +8464,7 @@ const initialBookData = [
     "title": "Fatherland"
   }, 
   {
+    "series": "The Tawny Man 02", 
     "author": {
       "lastName": "Hobb", 
       "firstName": "Robin"
@@ -7413,6 +8472,7 @@ const initialBookData = [
     "title": "Golden Fool"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hagar", 
       "firstName": "Sammy"
@@ -7420,6 +8480,7 @@ const initialBookData = [
     "title": "Red"
   }, 
   {
+    "series": "Meredith Gentry 06", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7427,6 +8488,7 @@ const initialBookData = [
     "title": "A Lick of Frost"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Handler", 
       "firstName": "Chelsea"
@@ -7434,6 +8496,7 @@ const initialBookData = [
     "title": "Are You There, Vodka. It's Me, Chelsea"
   }, 
   {
+    "series": "Dune 02", 
     "author": {
       "lastName": "Herbert", 
       "firstName": "Frank"
@@ -7441,6 +8504,7 @@ const initialBookData = [
     "title": "Dune Messiah"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Heather", 
       "firstName": "Peter"
@@ -7448,6 +8512,7 @@ const initialBookData = [
     "title": "The Fall of the Roman Empire"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hornby", 
       "firstName": "Nick"
@@ -7455,6 +8520,7 @@ const initialBookData = [
     "title": "Fever Pitch"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Haldeman", 
       "firstName": "Joe"
@@ -7462,6 +8528,7 @@ const initialBookData = [
     "title": "The Forever War"
   }, 
   {
+    "series": "Sookie Stackhouse 07", 
     "author": {
       "lastName": "Harris", 
       "firstName": "Charlaine"
@@ -7469,6 +8536,7 @@ const initialBookData = [
     "title": "All Together Dead"
   }, 
   {
+    "series": "Rachel Morgan 03", 
     "author": {
       "lastName": "Harrison", 
       "firstName": "Kim"
@@ -7476,6 +8544,7 @@ const initialBookData = [
     "title": "Every Which Way But Dead"
   }, 
   {
+    "series": "Rachel Morgan 08", 
     "author": {
       "lastName": "Harrison", 
       "firstName": "Kim"
@@ -7483,6 +8552,7 @@ const initialBookData = [
     "title": "Black Magic Sanction"
   }, 
   {
+    "series": "Joe Pitt 05", 
     "author": {
       "lastName": "Huston", 
       "firstName": "Charlie"
@@ -7490,6 +8560,7 @@ const initialBookData = [
     "title": "My Dead Body"
   }, 
   {
+    "series": "Anita Blake 02", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7497,6 +8568,7 @@ const initialBookData = [
     "title": "The Laughing Corpse"
   }, 
   {
+    "series": "Dune 01", 
     "author": {
       "lastName": "Herbert", 
       "firstName": "Frank"
@@ -7504,6 +8576,7 @@ const initialBookData = [
     "title": "Dune"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Huston", 
       "firstName": "Charlie"
@@ -7511,6 +8584,7 @@ const initialBookData = [
     "title": "Sleepless"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hemingway", 
       "firstName": "Ernest"
@@ -7518,6 +8592,7 @@ const initialBookData = [
     "title": "The Old Man and the Sea"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hill", 
       "firstName": "Joe"
@@ -7525,6 +8600,7 @@ const initialBookData = [
     "title": "Horns"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hillenbrand", 
       "firstName": "Laura"
@@ -7532,6 +8608,7 @@ const initialBookData = [
     "title": "Unbroken, A World War II Story of Survival"
   }, 
   {
+    "series": "The Liveship Traders 01", 
     "author": {
       "lastName": "Hobb", 
       "firstName": "Robin"
@@ -7539,6 +8616,7 @@ const initialBookData = [
     "title": "Ship of Magic"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hugo", 
       "firstName": "Victor"
@@ -7546,6 +8624,7 @@ const initialBookData = [
     "title": "The Hunchback of Notre Dame"
   }, 
   {
+    "series": "Rachel Morgan 04", 
     "author": {
       "lastName": "Harrison", 
       "firstName": "Kim"
@@ -7553,6 +8632,7 @@ const initialBookData = [
     "title": "A Fistful of Charms"
   }, 
   {
+    "series": "Sookie Stackhouse 04", 
     "author": {
       "lastName": "Harris", 
       "firstName": "Charlaine"
@@ -7560,6 +8640,7 @@ const initialBookData = [
     "title": "Dead to the World"
   }, 
   {
+    "series": "Dune 04", 
     "author": {
       "lastName": "Herbert", 
       "firstName": "Frank"
@@ -7567,6 +8648,7 @@ const initialBookData = [
     "title": "God Emperor of Dune"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hiaasen", 
       "firstName": "Carl"
@@ -7574,6 +8656,7 @@ const initialBookData = [
     "title": "Sick Puppy"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Handler", 
       "firstName": "Chelsea"
@@ -7581,6 +8664,7 @@ const initialBookData = [
     "title": "Chelsea Chelsea Bang Bang"
   }, 
   {
+    "series": "Sookie Stackhouse 01", 
     "author": {
       "lastName": "Harris", 
       "firstName": "Charlaine"
@@ -7588,6 +8672,7 @@ const initialBookData = [
     "title": "Dead Until Dark"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hemingway", 
       "firstName": "Ernest"
@@ -7595,6 +8680,7 @@ const initialBookData = [
     "title": "For Whom the Bell Tolls"
   }, 
   {
+    "series": "Hannibal 01", 
     "author": {
       "lastName": "Harris", 
       "firstName": "Thomas"
@@ -7602,6 +8688,7 @@ const initialBookData = [
     "title": "Red Dragon"
   }, 
   {
+    "series": "Anita Blake 01", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7609,6 +8696,7 @@ const initialBookData = [
     "title": "Guilty Pleasures"
   }, 
   {
+    "series": "Joe Pitt 01", 
     "author": {
       "lastName": "Huston", 
       "firstName": "Charlie"
@@ -7616,6 +8704,7 @@ const initialBookData = [
     "title": "Already Dead"
   }, 
   {
+    "series": "Meredith Gentry 01", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7623,6 +8712,7 @@ const initialBookData = [
     "title": "A Kiss of Shadows"
   }, 
   {
+    "series": "Rain Wilds Chronicles 01", 
     "author": {
       "lastName": "Hobb", 
       "firstName": "Robin"
@@ -7630,6 +8720,7 @@ const initialBookData = [
     "title": "Dragon Keeper"
   }, 
   {
+    "series": "Meredith Gentry 03", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7637,6 +8728,7 @@ const initialBookData = [
     "title": "Seduced by Moonlight"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hemingway", 
       "firstName": "Ernest"
@@ -7644,6 +8736,7 @@ const initialBookData = [
     "title": "The Sun Also Rises"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "", 
       "firstName": "Homer"
@@ -7651,6 +8744,7 @@ const initialBookData = [
     "title": "The Iliad"
   }, 
   {
+    "series": "Rachel Morgan 09", 
     "author": {
       "lastName": "Harrison", 
       "firstName": "Kim"
@@ -7658,6 +8752,7 @@ const initialBookData = [
     "title": "Pale Demon"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Huxley", 
       "firstName": "Aldous"
@@ -7665,6 +8760,7 @@ const initialBookData = [
     "title": "Brave New World"
   }, 
   {
+    "series": "Rachel Morgan 06", 
     "author": {
       "lastName": "Harrison", 
       "firstName": "Kim"
@@ -7672,6 +8768,7 @@ const initialBookData = [
     "title": "The Outlaw Demon Wails"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hale", 
       "firstName": "Benjamin"
@@ -7679,6 +8776,7 @@ const initialBookData = [
     "title": "The Evolution of Bruno Littlemore"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Heilemann", 
       "firstName": "John"
@@ -7686,6 +8784,7 @@ const initialBookData = [
     "title": "Game Change"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hornby", 
       "firstName": "Nick"
@@ -7693,6 +8792,7 @@ const initialBookData = [
     "title": "About a Boy"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hammett", 
       "firstName": "Dashiell"
@@ -7700,6 +8800,7 @@ const initialBookData = [
     "title": "The Maltese Falcon"
   }, 
   {
+    "series": "Meredith Gentry 08", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7707,6 +8808,7 @@ const initialBookData = [
     "title": "Divine Misdemeanors"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hiaasen", 
       "firstName": "Carl"
@@ -7714,6 +8816,7 @@ const initialBookData = [
     "title": "Tourist Season"
   }, 
   {
+    "series": "The Tawny Man 03", 
     "author": {
       "lastName": "Hobb", 
       "firstName": "Robin"
@@ -7721,6 +8824,7 @@ const initialBookData = [
     "title": "Fool's Fate"
   }, 
   {
+    "series": "Joe Pitt 04", 
     "author": {
       "lastName": "Huston", 
       "firstName": "Charlie"
@@ -7728,6 +8832,7 @@ const initialBookData = [
     "title": "Every Last Drop"
   }, 
   {
+    "series": "The Tawny Man 01", 
     "author": {
       "lastName": "Hobb", 
       "firstName": "Robin"
@@ -7735,6 +8840,7 @@ const initialBookData = [
     "title": "Fool's Errand"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Harding", 
       "firstName": "Paul"
@@ -7742,6 +8848,7 @@ const initialBookData = [
     "title": "Tinkers"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hornby", 
       "firstName": "Nick"
@@ -7749,6 +8856,7 @@ const initialBookData = [
     "title": "High Fidelity"
   }, 
   {
+    "series": "Anita Blake 08", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7756,6 +8864,7 @@ const initialBookData = [
     "title": "Blue Moon"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hurston", 
       "firstName": "Zora Neale"
@@ -7763,6 +8872,7 @@ const initialBookData = [
     "title": "Their Eyes Were Watching God"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hitchens", 
       "firstName": "Christopher"
@@ -7770,6 +8880,7 @@ const initialBookData = [
     "title": "God is Not Great"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hedges", 
       "firstName": "Chris"
@@ -7777,6 +8888,7 @@ const initialBookData = [
     "title": "The World As It Is"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hugo", 
       "firstName": "Victor"
@@ -7784,6 +8896,7 @@ const initialBookData = [
     "title": "Les Miserables"
   }, 
   {
+    "series": "Anita Blake 19", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7791,6 +8904,7 @@ const initialBookData = [
     "title": "Bullet"
   }, 
   {
+    "series": "Anita Blake 15", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7798,6 +8912,7 @@ const initialBookData = [
     "title": "The Harlequin"
   }, 
   {
+    "series": "Anita Blake 16", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7805,6 +8920,7 @@ const initialBookData = [
     "title": "Blood Noir"
   }, 
   {
+    "series": "The Farseer Trilogy 03", 
     "author": {
       "lastName": "Hobb", 
       "firstName": "Robin"
@@ -7812,6 +8928,7 @@ const initialBookData = [
     "title": "Assassin's Quest"
   }, 
   {
+    "series": "Dune 03", 
     "author": {
       "lastName": "Herbert", 
       "firstName": "Frank"
@@ -7819,6 +8936,7 @@ const initialBookData = [
     "title": "Children of Dune"
   }, 
   {
+    "series": "Henry Thompson 01", 
     "author": {
       "lastName": "Huston", 
       "firstName": "Charlie"
@@ -7826,6 +8944,7 @@ const initialBookData = [
     "title": "Caught Stealing"
   }, 
   {
+    "series": "Meredith Gentry 05", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7833,6 +8952,7 @@ const initialBookData = [
     "title": "Mistral's Kiss"
   }, 
   {
+    "series": "Sookie Stackhouse 06", 
     "author": {
       "lastName": "Harris", 
       "firstName": "Charlaine"
@@ -7840,6 +8960,7 @@ const initialBookData = [
     "title": "Definitely Dead"
   }, 
   {
+    "series": "Sookie Stackhouse 02", 
     "author": {
       "lastName": "Harris", 
       "firstName": "Charlaine"
@@ -7847,6 +8968,7 @@ const initialBookData = [
     "title": "Living Dead in Dallas"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hazlitt", 
       "firstName": "Henry"
@@ -7854,6 +8976,7 @@ const initialBookData = [
     "title": "Economics in One Lesson"
   }, 
   {
+    "series": "Joe Pitt 02", 
     "author": {
       "lastName": "Huston", 
       "firstName": "Charlie"
@@ -7861,6 +8984,7 @@ const initialBookData = [
     "title": "No Dominion"
   }, 
   {
+    "series": "Dune 05", 
     "author": {
       "lastName": "Herbert", 
       "firstName": "Frank"
@@ -7868,6 +8992,7 @@ const initialBookData = [
     "title": "Heretics of Dune"
   }, 
   {
+    "series": "Anita Blake 05", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7875,6 +9000,7 @@ const initialBookData = [
     "title": "Bloody Bones"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Heinlein", 
       "firstName": "Robert. A"
@@ -7882,6 +9008,7 @@ const initialBookData = [
     "title": "The Moon Is a Harsh Mistress"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Hesse", 
       "firstName": "Hermann"
@@ -7889,6 +9016,7 @@ const initialBookData = [
     "title": "Siddhartha"
   }, 
   {
+    "series": "Meredith Gentry 07", 
     "author": {
       "lastName": "Hamilton", 
       "firstName": "Laurell K."
@@ -7896,6 +9024,7 @@ const initialBookData = [
     "title": "Swallowing Darkness"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "", 
       "firstName": "Malcom X"
@@ -7903,6 +9032,7 @@ const initialBookData = [
     "title": "The Autobiography of Malcolm X"
   }, 
   {
+    "series": "Fever 04", 
     "author": {
       "lastName": "Moning", 
       "firstName": "Karen Marie"
@@ -7910,6 +9040,7 @@ const initialBookData = [
     "title": "Dreamfever"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "McCain", 
       "firstName": "Meghan"
@@ -7917,6 +9048,7 @@ const initialBookData = [
     "title": "Dirty Sexy Politics"
   }, 
   {
+    "series": "Twilight 01", 
     "author": {
       "lastName": "Meyer", 
       "firstName": "Stephanie"
@@ -7924,6 +9056,7 @@ const initialBookData = [
     "title": "Twilight"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Mieville", 
       "firstName": "China"
@@ -7931,6 +9064,7 @@ const initialBookData = [
     "title": "Kraken"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Mailer", 
       "firstName": "Norman"
@@ -7938,6 +9072,7 @@ const initialBookData = [
     "title": "The Naked and the Dead"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "McEwan", 
       "firstName": "Ian"
@@ -7945,6 +9080,7 @@ const initialBookData = [
     "title": "Solar"
   }, 
   {
+    "series": "A Song of Ice and Fire 02", 
     "author": {
       "lastName": "Martin", 
       "firstName": "George R.R."
@@ -7952,6 +9088,7 @@ const initialBookData = [
     "title": "A Clash of Kings"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Moore", 
       "firstName": "Christopher"
@@ -7959,6 +9096,7 @@ const initialBookData = [
     "title": "Fool"
   }, 
   {
+    "series": "Roosevelt 03", 
     "author": {
       "lastName": "Morris", 
       "firstName": "Edmund"
@@ -7966,6 +9104,7 @@ const initialBookData = [
     "title": "Colonel Roosevelt"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Martin", 
       "firstName": "Steve"
@@ -7973,6 +9112,7 @@ const initialBookData = [
     "title": "An Object of Beauty"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "", 
       "firstName": "Misc."
@@ -7980,6 +9120,7 @@ const initialBookData = [
     "title": "Machine of Death"
   }, 
   {
+    "series": "Kurt Wallander 08", 
     "author": {
       "lastName": "Mankell", 
       "firstName": "Henning"
@@ -7987,6 +9128,7 @@ const initialBookData = [
     "title": "Firewall"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "McLaughlin", 
       "firstName": "Emma"
@@ -7994,6 +9136,7 @@ const initialBookData = [
     "title": "The Nanny Diaries"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "McCarthy", 
       "firstName": "Cormac"
@@ -8001,6 +9144,7 @@ const initialBookData = [
     "title": "The Road"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Mitchell", 
       "firstName": "Margaret"
@@ -8008,6 +9152,7 @@ const initialBookData = [
     "title": "Gone with the Wind"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Melville", 
       "firstName": "Herman"
@@ -8015,6 +9160,7 @@ const initialBookData = [
     "title": "Moby Dick"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Mieville", 
       "firstName": "China"
@@ -8022,6 +9168,7 @@ const initialBookData = [
     "title": "The City & The City"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "MacDonald", 
       "firstName": "John D."
@@ -8029,6 +9176,7 @@ const initialBookData = [
     "title": "Bye"
   }, 
   {
+    "series": "Abhorsen 03", 
     "author": {
       "lastName": "Nix", 
       "firstName": "Garth"
@@ -8036,6 +9184,7 @@ const initialBookData = [
     "title": "Abhorsen"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Moore", 
       "firstName": "Christopher"
@@ -8043,6 +9192,7 @@ const initialBookData = [
     "title": "Bloodsucking Fiends"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "McDougall", 
       "firstName": "Christopher"
@@ -8050,6 +9200,7 @@ const initialBookData = [
     "title": "Born to Run"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Max", 
       "firstName": "Tucker"
@@ -8057,6 +9208,7 @@ const initialBookData = [
     "title": "I Hope They Serve Beer In Hell"
   }, 
   {
+    "series": "Jolie Wilkins 02", 
     "author": {
       "lastName": "Mallory", 
       "firstName": "H.P."
@@ -8064,6 +9216,7 @@ const initialBookData = [
     "title": "Toil and Trouble"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Miller", 
       "firstName": "Walter M."
@@ -8071,6 +9224,7 @@ const initialBookData = [
     "title": "A Canticle for Leibowitz"
   }, 
   {
+    "series": "Kurt Wallander 07", 
     "author": {
       "lastName": "Mankell", 
       "firstName": "Henning"
@@ -8078,6 +9232,7 @@ const initialBookData = [
     "title": "One Step Behind"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Niffenegger", 
       "firstName": "Audrey"
@@ -8085,6 +9240,7 @@ const initialBookData = [
     "title": "The Time Traveler's Wife"
   }, 
   {
+    "series": "Travis McGee 04", 
     "author": {
       "lastName": "MacDonald", 
       "firstName": "John D."
@@ -8092,6 +9248,7 @@ const initialBookData = [
     "title": "The Quick Red Fox"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Martin", 
       "firstName": "George R.R."
@@ -8099,6 +9256,7 @@ const initialBookData = [
     "title": "The Hedge Knight"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Neilan", 
       "firstName": "Paul"
@@ -8106,6 +9264,7 @@ const initialBookData = [
     "title": "Apathy and Other Small Victories"
   }, 
   {
+    "series": "A Song of Ice and Fire 01", 
     "author": {
       "lastName": "Martin", 
       "firstName": "George R.R."
@@ -8113,6 +9272,7 @@ const initialBookData = [
     "title": "A Game Of Thrones"
   }, 
   {
+    "series": "Fever 01", 
     "author": {
       "lastName": "Moning", 
       "firstName": "Karen Marie"
@@ -8120,6 +9280,7 @@ const initialBookData = [
     "title": "Darkfever"
   }, 
   {
+    "series": "Travis McGee 02", 
     "author": {
       "lastName": "MacDonald", 
       "firstName": "John D."
@@ -8127,6 +9288,7 @@ const initialBookData = [
     "title": "Nightmare In Pink"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Mieville", 
       "firstName": "China"
@@ -8134,6 +9296,7 @@ const initialBookData = [
     "title": "The Scar"
   }, 
   {
+    "series": "A Song of Ice and Fire 04", 
     "author": {
       "lastName": "Martin", 
       "firstName": "George R.R."
@@ -8141,6 +9304,7 @@ const initialBookData = [
     "title": "A Feast for Crows"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Marquez", 
       "firstName": "Gabriel Garcia"
@@ -8148,6 +9312,7 @@ const initialBookData = [
     "title": "One Hundred Years of Solitude"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Maugham", 
       "firstName": "W. Somerset"
@@ -8155,6 +9320,7 @@ const initialBookData = [
     "title": "The Razor's Edge"
   }, 
   {
+    "series": "Fever 02", 
     "author": {
       "lastName": "Moning", 
       "firstName": "Karen Marie"
@@ -8162,6 +9328,7 @@ const initialBookData = [
     "title": "Bloodfever"
   }, 
   {
+    "series": "Travis McGee 14", 
     "author": {
       "lastName": "MacDonald", 
       "firstName": "John D."
@@ -8169,6 +9336,7 @@ const initialBookData = [
     "title": "The Scarlet Ruse"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Martin", 
       "firstName": "Demetri"
@@ -8176,6 +9344,7 @@ const initialBookData = [
     "title": "This Is a Book"
   }, 
   {
+    "series": "Kurt Wallander 05", 
     "author": {
       "lastName": "Mankell", 
       "firstName": "Henning"
@@ -8183,6 +9352,7 @@ const initialBookData = [
     "title": "Sidetracked"
   }, 
   {
+    "series": "Kurt Wallander 04", 
     "author": {
       "lastName": "Mankell", 
       "firstName": "Henning"
@@ -8190,6 +9360,7 @@ const initialBookData = [
     "title": "The Man Who Smiled"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Nabokov", 
       "firstName": "Vladimir"
@@ -8197,6 +9368,7 @@ const initialBookData = [
     "title": "Lolita"
   }, 
   {
+    "series": "Kurt Wallander 02", 
     "author": {
       "lastName": "Mankell", 
       "firstName": "Henning"
@@ -8204,6 +9376,7 @@ const initialBookData = [
     "title": "The Dogs of Riga"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Nozick", 
       "firstName": "Robert"
@@ -8211,6 +9384,7 @@ const initialBookData = [
     "title": "Anarchy, State, and Utopia"
   }, 
   {
+    "series": "Takeshi Kovacs 02", 
     "author": {
       "lastName": "Morgan", 
       "firstName": "Richard"
@@ -8218,6 +9392,7 @@ const initialBookData = [
     "title": "Broken Angels"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Nietzsche", 
       "firstName": "Friedrich"
@@ -8225,6 +9400,7 @@ const initialBookData = [
     "title": "Beyond Good and Evil"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Moore", 
       "firstName": "Christopher"
@@ -8232,6 +9408,7 @@ const initialBookData = [
     "title": "The Lust Lizard of Melancholy Cove"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "McCullough", 
       "firstName": "Colleen"
@@ -8239,6 +9416,7 @@ const initialBookData = [
     "title": "The First Man in Rome"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "McLain", 
       "firstName": "Paula"
@@ -8246,6 +9424,7 @@ const initialBookData = [
     "title": "The Paris Wife"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Meyer", 
       "firstName": "Stephanie"
@@ -8253,6 +9432,7 @@ const initialBookData = [
     "title": "The Short Second Life of Bree Tanner"
   }, 
   {
+    "series": "Roosevelt 01", 
     "author": {
       "lastName": "Morris", 
       "firstName": "Edmund"
@@ -8260,6 +9440,7 @@ const initialBookData = [
     "title": "The Rise of Theodore Roosevelt"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Maugham", 
       "firstName": "W. Somerset"
@@ -8267,6 +9448,7 @@ const initialBookData = [
     "title": "Of Human Bondage"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Marquez", 
       "firstName": "Gabriel Garcia"
@@ -8274,6 +9456,7 @@ const initialBookData = [
     "title": "Love in the Time of Cholera"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Metaxas", 
       "firstName": "Eric"
@@ -8281,6 +9464,7 @@ const initialBookData = [
     "title": "Bonhoeffer"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "McCammon", 
       "firstName": "Robert R."
@@ -8288,6 +9472,7 @@ const initialBookData = [
     "title": "Swan Song"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Morrell", 
       "firstName": "David"
@@ -8295,6 +9480,7 @@ const initialBookData = [
     "title": "Creepers"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "McCarthy", 
       "firstName": "Cormac"
@@ -8302,6 +9488,7 @@ const initialBookData = [
     "title": "Blood Meridian"
   }, 
   {
+    "series": "Jolie Wilkins 01", 
     "author": {
       "lastName": "Mallory", 
       "firstName": "H.P."
@@ -8309,6 +9496,7 @@ const initialBookData = [
     "title": "Fire Burn and Cauldron Bubble"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Moore", 
       "firstName": "Christopher"
@@ -8316,6 +9504,7 @@ const initialBookData = [
     "title": "Bite Me"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Mitchell", 
       "firstName": "David"
@@ -8323,6 +9512,7 @@ const initialBookData = [
     "title": "Cloud Atlas"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "", 
       "firstName": "Madonna"
@@ -8330,6 +9520,7 @@ const initialBookData = [
     "title": "Sex"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "McMillan", 
       "firstName": "Terry"
@@ -8337,6 +9528,7 @@ const initialBookData = [
     "title": "A Day Late and a Dollar Short"
   }, 
   {
+    "series": "Roosevelt 02", 
     "author": {
       "lastName": "Morris", 
       "firstName": "Edmund"
@@ -8344,6 +9536,7 @@ const initialBookData = [
     "title": "Theodore Rex"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "McKenna", 
       "firstName": "Terence"
@@ -8351,6 +9544,7 @@ const initialBookData = [
     "title": "Food of the Gods"
   }, 
   {
+    "series": "Fever 05", 
     "author": {
       "lastName": "Moning", 
       "firstName": "Karen Marie"
@@ -8358,6 +9552,7 @@ const initialBookData = [
     "title": "Shadowfever"
   }, 
   {
+    "series": "Fever 03", 
     "author": {
       "lastName": "Moning", 
       "firstName": "Karen Marie"
@@ -8365,6 +9560,7 @@ const initialBookData = [
     "title": "Faefever"
   }, 
   {
+    "series": "Kurt Wallander 01", 
     "author": {
       "lastName": "Mankell", 
       "firstName": "Henning"
@@ -8372,6 +9568,7 @@ const initialBookData = [
     "title": "Faceless Killers"
   }, 
   {
+    "series": "A Song of Ice and Fire 03", 
     "author": {
       "lastName": "Martin", 
       "firstName": "George R.R."
@@ -8379,6 +9576,7 @@ const initialBookData = [
     "title": "A Storm of Swords"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Miller", 
       "firstName": "Arthur"
@@ -8386,6 +9584,7 @@ const initialBookData = [
     "title": "The Crucible"
   }, 
   {
+    "series": "Kurt Wallander 09", 
     "author": {
       "lastName": "Mankell", 
       "firstName": "Henning"
@@ -8393,6 +9592,7 @@ const initialBookData = [
     "title": "The Pyramid"
   }, 
   {
+    "series": "Twilight 03", 
     "author": {
       "lastName": "Meyer", 
       "firstName": "Stephanie"
@@ -8400,6 +9600,7 @@ const initialBookData = [
     "title": "Eclipse"
   }, 
   {
+    "series": "Travis McGee 18", 
     "author": {
       "lastName": "MacDonald", 
       "firstName": "John D."
@@ -8407,6 +9608,7 @@ const initialBookData = [
     "title": "The Green Ripper"
   }, 
   {
+    "series": "Travis McGee 19", 
     "author": {
       "lastName": "MacDonald", 
       "firstName": "John D."
@@ -8414,6 +9616,7 @@ const initialBookData = [
     "title": "Free Fall in Crimson"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Nemirovsky", 
       "firstName": "Irene"
@@ -8421,6 +9624,7 @@ const initialBookData = [
     "title": "Suite Francaise"
   }, 
   {
+    "series": "Travis McGee 10", 
     "author": {
       "lastName": "MacDonald", 
       "firstName": "John D."
@@ -8428,6 +9632,7 @@ const initialBookData = [
     "title": "The Girl in the Plain Brown Wrapper"
   }, 
   {
+    "series": "Travis McGee 03", 
     "author": {
       "lastName": "MacDonald", 
       "firstName": "John D."
@@ -8435,6 +9640,7 @@ const initialBookData = [
     "title": "A Purple Place For Dying"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Mieville", 
       "firstName": "China"
@@ -8442,6 +9648,7 @@ const initialBookData = [
     "title": "Perdido Street Station"
   }, 
   {
+    "series": "A Song of Ice and Fire 05", 
     "author": {
       "lastName": "Martin", 
       "firstName": "George R.R."
@@ -8449,6 +9656,7 @@ const initialBookData = [
     "title": "A Dance With Dragons.pdf"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Meyer", 
       "firstName": "Stephanie"
@@ -8456,6 +9664,7 @@ const initialBookData = [
     "title": "The Host"
   }, 
   {
+    "series": "Kurt Wallander 03", 
     "author": {
       "lastName": "Mankell", 
       "firstName": "Henning"
@@ -8463,6 +9672,7 @@ const initialBookData = [
     "title": "The White Lioness"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "McCullough", 
       "firstName": "David"
@@ -8470,6 +9680,7 @@ const initialBookData = [
     "title": "John Adams"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Mukherjee", 
       "firstName": "Siddhartha"
@@ -8477,6 +9688,7 @@ const initialBookData = [
     "title": "The Emperor of All Maladies"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "McCullough", 
       "firstName": "Colleen"
@@ -8484,6 +9696,7 @@ const initialBookData = [
     "title": "Caesar"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Mieville", 
       "firstName": "China"
@@ -8491,6 +9704,7 @@ const initialBookData = [
     "title": "Iron Council"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Max", 
       "firstName": "Tucker"
@@ -8498,6 +9712,7 @@ const initialBookData = [
     "title": "Assholes Finish First"
   }, 
   {
+    "series": "Kurt Wallander 06", 
     "author": {
       "lastName": "Mankell", 
       "firstName": "Henning"
@@ -8505,6 +9720,7 @@ const initialBookData = [
     "title": "The Fifth Woman"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Macomber", 
       "firstName": "Debbie"
@@ -8512,6 +9728,7 @@ const initialBookData = [
     "title": "A Turn in the Road"
   }, 
   {
+    "series": "Takeshi Kovacs 01", 
     "author": {
       "lastName": "Morgan", 
       "firstName": "Richard"
@@ -8519,6 +9736,7 @@ const initialBookData = [
     "title": "Altered Carbon"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Murakami", 
       "firstName": "Haruki"
@@ -8526,6 +9744,7 @@ const initialBookData = [
     "title": "Norwegian Wood"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "McCarthy", 
       "firstName": "Cormac"
@@ -8533,6 +9752,7 @@ const initialBookData = [
     "title": "No Country for Old Men"
   }, 
   {
+    "series": "Travis McGee 11", 
     "author": {
       "lastName": "MacDonald", 
       "firstName": "John D."
@@ -8540,6 +9760,7 @@ const initialBookData = [
     "title": "Dress Her In Indigo"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Murakami", 
       "firstName": "Haruki"
@@ -8547,6 +9768,7 @@ const initialBookData = [
     "title": "Kafka on the Shore"
   }, 
   {
+    "series": "Travis McGee 08", 
     "author": {
       "lastName": "MacDonald", 
       "firstName": "John D."
@@ -8554,6 +9776,7 @@ const initialBookData = [
     "title": "One Fearful Yellow Eye"
   }, 
   {
+    "series": "Travis McGee 21", 
     "author": {
       "lastName": "MacDonald", 
       "firstName": "John D."
@@ -8561,6 +9784,7 @@ const initialBookData = [
     "title": "The Lonely Silver Rain"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Morton", 
       "firstName": "Kate"
@@ -8568,6 +9792,7 @@ const initialBookData = [
     "title": "The Forgotten Garden"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Moore", 
       "firstName": "Christopher"
@@ -8575,6 +9800,7 @@ const initialBookData = [
     "title": "A Dirty Job"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Maguire", 
       "firstName": "Gregory"
@@ -8582,6 +9808,7 @@ const initialBookData = [
     "title": "Wicked"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "McCammon", 
       "firstName": "Robert R."
@@ -8589,6 +9816,7 @@ const initialBookData = [
     "title": "Boy's Life"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Marlantes", 
       "firstName": "Karl"
@@ -8596,6 +9824,7 @@ const initialBookData = [
     "title": "Matterhorn"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Moore", 
       "firstName": "Michael"
@@ -8603,6 +9832,7 @@ const initialBookData = [
     "title": "Dude, Where's My Country"
   }, 
   {
+    "series": "Travis McGee 12", 
     "author": {
       "lastName": "MacDonald", 
       "firstName": "John D."
@@ -8610,6 +9840,7 @@ const initialBookData = [
     "title": "The Long Lavender Look"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "McEwan", 
       "firstName": "Ian"
@@ -8617,6 +9848,7 @@ const initialBookData = [
     "title": "Atonement"
   }, 
   {
+    "series": "Twilight 04", 
     "author": {
       "lastName": "Meyer", 
       "firstName": "Stephanie"
@@ -8624,6 +9856,7 @@ const initialBookData = [
     "title": "Breaking Dawn"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Machiavelli", 
       "firstName": "Niccolo"
@@ -8631,6 +9864,7 @@ const initialBookData = [
     "title": "The Prince"
   }, 
   {
+    "series": "Takeshi Kovacs 03", 
     "author": {
       "lastName": "Morgan", 
       "firstName": "Richard"
@@ -8638,6 +9872,7 @@ const initialBookData = [
     "title": "Woken Furies"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "McCullough", 
       "firstName": "David"
@@ -8645,6 +9880,7 @@ const initialBookData = [
     "title": "1776"
   }, 
   {
+    "series": "Kurt Wallander 10", 
     "author": {
       "lastName": "Mankell", 
       "firstName": "Henning"
@@ -8652,6 +9888,7 @@ const initialBookData = [
     "title": "The Troubled Man"
   }, 
   {
+    "series": "Abhorsen 01", 
     "author": {
       "lastName": "Nix", 
       "firstName": "Garth"
@@ -8659,6 +9896,7 @@ const initialBookData = [
     "title": "Sabriel"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Mantel", 
       "firstName": "Hilary"
@@ -8666,6 +9904,7 @@ const initialBookData = [
     "title": "Wolf Hall"
   }, 
   {
+    "series": "Travis McGee 13", 
     "author": {
       "lastName": "MacDonald", 
       "firstName": "John D."
@@ -8673,6 +9912,7 @@ const initialBookData = [
     "title": "A Tan And Sandy Silence"
   }, 
   {
+    "series": "Travis McGee 07", 
     "author": {
       "lastName": "MacDonald", 
       "firstName": "John D."
@@ -8680,6 +9920,7 @@ const initialBookData = [
     "title": "Darker Than Amber"
   }, 
   {
+    "series": "Twilight 02", 
     "author": {
       "lastName": "Meyer", 
       "firstName": "Stephanie"
@@ -8687,6 +9928,7 @@ const initialBookData = [
     "title": "New Moon"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Mieville", 
       "firstName": "China"
@@ -8694,6 +9936,7 @@ const initialBookData = [
     "title": "Embassytown"
   }, 
   {
+    "series": "Travis McGee 16", 
     "author": {
       "lastName": "MacDonald", 
       "firstName": "John D."
@@ -8701,6 +9944,7 @@ const initialBookData = [
     "title": "The Dreadful Lemon Sky"
   }, 
   {
+    "series": "Travis McGee 06", 
     "author": {
       "lastName": "MacDonald", 
       "firstName": "John D."
@@ -8708,6 +9952,7 @@ const initialBookData = [
     "title": "Bright Orange for the Shroud"
   }, 
   {
+    "series": "Travis McGee 09", 
     "author": {
       "lastName": "MacDonald", 
       "firstName": "John D."
@@ -8715,6 +9960,7 @@ const initialBookData = [
     "title": "Pale Gray For Guilt"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Martel", 
       "firstName": "Yann"
@@ -8722,6 +9968,7 @@ const initialBookData = [
     "title": "Life of Pi"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "McCarthy", 
       "firstName": "Cormac"
@@ -8729,6 +9976,7 @@ const initialBookData = [
     "title": "All the Pretty Horses"
   }, 
   {
+    "series": "Travis McGee 17", 
     "author": {
       "lastName": "MacDonald", 
       "firstName": "John D."
@@ -8736,6 +9984,7 @@ const initialBookData = [
     "title": "The Empty Copper Sea"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Martin", 
       "firstName": "Steve"
@@ -8743,6 +9992,7 @@ const initialBookData = [
     "title": "Born Standing Up, A Comic's Life"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Matheson", 
       "firstName": "Richard"
@@ -8750,6 +10000,7 @@ const initialBookData = [
     "title": "I Am Legend"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Mitchell", 
       "firstName": "David"
@@ -8757,6 +10008,7 @@ const initialBookData = [
     "title": "The Thousand Autumns of Jacob de Zoet"
   }, 
   {
+    "series": "Abhorsen 02", 
     "author": {
       "lastName": "Nix", 
       "firstName": "Garth"
@@ -8764,6 +10016,7 @@ const initialBookData = [
     "title": "Lirael"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Munn", 
       "firstName": "Olivia"
@@ -8771,6 +10024,7 @@ const initialBookData = [
     "title": "Suck It, Wonder Woman!"
   }, 
   {
+    "series": "Travis McGee 05", 
     "author": {
       "lastName": "MacDonald", 
       "firstName": "John D."
@@ -8778,6 +10032,7 @@ const initialBookData = [
     "title": "A Deadly Shade Of Gold"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Miller", 
       "firstName": "Henry"
@@ -8785,6 +10040,7 @@ const initialBookData = [
     "title": "Tropic of Cancer"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Niven", 
       "firstName": "Larry"
@@ -8792,6 +10048,7 @@ const initialBookData = [
     "title": "Ringworld"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Maher", 
       "firstName": "Bill"
@@ -8799,6 +10056,7 @@ const initialBookData = [
     "title": "When You Ride Alone You Ride with Bin Laden"
   }, 
   {
+    "series": "Travis McGee 15", 
     "author": {
       "lastName": "MacDonald", 
       "firstName": "John D."
@@ -8806,6 +10064,7 @@ const initialBookData = [
     "title": "The Turquoise Lament"
   }, 
   {
+    "series": "Travis McGee 20", 
     "author": {
       "lastName": "MacDonald", 
       "firstName": "John D."
@@ -8813,6 +10072,7 @@ const initialBookData = [
     "title": "Cinnamon Skin"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Nietzsche", 
       "firstName": "Friedrich"
@@ -8820,6 +10080,7 @@ const initialBookData = [
     "title": "Basic Writing of Nietzsche"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Moore", 
       "firstName": "Christopher"
@@ -8827,6 +10088,7 @@ const initialBookData = [
     "title": "You Suck"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gibson", 
       "firstName": "William"
@@ -8834,6 +10096,7 @@ const initialBookData = [
     "title": "Mona Lisa Overdrive"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gaiman", 
       "firstName": "Neil"
@@ -8841,6 +10104,7 @@ const initialBookData = [
     "title": "Neverwhere"
   }, 
   {
+    "series": "Sword of Truth 00", 
     "author": {
       "lastName": "Goodkind", 
       "firstName": "Terry"
@@ -8848,6 +10112,7 @@ const initialBookData = [
     "title": "Debt of Bones"
   }, 
   {
+    "series": "Sword of Truth 05", 
     "author": {
       "lastName": "Goodkind", 
       "firstName": "Terry"
@@ -8855,6 +10120,7 @@ const initialBookData = [
     "title": "Soul of the Fire"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grafton", 
       "firstName": "Sue"
@@ -8862,6 +10128,7 @@ const initialBookData = [
     "title": "T is for Trespass"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Griffin", 
       "firstName": "Kathy"
@@ -8869,6 +10136,7 @@ const initialBookData = [
     "title": "Official Book Club Selection, A Memoir According to Kathy Griffin"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grafton", 
       "firstName": "Sue"
@@ -8876,6 +10144,7 @@ const initialBookData = [
     "title": "U is for Undertow"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "George", 
       "firstName": "Margaret"
@@ -8883,6 +10152,7 @@ const initialBookData = [
     "title": "Memoirs of Cleopatra"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grossman", 
       "firstName": "Lev"
@@ -8890,6 +10160,7 @@ const initialBookData = [
     "title": "The Magicians"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Goodwin", 
       "firstName": "Doris Kearns"
@@ -8897,6 +10168,7 @@ const initialBookData = [
     "title": "Team of Rivals"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grimm", 
       "firstName": "Wilhelm"
@@ -8904,6 +10176,7 @@ const initialBookData = [
     "title": "The Complete Grimm's Fairy Tales"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gregory", 
       "firstName": "Philippa"
@@ -8911,6 +10184,7 @@ const initialBookData = [
     "title": "The White Queen"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grisham", 
       "firstName": "John"
@@ -8918,6 +10192,7 @@ const initialBookData = [
     "title": "The Associate"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Greene", 
       "firstName": "Brian"
@@ -8925,6 +10200,7 @@ const initialBookData = [
     "title": "The Elegant Universe"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grisham", 
       "firstName": "John"
@@ -8932,6 +10208,7 @@ const initialBookData = [
     "title": "The Rainmaker"
   }, 
   {
+    "series": "Outlander 04", 
     "author": {
       "lastName": "Gabaldon", 
       "firstName": "Diana"
@@ -8939,6 +10216,7 @@ const initialBookData = [
     "title": "Drums of Autumn"
   }, 
   {
+    "series": "Sword of Truth 09", 
     "author": {
       "lastName": "Goodkind", 
       "firstName": "Terry"
@@ -8946,6 +10224,7 @@ const initialBookData = [
     "title": "Chainfire"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grisham", 
       "firstName": "John"
@@ -8953,6 +10232,7 @@ const initialBookData = [
     "title": "The Confession"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gibson", 
       "firstName": "William"
@@ -8960,6 +10240,7 @@ const initialBookData = [
     "title": "Pattern Recognition"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gaiman", 
       "firstName": "Neil"
@@ -8967,6 +10248,7 @@ const initialBookData = [
     "title": "American Gods"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gibson", 
       "firstName": "William"
@@ -8974,6 +10256,7 @@ const initialBookData = [
     "title": "Johnny Mnemonic"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Greene", 
       "firstName": "Brian"
@@ -8981,6 +10264,7 @@ const initialBookData = [
     "title": "The Hidden Reality"
   }, 
   {
+    "series": "Outlander 02", 
     "author": {
       "lastName": "Gabaldon", 
       "firstName": "Diana"
@@ -8988,6 +10272,7 @@ const initialBookData = [
     "title": "Dragonfly in Amber"
   }, 
   {
+    "series": "Outlander 07", 
     "author": {
       "lastName": "Gabaldon", 
       "firstName": "Diana"
@@ -8995,6 +10280,7 @@ const initialBookData = [
     "title": "An Echo in the Bone"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gladwell", 
       "firstName": "Malcolm"
@@ -9002,6 +10288,7 @@ const initialBookData = [
     "title": "Blink, The Power of Thinking Without Thinking"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grisham", 
       "firstName": "John"
@@ -9009,6 +10296,7 @@ const initialBookData = [
     "title": "The Innocent Man"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grafton", 
       "firstName": "Sue"
@@ -9016,6 +10304,7 @@ const initialBookData = [
     "title": "P is for Peril"
   }, 
   {
+    "series": "Sword of Truth 07", 
     "author": {
       "lastName": "Goodkind", 
       "firstName": "Terry"
@@ -9023,6 +10312,7 @@ const initialBookData = [
     "title": "The Pillars of Creation"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grogan", 
       "firstName": "John"
@@ -9030,6 +10320,7 @@ const initialBookData = [
     "title": "Marley & Me"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grisham", 
       "firstName": "John"
@@ -9037,6 +10328,7 @@ const initialBookData = [
     "title": "The Partner"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grafton", 
       "firstName": "Sue"
@@ -9044,6 +10336,7 @@ const initialBookData = [
     "title": "Q is for Quarry"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grisham", 
       "firstName": "John"
@@ -9051,6 +10344,7 @@ const initialBookData = [
     "title": "The Chamber"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gibson", 
       "firstName": "William"
@@ -9058,6 +10352,7 @@ const initialBookData = [
     "title": "Spook Country"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grafton", 
       "firstName": "Sue"
@@ -9065,6 +10360,7 @@ const initialBookData = [
     "title": "K is for Killer"
   }, 
   {
+    "series": "Outlander 06", 
     "author": {
       "lastName": "Gabaldon", 
       "firstName": "Diana"
@@ -9072,6 +10368,7 @@ const initialBookData = [
     "title": "A Breath of Snow and Ashes"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gaiman", 
       "firstName": "Neil"
@@ -9079,6 +10376,7 @@ const initialBookData = [
     "title": "Fragile Things"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grisham", 
       "firstName": "John"
@@ -9086,6 +10384,7 @@ const initialBookData = [
     "title": "The Testament"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grisham", 
       "firstName": "John"
@@ -9093,6 +10392,7 @@ const initialBookData = [
     "title": "A Time to Kill"
   }, 
   {
+    "series": "Sword of Truth 11", 
     "author": {
       "lastName": "Goodkind", 
       "firstName": "Terry"
@@ -9100,6 +10400,7 @@ const initialBookData = [
     "title": "Confessor"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Golding", 
       "firstName": "William"
@@ -9107,6 +10408,7 @@ const initialBookData = [
     "title": "Lord of the Flies"
   }, 
   {
+    "series": "Sword of Truth 02", 
     "author": {
       "lastName": "Goodkind", 
       "firstName": "Terry"
@@ -9114,6 +10416,7 @@ const initialBookData = [
     "title": "Stone of Tears"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gregory", 
       "firstName": "Philippa"
@@ -9121,6 +10424,7 @@ const initialBookData = [
     "title": "The Red Queen"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grafton", 
       "firstName": "Sue"
@@ -9128,6 +10432,7 @@ const initialBookData = [
     "title": "A is for Alibi"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Giffin", 
       "firstName": "Emily"
@@ -9135,6 +10440,7 @@ const initialBookData = [
     "title": "Baby Proof"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grafton", 
       "firstName": "Sue"
@@ -9142,6 +10448,7 @@ const initialBookData = [
     "title": "O is for Outlaw"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Garland", 
       "firstName": "Alex"
@@ -9149,6 +10456,7 @@ const initialBookData = [
     "title": "The Beach"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grisham", 
       "firstName": "John"
@@ -9156,6 +10464,7 @@ const initialBookData = [
     "title": "The Last Juror"
   }, 
   {
+    "series": "Outlander 03", 
     "author": {
       "lastName": "Gabaldon", 
       "firstName": "Diana"
@@ -9163,6 +10472,7 @@ const initialBookData = [
     "title": "Voyager"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Goldman", 
       "firstName": "William"
@@ -9170,6 +10480,7 @@ const initialBookData = [
     "title": "The Princess Bride"
   }, 
   {
+    "series": "Sword of Truth 10", 
     "author": {
       "lastName": "Goodkind", 
       "firstName": "Terry"
@@ -9177,6 +10488,7 @@ const initialBookData = [
     "title": "Phantom"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gorant", 
       "firstName": "Jim"
@@ -9184,6 +10496,7 @@ const initialBookData = [
     "title": "The Lost Dogs"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grisham", 
       "firstName": "John"
@@ -9191,6 +10504,7 @@ const initialBookData = [
     "title": "The Firm"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gleick", 
       "firstName": "James"
@@ -9198,6 +10512,7 @@ const initialBookData = [
     "title": "The Information"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grafton", 
       "firstName": "Sue"
@@ -9205,6 +10520,7 @@ const initialBookData = [
     "title": "B is for Burglar"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grafton", 
       "firstName": "Sue"
@@ -9212,6 +10528,7 @@ const initialBookData = [
     "title": "D is for Deadbeat"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gruen", 
       "firstName": "Sara"
@@ -9219,6 +10536,7 @@ const initialBookData = [
     "title": "Water for Elephants"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grafton", 
       "firstName": "Sue"
@@ -9226,6 +10544,7 @@ const initialBookData = [
     "title": "N is for Noose"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grisham", 
       "firstName": "John"
@@ -9233,6 +10552,7 @@ const initialBookData = [
     "title": "The King of Torts"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grisham", 
       "firstName": "John"
@@ -9240,6 +10560,7 @@ const initialBookData = [
     "title": "A Painted House"
   }, 
   {
+    "series": "Outlander 01", 
     "author": {
       "lastName": "Gabaldon", 
       "firstName": "Diana"
@@ -9247,6 +10568,7 @@ const initialBookData = [
     "title": "Outlander"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grafton", 
       "firstName": "Sue"
@@ -9254,6 +10576,7 @@ const initialBookData = [
     "title": "G is for Gumshoe"
   }, 
   {
+    "series": "Outlander 05", 
     "author": {
       "lastName": "Gabaldon", 
       "firstName": "Diana"
@@ -9261,6 +10584,7 @@ const initialBookData = [
     "title": "The Fiery Cross"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Green", 
       "firstName": "Simon R."
@@ -9268,6 +10592,7 @@ const initialBookData = [
     "title": "Something from the Nightside"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grisham", 
       "firstName": "John"
@@ -9275,6 +10600,7 @@ const initialBookData = [
     "title": "The Runaway Jury"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gaiman", 
       "firstName": "Neil"
@@ -9282,6 +10608,7 @@ const initialBookData = [
     "title": "Coraline"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grippando", 
       "firstName": "James"
@@ -9289,6 +10616,7 @@ const initialBookData = [
     "title": "A King's Ransom"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grunwald", 
       "firstName": "Lisa"
@@ -9296,6 +10624,7 @@ const initialBookData = [
     "title": "The Irresistible Henry House"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gilbert", 
       "firstName": "Elizabeth"
@@ -9303,6 +10632,7 @@ const initialBookData = [
     "title": "Eat, Pray, Love"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "", 
       "firstName": "Grimm Brothers"
@@ -9310,6 +10640,7 @@ const initialBookData = [
     "title": "Grimm's Fairy Tales"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grisham", 
       "firstName": "John"
@@ -9317,6 +10648,7 @@ const initialBookData = [
     "title": "The Summons"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grafton", 
       "firstName": "Sue"
@@ -9324,6 +10656,7 @@ const initialBookData = [
     "title": "E is for Evidence"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grisham", 
       "firstName": "John"
@@ -9331,6 +10664,7 @@ const initialBookData = [
     "title": "Playing for Pizza"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gemmell", 
       "firstName": "David"
@@ -9338,6 +10672,7 @@ const initialBookData = [
     "title": "Dark Moon"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gaiman", 
       "firstName": "Neil"
@@ -9345,6 +10680,7 @@ const initialBookData = [
     "title": "Anansi Boys"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grisham", 
       "firstName": "John"
@@ -9352,6 +10688,7 @@ const initialBookData = [
     "title": "The Pelican Brief"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gladwell", 
       "firstName": "Malcolm"
@@ -9359,6 +10696,7 @@ const initialBookData = [
     "title": "Outliers, The Story of Success"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grisham", 
       "firstName": "John"
@@ -9366,6 +10704,7 @@ const initialBookData = [
     "title": "Ford County"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gleick", 
       "firstName": "James"
@@ -9373,6 +10712,7 @@ const initialBookData = [
     "title": "Genius, The Life and Science of Richard Feynman"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grafton", 
       "firstName": "Sue"
@@ -9380,6 +10720,7 @@ const initialBookData = [
     "title": "R is for Ricochet"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gaiman", 
       "firstName": "Neil"
@@ -9387,6 +10728,7 @@ const initialBookData = [
     "title": "The Graveyard Book"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grafton", 
       "firstName": "Sue"
@@ -9394,6 +10736,7 @@ const initialBookData = [
     "title": "M is for Malice"
   }, 
   {
+    "series": "Sword of Truth 06", 
     "author": {
       "lastName": "Goodkind", 
       "firstName": "Terry"
@@ -9401,6 +10744,7 @@ const initialBookData = [
     "title": "Faith of the Fallen"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grisham", 
       "firstName": "John"
@@ -9408,6 +10752,7 @@ const initialBookData = [
     "title": "Skipping Christmas"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grafton", 
       "firstName": "Sue"
@@ -9415,6 +10760,7 @@ const initialBookData = [
     "title": "H is for Homicide"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grisham", 
       "firstName": "John"
@@ -9422,6 +10768,7 @@ const initialBookData = [
     "title": "The Client"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Giffin", 
       "firstName": "Emily"
@@ -9429,6 +10776,7 @@ const initialBookData = [
     "title": "Heart of the Matter"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gregory", 
       "firstName": "Philippa"
@@ -9436,6 +10784,7 @@ const initialBookData = [
     "title": "The Boleyn Inheritance"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grisham", 
       "firstName": "John"
@@ -9443,6 +10792,7 @@ const initialBookData = [
     "title": "The Broker"
   }, 
   {
+    "series": "Smith, Seth", 
     "author": {
       "lastName": "", 
       "firstName": "Grahame"
@@ -9450,6 +10800,7 @@ const initialBookData = [
     "title": "Abraham Lincoln, Vampire Hunter"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Golden", 
       "firstName": "Arthur"
@@ -9457,6 +10808,7 @@ const initialBookData = [
     "title": "Memoirs of a Geisha"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grafton", 
       "firstName": "Sue"
@@ -9464,6 +10816,7 @@ const initialBookData = [
     "title": "I is for Innocent"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grafton", 
       "firstName": "Sue"
@@ -9471,6 +10824,7 @@ const initialBookData = [
     "title": "C is for Corpse"
   }, 
   {
+    "series": "Sword of Truth 08", 
     "author": {
       "lastName": "Goodkind", 
       "firstName": "Terry"
@@ -9478,6 +10832,7 @@ const initialBookData = [
     "title": "Naked Empire"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gregory", 
       "firstName": "Philippa"
@@ -9485,6 +10840,7 @@ const initialBookData = [
     "title": "The Other Boleyn Girl"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grisham", 
       "firstName": "John"
@@ -9492,6 +10848,7 @@ const initialBookData = [
     "title": "The Brethren"
   }, 
   {
+    "series": "Sword of Truth 03", 
     "author": {
       "lastName": "Goodkind", 
       "firstName": "Terry"
@@ -9499,6 +10856,7 @@ const initialBookData = [
     "title": "Blood of the Fold"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gaiman", 
       "firstName": "Neil"
@@ -9506,6 +10864,7 @@ const initialBookData = [
     "title": "Stardust"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grafton", 
       "firstName": "Sue"
@@ -9513,6 +10872,7 @@ const initialBookData = [
     "title": "L is for Lawless"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Giffin", 
       "firstName": "Emily"
@@ -9520,6 +10880,7 @@ const initialBookData = [
     "title": "Love the One You're With"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gladwell", 
       "firstName": "Malcolm"
@@ -9527,6 +10888,7 @@ const initialBookData = [
     "title": "The Tipping Point, How Little Things Can Make a Big Difference"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grisham", 
       "firstName": "John"
@@ -9534,6 +10896,7 @@ const initialBookData = [
     "title": "The Street Lawyer"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Greene", 
       "firstName": "Robert"
@@ -9541,6 +10904,7 @@ const initialBookData = [
     "title": "48 Laws of Power"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Giffin", 
       "firstName": "Emily"
@@ -9548,6 +10912,7 @@ const initialBookData = [
     "title": "Something Borrowed"
   }, 
   {
+    "series": "Sword of Truth 01", 
     "author": {
       "lastName": "Goodkind", 
       "firstName": "Terry"
@@ -9555,6 +10920,7 @@ const initialBookData = [
     "title": "Wizard's First Rule"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grafton", 
       "firstName": "Sue"
@@ -9562,6 +10928,7 @@ const initialBookData = [
     "title": "J is for Judgement"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grisham", 
       "firstName": "John"
@@ -9569,6 +10936,7 @@ const initialBookData = [
     "title": "The Appeal"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gibson", 
       "firstName": "William"
@@ -9576,6 +10944,7 @@ const initialBookData = [
     "title": "Burning Chrome"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Green", 
       "firstName": "John"
@@ -9583,6 +10952,7 @@ const initialBookData = [
     "title": "Will Grayson, Will Grayson"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gaiman", 
       "firstName": "Neil"
@@ -9590,6 +10960,7 @@ const initialBookData = [
     "title": "Good Omens"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grafton", 
       "firstName": "Sue"
@@ -9597,6 +10968,7 @@ const initialBookData = [
     "title": "S is for Silence"
   }, 
   {
+    "series": "Smith, Seth", 
     "author": {
       "lastName": "", 
       "firstName": "Grahame"
@@ -9604,6 +10976,7 @@ const initialBookData = [
     "title": "Pride and Prejudice and Zombies"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Giffin", 
       "firstName": "Emily"
@@ -9611,6 +10984,7 @@ const initialBookData = [
     "title": "Something Blue"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Greitens", 
       "firstName": "Eric"
@@ -9618,6 +10992,7 @@ const initialBookData = [
     "title": "The Heart and the Fist"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gibson", 
       "firstName": "William"
@@ -9625,6 +11000,7 @@ const initialBookData = [
     "title": "Count Zero"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gibson", 
       "firstName": "William"
@@ -9632,6 +11008,7 @@ const initialBookData = [
     "title": "The Difference Engine"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grafton", 
       "firstName": "Sue"
@@ -9639,6 +11016,7 @@ const initialBookData = [
     "title": "F is for Fugitive"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gibson", 
       "firstName": "William"
@@ -9646,6 +11024,7 @@ const initialBookData = [
     "title": "Neuromancer"
   }, 
   {
+    "series": "Sword of Truth 04", 
     "author": {
       "lastName": "Goodkind", 
       "firstName": "Terry"
@@ -9653,6 +11032,7 @@ const initialBookData = [
     "title": "Temple of the Winds"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Grisham", 
       "firstName": "John"
@@ -9660,6 +11040,7 @@ const initialBookData = [
     "title": "Bleachers"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Gibson", 
       "firstName": "William"
@@ -9667,6 +11048,7 @@ const initialBookData = [
     "title": "Zero History"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "George", 
       "firstName": "Margaret"
@@ -9674,6 +11056,7 @@ const initialBookData = [
     "title": "The Autobiography of Henry VIII"
   }, 
   {
+    "series": "Thomas Covenant 07", 
     "author": {
       "lastName": "Donaldson", 
       "firstName": "Stephen R."
@@ -9681,6 +11064,7 @@ const initialBookData = [
     "title": "The Runes of the Earth"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dalton", 
       "firstName": "C.H."
@@ -9688,6 +11072,7 @@ const initialBookData = [
     "title": "A Practical Guide to Racism"
   }, 
   {
+    "series": "Thomas Covenant 04", 
     "author": {
       "lastName": "Donaldson", 
       "firstName": "Stephen R."
@@ -9695,6 +11080,7 @@ const initialBookData = [
     "title": "The Wounded Land"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Darwin", 
       "firstName": "Charles"
@@ -9702,6 +11088,7 @@ const initialBookData = [
     "title": "The Origin of Species"
   }, 
   {
+    "series": "Circle 04", 
     "author": {
       "lastName": "Dekker", 
       "firstName": "Ted"
@@ -9709,6 +11096,7 @@ const initialBookData = [
     "title": "Green"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dickens", 
       "firstName": "Charles"
@@ -9716,6 +11104,7 @@ const initialBookData = [
     "title": "David Copperfield"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dick", 
       "firstName": "Philip K."
@@ -9723,6 +11112,7 @@ const initialBookData = [
     "title": "Valis"
   }, 
   {
+    "series": "The Strain Trilogy 01", 
     "author": {
       "lastName": "Del Toro", 
       "firstName": "Guillermo"
@@ -9730,6 +11120,7 @@ const initialBookData = [
     "title": "The Strain"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "DeMille", 
       "firstName": "Nelson"
@@ -9737,6 +11128,7 @@ const initialBookData = [
     "title": "Night Fall"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dekker", 
       "firstName": "Ted"
@@ -9744,6 +11136,7 @@ const initialBookData = [
     "title": "The Bride Collector"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dickens", 
       "firstName": "Charles"
@@ -9751,6 +11144,7 @@ const initialBookData = [
     "title": "A Christmas Carol"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "DeMille", 
       "firstName": "Nelson"
@@ -9758,6 +11152,7 @@ const initialBookData = [
     "title": "Cathedral"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dick", 
       "firstName": "Philip K."
@@ -9765,6 +11160,7 @@ const initialBookData = [
     "title": "Do Androids Dream of Electric Sheep"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dumas", 
       "firstName": "Alexandre"
@@ -9772,6 +11168,7 @@ const initialBookData = [
     "title": "The Count of Monte Cristo"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dickens", 
       "firstName": "Charles"
@@ -9779,6 +11176,7 @@ const initialBookData = [
     "title": "Oliver Twist"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Defoe", 
       "firstName": "Daniel"
@@ -9786,6 +11184,7 @@ const initialBookData = [
     "title": "Robinson Crusoe"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dickens", 
       "firstName": "Charles"
@@ -9793,6 +11192,7 @@ const initialBookData = [
     "title": "Our Mutual Friend"
   }, 
   {
+    "series": "Circle 01", 
     "author": {
       "lastName": "Dekker", 
       "firstName": "Ted"
@@ -9800,6 +11200,7 @@ const initialBookData = [
     "title": "Black"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dostoyevsky", 
       "firstName": "Fyodor"
@@ -9807,6 +11208,7 @@ const initialBookData = [
     "title": "The Idiot"
   }, 
   {
+    "series": "Circle 02", 
     "author": {
       "lastName": "Dekker", 
       "firstName": "Ted"
@@ -9814,6 +11216,7 @@ const initialBookData = [
     "title": "Red"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "DeMille", 
       "firstName": "Nelson"
@@ -9821,6 +11224,7 @@ const initialBookData = [
     "title": "Word of Honor"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dick", 
       "firstName": "Philip K."
@@ -9828,6 +11232,7 @@ const initialBookData = [
     "title": "Flow My Tears, The Policeman Said"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dukan", 
       "firstName": "Pierre"
@@ -9835,6 +11240,7 @@ const initialBookData = [
     "title": "The Dukan Diet"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dawkins", 
       "firstName": "Richard"
@@ -9842,6 +11248,7 @@ const initialBookData = [
     "title": "The Greatest Show on Earth, The Evidence for Evolution"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dawkins", 
       "firstName": "Richard"
@@ -9849,6 +11256,7 @@ const initialBookData = [
     "title": "The Selfish Gene"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "DeMille", 
       "firstName": "Nelson"
@@ -9856,6 +11264,7 @@ const initialBookData = [
     "title": "The Lion's Game"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Diamant", 
       "firstName": "Anita"
@@ -9863,6 +11272,7 @@ const initialBookData = [
     "title": "The Red Tent"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dawkins", 
       "firstName": "Richard"
@@ -9870,6 +11280,7 @@ const initialBookData = [
     "title": "The Ancestor's Tale"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dick", 
       "firstName": "Philip K."
@@ -9877,6 +11288,7 @@ const initialBookData = [
     "title": "The Man in the High Castle"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dreiser", 
       "firstName": "Theodore"
@@ -9884,6 +11296,7 @@ const initialBookData = [
     "title": "Sister Carrie"
   }, 
   {
+    "series": "Thomas Covenant 03", 
     "author": {
       "lastName": "Donaldson", 
       "firstName": "Stephen R."
@@ -9891,6 +11304,7 @@ const initialBookData = [
     "title": "The Power That Preserves"
   }, 
   {
+    "series": "Thomas Covenant 09", 
     "author": {
       "lastName": "Donaldson", 
       "firstName": "Stephen R."
@@ -9898,6 +11312,7 @@ const initialBookData = [
     "title": "Against All Things Ending"
   }, 
   {
+    "series": "Thomas Covenant 05", 
     "author": {
       "lastName": "Donaldson", 
       "firstName": "Stephen R."
@@ -9905,6 +11320,7 @@ const initialBookData = [
     "title": "The One Tree"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "DeLillo", 
       "firstName": "Don"
@@ -9912,6 +11328,7 @@ const initialBookData = [
     "title": "Underworld"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dick", 
       "firstName": "Philip K."
@@ -9919,6 +11336,7 @@ const initialBookData = [
     "title": "The Three Stigmata of Palmer Eldritch"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "DeMille", 
       "firstName": "Nelson"
@@ -9926,6 +11344,7 @@ const initialBookData = [
     "title": "Wild Fire"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dumas", 
       "firstName": "Alexandre"
@@ -9933,6 +11352,7 @@ const initialBookData = [
     "title": "The Three Musketeers"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dunn", 
       "firstName": "Katherine"
@@ -9940,6 +11360,7 @@ const initialBookData = [
     "title": "Geek Love"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dostoyevsky", 
       "firstName": "Fyodor"
@@ -9947,6 +11368,7 @@ const initialBookData = [
     "title": "The Brothers Karamazov"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Diaz", 
       "firstName": "Junot"
@@ -9954,6 +11376,7 @@ const initialBookData = [
     "title": "The Brief Wondrous Life of Oscar Wao"
   }, 
   {
+    "series": "Thomas Covenant 08", 
     "author": {
       "lastName": "Donaldson", 
       "firstName": "Stephen R."
@@ -9961,6 +11384,7 @@ const initialBookData = [
     "title": "The Fatal Revenant"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dick", 
       "firstName": "Philip K."
@@ -9968,6 +11392,7 @@ const initialBookData = [
     "title": "The Minority Report"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "DeMille", 
       "firstName": "Nelson"
@@ -9975,6 +11400,7 @@ const initialBookData = [
     "title": "Plum Island"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Doyle", 
       "firstName": "Arthur Conan"
@@ -9982,6 +11408,7 @@ const initialBookData = [
     "title": "Sherlock Holmes Illustrated"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dickens", 
       "firstName": "Charles"
@@ -9989,6 +11416,7 @@ const initialBookData = [
     "title": "Hard Times"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dickens", 
       "firstName": "Charles"
@@ -9996,6 +11424,7 @@ const initialBookData = [
     "title": "A Tale of Two Cities"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "DeMille", 
       "firstName": "Nelson"
@@ -10003,6 +11432,7 @@ const initialBookData = [
     "title": "Up Country"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dawkins", 
       "firstName": "Richard"
@@ -10010,6 +11440,7 @@ const initialBookData = [
     "title": "The God Delusion"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dahl", 
       "firstName": "Roald"
@@ -10017,6 +11448,7 @@ const initialBookData = [
     "title": "Charlie and the Chocolate Factory"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dostoyevsky", 
       "firstName": "Fyodor"
@@ -10024,6 +11456,7 @@ const initialBookData = [
     "title": "Crime and Punishment"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Diamond", 
       "firstName": "Jared"
@@ -10031,6 +11464,7 @@ const initialBookData = [
     "title": "Guns, Germs and Steel"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Defoe", 
       "firstName": "Daniel"
@@ -10038,6 +11472,7 @@ const initialBookData = [
     "title": "Moll Flanders"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "DeMille", 
       "firstName": "Nelson"
@@ -10045,6 +11480,7 @@ const initialBookData = [
     "title": "The Lion"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dick", 
       "firstName": "Philip K."
@@ -10052,6 +11488,7 @@ const initialBookData = [
     "title": "A Scanner Darkly"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Diamond", 
       "firstName": "Jared"
@@ -10059,6 +11496,7 @@ const initialBookData = [
     "title": "Collapse"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Donaldson", 
       "firstName": "Stephen R."
@@ -10066,6 +11504,7 @@ const initialBookData = [
     "title": "Earth War"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dick", 
       "firstName": "Philip K."
@@ -10073,6 +11512,7 @@ const initialBookData = [
     "title": "Ubik"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dickens", 
       "firstName": "Charles"
@@ -10080,6 +11520,7 @@ const initialBookData = [
     "title": "Bleak House"
   }, 
   {
+    "series": "Thomas Covenant 06", 
     "author": {
       "lastName": "Donaldson", 
       "firstName": "Stephen R."
@@ -10087,6 +11528,7 @@ const initialBookData = [
     "title": "White Gold Wielder"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "DeLillo", 
       "firstName": "Don"
@@ -10094,6 +11536,7 @@ const initialBookData = [
     "title": "White Noise"
   }, 
   {
+    "series": "Thomas Covenant 01", 
     "author": {
       "lastName": "Donaldson", 
       "firstName": "Stephen R."
@@ -10101,6 +11544,7 @@ const initialBookData = [
     "title": "Lord Foul's Bane"
   }, 
   {
+    "series": "Circle 03", 
     "author": {
       "lastName": "Dekker", 
       "firstName": "Ted"
@@ -10108,6 +11552,7 @@ const initialBookData = [
     "title": "White"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dickens", 
       "firstName": "Charles"
@@ -10115,6 +11560,7 @@ const initialBookData = [
     "title": "Great Expectations"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "DeMille", 
       "firstName": "Nelson"
@@ -10122,6 +11568,7 @@ const initialBookData = [
     "title": "The General's Daughter"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Donoghue", 
       "firstName": "Emma"
@@ -10129,6 +11576,7 @@ const initialBookData = [
     "title": "Room"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "DeMille", 
       "firstName": "Nelson"
@@ -10136,6 +11584,7 @@ const initialBookData = [
     "title": "The Gold Coast"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dumas", 
       "firstName": "Alexandre"
@@ -10143,6 +11592,7 @@ const initialBookData = [
     "title": "The Man in the Iron Mask"
   }, 
   {
+    "series": "The Strain Trilogy 02", 
     "author": {
       "lastName": "Del Toro", 
       "firstName": "Guillermo"
@@ -10150,6 +11600,7 @@ const initialBookData = [
     "title": "The Fall"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Douglass", 
       "firstName": "Frederick"
@@ -10157,6 +11608,7 @@ const initialBookData = [
     "title": "Narrative of the Life of Frederick Douglass"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Demick", 
       "firstName": "Barbara"
@@ -10164,6 +11616,7 @@ const initialBookData = [
     "title": "Nothing to Envy"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Dekker", 
       "firstName": "Ted"
@@ -10171,6 +11624,7 @@ const initialBookData = [
     "title": "Thr3e"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Fitzgerald", 
       "firstName": "F. Scott"
@@ -10178,6 +11632,7 @@ const initialBookData = [
     "title": "The Great Gatsby"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Franzen", 
       "firstName": "Jonathan"
@@ -10185,6 +11640,7 @@ const initialBookData = [
     "title": "Freedom"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Feist", 
       "firstName": "Raymond E."
@@ -10192,6 +11648,7 @@ const initialBookData = [
     "title": "Magician, Apprentice"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Ferguson", 
       "firstName": "Niall"
@@ -10199,6 +11656,7 @@ const initialBookData = [
     "title": "The Ascent of Money"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Frey", 
       "firstName": "James"
@@ -10206,6 +11664,7 @@ const initialBookData = [
     "title": "Bright Shiny Morning"
   }, 
   {
+    "series": "Ranger's Apprentice 08", 
     "author": {
       "lastName": "Flanagan", 
       "firstName": "John"
@@ -10213,6 +11672,7 @@ const initialBookData = [
     "title": "The Kings of Clonmel"
   }, 
   {
+    "series": "Ranger's Apprentice 06", 
     "author": {
       "lastName": "Flanagan", 
       "firstName": "John"
@@ -10220,6 +11680,7 @@ const initialBookData = [
     "title": "The Siege of Macindaw"
   }, 
   {
+    "series": "Ranger's Apprentice 03", 
     "author": {
       "lastName": "Flanagan", 
       "firstName": "John"
@@ -10227,6 +11688,7 @@ const initialBookData = [
     "title": "The Icebound Land"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Franzen", 
       "firstName": "Jonathan"
@@ -10234,6 +11696,7 @@ const initialBookData = [
     "title": "The Corrections"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Fox", 
       "firstName": "Michael J."
@@ -10241,6 +11704,7 @@ const initialBookData = [
     "title": "Always Looking Up, The Adventures of an Incurable Optimist"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Foer", 
       "firstName": "Jonathan Safran"
@@ -10248,6 +11712,7 @@ const initialBookData = [
     "title": "Extremely Loud & Incredibly Close"
   }, 
   {
+    "series": "Ranger's Apprentice 05", 
     "author": {
       "lastName": "Flanagan", 
       "firstName": "John"
@@ -10255,6 +11720,7 @@ const initialBookData = [
     "title": "The Sorcerer of the North"
   }, 
   {
+    "series": "Thursday Next 06", 
     "author": {
       "lastName": "Fforde", 
       "firstName": "Jasper"
@@ -10262,6 +11728,7 @@ const initialBookData = [
     "title": "One of Our Thursdays is Missing"
   }, 
   {
+    "series": "Ranger's Apprentice 01", 
     "author": {
       "lastName": "Flanagan", 
       "firstName": "John"
@@ -10269,6 +11736,7 @@ const initialBookData = [
     "title": "The Ruins of Gorlan"
   }, 
   {
+    "series": "Thursday Next 05", 
     "author": {
       "lastName": "Fforde", 
       "firstName": "Jasper"
@@ -10276,6 +11744,7 @@ const initialBookData = [
     "title": "First Among Sequels"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Faber", 
       "firstName": "Michel"
@@ -10283,6 +11752,7 @@ const initialBookData = [
     "title": "The Crimson Petal and the White"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Farmer", 
       "firstName": "Philip Jose"
@@ -10290,6 +11760,7 @@ const initialBookData = [
     "title": "To Your Scattered Bodies Go"
   }, 
   {
+    "series": "Ranger's Apprentice 04", 
     "author": {
       "lastName": "Flanagan", 
       "firstName": "John"
@@ -10297,6 +11768,7 @@ const initialBookData = [
     "title": "The Battle for Skandia"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Fitzgerald", 
       "firstName": "F. Scott"
@@ -10304,6 +11776,7 @@ const initialBookData = [
     "title": "Tender is the Night"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Flaubert", 
       "firstName": "Gustave"
@@ -10311,6 +11784,7 @@ const initialBookData = [
     "title": "Sentimental Education"
   }, 
   {
+    "series": "The Civil War Vol. 1", 
     "author": {
       "lastName": "Foote", 
       "firstName": "Shelby"
@@ -10318,6 +11792,7 @@ const initialBookData = [
     "title": "Fort Sumter to Perryville"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Frey", 
       "firstName": "James"
@@ -10325,6 +11800,7 @@ const initialBookData = [
     "title": "The Key"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Follett", 
       "firstName": "Ken"
@@ -10332,6 +11808,7 @@ const initialBookData = [
     "title": "The Key to Rebecca"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "French", 
       "firstName": "Tana"
@@ -10339,6 +11816,7 @@ const initialBookData = [
     "title": "Faithful Place"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Follett", 
       "firstName": "Ken"
@@ -10346,6 +11824,7 @@ const initialBookData = [
     "title": "Fall of Giants"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Feynman", 
       "firstName": "Richard P."
@@ -10353,6 +11832,7 @@ const initialBookData = [
     "title": "Surely You're Joking, Mr. Feynman!"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Feist", 
       "firstName": "Raymond E."
@@ -10360,6 +11840,7 @@ const initialBookData = [
     "title": "A Kingdom Besieged"
   }, 
   {
+    "series": "The 4", 
     "author": {
       "lastName": "Ferriss", 
       "firstName": "Timothy"
@@ -10367,6 +11848,7 @@ const initialBookData = [
     "title": "Hour Workweek"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Frank", 
       "firstName": "Pat"
@@ -10374,6 +11856,7 @@ const initialBookData = [
     "title": "Alas, Babylon"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Follett", 
       "firstName": "Ken"
@@ -10381,6 +11864,7 @@ const initialBookData = [
     "title": "World Without End"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Frank", 
       "firstName": "Anne"
@@ -10388,6 +11872,7 @@ const initialBookData = [
     "title": "The Diary of a Young Girl"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Ferguson", 
       "firstName": "Craig"
@@ -10395,6 +11880,7 @@ const initialBookData = [
     "title": "American on Purpose, The Improbable Adventures of an Unlikely Patriot"
   }, 
   {
+    "series": "Ranger's Apprentice 09", 
     "author": {
       "lastName": "Flanagan", 
       "firstName": "John"
@@ -10402,6 +11888,7 @@ const initialBookData = [
     "title": "Halt's Peril"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Foer", 
       "firstName": "Joshua"
@@ -10409,6 +11896,7 @@ const initialBookData = [
     "title": "Moonwalking With Einstein, The Art and Science of Remembering Everything"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Friedlander", 
       "firstName": "Judah"
@@ -10416,6 +11904,7 @@ const initialBookData = [
     "title": "How to Beat Up Anybody"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "French", 
       "firstName": "Tana"
@@ -10423,6 +11912,7 @@ const initialBookData = [
     "title": "The Likeness"
   }, 
   {
+    "series": "Thursday Next 01", 
     "author": {
       "lastName": "Fforde", 
       "firstName": "Jasper"
@@ -10430,6 +11920,7 @@ const initialBookData = [
     "title": "The Eyre Affair"
   }, 
   {
+    "series": "The Civil War Vol. 3", 
     "author": {
       "lastName": "Foote", 
       "firstName": "Shelby"
@@ -10437,6 +11928,7 @@ const initialBookData = [
     "title": "Red River to Appomattox"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Flaubert", 
       "firstName": "Gustave"
@@ -10444,6 +11936,7 @@ const initialBookData = [
     "title": "Madame Bovary"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Frost", 
       "firstName": "Robert"
@@ -10451,6 +11944,7 @@ const initialBookData = [
     "title": "The Road Not Taken"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Fabiano", 
       "firstName": "Laurie"
@@ -10458,6 +11952,7 @@ const initialBookData = [
     "title": "Elizabeth Street"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Fitzgerald", 
       "firstName": "F. Scott"
@@ -10465,6 +11960,7 @@ const initialBookData = [
     "title": "The Beautiful and Damned"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Follett", 
       "firstName": "Ken"
@@ -10472,6 +11968,7 @@ const initialBookData = [
     "title": "Jackdaws"
   }, 
   {
+    "series": "The 4", 
     "author": {
       "lastName": "Ferriss", 
       "firstName": "Timothy"
@@ -10479,6 +11976,7 @@ const initialBookData = [
     "title": "Hour Body"
   }, 
   {
+    "series": "Thursday Next 02", 
     "author": {
       "lastName": "Fforde", 
       "firstName": "Jasper"
@@ -10486,6 +11984,7 @@ const initialBookData = [
     "title": "Lost in a Good Book"
   }, 
   {
+    "series": "Thursday Next 04", 
     "author": {
       "lastName": "Fforde", 
       "firstName": "Jasper"
@@ -10493,6 +11992,7 @@ const initialBookData = [
     "title": "Something Rotten"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Frazier", 
       "firstName": "Charles"
@@ -10500,6 +12000,7 @@ const initialBookData = [
     "title": "Cold Mountain"
   }, 
   {
+    "series": "Ranger's Apprentice 07", 
     "author": {
       "lastName": "Flanagan", 
       "firstName": "John"
@@ -10507,6 +12008,7 @@ const initialBookData = [
     "title": "Erak's Ransom"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Follett", 
       "firstName": "Ken"
@@ -10514,6 +12016,7 @@ const initialBookData = [
     "title": "The Pillars of the Earth"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Fowles", 
       "firstName": "John"
@@ -10521,6 +12024,7 @@ const initialBookData = [
     "title": "The French Lieutenant's Woman"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Foer", 
       "firstName": "Jonathan Safran"
@@ -10528,6 +12032,7 @@ const initialBookData = [
     "title": "Extremely Loud and Incredibly Close"
   }, 
   {
+    "series": "The Civil War Vol. 2", 
     "author": {
       "lastName": "Foote", 
       "firstName": "Shelby"
@@ -10535,6 +12040,7 @@ const initialBookData = [
     "title": "Fredericksburg to Meridian"
   }, 
   {
+    "series": "Ranger's Apprentice 02", 
     "author": {
       "lastName": "Flanagan", 
       "firstName": "John"
@@ -10542,6 +12048,7 @@ const initialBookData = [
     "title": "The Burning Bridge"
   }, 
   {
+    "series": "Thursday Next 03", 
     "author": {
       "lastName": "Fforde", 
       "firstName": "Jasper"
@@ -10549,6 +12056,7 @@ const initialBookData = [
     "title": "The Well of Lost Plots"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Fukuyama", 
       "firstName": "Francis"
@@ -10556,6 +12064,7 @@ const initialBookData = [
     "title": "Origins of Political Order"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Ford", 
       "firstName": "Jamie"
@@ -10563,6 +12072,7 @@ const initialBookData = [
     "title": "Hotel on the Corner of Bitter and Sweet"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Fielding", 
       "firstName": "Helen"
@@ -10570,6 +12080,7 @@ const initialBookData = [
     "title": "Bridget Jones's Diary"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Flynn", 
       "firstName": "Gillian"
@@ -10577,6 +12088,7 @@ const initialBookData = [
     "title": "Dark Places"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Follett", 
       "firstName": "Ken"
@@ -10584,6 +12096,7 @@ const initialBookData = [
     "title": "The Man from St. Petersburg"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Frey", 
       "firstName": "James"
@@ -10591,6 +12104,7 @@ const initialBookData = [
     "title": "A Million Little Pieces"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Flanagan", 
       "firstName": "John"
@@ -10598,6 +12112,7 @@ const initialBookData = [
     "title": "Ja"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Fey", 
       "firstName": "Tina"
@@ -10605,6 +12120,7 @@ const initialBookData = [
     "title": "Bossypants"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Fitzgerald", 
       "firstName": "F. Scott"
@@ -10612,6 +12128,7 @@ const initialBookData = [
     "title": "This Side of Paradise"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "French", 
       "firstName": "Tana"
@@ -10619,6 +12136,7 @@ const initialBookData = [
     "title": "In the Woods"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Foer", 
       "firstName": "Jonathan Safran"
@@ -10626,6 +12144,7 @@ const initialBookData = [
     "title": "Eating Animals"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Smith", 
       "firstName": "Patti"
@@ -10633,6 +12152,7 @@ const initialBookData = [
     "title": "Just Kids"
   }, 
   {
+    "series": "The Baroque Cycle 03", 
     "author": {
       "lastName": "Stephenson", 
       "firstName": "Neal"
@@ -10640,6 +12160,7 @@ const initialBookData = [
     "title": "The System of the World"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Snyder", 
       "firstName": "Blake"
@@ -10647,6 +12168,7 @@ const initialBookData = [
     "title": "Save the Cat!"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Stegner", 
       "firstName": "Wallace"
@@ -10654,6 +12176,7 @@ const initialBookData = [
     "title": "Angle of Repose"
   }, 
   {
+    "series": "The Baroque Cycle 01", 
     "author": {
       "lastName": "Stephenson", 
       "firstName": "Neal"
@@ -10661,6 +12184,7 @@ const initialBookData = [
     "title": "Quicksilver"
   }, 
   {
+    "series": "1", 
     "author": {
       "lastName": "Stroud", 
       "firstName": "Jonathan"
@@ -10668,6 +12192,7 @@ const initialBookData = [
     "title": "The Amulet of Samarkand"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sebold", 
       "firstName": "Alice"
@@ -10675,6 +12200,7 @@ const initialBookData = [
     "title": "The Lovely Bones"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Stephenson", 
       "firstName": "Neal"
@@ -10682,6 +12208,7 @@ const initialBookData = [
     "title": "The Diamond Age"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Smith", 
       "firstName": "Scott"
@@ -10689,6 +12216,7 @@ const initialBookData = [
     "title": "A Simple Plan"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Shelley", 
       "firstName": "Mary"
@@ -10696,6 +12224,7 @@ const initialBookData = [
     "title": "Frankenstein"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Scalzi", 
       "firstName": "John"
@@ -10703,6 +12232,7 @@ const initialBookData = [
     "title": "The Android's Dream"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Saylor", 
       "firstName": "Steven"
@@ -10710,6 +12240,7 @@ const initialBookData = [
     "title": "Roma"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Salinger", 
       "firstName": "J.D."
@@ -10717,6 +12248,7 @@ const initialBookData = [
     "title": "The Catcher in the Rye"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Snyder", 
       "firstName": "Timothy"
@@ -10724,6 +12256,7 @@ const initialBookData = [
     "title": "Bloodlands, Europe Between Hitler and Stalin"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sparks", 
       "firstName": "Nicholas"
@@ -10731,6 +12264,7 @@ const initialBookData = [
     "title": "Dear John"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Solzhenitsyn", 
       "firstName": "Alexander"
@@ -10738,6 +12272,7 @@ const initialBookData = [
     "title": "One Day in the Life of Ivan Denisovich"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Stephenson", 
       "firstName": "Neal"
@@ -10745,6 +12280,7 @@ const initialBookData = [
     "title": "Cryptonomicon"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Stein", 
       "firstName": "Garth"
@@ -10752,6 +12288,7 @@ const initialBookData = [
     "title": "The Art of Racing in the Rain###"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Silverman", 
       "firstName": "Sarah"
@@ -10759,6 +12296,7 @@ const initialBookData = [
     "title": "The Bedwetter"
   }, 
   {
+    "series": "Old Man's War 03", 
     "author": {
       "lastName": "Scalzi", 
       "firstName": "John"
@@ -10766,6 +12304,7 @@ const initialBookData = [
     "title": "The Last Colony"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Styron", 
       "firstName": "William"
@@ -10773,6 +12312,7 @@ const initialBookData = [
     "title": "Sophie's Choice"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Simmons", 
       "firstName": "Dan"
@@ -10780,6 +12320,7 @@ const initialBookData = [
     "title": "Olympos"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Shaw", 
       "firstName": "Bernard"
@@ -10787,6 +12328,7 @@ const initialBookData = [
     "title": "Pygmalion"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Shteyngart", 
       "firstName": "Gary"
@@ -10794,6 +12336,7 @@ const initialBookData = [
     "title": "Super Sad True Love Story"
   }, 
   {
+    "series": "Hyperion Cantos 02", 
     "author": {
       "lastName": "Simmons", 
       "firstName": "Dan"
@@ -10801,6 +12344,7 @@ const initialBookData = [
     "title": "The Fall of Hyperion"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Steinbeck", 
       "firstName": "John"
@@ -10808,6 +12352,7 @@ const initialBookData = [
     "title": "Of Mice and Men"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Schiff", 
       "firstName": "Stacy"
@@ -10815,6 +12360,7 @@ const initialBookData = [
     "title": "Cleopatra"
   }, 
   {
+    "series": "A Series of Unfortunate Events 02", 
     "author": {
       "lastName": "Snicket", 
       "firstName": "Lemony"
@@ -10822,6 +12368,7 @@ const initialBookData = [
     "title": "The Reptile Room"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sixx", 
       "firstName": "Nikki"
@@ -10829,6 +12376,7 @@ const initialBookData = [
     "title": "The Heroin Diaries"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Shakespeare", 
       "firstName": "William"
@@ -10836,6 +12384,7 @@ const initialBookData = [
     "title": "The Winter's Tale"
   }, 
   {
+    "series": "Hyperion Cantos 04", 
     "author": {
       "lastName": "Simmons", 
       "firstName": "Dan"
@@ -10843,6 +12392,7 @@ const initialBookData = [
     "title": "The Rise of Endymion"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Stein", 
       "firstName": "Sol"
@@ -10850,6 +12400,7 @@ const initialBookData = [
     "title": "Stein on Writing"
   }, 
   {
+    "series": "Old Man's War 02", 
     "author": {
       "lastName": "Scalzi", 
       "firstName": "John"
@@ -10857,6 +12408,7 @@ const initialBookData = [
     "title": "The Ghost Brigades"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Straub", 
       "firstName": "Peter"
@@ -10864,6 +12416,7 @@ const initialBookData = [
     "title": "Ghost Story"
   }, 
   {
+    "series": "The Baroque Cycle 02", 
     "author": {
       "lastName": "Stephenson", 
       "firstName": "Neal"
@@ -10871,6 +12424,7 @@ const initialBookData = [
     "title": "The Confusion"
   }, 
   {
+    "series": "A Series of Unfortunate Events 07", 
     "author": {
       "lastName": "Snicket", 
       "firstName": "Lemony"
@@ -10878,6 +12432,7 @@ const initialBookData = [
     "title": "The Vile Village"
   }, 
   {
+    "series": "A Series of Unfortunate Events 10", 
     "author": {
       "lastName": "Snicket", 
       "firstName": "Lemony"
@@ -10885,6 +12440,7 @@ const initialBookData = [
     "title": "The Slippery Slope"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sedaris", 
       "firstName": "David"
@@ -10892,6 +12448,7 @@ const initialBookData = [
     "title": "Dress Your Family in Corduroy and Denim"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Seton", 
       "firstName": "Anya"
@@ -10899,6 +12456,7 @@ const initialBookData = [
     "title": "Katherine"
   }, 
   {
+    "series": "A Series of Unfortunate Events 01", 
     "author": {
       "lastName": "Snicket", 
       "firstName": "Lemony"
@@ -10906,6 +12464,7 @@ const initialBookData = [
     "title": "The Bad Beginning"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Shakespeare", 
       "firstName": "William"
@@ -10913,6 +12472,7 @@ const initialBookData = [
     "title": "Henry IV (Part 1)"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sawyer", 
       "firstName": "Robert J."
@@ -10920,6 +12480,7 @@ const initialBookData = [
     "title": "Factoring Humanity"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sagan", 
       "firstName": "Carl"
@@ -10927,6 +12488,7 @@ const initialBookData = [
     "title": "Cosmos"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Smith", 
       "firstName": "Betty"
@@ -10934,6 +12496,7 @@ const initialBookData = [
     "title": "A Tree Grows in Brooklyn"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sendak", 
       "firstName": "Maurice"
@@ -10941,6 +12504,7 @@ const initialBookData = [
     "title": "Where The Wild Things Are"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Shakespeare", 
       "firstName": "William"
@@ -10948,6 +12512,7 @@ const initialBookData = [
     "title": "Hamlet"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Shakespeare", 
       "firstName": "William"
@@ -10955,6 +12520,7 @@ const initialBookData = [
     "title": "The Merchant of Venice"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Strout", 
       "firstName": "Elizabeth"
@@ -10962,6 +12528,7 @@ const initialBookData = [
     "title": "Olive Kitteridge"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Simmons", 
       "firstName": "Dan"
@@ -10969,6 +12536,7 @@ const initialBookData = [
     "title": "Drood"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Stockett", 
       "firstName": "Kathryn"
@@ -10976,6 +12544,7 @@ const initialBookData = [
     "title": "The Help"
   }, 
   {
+    "series": "Arthurian Saga 02", 
     "author": {
       "lastName": "Stewart", 
       "firstName": "Mary"
@@ -10983,6 +12552,7 @@ const initialBookData = [
     "title": "The Hollow Hills"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sedaris", 
       "firstName": "David"
@@ -10990,6 +12560,7 @@ const initialBookData = [
     "title": "Squirrel Seeks Chipmunk"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Shute", 
       "firstName": "Nevil"
@@ -10997,6 +12568,7 @@ const initialBookData = [
     "title": "On The Beach"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Shute", 
       "firstName": "Nevil"
@@ -11004,6 +12576,7 @@ const initialBookData = [
     "title": "A Town Like Alice"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sanderson", 
       "firstName": "Brandon"
@@ -11011,6 +12584,7 @@ const initialBookData = [
     "title": "Elantris"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Shakespeare", 
       "firstName": "William"
@@ -11018,6 +12592,7 @@ const initialBookData = [
     "title": "Romeo and Juliet"
   }, 
   {
+    "series": "Arthurian Saga 03", 
     "author": {
       "lastName": "Stewart", 
       "firstName": "Mary"
@@ -11025,6 +12600,7 @@ const initialBookData = [
     "title": "The Last Enchantment"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Setterfield", 
       "firstName": "Diane"
@@ -11032,6 +12608,7 @@ const initialBookData = [
     "title": "The Thirteenth Tale"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sparks", 
       "firstName": "Nicholas"
@@ -11039,6 +12616,7 @@ const initialBookData = [
     "title": "The Notebook"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sagan", 
       "firstName": "Carl"
@@ -11046,6 +12624,7 @@ const initialBookData = [
     "title": "Contact"
   }, 
   {
+    "series": "Old Man's War 01", 
     "author": {
       "lastName": "Scalzi", 
       "firstName": "John"
@@ -11053,6 +12632,7 @@ const initialBookData = [
     "title": "Old Man's War"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sagan", 
       "firstName": "Carl"
@@ -11060,6 +12640,7 @@ const initialBookData = [
     "title": "The Demon Haunted World"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sagan", 
       "firstName": "Carl"
@@ -11067,6 +12648,7 @@ const initialBookData = [
     "title": "Pale Blue Dot"
   }, 
   {
+    "series": "A Series of Unfortunate Events 08", 
     "author": {
       "lastName": "Snicket", 
       "firstName": "Lemony"
@@ -11074,6 +12656,7 @@ const initialBookData = [
     "title": "The Hostile Hospital"
   }, 
   {
+    "series": "Hyperion Cantos 01", 
     "author": {
       "lastName": "Simmons", 
       "firstName": "Dan"
@@ -11081,6 +12664,7 @@ const initialBookData = [
     "title": "Hyperion"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Stevenson", 
       "firstName": "Robert Lous"
@@ -11088,6 +12672,7 @@ const initialBookData = [
     "title": "The Strange Case of Dr. Jekyll and Mr. Hyde"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Saramago", 
       "firstName": "Jose"
@@ -11095,6 +12680,7 @@ const initialBookData = [
     "title": "Blindness"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Shakespeare", 
       "firstName": "William"
@@ -11102,6 +12688,7 @@ const initialBookData = [
     "title": "The Tempest"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Simmons", 
       "firstName": "Dan"
@@ -11109,6 +12696,7 @@ const initialBookData = [
     "title": "Summer of Night"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sparks", 
       "firstName": "Nicholas"
@@ -11116,6 +12704,7 @@ const initialBookData = [
     "title": "Message in a Bottle"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sinclair", 
       "firstName": "Upton"
@@ -11123,6 +12712,7 @@ const initialBookData = [
     "title": "The Jungle"
   }, 
   {
+    "series": "A Series of Unfortunate Events 12", 
     "author": {
       "lastName": "Snicket", 
       "firstName": "Lemony"
@@ -11130,6 +12720,7 @@ const initialBookData = [
     "title": "The Penultimate Peril"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sparks", 
       "firstName": "Nicholas"
@@ -11137,6 +12728,7 @@ const initialBookData = [
     "title": "Nights in Rodanthe"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Shermer", 
       "firstName": "Michael"
@@ -11144,6 +12736,7 @@ const initialBookData = [
     "title": "Why People Believe Weird Things"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Stephenson", 
       "firstName": "Neal"
@@ -11151,6 +12744,7 @@ const initialBookData = [
     "title": "Snow Crash"
   }, 
   {
+    "series": "Arthurian Saga 04", 
     "author": {
       "lastName": "Stewart", 
       "firstName": "Mary"
@@ -11158,6 +12752,7 @@ const initialBookData = [
     "title": "The Wicked Day"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Scott", 
       "firstName": "Walter"
@@ -11165,6 +12760,7 @@ const initialBookData = [
     "title": "Ivanhoe"
   }, 
   {
+    "series": "A Series of Unfortunate Events 05", 
     "author": {
       "lastName": "Snicket", 
       "firstName": "Lemony"
@@ -11172,6 +12768,7 @@ const initialBookData = [
     "title": "The Austere Academy"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Stoker", 
       "firstName": "Bram"
@@ -11179,6 +12776,7 @@ const initialBookData = [
     "title": "Dracula"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Strauss", 
       "firstName": "Neil"
@@ -11186,6 +12784,7 @@ const initialBookData = [
     "title": "The Game"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Shakespeare", 
       "firstName": "William"
@@ -11193,6 +12792,7 @@ const initialBookData = [
     "title": "Othello"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "", 
       "firstName": "Sapphire"
@@ -11200,6 +12800,7 @@ const initialBookData = [
     "title": "Push"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Steinbeck", 
       "firstName": "John"
@@ -11207,6 +12808,7 @@ const initialBookData = [
     "title": "Tortilla Flat"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sparks", 
       "firstName": "Nicholas"
@@ -11214,6 +12816,7 @@ const initialBookData = [
     "title": "Safe Haven"
   }, 
   {
+    "series": "A Series of Unfortunate Events 04", 
     "author": {
       "lastName": "Snicket", 
       "firstName": "Lemony"
@@ -11221,6 +12824,7 @@ const initialBookData = [
     "title": "The Miserable Mill"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Simmons", 
       "firstName": "Dan"
@@ -11228,6 +12832,7 @@ const initialBookData = [
     "title": "Ilium"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Stevenson", 
       "firstName": "Robert Louis"
@@ -11235,6 +12840,7 @@ const initialBookData = [
     "title": "Treasure Island"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Steinbeck", 
       "firstName": "John"
@@ -11242,6 +12848,7 @@ const initialBookData = [
     "title": "Cannery Row"
   }, 
   {
+    "series": "A Series of Unfortunate Events 13", 
     "author": {
       "lastName": "Snicket", 
       "firstName": "Lemony"
@@ -11249,6 +12856,7 @@ const initialBookData = [
     "title": "The End"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sparks", 
       "firstName": "Nicholas"
@@ -11256,6 +12864,7 @@ const initialBookData = [
     "title": "A Bend in the Road"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sparks", 
       "firstName": "Nicholas"
@@ -11263,6 +12872,7 @@ const initialBookData = [
     "title": "A Walk to Remember"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sass", 
       "firstName": "Erik"
@@ -11270,6 +12880,7 @@ const initialBookData = [
     "title": "The Mental Floss History of the World"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sparks", 
       "firstName": "Nicholas"
@@ -11277,6 +12888,7 @@ const initialBookData = [
     "title": "At First Sight"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sedaris", 
       "firstName": "David"
@@ -11284,6 +12896,7 @@ const initialBookData = [
     "title": "Naked"
   }, 
   {
+    "series": "3", 
     "author": {
       "lastName": "Stroud", 
       "firstName": "Jonathan"
@@ -11291,6 +12904,7 @@ const initialBookData = [
     "title": "Ptolemy's Gate"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sigler", 
       "firstName": "Scott"
@@ -11298,6 +12912,7 @@ const initialBookData = [
     "title": "Infected"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Stephenson", 
       "firstName": "Neal"
@@ -11305,6 +12920,7 @@ const initialBookData = [
     "title": "Anathem"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Stowe", 
       "firstName": "Harriet Beecher"
@@ -11312,6 +12928,7 @@ const initialBookData = [
     "title": "Uncle Tom's Cabin"
   }, 
   {
+    "series": "A Series of Unfortunate Events 06", 
     "author": {
       "lastName": "Snicket", 
       "firstName": "Lemony"
@@ -11319,6 +12936,7 @@ const initialBookData = [
     "title": "The Ersatz Elevator"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Steinbeck", 
       "firstName": "John"
@@ -11326,6 +12944,7 @@ const initialBookData = [
     "title": "The Pearl"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Steakley", 
       "firstName": "John"
@@ -11333,6 +12952,7 @@ const initialBookData = [
     "title": "Armor"
   }, 
   {
+    "series": "A Series of Unfortunate Events 11", 
     "author": {
       "lastName": "Snicket", 
       "firstName": "Lemony"
@@ -11340,6 +12960,7 @@ const initialBookData = [
     "title": "The Grim Grotto"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Singh", 
       "firstName": "Simon"
@@ -11347,6 +12968,7 @@ const initialBookData = [
     "title": "The Code Book"
   }, 
   {
+    "series": "4", 
     "author": {
       "lastName": "Stroud", 
       "firstName": "Jonathan"
@@ -11354,6 +12976,7 @@ const initialBookData = [
     "title": "The Ring of Solomon"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sawyer", 
       "firstName": "Robert J."
@@ -11361,6 +12984,7 @@ const initialBookData = [
     "title": "Flashforward"
   }, 
   {
+    "series": "Arthurian Saga 01", 
     "author": {
       "lastName": "Stewart", 
       "firstName": "Mary"
@@ -11368,6 +12992,7 @@ const initialBookData = [
     "title": "The Crystal Cave"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sharlet", 
       "firstName": "Jeff"
@@ -11375,6 +13000,7 @@ const initialBookData = [
     "title": "The Family"
   }, 
   {
+    "series": "Hyperion Cantos 03", 
     "author": {
       "lastName": "Simmons", 
       "firstName": "Dan"
@@ -11382,6 +13008,7 @@ const initialBookData = [
     "title": "Endymion"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Steinbeck", 
       "firstName": "John"
@@ -11389,6 +13016,7 @@ const initialBookData = [
     "title": "East of Eden"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Simmons", 
       "firstName": "Dan"
@@ -11396,6 +13024,7 @@ const initialBookData = [
     "title": "Carrion Comfort"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Shaffer", 
       "firstName": "Mary Ann"
@@ -11403,6 +13032,7 @@ const initialBookData = [
     "title": "The Guernsey Literary and Potato Peel Pie Society"
   }, 
   {
+    "series": "Mistborn 01", 
     "author": {
       "lastName": "Sanderson", 
       "firstName": "Brandon"
@@ -11410,6 +13040,7 @@ const initialBookData = [
     "title": "Mistborn"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sanderson", 
       "firstName": "Brandon"
@@ -11417,6 +13048,7 @@ const initialBookData = [
     "title": "The Way of Kings"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Smith", 
       "firstName": "Scott"
@@ -11424,6 +13056,7 @@ const initialBookData = [
     "title": "The Ruins"
   }, 
   {
+    "series": "A Series of Unfortunate Events 09", 
     "author": {
       "lastName": "Snicket", 
       "firstName": "Lemony"
@@ -11431,6 +13064,7 @@ const initialBookData = [
     "title": "The Carnivorous Carnival"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Styron", 
       "firstName": "William"
@@ -11438,6 +13072,7 @@ const initialBookData = [
     "title": "The Confessions of Nat Turner"
   }, 
   {
+    "series": "Mistborn 03", 
     "author": {
       "lastName": "Sanderson", 
       "firstName": "Brandon"
@@ -11445,6 +13080,7 @@ const initialBookData = [
     "title": "The Hero of Ages"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Shakespeare", 
       "firstName": "William"
@@ -11452,6 +13088,7 @@ const initialBookData = [
     "title": "The Oxford Complete Works of Shakespeare"
   }, 
   {
+    "series": "2", 
     "author": {
       "lastName": "Stroud", 
       "firstName": "Jonathan"
@@ -11459,6 +13096,7 @@ const initialBookData = [
     "title": "The Golem's Eye"
   }, 
   {
+    "series": "Mistborn 02", 
     "author": {
       "lastName": "Sanderson", 
       "firstName": "Brandon"
@@ -11466,6 +13104,7 @@ const initialBookData = [
     "title": "The Well of Ascension"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Simmons", 
       "firstName": "Dan"
@@ -11473,6 +13112,7 @@ const initialBookData = [
     "title": "The Terror"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sanderson", 
       "firstName": "Brandon"
@@ -11480,6 +13120,7 @@ const initialBookData = [
     "title": "Warbreaker"
   }, 
   {
+    "series": "A Series of Unfortunate Events 03", 
     "author": {
       "lastName": "Snicket", 
       "firstName": "Lemony"
@@ -11487,6 +13128,7 @@ const initialBookData = [
     "title": "The Wide Window"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sawyer", 
       "firstName": "Robert J."
@@ -11494,6 +13136,7 @@ const initialBookData = [
     "title": "Calculating God"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Sedaris", 
       "firstName": "David"
@@ -11501,6 +13144,7 @@ const initialBookData = [
     "title": "Me Talk Pretty One Day"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Simonson", 
       "firstName": "Helen"
@@ -11508,6 +13152,7 @@ const initialBookData = [
     "title": "Major Pettigrew's Last Stand"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Swift", 
       "firstName": "Jonathan"
@@ -11515,6 +13160,7 @@ const initialBookData = [
     "title": "Gulliver's Travels"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Steinbeck", 
       "firstName": "John"
@@ -11522,6 +13168,7 @@ const initialBookData = [
     "title": "The Grapes of Wrath"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Selby", 
       "firstName": "Hubert"
@@ -11529,6 +13176,7 @@ const initialBookData = [
     "title": "Requiem for a Dream"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Shakespeare", 
       "firstName": "William"
@@ -11536,6 +13184,7 @@ const initialBookData = [
     "title": "Henry IV (Part 2)"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Wilkinson", 
       "firstName": "Toby"
@@ -11543,6 +13192,7 @@ const initialBookData = [
     "title": "The Rise and Fall of Ancient Egypt"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Wouk", 
       "firstName": "Herman"
@@ -11550,6 +13200,7 @@ const initialBookData = [
     "title": "The Caine Mutiny"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Wyndham", 
       "firstName": "John"
@@ -11557,6 +13208,7 @@ const initialBookData = [
     "title": "The Day of the Triffids"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Wright", 
       "firstName": "Steven"
@@ -11564,6 +13216,7 @@ const initialBookData = [
     "title": "Steven Wright Humor"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Wells", 
       "firstName": "H.G."
@@ -11571,6 +13224,7 @@ const initialBookData = [
     "title": "The Time Machine and the Invisible Man"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Wong", 
       "firstName": "David"
@@ -11578,6 +13232,7 @@ const initialBookData = [
     "title": "John Dies at the End"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "White", 
       "firstName": "Betty"
@@ -11585,6 +13240,7 @@ const initialBookData = [
     "title": "If You Ask Me"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Weiner", 
       "firstName": "Jennifer"
@@ -11592,6 +13248,7 @@ const initialBookData = [
     "title": "In Her Shoes"
   }, 
   {
+    "series": "Uglies 04", 
     "author": {
       "lastName": "Westerfeld", 
       "firstName": "Scott"
@@ -11599,6 +13256,7 @@ const initialBookData = [
     "title": "Extras"
   }, 
   {
+    "series": "Black Dagger Brotherhood 07", 
     "author": {
       "lastName": "Ward", 
       "firstName": "J.R."
@@ -11606,6 +13264,7 @@ const initialBookData = [
     "title": "Lover Avenged"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Wolfe", 
       "firstName": "Tom"
@@ -11613,6 +13272,7 @@ const initialBookData = [
     "title": "The Right Stuff"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Walls", 
       "firstName": "Jeannette"
@@ -11620,6 +13280,7 @@ const initialBookData = [
     "title": "Half Broke Horses"
   }, 
   {
+    "series": "6", 
     "author": {
       "lastName": "Wilder", 
       "firstName": "Laura Ingalls"
@@ -11627,6 +13288,7 @@ const initialBookData = [
     "title": "The Long Winter"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Woodward", 
       "firstName": "Bob"
@@ -11634,6 +13296,7 @@ const initialBookData = [
     "title": "Obama's Wars"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Wharton", 
       "firstName": "Edith"
@@ -11641,6 +13304,7 @@ const initialBookData = [
     "title": "The House of Mirth"
   }, 
   {
+    "series": "Night Angel Trilogy 03", 
     "author": {
       "lastName": "Weeks", 
       "firstName": "Brent"
@@ -11648,6 +13312,7 @@ const initialBookData = [
     "title": "Beyond the Shadows"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Warren", 
       "firstName": "Robert Penn"
@@ -11655,6 +13320,7 @@ const initialBookData = [
     "title": "All the King's Men"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Wyndham", 
       "firstName": "John"
@@ -11662,6 +13328,7 @@ const initialBookData = [
     "title": "The Chrysalids"
   }, 
   {
+    "series": "Black Dagger Brotherhood 03", 
     "author": {
       "lastName": "Ward", 
       "firstName": "J.R."
@@ -11669,6 +13336,7 @@ const initialBookData = [
     "title": "Lover Awakened"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Wallace", 
       "firstName": "David Foster"
@@ -11676,6 +13344,7 @@ const initialBookData = [
     "title": "Consider the Lobster and Other Essays"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Woodward", 
       "firstName": "Bob"
@@ -11683,6 +13352,7 @@ const initialBookData = [
     "title": "Plan of Attack"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Whitman", 
       "firstName": "Walt"
@@ -11690,6 +13360,7 @@ const initialBookData = [
     "title": "Leaves of Grass"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Wright", 
       "firstName": "Richard"
@@ -11697,6 +13368,7 @@ const initialBookData = [
     "title": "Native Son"
   }, 
   {
+    "series": "9", 
     "author": {
       "lastName": "Wilder", 
       "firstName": "Laura Ingalls"
@@ -11704,6 +13376,7 @@ const initialBookData = [
     "title": "The First Four Years"
   }, 
   {
+    "series": "4", 
     "author": {
       "lastName": "Wilder", 
       "firstName": "Laura Ingalls"
@@ -11711,6 +13384,7 @@ const initialBookData = [
     "title": "On the Banks of Plum Creek"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Zusak", 
       "firstName": "Markus"
@@ -11718,6 +13392,7 @@ const initialBookData = [
     "title": "The Book Thief"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Wolfe", 
       "firstName": "Tom"
@@ -11725,6 +13400,7 @@ const initialBookData = [
     "title": "Bonfire of the Vanities"
   }, 
   {
+    "series": "Night Angel Trilogy 01", 
     "author": {
       "lastName": "Weeks", 
       "firstName": "Brent"
@@ -11732,6 +13408,7 @@ const initialBookData = [
     "title": "The Way of Shadows"
   }, 
   {
+    "series": "Lost in Shangri", 
     "author": {
       "lastName": "Zuckoff", 
       "firstName": "Mitchell"
@@ -11739,6 +13416,7 @@ const initialBookData = [
     "title": "La"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Wallace", 
       "firstName": "David Foster"
@@ -11746,6 +13424,7 @@ const initialBookData = [
     "title": "Brief Interviews With Hideous Men"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Wilde", 
       "firstName": "Oscar"
@@ -11753,6 +13432,7 @@ const initialBookData = [
     "title": "The Picture of Dorian Gray"
   }, 
   {
+    "series": "Black Dagger Brotherhood 01", 
     "author": {
       "lastName": "Ward", 
       "firstName": "J.R."
@@ -11760,6 +13440,7 @@ const initialBookData = [
     "title": "Dark Lover"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Wells", 
       "firstName": "H.G."
@@ -11767,6 +13448,7 @@ const initialBookData = [
     "title": "The War of the Worlds"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Wasdin", 
       "firstName": "Howard"
@@ -11774,6 +13456,7 @@ const initialBookData = [
     "title": "SEAL Team Six"
   }, 
   {
+    "series": "Black Dagger Brotherhood 05", 
     "author": {
       "lastName": "Ward", 
       "firstName": "J.R."
@@ -11781,6 +13464,7 @@ const initialBookData = [
     "title": "Lover Unbound"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Wilber", 
       "firstName": "Del Quentin"
@@ -11788,6 +13472,7 @@ const initialBookData = [
     "title": "Rawhide Down"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Wilmore", 
       "firstName": "Larry"
@@ -11795,6 +13480,7 @@ const initialBookData = [
     "title": "I'd Rather We Got Casinos, And Other Black Thoughts"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Wharton", 
       "firstName": "Edith"
@@ -11802,6 +13488,7 @@ const initialBookData = [
     "title": "The Age of Innocence"
   }, 
   {
+    "series": "Uglies 02", 
     "author": {
       "lastName": "Westerfeld", 
       "firstName": "Scott"
@@ -11809,6 +13496,7 @@ const initialBookData = [
     "title": "Pretties"
   }, 
   {
+    "series": "Black Dagger Brotherhood 06", 
     "author": {
       "lastName": "Ward", 
       "firstName": "J.R."
@@ -11816,6 +13504,7 @@ const initialBookData = [
     "title": "Lover Enshrined"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Zelazny", 
       "firstName": "Roger"
@@ -11823,6 +13512,7 @@ const initialBookData = [
     "title": "Lord of Light"
   }, 
   {
+    "series": "Night Angel Trilogy 02", 
     "author": {
       "lastName": "Weeks", 
       "firstName": "Brent"
@@ -11830,6 +13520,7 @@ const initialBookData = [
     "title": "Shadow's Edge"
   }, 
   {
+    "series": "5", 
     "author": {
       "lastName": "Wilder", 
       "firstName": "Laura Ingalls"
@@ -11837,6 +13528,7 @@ const initialBookData = [
     "title": "By the Shores of Silver Lake"
   }, 
   {
+    "series": "2", 
     "author": {
       "lastName": "Wilder", 
       "firstName": "Laura Ingalls"
@@ -11844,6 +13536,7 @@ const initialBookData = [
     "title": "Little House on the Prairie"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Walker", 
       "firstName": "Alice"
@@ -11851,6 +13544,7 @@ const initialBookData = [
     "title": "The Color Purple"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Walls", 
       "firstName": "Jeannette"
@@ -11858,6 +13552,7 @@ const initialBookData = [
     "title": "The Glass Castle"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Zafon", 
       "firstName": "Carlos Ruiz"
@@ -11865,6 +13560,7 @@ const initialBookData = [
     "title": "The Angel's Game"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "White", 
       "firstName": "T.H."
@@ -11872,6 +13568,7 @@ const initialBookData = [
     "title": "The Once and Future King"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Wiesel", 
       "firstName": "Elie"
@@ -11879,6 +13576,7 @@ const initialBookData = [
     "title": "Night"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Wharton", 
       "firstName": "Edith"
@@ -11886,6 +13584,7 @@ const initialBookData = [
     "title": "Ethan Frome"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Weir", 
       "firstName": "Alison"
@@ -11893,6 +13592,7 @@ const initialBookData = [
     "title": "The Life of Elizabeth I"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Weisman", 
       "firstName": "Alan"
@@ -11900,6 +13600,7 @@ const initialBookData = [
     "title": "The World Without Us"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Woodward", 
       "firstName": "Bob"
@@ -11907,6 +13608,7 @@ const initialBookData = [
     "title": "Bush At War"
   }, 
   {
+    "series": "8", 
     "author": {
       "lastName": "Wilder", 
       "firstName": "Laura Ingalls"
@@ -11914,6 +13616,7 @@ const initialBookData = [
     "title": "These Happy Golden Years"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Welsh", 
       "firstName": "Irvine"
@@ -11921,6 +13624,7 @@ const initialBookData = [
     "title": "Trainspotting"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Zafon", 
       "firstName": "Carlos Ruiz"
@@ -11928,6 +13632,7 @@ const initialBookData = [
     "title": "The Shadow of the Wind"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Weir", 
       "firstName": "Alison"
@@ -11935,6 +13640,7 @@ const initialBookData = [
     "title": "The Lady in the Tower"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Wheaton", 
       "firstName": "Wil"
@@ -11942,6 +13648,7 @@ const initialBookData = [
     "title": "Just a Geek"
   }, 
   {
+    "series": "7", 
     "author": {
       "lastName": "Wilder", 
       "firstName": "Laura Ingalls"
@@ -11949,6 +13656,7 @@ const initialBookData = [
     "title": "Little Town on the Prairie"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Weir", 
       "firstName": "Alison"
@@ -11956,6 +13664,7 @@ const initialBookData = [
     "title": "The Six Wives of Henry VIII"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Wilson", 
       "firstName": "Robert Charles"
@@ -11963,6 +13672,7 @@ const initialBookData = [
     "title": "Spin"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Young", 
       "firstName": "William"
@@ -11970,6 +13680,7 @@ const initialBookData = [
     "title": "The Shack"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Yates", 
       "firstName": "Richard"
@@ -11977,6 +13688,7 @@ const initialBookData = [
     "title": "Revolutionary Road"
   }, 
   {
+    "series": "Black Dagger Brotherhood 09", 
     "author": {
       "lastName": "Ward", 
       "firstName": "J.R."
@@ -11984,6 +13696,7 @@ const initialBookData = [
     "title": "Lover Unleashed"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Weiner", 
       "firstName": "Jennifer"
@@ -11991,6 +13704,7 @@ const initialBookData = [
     "title": "Good In Bed"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Weiner", 
       "firstName": "Jennifer"
@@ -11998,6 +13712,7 @@ const initialBookData = [
     "title": "Little Earthquakes"
   }, 
   {
+    "series": "1", 
     "author": {
       "lastName": "Wilder", 
       "firstName": "Laura Ingalls"
@@ -12005,6 +13720,7 @@ const initialBookData = [
     "title": "Little House Big Woods"
   }, 
   {
+    "series": "Book of the New Sun 01", 
     "author": {
       "lastName": "Wolfe", 
       "firstName": "Gene"
@@ -12012,6 +13728,7 @@ const initialBookData = [
     "title": "Shadow & Claw"
   }, 
   {
+    "series": "3", 
     "author": {
       "lastName": "Wilder", 
       "firstName": "Laura Ingalls"
@@ -12019,6 +13736,7 @@ const initialBookData = [
     "title": "Farmer Boy"
   }, 
   {
+    "series": "Black Dagger Brotherhood 04", 
     "author": {
       "lastName": "Ward", 
       "firstName": "J.R."
@@ -12026,6 +13744,7 @@ const initialBookData = [
     "title": "Lover Revealed"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Winchester", 
       "firstName": "Simon"
@@ -12033,6 +13752,7 @@ const initialBookData = [
     "title": "The Professor and the Madman"
   }, 
   {
+    "series": "Uglies 01", 
     "author": {
       "lastName": "Westerfeld", 
       "firstName": "Scott"
@@ -12040,6 +13760,7 @@ const initialBookData = [
     "title": "Uglies"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Wallace", 
       "firstName": "David Foster"
@@ -12047,6 +13768,7 @@ const initialBookData = [
     "title": "Infinite Jest"
   }, 
   {
+    "series": "Black Dagger Brotherhood 02", 
     "author": {
       "lastName": "Ward", 
       "firstName": "J.R."
@@ -12054,6 +13776,7 @@ const initialBookData = [
     "title": "Lover Eternal"
   }, 
   {
+    "series": "Uglies 03", 
     "author": {
       "lastName": "Westerfeld", 
       "firstName": "Scott"
@@ -12061,6 +13784,7 @@ const initialBookData = [
     "title": "Specials"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Zinn", 
       "firstName": "Howard"
@@ -12068,6 +13792,7 @@ const initialBookData = [
     "title": "A People's History of the United States"
   }, 
   {
+    "series": "Book of the New Sun 02", 
     "author": {
       "lastName": "Wolfe", 
       "firstName": "Gene"
@@ -12075,6 +13800,7 @@ const initialBookData = [
     "title": "Sword and Citadel"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Woolf", 
       "firstName": "Virginia"
@@ -12082,6 +13808,7 @@ const initialBookData = [
     "title": "To the Lighthouse"
   }, 
   {
+    "series": "Black Dagger Brotherhood 08", 
     "author": {
       "lastName": "Ward", 
       "firstName": "J.R."
@@ -12089,6 +13816,7 @@ const initialBookData = [
     "title": "Lover Mine"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Woolf", 
       "firstName": "Virginia"
@@ -12096,6 +13824,7 @@ const initialBookData = [
     "title": "Mrs. Dalloway"
   }, 
   {
+    "series": "01", 
     "author": {
       "lastName": "Evans", 
       "firstName": "Richard J."
@@ -12103,6 +13832,7 @@ const initialBookData = [
     "title": "The Coming of the Third Reich"
   }, 
   {
+    "series": "Stephanie Plum 12", 
     "author": {
       "lastName": "Evanovich", 
       "firstName": "Janet"
@@ -12110,6 +13840,7 @@ const initialBookData = [
     "title": "Twelve Sharp"
   }, 
   {
+    "series": "Malazan Book of the Fallen 01", 
     "author": {
       "lastName": "Erikson", 
       "firstName": "Steven"
@@ -12117,6 +13848,7 @@ const initialBookData = [
     "title": "Gardens of the Moon"
   }, 
   {
+    "series": "Malloreon 02", 
     "author": {
       "lastName": "Eddings", 
       "firstName": "David"
@@ -12124,6 +13856,7 @@ const initialBookData = [
     "title": "King of The Murgos"
   }, 
   {
+    "series": "Stephanie Plum 09", 
     "author": {
       "lastName": "Evanovich", 
       "firstName": "Janet"
@@ -12131,6 +13864,7 @@ const initialBookData = [
     "title": "To the Nines"
   }, 
   {
+    "series": "Bright", 
     "author": {
       "lastName": "Ehrenreich", 
       "firstName": "Barbara"
@@ -12138,6 +13872,7 @@ const initialBookData = [
     "title": "Sided"
   }, 
   {
+    "series": "Stephanie Plum 14", 
     "author": {
       "lastName": "Evanovich", 
       "firstName": "Janet"
@@ -12145,6 +13880,7 @@ const initialBookData = [
     "title": "Fearless Fourteen"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Eggers", 
       "firstName": "Dave"
@@ -12152,6 +13888,7 @@ const initialBookData = [
     "title": "What is the What"
   }, 
   {
+    "series": "Stephanie Plum 10", 
     "author": {
       "lastName": "Evanovich", 
       "firstName": "Janet"
@@ -12159,6 +13896,7 @@ const initialBookData = [
     "title": "Ten Big Ones"
   }, 
   {
+    "series": "Malazan Book of the Fallen 05", 
     "author": {
       "lastName": "Erikson", 
       "firstName": "Steven"
@@ -12166,6 +13904,7 @@ const initialBookData = [
     "title": "Midnight Tides"
   }, 
   {
+    "series": "Belgariad 04", 
     "author": {
       "lastName": "Eddings", 
       "firstName": "David"
@@ -12173,6 +13912,7 @@ const initialBookData = [
     "title": "Castle of Wizardry"
   }, 
   {
+    "series": "Stephanie Plum 01", 
     "author": {
       "lastName": "Evanovich", 
       "firstName": "Janet"
@@ -12180,6 +13920,7 @@ const initialBookData = [
     "title": "One for the Money"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Evanovich", 
       "firstName": "Janet"
@@ -12187,6 +13928,7 @@ const initialBookData = [
     "title": "Foul Play"
   }, 
   {
+    "series": "Malloreon 04", 
     "author": {
       "lastName": "Eddings", 
       "firstName": "David"
@@ -12194,6 +13936,7 @@ const initialBookData = [
     "title": "Sorceress of Darshiva"
   }, 
   {
+    "series": "Stephanie Plum 02", 
     "author": {
       "lastName": "Evanovich", 
       "firstName": "Janet"
@@ -12201,6 +13944,7 @@ const initialBookData = [
     "title": "Two for the Dough"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Evanovich", 
       "firstName": "Janet"
@@ -12208,6 +13952,7 @@ const initialBookData = [
     "title": "Plum Lucky"
   }, 
   {
+    "series": "Stephanie Plum 13", 
     "author": {
       "lastName": "Evanovich", 
       "firstName": "Janet"
@@ -12215,6 +13960,7 @@ const initialBookData = [
     "title": "Lean Mean Thirteen"
   }, 
   {
+    "series": "Malazan Book of the Fallen 02", 
     "author": {
       "lastName": "Erikson", 
       "firstName": "Steven"
@@ -12222,6 +13968,7 @@ const initialBookData = [
     "title": "Deadhouse Gates"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Eco", 
       "firstName": "Umberto"
@@ -12229,6 +13976,7 @@ const initialBookData = [
     "title": "Foucault's Pendulum"
   }, 
   {
+    "series": "Malloreon 01", 
     "author": {
       "lastName": "Eddings", 
       "firstName": "David"
@@ -12236,6 +13984,7 @@ const initialBookData = [
     "title": "Guardians of the West"
   }, 
   {
+    "series": "Belgariad 03", 
     "author": {
       "lastName": "Eddings", 
       "firstName": "David"
@@ -12243,6 +13992,7 @@ const initialBookData = [
     "title": "Magician's Gambit"
   }, 
   {
+    "series": "Stephanie Plum 04", 
     "author": {
       "lastName": "Evanovich", 
       "firstName": "Janet"
@@ -12250,6 +14000,7 @@ const initialBookData = [
     "title": "Four to Score"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Egan", 
       "firstName": "Timothy"
@@ -12257,6 +14008,7 @@ const initialBookData = [
     "title": "The Worst Hard Time"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Ellroy", 
       "firstName": "James"
@@ -12264,6 +14016,7 @@ const initialBookData = [
     "title": "The Big Nowhere"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Edwards", 
       "firstName": "Kim"
@@ -12271,6 +14024,7 @@ const initialBookData = [
     "title": "The Memory Keeper's Daughter"
   }, 
   {
+    "series": "Malloreon 03", 
     "author": {
       "lastName": "Eddings", 
       "firstName": "David"
@@ -12278,6 +14032,7 @@ const initialBookData = [
     "title": "Demon Lord of Karanda"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Ellis", 
       "firstName": "Bret Easton"
@@ -12285,6 +14040,7 @@ const initialBookData = [
     "title": "Less Than Zero"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Ellroy", 
       "firstName": "James"
@@ -12292,6 +14048,7 @@ const initialBookData = [
     "title": "L.A. Confidential"
   }, 
   {
+    "series": "Malazan Book of the Fallen 03", 
     "author": {
       "lastName": "Erikson", 
       "firstName": "Steven"
@@ -12299,6 +14056,7 @@ const initialBookData = [
     "title": "Memories of Ice"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Eagleton", 
       "firstName": "Terry"
@@ -12306,6 +14064,7 @@ const initialBookData = [
     "title": "Why Marx Was Right"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Ellis", 
       "firstName": "Bret Easton"
@@ -12313,6 +14072,7 @@ const initialBookData = [
     "title": "Imperial Bedrooms"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Evanovich", 
       "firstName": "Janet"
@@ -12320,6 +14080,7 @@ const initialBookData = [
     "title": "Plum Spooky"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Eggers", 
       "firstName": "Dave"
@@ -12327,6 +14088,7 @@ const initialBookData = [
     "title": "You Shall Know Our Velocity"
   }, 
   {
+    "series": "Stephanie Plum 11", 
     "author": {
       "lastName": "Evanovich", 
       "firstName": "Janet"
@@ -12334,6 +14096,7 @@ const initialBookData = [
     "title": "Eleven on Top"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Eugenides", 
       "firstName": "Jeffrey"
@@ -12341,6 +14104,7 @@ const initialBookData = [
     "title": "Middlesex"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Evanovich", 
       "firstName": "Janet"
@@ -12348,6 +14112,7 @@ const initialBookData = [
     "title": "Visions of Sugar Plums"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Ellis", 
       "firstName": "Bret Easton"
@@ -12355,6 +14120,7 @@ const initialBookData = [
     "title": "Glamorama"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Ellis", 
       "firstName": "Bret Easton"
@@ -12362,6 +14128,7 @@ const initialBookData = [
     "title": "American Psycho"
   }, 
   {
+    "series": "Belgariad 05", 
     "author": {
       "lastName": "Eddings", 
       "firstName": "David"
@@ -12369,6 +14136,7 @@ const initialBookData = [
     "title": "Enchanter's End Game"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Ellroy", 
       "firstName": "James"
@@ -12376,6 +14144,7 @@ const initialBookData = [
     "title": "White Jazz"
   }, 
   {
+    "series": "03", 
     "author": {
       "lastName": "Evans", 
       "firstName": "Richard J."
@@ -12383,6 +14152,7 @@ const initialBookData = [
     "title": "The Third Reich at War"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Emerson", 
       "firstName": "Ralph Waldo"
@@ -12390,6 +14160,7 @@ const initialBookData = [
     "title": "Essays and Poems"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Eliot", 
       "firstName": "T.S."
@@ -12397,6 +14168,7 @@ const initialBookData = [
     "title": "Waste Land and Other Poems"
   }, 
   {
+    "series": "Stephanie Plum 05", 
     "author": {
       "lastName": "Evanovich", 
       "firstName": "Janet"
@@ -12404,6 +14176,7 @@ const initialBookData = [
     "title": "High Five"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Ellroy", 
       "firstName": "James"
@@ -12411,6 +14184,7 @@ const initialBookData = [
     "title": "American Tabloid"
   }, 
   {
+    "series": "Malazan Book of the Fallen 09", 
     "author": {
       "lastName": "Erikson", 
       "firstName": "Steven"
@@ -12418,6 +14192,7 @@ const initialBookData = [
     "title": "Dust of Dreams"
   }, 
   {
+    "series": "Stephanie Plum 07", 
     "author": {
       "lastName": "Evanovich", 
       "firstName": "Janet"
@@ -12425,6 +14200,7 @@ const initialBookData = [
     "title": "Seven Up"
   }, 
   {
+    "series": "Stephanie Plum 08", 
     "author": {
       "lastName": "Evanovich", 
       "firstName": "Janet"
@@ -12432,6 +14208,7 @@ const initialBookData = [
     "title": "Hard Eight"
   }, 
   {
+    "series": "Stephanie Plum 16", 
     "author": {
       "lastName": "Evanovich", 
       "firstName": "Janet"
@@ -12439,6 +14216,7 @@ const initialBookData = [
     "title": "Sizzling Sixteen"
   }, 
   {
+    "series": "Malazan Book of the Fallen 08", 
     "author": {
       "lastName": "Erikson", 
       "firstName": "Steven"
@@ -12446,6 +14224,7 @@ const initialBookData = [
     "title": "Toll the Hounds"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Eco", 
       "firstName": "Umberto"
@@ -12453,6 +14232,7 @@ const initialBookData = [
     "title": "The Name of the Rose"
   }, 
   {
+    "series": "Malazan Book of the Fallen 10", 
     "author": {
       "lastName": "Erikson", 
       "firstName": "Steven"
@@ -12460,6 +14240,7 @@ const initialBookData = [
     "title": "The Crippled God"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Egan", 
       "firstName": "Jennifer"
@@ -12467,6 +14248,7 @@ const initialBookData = [
     "title": "A Visit from the Goon Squad"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Evanovich", 
       "firstName": "Janet"
@@ -12474,6 +14256,7 @@ const initialBookData = [
     "title": "Plum Lovin'"
   }, 
   {
+    "series": "Malazan Book of the Fallen 06", 
     "author": {
       "lastName": "Erikson", 
       "firstName": "Steven"
@@ -12481,6 +14264,7 @@ const initialBookData = [
     "title": "The Bonehunters"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Eggers", 
       "firstName": "Dave"
@@ -12488,6 +14272,7 @@ const initialBookData = [
     "title": "Zeitoun"
   }, 
   {
+    "series": "02", 
     "author": {
       "lastName": "Evans", 
       "firstName": "Richard J."
@@ -12495,6 +14280,7 @@ const initialBookData = [
     "title": "The Third Reich in Power"
   }, 
   {
+    "series": "Belgariad 02", 
     "author": {
       "lastName": "Eddings", 
       "firstName": "David"
@@ -12502,6 +14288,7 @@ const initialBookData = [
     "title": "Queen of Sorcery"
   }, 
   {
+    "series": "Malloreon 05", 
     "author": {
       "lastName": "Eddings", 
       "firstName": "David"
@@ -12509,6 +14296,7 @@ const initialBookData = [
     "title": "The Seeress of Kell"
   }, 
   {
+    "series": "Malazan Book of the Fallen 07", 
     "author": {
       "lastName": "Erikson", 
       "firstName": "Steven"
@@ -12516,6 +14304,7 @@ const initialBookData = [
     "title": "Reaper's Gale"
   }, 
   {
+    "series": "Stephanie Plum 03", 
     "author": {
       "lastName": "Evanovich", 
       "firstName": "Janet"
@@ -12523,6 +14312,7 @@ const initialBookData = [
     "title": "Three to Get Deadly"
   }, 
   {
+    "series": "Stephanie Plum 15", 
     "author": {
       "lastName": "Evanovich", 
       "firstName": "Janet"
@@ -12530,6 +14320,7 @@ const initialBookData = [
     "title": "Finger Lickin' Fifteen"
   }, 
   {
+    "series": "Belgariad 01", 
     "author": {
       "lastName": "Eddings", 
       "firstName": "David"
@@ -12537,6 +14328,7 @@ const initialBookData = [
     "title": "Pawn of Prophecy"
   }, 
   {
+    "series": "", 
     "author": {
       "lastName": "Ellroy", 
       "firstName": "James"
@@ -12544,6 +14336,7 @@ const initialBookData = [
     "title": "The Black Dahlia"
   }, 
   {
+    "series": "Malazan Book of the Fallen 04", 
     "author": {
       "lastName": "Erikson", 
       "firstName": "Steven"
@@ -12551,6 +14344,7 @@ const initialBookData = [
     "title": "House of Chains"
   }, 
   {
+    "series": "Stephanie Plum 06", 
     "author": {
       "lastName": "Evanovich", 
       "firstName": "Janet"

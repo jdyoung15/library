@@ -7,6 +7,7 @@ for subdir in os.listdir(books_path):
     descriptors = book_filename.split("-")
 
     title = descriptors[len(descriptors) - 1].strip().replace(".mobi", "").replace(".prc", "")
+    series = descriptors[1].strip() if len(descriptors) == 3 else ''
 
     author = [ word.strip() for word in descriptors[0].strip().split(",") ]
     if len(author) < 2:
@@ -18,6 +19,7 @@ for subdir in os.listdir(books_path):
 
     book = {
       'title': title,
+      'series': series,
       'author': {
         'lastName': lastName,
         'firstName': firstName

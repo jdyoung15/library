@@ -177,7 +177,9 @@ var Book = function (_React$Component) {
       var _this3 = this;
 
       var author = this.props.author;
-      var hdrText = this.props.title + ' (' + (author.lastName ? author.lastName + ', ' : '') + author.firstName + ')';
+      var authorDisplayText = '' + (author.lastName ? author.lastName + ', ' : '') + author.firstName;
+      var seriesDisplayText = this.props.series ? this.props.series + ' - ' : '';
+      var hdrText = seriesDisplayText + ' ' + this.props.title + ' (' + authorDisplayText + ')';
       var details = void 0;
       if (this.state.expanded) {
         details = React.createElement(
