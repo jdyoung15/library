@@ -3,6 +3,7 @@
 const PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
 const EXCLUDED_SHELVES = ['to-read', 'currently-reading'];
 const NUM_GENRES = 3;
+const NUM_SIMILAR_BOOKS = 3;
 
 class Book extends React.Component {
   constructor(props) {
@@ -16,6 +17,7 @@ class Book extends React.Component {
       origPubYear: '',
       description: '',
       genres: [],
+      similarBooks: [],
     };
   }
 
@@ -52,6 +54,7 @@ class Book extends React.Component {
               origPubYear: this._extractFirstTagValue(bookXml, 'original_publication_year'),
               description: this._extractFirstTagValue(bookXml, 'description'),
               genres: this._extractGenres(bookXml),
+              similarBooks: this._extractSimilarBooks(bookXml),
             });
           });
       });
@@ -86,13 +89,34 @@ class Book extends React.Component {
     return genres.slice(0, Math.min(genres.length, NUM_GENRES));
   }
 
+  _extractSimilarBooks(bookXml) {
+    let similarBooks = Array.from(
+      bookXml.getElementsByTagName('similar_books')[0].getElementsByTagName('title_without_series'))
+        .map(title => title.childNodes[0].nodeValue);
+        
+    return similarBooks.slice(0, Math.min(similarBooks.length, NUM_SIMILAR_BOOKS));
+  }
+
   _renderGenres() {
     let genres = this.state.genres.map(genre => (<li className='genre' key={genre}>{genre}</li>));
     return (
-      <div className'genres'>
+      <div className='book-genres'>
         <span>Genres:</span>
         <ul className='genre-list'>
           {genres}
+        </ul>
+      </div>
+    );
+  }
+
+  _renderSimilarBooks() {
+    let similarBooks = this.state.similarBooks.map(similarBook => 
+      (<li className='similar-book' key={similarBook}>{similarBook}</li>));
+    return (
+      <div className='similar-books'>
+        <span>Similar books:</span>
+        <ul className='similar-books-list'>
+          {similarBooks}
         </ul>
       </div>
     );
@@ -114,9 +138,8 @@ class Book extends React.Component {
           <div className='book-description'>
             {this.state.description}
           </div>
-          <div className='book-genres'>
-            {this._renderGenres()}
-          </div>
+          {this._renderGenres()}
+          {this._renderSimilarBooks()}
         </div>
       );
     }

@@ -11,6 +11,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
 var EXCLUDED_SHELVES = ['to-read', 'currently-reading'];
 var NUM_GENRES = 3;
+var NUM_SIMILAR_BOOKS = 3;
 
 var Book = function (_React$Component) {
   _inherits(Book, _React$Component);
@@ -28,7 +29,8 @@ var Book = function (_React$Component) {
       numPages: '',
       origPubYear: '',
       description: '',
-      genres: []
+      genres: [],
+      similarBooks: []
     };
     return _this;
   }
@@ -69,7 +71,8 @@ var Book = function (_React$Component) {
             numPages: _this2._extractFirstTagValue(bookXml, 'num_pages'),
             origPubYear: _this2._extractFirstTagValue(bookXml, 'original_publication_year'),
             description: _this2._extractFirstTagValue(bookXml, 'description'),
-            genres: _this2._extractGenres(bookXml)
+            genres: _this2._extractGenres(bookXml),
+            similarBooks: _this2._extractSimilarBooks(bookXml)
           });
         });
       });
@@ -110,6 +113,15 @@ var Book = function (_React$Component) {
       return genres.slice(0, Math.min(genres.length, NUM_GENRES));
     }
   }, {
+    key: '_extractSimilarBooks',
+    value: function _extractSimilarBooks(bookXml) {
+      var similarBooks = Array.from(bookXml.getElementsByTagName('similar_books')[0].getElementsByTagName('title_without_series')).map(function (title) {
+        return title.childNodes[0].nodeValue;
+      });
+
+      return similarBooks.slice(0, Math.min(similarBooks.length, NUM_SIMILAR_BOOKS));
+    }
+  }, {
     key: '_renderGenres',
     value: function _renderGenres() {
       var genres = this.state.genres.map(function (genre) {
@@ -120,14 +132,43 @@ var Book = function (_React$Component) {
         );
       });
       return React.createElement(
-        'ul',
-        { className: 'genres' },
+        'div',
+        { className: 'book-genres' },
         React.createElement(
           'span',
           null,
           'Genres:'
         ),
-        genres
+        React.createElement(
+          'ul',
+          { className: 'genre-list' },
+          genres
+        )
+      );
+    }
+  }, {
+    key: '_renderSimilarBooks',
+    value: function _renderSimilarBooks() {
+      var similarBooks = this.state.similarBooks.map(function (similarBook) {
+        return React.createElement(
+          'li',
+          { className: 'similar-book', key: similarBook },
+          similarBook
+        );
+      });
+      return React.createElement(
+        'div',
+        { className: 'similar-books' },
+        React.createElement(
+          'span',
+          null,
+          'Similar books:'
+        ),
+        React.createElement(
+          'ul',
+          { className: 'similar-books-list' },
+          similarBooks
+        )
       );
     }
   }, {
@@ -175,11 +216,8 @@ var Book = function (_React$Component) {
             { className: 'book-description' },
             this.state.description
           ),
-          React.createElement(
-            'div',
-            { className: 'book-genres' },
-            this._renderGenres()
-          )
+          this._renderGenres(),
+          this._renderSimilarBooks()
         );
       }
       return React.createElement(
