@@ -560,12 +560,12 @@ const initialBookData = [
     "title": "Unbearable Lightness, A Story of Loss and Gain"
   }, 
   {
-    "series": "", 
+    "series": "Harry Potter 06", 
     "author": {
       "lastName": "Rowling", 
       "firstName": "J.K."
     }, 
-    "title": "Blood Prince"
+    "title": "Harry Potter and the Half-Blood Prince"
   }, 
   {
     "series": "", 
@@ -1304,12 +1304,12 @@ const initialBookData = [
     "title": "Aesop's Fables"
   }, 
   {
-    "series": "", 
+    "series": "Dirk Gently 02", 
     "author": {
       "lastName": "Adams", 
       "firstName": "Douglas"
     }, 
-    "title": "Time of the Soul"
+    "title": "The Long Dark Tea-Time of the Soul"
   }, 
   {
     "series": "", 
@@ -1864,7 +1864,7 @@ const initialBookData = [
     "title": "Imajica"
   }, 
   {
-    "series": "", 
+    "series": "Calliope Reaper-Jones 02", 
     "author": {
       "lastName": "Benson", 
       "firstName": "Amber"
@@ -2576,7 +2576,7 @@ const initialBookData = [
     "title": "Storm Front"
   }, 
   {
-    "series": "", 
+    "series": "Calliope Reaper-Jones 03", 
     "author": {
       "lastName": "Benson", 
       "firstName": "Amber"
@@ -2624,7 +2624,7 @@ const initialBookData = [
     "title": "The Thousandfold Thought"
   }, 
   {
-    "series": "", 
+    "series": "Calliope Reaper-Jones 01", 
     "author": {
       "lastName": "Benson", 
       "firstName": "Amber"
@@ -2640,12 +2640,12 @@ const initialBookData = [
     "title": "The Winner"
   }, 
   {
-    "series": "Self", 
+    "series": "", 
     "author": {
       "lastName": "Browne", 
       "firstName": "Renni"
     }, 
-    "title": "Editing for Fiction Writers"
+    "title": "Self-Editing for Fiction Writers"
   }, 
   {
     "series": "", 
@@ -3184,12 +3184,12 @@ const initialBookData = [
     "title": "The Girl Who Kicked the Hornet's Nest"
   }, 
   {
-    "series": "Three", 
+    "series": "", 
     "author": {
       "lastName": "Leonard", 
       "firstName": "Elmore"
     }, 
-    "title": "Ten to Yuma and Other Stories"
+    "title": "Three-Ten to Yuma and Other Stories"
   }, 
   {
     "series": "", 
@@ -4504,12 +4504,12 @@ const initialBookData = [
     "title": "You Might Be a Zombie and Other Bad News"
   }, 
   {
-    "series": "Alice's Adventures in Wonderland and Through the Looking", 
+    "series": "", 
     "author": {
       "lastName": "Carroll", 
       "firstName": "Lewis"
     }, 
-    "title": "Glass"
+    "title": "Alice's Adventures in Wonderland and Through the Looking-Glass"
   }, 
   {
     "series": "", 
@@ -5128,10 +5128,10 @@ const initialBookData = [
     "title": "The Legend of Sleepy Hollow"
   }, 
   {
-    "series": "Z", 
+    "series": "", 
     "author": {
       "lastName": "", 
-      "firstName": "Jay"
+      "firstName": "Jay-Z"
     }, 
     "title": "Decoded"
   }, 
@@ -5173,7 +5173,7 @@ const initialBookData = [
       "lastName": "Jacobs", 
       "firstName": "A.J."
     }, 
-    "title": "All"
+    "title": "The Know-It-All"
   }, 
   {
     "series": "", 
@@ -5248,7 +5248,7 @@ const initialBookData = [
     "title": "All That is Bitter and Sweet"
   }, 
   {
-    "series": "", 
+    "series": "7- 7", 
     "author": {
       "lastName": "Jacques", 
       "firstName": "Brian"
@@ -6032,12 +6032,12 @@ const initialBookData = [
     "title": "Nightmares and Dreamscapes"
   }, 
   {
-    "series": "The Lions of Al", 
+    "series": "", 
     "author": {
       "lastName": "Kay", 
       "firstName": "Guy Gavriel"
     }, 
-    "title": "Rassan"
+    "title": "The Lions of Al-Rassan"
   }, 
   {
     "series": "", 
@@ -7032,12 +7032,12 @@ const initialBookData = [
     "title": "Mort"
   }, 
   {
-    "series": "", 
+    "series": "Aubrey Maturin 16", 
     "author": {
       "lastName": "O'Brian", 
       "firstName": "Patrick"
     }, 
-    "title": "Dark Sea"
+    "title": "The Wine-Dark Sea"
   }, 
   {
     "series": "Pendergast 10", 
@@ -7120,12 +7120,12 @@ const initialBookData = [
     "title": "Essential Tales and Poems"
   }, 
   {
-    "series": "Tell", 
+    "series": "", 
     "author": {
       "lastName": "Palahniuk", 
       "firstName": "Chuck"
     }, 
-    "title": "All"
+    "title": "Tell-All"
   }, 
   {
     "series": "Stone 09", 
@@ -7968,12 +7968,12 @@ const initialBookData = [
     "title": "A Discovery of Witches"
   }, 
   {
-    "series": "Hitch", 
+    "series": "", 
     "author": {
       "lastName": "Hitchens", 
       "firstName": "Christopher"
     }, 
-    "title": "22"
+    "title": "Hitch-22"
   }, 
   {
     "series": "Sookie Stackhouse 11", 
@@ -8056,12 +8056,12 @@ const initialBookData = [
     "title": "Lies That Chelsea Handler Told Me"
   }, 
   {
-    "series": "Catch", 
+    "series": "", 
     "author": {
       "lastName": "Heller", 
       "firstName": "Joseph"
     }, 
-    "title": "22"
+    "title": "Catch-22"
   }, 
   {
     "series": "", 
@@ -8336,12 +8336,12 @@ const initialBookData = [
     "title": "Ship of Destiny"
   }, 
   {
-    "series": "Heart", 
+    "series": "", 
     "author": {
       "lastName": "Hill", 
       "firstName": "Joe"
     }, 
-    "title": "Shaped Box"
+    "title": "Heart-Shaped Box"
   }, 
   {
     "series": "", 
@@ -9168,12 +9168,12 @@ const initialBookData = [
     "title": "The City & The City"
   }, 
   {
-    "series": "", 
+    "series": "Travis McGee 01", 
     "author": {
       "lastName": "MacDonald", 
       "firstName": "John D."
     }, 
-    "title": "Bye"
+    "title": "The Deep Blue Good-Bye"
   }, 
   {
     "series": "Abhorsen 03", 
@@ -10792,10 +10792,10 @@ const initialBookData = [
     "title": "The Broker"
   }, 
   {
-    "series": "Smith, Seth", 
+    "series": "", 
     "author": {
-      "lastName": "", 
-      "firstName": "Grahame"
+      "lastName": "Grahame-Smith", 
+      "firstName": "Seth"
     }, 
     "title": "Abraham Lincoln, Vampire Hunter"
   }, 
@@ -10968,10 +10968,10 @@ const initialBookData = [
     "title": "S is for Silence"
   }, 
   {
-    "series": "Smith, Seth", 
+    "series": "", 
     "author": {
-      "lastName": "", 
-      "firstName": "Grahame"
+      "lastName": "Grahame-Smith", 
+      "firstName": "Seth"
     }, 
     "title": "Pride and Prejudice and Zombies"
   }, 
@@ -11496,12 +11496,12 @@ const initialBookData = [
     "title": "Collapse"
   }, 
   {
-    "series": "", 
+    "series": "Thomas Covenant 02", 
     "author": {
       "lastName": "Donaldson", 
       "firstName": "Stephen R."
     }, 
-    "title": "Earth War"
+    "title": "The Ill-Earth War"
   }, 
   {
     "series": "", 
@@ -11840,12 +11840,12 @@ const initialBookData = [
     "title": "A Kingdom Besieged"
   }, 
   {
-    "series": "The 4", 
+    "series": "", 
     "author": {
       "lastName": "Ferriss", 
       "firstName": "Timothy"
     }, 
-    "title": "Hour Workweek"
+    "title": "The 4-Hour Workweek"
   }, 
   {
     "series": "", 
@@ -11968,12 +11968,12 @@ const initialBookData = [
     "title": "Jackdaws"
   }, 
   {
-    "series": "The 4", 
+    "series": "", 
     "author": {
       "lastName": "Ferriss", 
       "firstName": "Timothy"
     }, 
-    "title": "Hour Body"
+    "title": "The 4-Hour Body"
   }, 
   {
     "series": "Thursday Next 02", 
@@ -12104,12 +12104,12 @@ const initialBookData = [
     "title": "A Million Little Pieces"
   }, 
   {
-    "series": "", 
+    "series": "Ranger's Apprentice 10", 
     "author": {
       "lastName": "Flanagan", 
       "firstName": "John"
     }, 
-    "title": "Ja"
+    "title": "The Emperor of Nihon-Ja"
   }, 
   {
     "series": "", 
@@ -13408,12 +13408,12 @@ const initialBookData = [
     "title": "The Way of Shadows"
   }, 
   {
-    "series": "Lost in Shangri", 
+    "series": "", 
     "author": {
       "lastName": "Zuckoff", 
       "firstName": "Mitchell"
     }, 
-    "title": "La"
+    "title": "Lost in Shangri-La"
   }, 
   {
     "series": "", 
@@ -13864,12 +13864,12 @@ const initialBookData = [
     "title": "To the Nines"
   }, 
   {
-    "series": "Bright", 
+    "series": "", 
     "author": {
       "lastName": "Ehrenreich", 
       "firstName": "Barbara"
     }, 
-    "title": "Sided"
+    "title": "Bright-Sided"
   }, 
   {
     "series": "Stephanie Plum 14", 
