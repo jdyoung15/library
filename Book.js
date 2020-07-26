@@ -177,9 +177,6 @@ var Book = function (_React$Component) {
       var _this3 = this;
 
       var author = this.props.author;
-      var authorDisplayText = '' + (author.lastName ? author.lastName + ', ' : '') + author.firstName;
-      var seriesDisplayText = this.props.series ? this.props.series + ' - ' : '';
-      var hdrText = seriesDisplayText + ' ' + this.props.title + ' (' + authorDisplayText + ')';
       var details = void 0;
       if (this.state.expanded) {
         details = React.createElement(
@@ -220,13 +217,13 @@ var Book = function (_React$Component) {
       }
       return React.createElement(
         'li',
-        { className: 'book-item', key: hdrText },
+        { className: 'book-item' },
         React.createElement(
           'span',
           { className: 'book-hdr', onClick: function onClick() {
               return _this3._toggleExpanded(_this3.props.title, author);
             } },
-          hdrText
+          this.props.displayText
         ),
         details
       );

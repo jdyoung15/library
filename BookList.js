@@ -18,10 +18,26 @@ var BookList = function (_React$Component) {
   }
 
   _createClass(BookList, [{
+    key: '_toDisplayText',
+    value: function _toDisplayText(book) {
+      var author = book.author;
+      var authorDisplayText = '' + (author.lastName ? author.lastName + ', ' : '') + author.firstName;
+      var seriesDisplayText = book.series ? book.series + ' - ' : '';
+      return '' + seriesDisplayText + book.title + ' (' + authorDisplayText + ')';
+    }
+  }, {
     key: 'render',
     value: function render() {
+      var self = this;
       var bookList = this.props.books.map(function (book) {
-        return React.createElement(Book, { title: book.title, author: book.author, series: book.series, key: book.title });
+        var displayText = self._toDisplayText(book);
+        return React.createElement(Book, {
+          title: book.title,
+          author: book.author,
+          series: book.series,
+          displayText: displayText,
+          key: displayText
+        });
       });
 
       return React.createElement(

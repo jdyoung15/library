@@ -124,9 +124,6 @@ class Book extends React.Component {
 
   render() {
     const author = this.props.author;
-    const authorDisplayText = `${author.lastName ? author.lastName + ', ' : ''}${author.firstName}`;
-    const seriesDisplayText = this.props.series ? this.props.series + ' - ' : '';
-    const hdrText = `${seriesDisplayText} ${this.props.title} (${authorDisplayText})`;
     let details;
     if (this.state.expanded) {
       details = (
@@ -144,8 +141,10 @@ class Book extends React.Component {
       );
     }
     return (
-      <li className='book-item' key={hdrText}>
-        <span className='book-hdr' onClick={() => this._toggleExpanded(this.props.title, author)}>{hdrText}</span>
+      <li className='book-item'>
+        <span className='book-hdr' onClick={() => this._toggleExpanded(this.props.title, author)}>
+          {this.props.displayText}
+        </span>
         {details}
       </li>
     );

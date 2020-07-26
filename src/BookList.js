@@ -5,9 +5,25 @@ class BookList extends React.Component {
     super(props);
   }
 
+  _toDisplayText(book) {
+    const author = book.author;
+    const authorDisplayText = `${author.lastName ? author.lastName + ', ' : ''}${author.firstName}`;
+    const seriesDisplayText = book.series ? book.series + ' - ' : '';
+    return `${seriesDisplayText}${book.title} (${authorDisplayText})`;
+  }
+
   render() {
+    const self = this;
     let bookList = this.props.books.map(book => {
-      return (<Book title={book.title} author={book.author} series={book.series} key={book.title} />);
+      const displayText = self._toDisplayText(book);
+      return (
+        <Book 
+          title={book.title} 
+          author={book.author} 
+          series={book.series} 
+          displayText={displayText}
+          key={displayText} 
+        />);
     });
       
     return (
