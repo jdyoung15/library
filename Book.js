@@ -211,11 +211,7 @@ var Book = function (_React$Component) {
               this.state.origPubYear
             )
           ),
-          React.createElement(
-            'div',
-            { className: 'book-description' },
-            this.state.description
-          ),
+          React.createElement('div', { className: 'book-description', dangerouslySetInnerHTML: { __html: this.state.description } }),
           this._renderGenres(),
           this._renderSimilarBooks()
         );

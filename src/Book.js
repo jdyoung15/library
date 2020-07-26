@@ -135,9 +135,7 @@ class Book extends React.Component {
             <span>Num pages: {this.state.numPages}</span>
             <span>Year: {this.state.origPubYear}</span>
           </div>
-          <div className='book-description'>
-            {this.state.description}
-          </div>
+          <div className='book-description' dangerouslySetInnerHTML={{__html: this.state.description}} />
           {this._renderGenres()}
           {this._renderSimilarBooks()}
         </div>
