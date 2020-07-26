@@ -9,6 +9,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
+var EXCLUDED_SHELVES = ['to-read', 'currently-reading'];
+var NUM_GENRES = 3;
 
 var Book = function (_React$Component) {
   _inherits(Book, _React$Component);
@@ -24,7 +26,9 @@ var Book = function (_React$Component) {
       avgRating: '',
       ratingsCount: '',
       numPages: '',
-      origPubYear: ''
+      origPubYear: '',
+      description: '',
+      genres: []
     };
     return _this;
   }
@@ -57,13 +61,15 @@ var Book = function (_React$Component) {
           return response.text();
         }).then(function (txt) {
           var parser = new DOMParser();
-          var xmlDoc = parser.parseFromString(txt, 'text/xml');
-          var book = xmlDoc.getElementsByTagName('book')[0];
+          var xml = parser.parseFromString(txt, 'text/xml');
+          var bookXml = xml.getElementsByTagName('book')[0];
           _this2.setState({
-            avgRating: _this2._extractFirstTagValue(book, 'average_rating'),
-            ratingsCount: _this2._extractFirstTagValue(book, 'ratings_count'),
-            numPages: _this2._extractFirstTagValue(book, 'num_pages'),
-            origPubYear: _this2._extractFirstTagValue(book, 'original_publication_year')
+            avgRating: _this2._extractFirstTagValue(bookXml, 'average_rating'),
+            ratingsCount: _this2._extractFirstTagValue(bookXml, 'ratings_count'),
+            numPages: _this2._extractFirstTagValue(bookXml, 'num_pages'),
+            origPubYear: _this2._extractFirstTagValue(bookXml, 'original_publication_year'),
+            description: _this2._extractFirstTagValue(bookXml, 'description'),
+            genres: _this2._extractGenres(bookXml)
           });
         });
       });
@@ -76,9 +82,9 @@ var Book = function (_React$Component) {
         return response.text();
       }).then(function (txt) {
         var parser = new DOMParser();
-        var xmlDoc = parser.parseFromString(txt, 'text/xml');
-        var firstResult = xmlDoc.getElementsByTagName('work')[0];
-        var bookId = firstResult.getElementsByTagName('best_book')[0].getElementsByTagName('id')[0].childNodes[0].nodeValue;
+        var xml = parser.parseFromString(txt, 'text/xml');
+        var workXml = xml.getElementsByTagName('work')[0];
+        var bookId = workXml.getElementsByTagName('best_book')[0].getElementsByTagName('id')[0].childNodes[0].nodeValue;
         return bookId;
       });
     }
@@ -93,6 +99,38 @@ var Book = function (_React$Component) {
       return xml.getElementsByTagName(tagName)[0].childNodes[0].nodeValue;
     }
   }, {
+    key: '_extractGenres',
+    value: function _extractGenres(bookXml) {
+      var genres = Array.from(bookXml.getElementsByTagName('shelf')).map(function (shelf) {
+        return shelf.getAttribute('name');
+      }).filter(function (name) {
+        return !EXCLUDED_SHELVES.includes(name);
+      });
+
+      return genres.slice(0, Math.min(genres.length, NUM_GENRES));
+    }
+  }, {
+    key: '_renderGenres',
+    value: function _renderGenres() {
+      var genres = this.state.genres.map(function (genre) {
+        return React.createElement(
+          'li',
+          { className: 'genre', key: genre },
+          genre
+        );
+      });
+      return React.createElement(
+        'ul',
+        { className: 'genres' },
+        React.createElement(
+          'span',
+          null,
+          'Genres:'
+        ),
+        genres
+      );
+    }
+  }, {
     key: 'render',
     value: function render() {
       var _this3 = this;
@@ -105,39 +143,53 @@ var Book = function (_React$Component) {
           'div',
           { className: 'book-details' },
           React.createElement(
-            'span',
-            null,
-            'Rating: ',
-            this.state.avgRating
+            'div',
+            { className: 'book-stats' },
+            React.createElement(
+              'span',
+              null,
+              'Rating: ',
+              this.state.avgRating
+            ),
+            React.createElement(
+              'span',
+              null,
+              'Num ratings: ',
+              this.state.ratingsCount
+            ),
+            React.createElement(
+              'span',
+              null,
+              'Num pages: ',
+              this.state.numPages
+            ),
+            React.createElement(
+              'span',
+              null,
+              'Year: ',
+              this.state.origPubYear
+            )
           ),
           React.createElement(
-            'span',
-            null,
-            'Num ratings: ',
-            this.state.ratingsCount
+            'div',
+            { className: 'book-description' },
+            this.state.description
           ),
           React.createElement(
-            'span',
-            null,
-            'Num pages: ',
-            this.state.numPages
-          ),
-          React.createElement(
-            'span',
-            null,
-            'Year: ',
-            this.state.origPubYear
+            'div',
+            { className: 'book-genres' },
+            this._renderGenres()
           )
         );
       }
       return React.createElement(
         'li',
-        { className: 'book-item', key: hdrText, onClick: function onClick() {
-            return _this3._toggleExpanded(_this3.props.title, author);
-          } },
+        { className: 'book-item', key: hdrText },
         React.createElement(
           'span',
-          { className: 'book-hdr' },
+          { className: 'book-hdr', onClick: function onClick() {
+              return _this3._toggleExpanded(_this3.props.title, author);
+            } },
           hdrText
         ),
         details

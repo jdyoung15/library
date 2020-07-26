@@ -1,6 +1,8 @@
 'use strict';
 
 const PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
+const EXCLUDED_SHELVES = ['to-read', 'currently-reading'];
+const NUM_GENRES = 3;
 
 class Book extends React.Component {
   constructor(props) {
@@ -12,6 +14,8 @@ class Book extends React.Component {
       ratingsCount: '',
       numPages: '',
       origPubYear: '',
+      description: '',
+      genres: [],
     };
   }
 
@@ -39,13 +43,15 @@ class Book extends React.Component {
           .then(response => response.text())
           .then(txt => {
             let parser = new DOMParser();
-            let xmlDoc = parser.parseFromString(txt, 'text/xml');
-            let book = xmlDoc.getElementsByTagName('book')[0];
+            let xml = parser.parseFromString(txt, 'text/xml');
+            let bookXml = xml.getElementsByTagName('book')[0];
             this.setState({
-              avgRating: this._extractFirstTagValue(book, 'average_rating'),
-              ratingsCount: this._extractFirstTagValue(book, 'ratings_count'),
-              numPages: this._extractFirstTagValue(book, 'num_pages'),
-              origPubYear: this._extractFirstTagValue(book, 'original_publication_year'),
+              avgRating: this._extractFirstTagValue(bookXml, 'average_rating'),
+              ratingsCount: this._extractFirstTagValue(bookXml, 'ratings_count'),
+              numPages: this._extractFirstTagValue(bookXml, 'num_pages'),
+              origPubYear: this._extractFirstTagValue(bookXml, 'original_publication_year'),
+              description: this._extractFirstTagValue(bookXml, 'description'),
+              genres: this._extractGenres(bookXml),
             });
           });
       });
@@ -57,9 +63,9 @@ class Book extends React.Component {
       .then(response => response.text())
       .then(txt => {
         let parser = new DOMParser();
-        let xmlDoc = parser.parseFromString(txt, 'text/xml');
-        let firstResult = xmlDoc.getElementsByTagName('work')[0];
-        let bookId = firstResult.getElementsByTagName('best_book')[0].getElementsByTagName('id')[0].childNodes[0].nodeValue;
+        let xml = parser.parseFromString(txt, 'text/xml');
+        let workXml = xml.getElementsByTagName('work')[0];
+        let bookId = workXml.getElementsByTagName('best_book')[0].getElementsByTagName('id')[0].childNodes[0].nodeValue;
         return bookId;
       });
   }
@@ -72,6 +78,26 @@ class Book extends React.Component {
     return xml.getElementsByTagName(tagName)[0].childNodes[0].nodeValue;
   }
 
+  _extractGenres(bookXml) {
+    let genres = Array.from(bookXml.getElementsByTagName('shelf'))
+      .map(shelf => shelf.getAttribute('name'))
+      .filter(name => !EXCLUDED_SHELVES.includes(name));
+
+    return genres.slice(0, Math.min(genres.length, NUM_GENRES));
+  }
+
+  _renderGenres() {
+    let genres = this.state.genres.map(genre => (<li className='genre' key={genre}>{genre}</li>));
+    return (
+      <div className'genres'>
+        <span>Genres:</span>
+        <ul className='genre-list'>
+          {genres}
+        </ul>
+      </div>
+    );
+  }
+
   render() {
     const author = this.props.author;
     const hdrText = `${this.props.title} (${author.lastName}, ${author.firstName})`;
@@ -79,16 +105,24 @@ class Book extends React.Component {
     if (this.state.expanded) {
       details = (
         <div className='book-details'>
-          <span>Rating: {this.state.avgRating}</span>
-          <span>Num ratings: {this.state.ratingsCount}</span>
-          <span>Num pages: {this.state.numPages}</span>
-          <span>Year: {this.state.origPubYear}</span>
+          <div className='book-stats'>
+            <span>Rating: {this.state.avgRating}</span>
+            <span>Num ratings: {this.state.ratingsCount}</span>
+            <span>Num pages: {this.state.numPages}</span>
+            <span>Year: {this.state.origPubYear}</span>
+          </div>
+          <div className='book-description'>
+            {this.state.description}
+          </div>
+          <div className='book-genres'>
+            {this._renderGenres()}
+          </div>
         </div>
       );
     }
     return (
-      <li className='book-item' key={hdrText} onClick={() => this._toggleExpanded(this.props.title, author)}>
-        <span className='book-hdr'>{hdrText}</span>
+      <li className='book-item' key={hdrText}>
+        <span className='book-hdr' onClick={() => this._toggleExpanded(this.props.title, author)}>{hdrText}</span>
         {details}
       </li>
     );

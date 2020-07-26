@@ -17,19 +17,7 @@ var Library = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Library.__proto__ || Object.getPrototypeOf(Library)).call(this, props));
 
     _this.state = {
-      books: [{
-        author: {
-          lastName: 'Abagnale',
-          firstName: 'Frank'
-        },
-        title: 'Catch Me If You Can'
-      }, {
-        author: {
-          lastName: 'Abbot',
-          firstName: 'Edwin'
-        },
-        title: 'Flatland'
-      }]
+      books: initialBookData
     };
     return _this;
   }

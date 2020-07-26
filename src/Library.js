@@ -4,22 +4,7 @@ class Library extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 
-      books: [
-        {
-          author: {
-            lastName: 'Abagnale',
-            firstName: 'Frank'
-          },
-          title: 'Catch Me If You Can',
-        },
-        {
-          author: {
-            lastName: 'Abbot',
-            firstName: 'Edwin'
-          },
-          title: 'Flatland',
-        },
-      ]
+      books: initialBookData
     };
   }
 
