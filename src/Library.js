@@ -3,15 +3,21 @@
 class Library extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { 
-      books: initialBookData
-    };
+  }
+
+  _compareByAuthor(bookA, bookB) {
+    const aAuthor = bookA.author.lastName ? bookA.author.lastName : bookA.author.firstName;
+    const bAuthor = bookB.author.lastName ? bookB.author.lastName : bookB.author.firstName;
+    return aAuthor.localeCompare(bAuthor);
   }
 
   render() {
+    const sortedBooks = [...initialBookData];
+    sortedBooks.sort(this._compareByAuthor);
+
     return (
       <ul className='book-list'>
-        <BookList books={this.state.books} />
+        <BookList books={sortedBooks} />
       </ul>
     );
   }

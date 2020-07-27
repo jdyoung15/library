@@ -14,7 +14,12 @@ var BookList = function (_React$Component) {
   function BookList(props) {
     _classCallCheck(this, BookList);
 
-    return _possibleConstructorReturn(this, (BookList.__proto__ || Object.getPrototypeOf(BookList)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (BookList.__proto__ || Object.getPrototypeOf(BookList)).call(this, props));
+
+    _this.state = {
+      displayedBooks: _this.props.books
+    };
+    return _this;
   }
 
   _createClass(BookList, [{
@@ -29,7 +34,7 @@ var BookList = function (_React$Component) {
     key: 'render',
     value: function render() {
       var self = this;
-      var bookList = this.props.books.map(function (book) {
+      var bookList = this.state.displayedBooks.map(function (book) {
         var displayText = self._toDisplayText(book);
         return React.createElement(Book, {
           title: book.title,

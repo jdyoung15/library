@@ -3,6 +3,9 @@
 class BookList extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      displayedBooks: this.props.books 
+    };
   }
 
   _toDisplayText(book) {
@@ -14,7 +17,7 @@ class BookList extends React.Component {
 
   render() {
     const self = this;
-    let bookList = this.props.books.map(book => {
+    let bookList = this.state.displayedBooks.map(book => {
       const displayText = self._toDisplayText(book);
       return (
         <Book 
