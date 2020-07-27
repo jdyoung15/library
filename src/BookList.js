@@ -34,7 +34,7 @@ class BookList extends React.Component {
   }
 
   _sortByTitle(books) {
-    books.sort(compareByTitle);
+    books.sort(this._compareByTitle.bind(this));
     return books;
   }
   

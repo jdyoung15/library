@@ -24,16 +24,48 @@ var Library = function (_React$Component) {
   }
 
   _createClass(Library, [{
+    key: '_toggleSortByAuthorThenTitle',
+    value: function _toggleSortByAuthorThenTitle() {
+      this.setState({
+        sortByAuthorThenTitle: !this.state.sortByAuthorThenTitle,
+        sortByTitle: !this.state.sortByTitle
+      });
+    }
+  }, {
+    key: '_toggleSortByTitle',
+    value: function _toggleSortByTitle() {
+      this.setState({
+        sortByTitle: !this.state.sortByTitle,
+        sortByAuthorThenTitle: !this.state.sortByAuthorThenTitle
+      });
+    }
+  }, {
     key: 'render',
     value: function render() {
+      console.log('sortByAuthorThenTitle ' + this.state.sortByAuthorThenTitle);
+      console.log('sortByTitle ' + this.state.sortByTitle);
       return React.createElement(
-        'ul',
-        { className: 'book-list' },
-        React.createElement(BookList, {
-          books: initialBookData,
-          sortByAuthorThenTitle: this.state.sortByAuthorThenTitle,
-          sortByTitle: this.state.sortByTitle
-        })
+        'div',
+        { className: 'library' },
+        React.createElement(
+          'button',
+          { onClick: this._toggleSortByAuthorThenTitle.bind(this), disabled: !this.state.sortByTitle },
+          'Sort by Author'
+        ),
+        React.createElement(
+          'button',
+          { onClick: this._toggleSortByTitle.bind(this), disabled: !this.state.sortByAuthorThenTitle },
+          'Sort by Title'
+        ),
+        React.createElement(
+          'ul',
+          { className: 'book-list' },
+          React.createElement(BookList, {
+            books: initialBookData,
+            sortByAuthorThenTitle: this.state.sortByAuthorThenTitle,
+            sortByTitle: this.state.sortByTitle
+          })
+        )
       );
     }
   }]);

@@ -53,7 +53,7 @@ var BookList = function (_React$Component) {
   }, {
     key: '_sortByTitle',
     value: function _sortByTitle(books) {
-      books.sort(compareByTitle);
+      books.sort(this._compareByTitle.bind(this));
       return books;
     }
   }, {
