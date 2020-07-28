@@ -1936,6 +1936,14 @@ const initialBookData = [
     "title": "White Night"
   }, 
   {
+    "series": "Culture 06", 
+    "author": {
+      "lastName": "Banks", 
+      "firstName": "Iain M."
+    }, 
+    "title": "Look to Windward"
+  }, 
+  {
     "series": "", 
     "author": {
       "lastName": "Butler", 
@@ -1950,14 +1958,6 @@ const initialBookData = [
       "firstName": "Ray"
     }, 
     "title": "Zen in the Art of Writing"
-  }, 
-  {
-    "series": "", 
-    "author": {
-      "lastName": "Banks", 
-      "firstName": "Ian M."
-    }, 
-    "title": "The Wasp Factory"
   }, 
   {
     "series": "", 
@@ -2000,14 +2000,6 @@ const initialBookData = [
     "title": "Blood Bound"
   }, 
   {
-    "series": "Culture 04", 
-    "author": {
-      "lastName": "Banks", 
-      "firstName": "Ian M."
-    }, 
-    "title": "Excession"
-  }, 
-  {
     "series": "", 
     "author": {
       "lastName": "Baigent", 
@@ -2038,14 +2030,6 @@ const initialBookData = [
       "firstName": "Mikhail"
     }, 
     "title": "The Master and Margarita"
-  }, 
-  {
-    "series": "", 
-    "author": {
-      "lastName": "Banks", 
-      "firstName": "Ian M."
-    }, 
-    "title": "The Algebraist"
   }, 
   {
     "series": "Harry Dresden 11", 
@@ -2088,14 +2072,6 @@ const initialBookData = [
     "title": "Dave Barry's Only Travel Guide You'll Ever Need"
   }, 
   {
-    "series": "Culture 05", 
-    "author": {
-      "lastName": "Banks", 
-      "firstName": "Ian M."
-    }, 
-    "title": "Inversions"
-  }, 
-  {
     "series": "", 
     "author": {
       "lastName": "Baum", 
@@ -2120,28 +2096,12 @@ const initialBookData = [
     "title": "Circle of Friends"
   }, 
   {
-    "series": "Culture 06", 
-    "author": {
-      "lastName": "Banks", 
-      "firstName": "Ian M."
-    }, 
-    "title": "Look to Windward"
-  }, 
-  {
     "series": "Codex Alera 06", 
     "author": {
       "lastName": "Butcher", 
       "firstName": "Jim"
     }, 
     "title": "First Lord's Fury"
-  }, 
-  {
-    "series": "Culture 03", 
-    "author": {
-      "lastName": "Banks", 
-      "firstName": "Ian M."
-    }, 
-    "title": "Use of Weapons"
   }, 
   {
     "series": "", 
@@ -2154,6 +2114,14 @@ const initialBookData = [
   {
     "series": "", 
     "author": {
+      "lastName": "Banks", 
+      "firstName": "Iain M."
+    }, 
+    "title": "The Crow Road"
+  }, 
+  {
+    "series": "", 
+    "author": {
       "lastName": "Bush", 
       "firstName": "George W."
     }, 
@@ -2162,18 +2130,18 @@ const initialBookData = [
   {
     "series": "", 
     "author": {
+      "lastName": "Banks", 
+      "firstName": "Iain M."
+    }, 
+    "title": "Transition"
+  }, 
+  {
+    "series": "", 
+    "author": {
       "lastName": "Barker", 
       "firstName": "Clive"
     }, 
     "title": "The Damnation Game"
-  }, 
-  {
-    "series": "Culture 07", 
-    "author": {
-      "lastName": "Banks", 
-      "firstName": "Ian M."
-    }, 
-    "title": "Matter"
   }, 
   {
     "series": "02", 
@@ -2190,6 +2158,14 @@ const initialBookData = [
       "firstName": "Jim"
     }, 
     "title": "Academ's Fury"
+  }, 
+  {
+    "series": "Culture 02", 
+    "author": {
+      "lastName": "Banks", 
+      "firstName": "Iain M."
+    }, 
+    "title": "The Player of Games"
   }, 
   {
     "series": "", 
@@ -2230,6 +2206,14 @@ const initialBookData = [
       "firstName": "Max"
     }, 
     "title": "The Zombie Survival Guide"
+  }, 
+  {
+    "series": "Culture 03", 
+    "author": {
+      "lastName": "Banks", 
+      "firstName": "Iain M."
+    }, 
+    "title": "Use of Weapons"
   }, 
   {
     "series": "", 
@@ -2304,6 +2288,14 @@ const initialBookData = [
     "title": "Sleepwalk With Me, and Other Painfully True Stories"
   }, 
   {
+    "series": "Culture 04", 
+    "author": {
+      "lastName": "Banks", 
+      "firstName": "Iain M."
+    }, 
+    "title": "Excession"
+  }, 
+  {
     "series": "", 
     "author": {
       "lastName": "Binchy", 
@@ -2322,26 +2314,10 @@ const initialBookData = [
   {
     "series": "", 
     "author": {
-      "lastName": "Banks", 
-      "firstName": "Ian M."
-    }, 
-    "title": "The Crow Road"
-  }, 
-  {
-    "series": "", 
-    "author": {
       "lastName": "Bryson", 
       "firstName": "Bill"
     }, 
     "title": "I'm a Stranger Here Myself"
-  }, 
-  {
-    "series": "Culture 02", 
-    "author": {
-      "lastName": "Banks", 
-      "firstName": "Ian M."
-    }, 
-    "title": "The Player of Games"
   }, 
   {
     "series": "", 
@@ -2490,6 +2466,14 @@ const initialBookData = [
   {
     "series": "", 
     "author": {
+      "lastName": "Banks", 
+      "firstName": "Iain M."
+    }, 
+    "title": "The Algebraist"
+  }, 
+  {
+    "series": "", 
+    "author": {
       "lastName": "Bryson", 
       "firstName": "Bill"
     }, 
@@ -2510,6 +2494,14 @@ const initialBookData = [
       "firstName": "Charlotte"
     }, 
     "title": "Jane Eyre"
+  }, 
+  {
+    "series": "Culture 05", 
+    "author": {
+      "lastName": "Banks", 
+      "firstName": "Iain M."
+    }, 
+    "title": "Inversions"
   }, 
   {
     "series": "", 
@@ -2536,20 +2528,20 @@ const initialBookData = [
     "title": "Furies of Calderon"
   }, 
   {
-    "series": "Culture 08", 
-    "author": {
-      "lastName": "Banks", 
-      "firstName": "Ian M."
-    }, 
-    "title": "Surface Detail"
-  }, 
-  {
     "series": "", 
     "author": {
       "lastName": "Berg", 
       "firstName": "Elizabeth"
     }, 
     "title": "Joy School"
+  }, 
+  {
+    "series": "", 
+    "author": {
+      "lastName": "Banks", 
+      "firstName": "Iain M."
+    }, 
+    "title": "The Wasp Factory"
   }, 
   {
     "series": "Prince of Nothing 02", 
@@ -2608,12 +2600,12 @@ const initialBookData = [
     "title": "Crash"
   }, 
   {
-    "series": "", 
+    "series": "Culture 07", 
     "author": {
       "lastName": "Banks", 
-      "firstName": "Ian M."
+      "firstName": "Iain M."
     }, 
-    "title": "Transition"
+    "title": "Matter"
   }, 
   {
     "series": "Prince of Nothing 03", 
@@ -2680,14 +2672,6 @@ const initialBookData = [
     "title": "Iron Kissed"
   }, 
   {
-    "series": "Culture 01", 
-    "author": {
-      "lastName": "Banks", 
-      "firstName": "Ian M."
-    }, 
-    "title": "Consider Phlebas"
-  }, 
-  {
     "series": "", 
     "author": {
       "lastName": "Brown", 
@@ -2702,6 +2686,22 @@ const initialBookData = [
       "firstName": "Jim"
     }, 
     "title": "Captain's Fury"
+  }, 
+  {
+    "series": "Culture 01", 
+    "author": {
+      "lastName": "Banks", 
+      "firstName": "Iain M."
+    }, 
+    "title": "Consider Phlebas"
+  }, 
+  {
+    "series": "Culture 08", 
+    "author": {
+      "lastName": "Banks", 
+      "firstName": "Iain M."
+    }, 
+    "title": "Surface Detail"
   }, 
   {
     "series": "Harry Dresden 13", 
