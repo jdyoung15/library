@@ -1757,7 +1757,7 @@ const initialBookData = [
       "lastName": "Asimov", 
       "firstName": "Isaac"
     }, 
-    "title": "I, Robot.pdf"
+    "title": "I, Robot"
   }, 
   {
     "series": "Foundation 02", 
@@ -9653,7 +9653,7 @@ const initialBookData = [
       "lastName": "Martin", 
       "firstName": "George R.R."
     }, 
-    "title": "A Dance With Dragons.pdf"
+    "title": "A Dance With Dragons"
   }, 
   {
     "series": "", 
