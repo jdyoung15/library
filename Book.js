@@ -80,7 +80,7 @@ var Book = function (_React$Component) {
   }, {
     key: '_fetchBookId',
     value: function _fetchBookId(title, author) {
-      var url = 'https://www.goodreads.com/search.xml?key=' + config.GOODREADS_API_KEY + '&q=' + title + ' ' + author.firstName + ' ' + author.lastName;
+      var url = 'https://www.goodreads.com/search.xml?key=' + config.GOODREADS_API_KEY + '&q=' + title;
       var self = this;
       return this._fetch(url).then(function (response) {
         return response.text();
@@ -88,9 +88,14 @@ var Book = function (_React$Component) {
         var parser = new DOMParser();
         var xml = parser.parseFromString(txt, 'text/xml');
         var results = Array.from(xml.getElementsByTagName('best_book'));
-        //let matches = results.filter(result => self._getFirstValue(result, 'title') === title);
-        //let selected = matches.length > 0 ? matches[0] : results[0];
-        var selected = results[0];
+
+        var matches = results.filter(function (result) {
+          var resultTitle = self._getFirstValue(result, 'title');
+          var resultAuthor = self._getFirstValue(result, 'name');
+          return resultTitle === title || resultAuthor.includes(author.lastName) && resultAuthor.includes(author.firstName);
+        });
+
+        var selected = matches.length > 0 ? matches[0] : results[0];
         return self._getFirstValue(selected, 'id');
       });
     }
