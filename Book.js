@@ -80,7 +80,7 @@ var Book = function (_React$Component) {
   }, {
     key: '_fetchBookId',
     value: function _fetchBookId(title, author) {
-      var url = 'https://www.goodreads.com/search.xml?key=' + config.GOODREADS_API_KEY + '&q=' + title + ' ' + author.firstName + ' ' + author.lastName;
+      var url = 'https://www.goodreads.com/search.xml?key=' + config.GOODREADS_API_KEY + '&q=' + title;
       var self = this;
       return this._fetch(url).then(function (response) {
         return response.text();

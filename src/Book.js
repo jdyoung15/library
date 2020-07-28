@@ -61,7 +61,7 @@ class Book extends React.Component {
   }
 
   _fetchBookId(title, author) {
-    const url = `https://www.goodreads.com/search.xml?key=${config.GOODREADS_API_KEY}&q=${title} ${author.firstName} ${author.lastName}`;
+    const url = `https://www.goodreads.com/search.xml?key=${config.GOODREADS_API_KEY}&q=${title}`;
     const self = this;
     return this._fetch(url)
       .then(response => response.text())
