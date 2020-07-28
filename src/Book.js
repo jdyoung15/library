@@ -61,14 +61,18 @@ class Book extends React.Component {
   }
 
   _fetchBookId(title, author) {
-    const url = `https://www.goodreads.com/search.xml?key=${config.GOODREADS_API_KEY}&q=${title}`;
+    const url = `https://www.goodreads.com/search.xml?key=${config.GOODREADS_API_KEY}&q=${title} ${author.firstName} ${author.lastName}`;
     const self = this;
     return this._fetch(url)
       .then(response => response.text())
       .then(txt => {
         let parser = new DOMParser();
         let xml = parser.parseFromString(txt, 'text/xml');
-        return self._getFirstValue(xml.getElementsByTagName('best_book')[0], 'id');
+        let results = Array.from(xml.getElementsByTagName('best_book'));
+        //let matches = results.filter(result => self._getFirstValue(result, 'title') === title);
+        //let selected = matches.length > 0 ? matches[0] : results[0];
+        let selected = results[0];
+        return self._getFirstValue(selected, 'id');
       });
   }
 
