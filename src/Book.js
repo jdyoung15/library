@@ -48,11 +48,11 @@ class Book extends React.Component {
             let xml = parser.parseFromString(txt, 'text/xml');
             let bookXml = xml.getElementsByTagName('book')[0];
             this.setState({
-              avgRating: this._extractFirstTagValue(bookXml, 'average_rating'),
-              ratingsCount: this._extractFirstTagValue(bookXml, 'ratings_count'),
-              numPages: this._extractFirstTagValue(bookXml, 'num_pages'),
-              origPubYear: this._extractFirstTagValue(bookXml, 'original_publication_year'),
-              description: this._extractFirstTagValue(bookXml, 'description'),
+              avgRating: this._getFirstValue(bookXml, 'average_rating'),
+              ratingsCount: this._getFirstValue(bookXml, 'ratings_count'),
+              numPages: this._getFirstValue(bookXml, 'num_pages'),
+              origPubYear: this._getFirstValue(bookXml, 'original_publication_year'),
+              description: this._getFirstValue(bookXml, 'description'),
               genres: this._extractGenres(bookXml),
               similarBooks: this._extractSimilarBooks(bookXml),
             });
@@ -61,15 +61,14 @@ class Book extends React.Component {
   }
 
   _fetchBookId(title, author) {
-    const url = `https://www.goodreads.com/search.xml?key=${config.GOODREADS_API_KEY}&q=${title}`;
+    const url = `https://www.goodreads.com/search.xml?key=${config.GOODREADS_API_KEY}&q=${title} ${author.firstName} ${author.lastName}`;
+    const self = this;
     return this._fetch(url)
       .then(response => response.text())
       .then(txt => {
         let parser = new DOMParser();
         let xml = parser.parseFromString(txt, 'text/xml');
-        let workXml = xml.getElementsByTagName('work')[0];
-        let bookId = workXml.getElementsByTagName('best_book')[0].getElementsByTagName('id')[0].childNodes[0].nodeValue;
-        return bookId;
+        return self._getFirstValue(xml.getElementsByTagName('best_book')[0], 'id');
       });
   }
 
@@ -77,7 +76,7 @@ class Book extends React.Component {
     return fetch(PROXY_URL + url);
   }
 
-  _extractFirstTagValue(xml, tagName) {
+  _getFirstValue(xml, tagName) {
     return xml.getElementsByTagName(tagName)[0].childNodes[0].nodeValue;
   }
 

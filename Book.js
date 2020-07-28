@@ -66,11 +66,11 @@ var Book = function (_React$Component) {
           var xml = parser.parseFromString(txt, 'text/xml');
           var bookXml = xml.getElementsByTagName('book')[0];
           _this2.setState({
-            avgRating: _this2._extractFirstTagValue(bookXml, 'average_rating'),
-            ratingsCount: _this2._extractFirstTagValue(bookXml, 'ratings_count'),
-            numPages: _this2._extractFirstTagValue(bookXml, 'num_pages'),
-            origPubYear: _this2._extractFirstTagValue(bookXml, 'original_publication_year'),
-            description: _this2._extractFirstTagValue(bookXml, 'description'),
+            avgRating: _this2._getFirstValue(bookXml, 'average_rating'),
+            ratingsCount: _this2._getFirstValue(bookXml, 'ratings_count'),
+            numPages: _this2._getFirstValue(bookXml, 'num_pages'),
+            origPubYear: _this2._getFirstValue(bookXml, 'original_publication_year'),
+            description: _this2._getFirstValue(bookXml, 'description'),
             genres: _this2._extractGenres(bookXml),
             similarBooks: _this2._extractSimilarBooks(bookXml)
           });
@@ -80,15 +80,14 @@ var Book = function (_React$Component) {
   }, {
     key: '_fetchBookId',
     value: function _fetchBookId(title, author) {
-      var url = 'https://www.goodreads.com/search.xml?key=' + config.GOODREADS_API_KEY + '&q=' + title;
+      var url = 'https://www.goodreads.com/search.xml?key=' + config.GOODREADS_API_KEY + '&q=' + title + ' ' + author.firstName + ' ' + author.lastName;
+      var self = this;
       return this._fetch(url).then(function (response) {
         return response.text();
       }).then(function (txt) {
         var parser = new DOMParser();
         var xml = parser.parseFromString(txt, 'text/xml');
-        var workXml = xml.getElementsByTagName('work')[0];
-        var bookId = workXml.getElementsByTagName('best_book')[0].getElementsByTagName('id')[0].childNodes[0].nodeValue;
-        return bookId;
+        return self._getFirstValue(xml.getElementsByTagName('best_book')[0], 'id');
       });
     }
   }, {
@@ -97,8 +96,8 @@ var Book = function (_React$Component) {
       return fetch(PROXY_URL + url);
     }
   }, {
-    key: '_extractFirstTagValue',
-    value: function _extractFirstTagValue(xml, tagName) {
+    key: '_getFirstValue',
+    value: function _getFirstValue(xml, tagName) {
       return xml.getElementsByTagName(tagName)[0].childNodes[0].nodeValue;
     }
   }, {
