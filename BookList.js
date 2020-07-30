@@ -16,12 +16,30 @@ var BookList = function (_React$Component) {
   function BookList(props) {
     _classCallCheck(this, BookList);
 
-    return _possibleConstructorReturn(this, (BookList.__proto__ || Object.getPrototypeOf(BookList)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (BookList.__proto__ || Object.getPrototypeOf(BookList)).call(this, props));
+
+    var books = [].concat(_toConsumableArray(_this.props.books));
+    _this._shuffleArray(books);
+    _this.state = {
+      books: books
+    };
+    return _this;
   }
 
   _createClass(BookList, [{
+    key: '_shuffleArray',
+    value: function _shuffleArray(array) {
+      for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var _ref = [array[j], array[i]];
+        array[i] = _ref[0];
+        array[j] = _ref[1];
+      }
+    }
+  }, {
     key: '_sortByAuthorThenTitle',
-    value: function _sortByAuthorThenTitle(books) {
+    value: function _sortByAuthorThenTitle() {
+      var books = [].concat(_toConsumableArray(this.state.books));
       var self = this;
       books.sort(function (bookA, bookB) {
         var compare = self._getAuthorForCompare(bookA).localeCompare(self._getAuthorForCompare(bookB));
@@ -32,7 +50,9 @@ var BookList = function (_React$Component) {
         return self._compareByTitle(bookA, bookB);
       });
 
-      return books;
+      this.setState({
+        books: books
+      });
     }
   }, {
     key: '_getAuthorForCompare',
@@ -52,9 +72,12 @@ var BookList = function (_React$Component) {
     }
   }, {
     key: '_sortByTitle',
-    value: function _sortByTitle(books) {
+    value: function _sortByTitle() {
+      var books = [].concat(_toConsumableArray(this.state.books));
       books.sort(this._compareByTitle.bind(this));
-      return books;
+      this.setState({
+        books: books
+      });
     }
   }, {
     key: '_toDisplayText',
@@ -77,7 +100,7 @@ var BookList = function (_React$Component) {
         this._sortByTitle(books);
       }
 
-      var bookList = books.map(function (book) {
+      var bookList = this.state.books.map(function (book) {
         var displayText = _this2._toDisplayText(book);
         return React.createElement(Book, {
           title: book.title,
@@ -89,9 +112,23 @@ var BookList = function (_React$Component) {
       });
 
       return React.createElement(
-        'ul',
+        'div',
         { className: 'book-list' },
-        bookList
+        React.createElement(
+          'button',
+          { onClick: this._sortByAuthorThenTitle.bind(this) },
+          'Sort by Author'
+        ),
+        React.createElement(
+          'button',
+          { onClick: this._sortByTitle.bind(this) },
+          'Sort by Title'
+        ),
+        React.createElement(
+          'ul',
+          { className: 'book-list-items' },
+          bookList
+        )
       );
     }
   }]);

@@ -3,9 +3,23 @@
 class BookList extends React.Component {
   constructor(props) {
     super(props);
+
+    const books = [...this.props.books];
+    this._shuffleArray(books);
+    this.state = {
+      books: books
+    }
   }
 
-  _sortByAuthorThenTitle(books) {
+  _shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+
+  _sortByAuthorThenTitle() {
+    const books = [...this.state.books];
     const self = this;
     books.sort((bookA, bookB) => {
       let compare = self._getAuthorForCompare(bookA).localeCompare(self._getAuthorForCompare(bookB));
@@ -14,10 +28,11 @@ class BookList extends React.Component {
       }
 
       return self._compareByTitle(bookA, bookB);
-  
     });
 
-    return books;
+    this.setState({
+      books: books
+    });
   }
 
   _getAuthorForCompare(book) {
@@ -33,9 +48,12 @@ class BookList extends React.Component {
     return `${series}${book.title}`;
   }
 
-  _sortByTitle(books) {
+  _sortByTitle() {
+    const books = [...this.state.books];
     books.sort(this._compareByTitle.bind(this));
-    return books;
+    this.setState({
+      books: books
+    });
   }
   
   _toDisplayText(book) {
@@ -55,7 +73,7 @@ class BookList extends React.Component {
       this._sortByTitle(books);
     }
 
-    let bookList = books.map(book => {
+    let bookList = this.state.books.map(book => {
       const displayText = this._toDisplayText(book);
       return (
         <Book 
@@ -68,9 +86,17 @@ class BookList extends React.Component {
     });
       
     return (
-      <ul className='book-list'>
-        {bookList}
-      </ul>
+      <div className='book-list'>
+        <button onClick={this._sortByAuthorThenTitle.bind(this)}>
+          Sort by Author
+        </button>
+        <button onClick={this._sortByTitle.bind(this)}>
+          Sort by Title 
+        </button>
+        <ul className='book-list-items'>
+          {bookList}
+        </ul>
+      </div>
     );
   }
 }
