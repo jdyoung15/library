@@ -37,6 +37,13 @@ var BookList = function (_React$Component) {
       }
     }
   }, {
+    key: '_toDisplayText',
+    value: function _toDisplayText(book) {
+      var author = book.author;
+      var authorDisplayText = '' + (author.lastName ? author.lastName + ', ' : '') + author.firstName;
+      return this._toDisplayTitle(book) + ' (' + authorDisplayText + ')';
+    }
+  }, {
     key: '_sortByAuthorThenTitle',
     value: function _sortByAuthorThenTitle() {
       var books = [].concat(_toConsumableArray(this.state.books));
@@ -80,11 +87,13 @@ var BookList = function (_React$Component) {
       });
     }
   }, {
-    key: '_toDisplayText',
-    value: function _toDisplayText(book) {
-      var author = book.author;
-      var authorDisplayText = '' + (author.lastName ? author.lastName + ', ' : '') + author.firstName;
-      return this._toDisplayTitle(book) + ' (' + authorDisplayText + ')';
+    key: '_randomize',
+    value: function _randomize() {
+      var books = [].concat(_toConsumableArray(this.state.books));
+      this._shuffleArray(books);
+      this.setState({
+        books: books
+      });
     }
   }, {
     key: 'render',
@@ -123,6 +132,11 @@ var BookList = function (_React$Component) {
           'button',
           { onClick: this._sortByTitle.bind(this) },
           'Sort by Title'
+        ),
+        React.createElement(
+          'button',
+          { onClick: this._randomize.bind(this) },
+          'Randomize'
         ),
         React.createElement(
           'ul',

@@ -18,6 +18,12 @@ class BookList extends React.Component {
     }
   }
 
+  _toDisplayText(book) {
+    const author = book.author;
+    const authorDisplayText = `${author.lastName ? author.lastName + ', ' : ''}${author.firstName}`;
+    return `${this._toDisplayTitle(book)} (${authorDisplayText})`;
+  }
+
   _sortByAuthorThenTitle() {
     const books = [...this.state.books];
     const self = this;
@@ -55,11 +61,13 @@ class BookList extends React.Component {
       books: books
     });
   }
-  
-  _toDisplayText(book) {
-    const author = book.author;
-    const authorDisplayText = `${author.lastName ? author.lastName + ', ' : ''}${author.firstName}`;
-    return `${this._toDisplayTitle(book)} (${authorDisplayText})`;
+
+  _randomize() {
+    const books = [...this.state.books];
+    this._shuffleArray(books);
+    this.setState({
+      books: books
+    });
   }
 
   render() {
@@ -92,6 +100,9 @@ class BookList extends React.Component {
         </button>
         <button onClick={this._sortByTitle.bind(this)}>
           Sort by Title 
+        </button>
+        <button onClick={this._randomize.bind(this)}>
+          Randomize 
         </button>
         <ul className='book-list-items'>
           {bookList}
