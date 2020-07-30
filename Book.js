@@ -184,6 +184,10 @@ var Book = function (_React$Component) {
     value: function render() {
       var _this3 = this;
 
+      if (this.props.hide) {
+        return null;
+      }
+
       var author = this.props.author;
       var details = void 0;
       if (this.state.expanded) {

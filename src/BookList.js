@@ -89,18 +89,17 @@ class BookList extends React.Component {
     }
 
     let bookList = this.state.books
-      .filter(book => {
-        const searchableWords = this._toDisplayText(book).toLowerCase();
-        return searchableWords.includes(this.state.query);
-      })
       .map(book => {
         const displayText = this._toDisplayText(book);
+        const searchableTerms = displayText.toLowerCase();
+        const hide = !searchableTerms.includes(this.state.query);
         return (
           <Book 
             title={book.title} 
             author={book.author} 
             series={book.series} 
             displayText={displayText}
+            hide={hide}
             key={displayText} 
           />);
     });

@@ -117,16 +117,16 @@ var BookList = function (_React$Component) {
         this._sortByTitle(books);
       }
 
-      var bookList = this.state.books.filter(function (book) {
-        var searchableWords = _this2._toDisplayText(book).toLowerCase();
-        return searchableWords.includes(_this2.state.query);
-      }).map(function (book) {
+      var bookList = this.state.books.map(function (book) {
         var displayText = _this2._toDisplayText(book);
+        var searchableTerms = displayText.toLowerCase();
+        var hide = !searchableTerms.includes(_this2.state.query);
         return React.createElement(Book, {
           title: book.title,
           author: book.author,
           series: book.series,
           displayText: displayText,
+          hide: hide,
           key: displayText
         });
       });
