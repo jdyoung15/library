@@ -30,7 +30,8 @@ var Book = function (_React$Component) {
       origPubYear: '',
       description: '',
       genres: [],
-      similarBooks: []
+      similarBooks: [],
+      truncateDescription: true
     };
     return _this;
   }
@@ -191,40 +192,45 @@ var Book = function (_React$Component) {
       var author = this.props.author;
       var details = void 0;
       if (this.state.expanded) {
+        var truncatedDesc = this.state.description.substring(0, 1000) + '...';
         details = React.createElement(
           'div',
           { className: 'book-details' },
+          React.createElement('div', { className: 'book-description', dangerouslySetInnerHTML: { __html: truncatedDesc } }),
           React.createElement(
             'div',
-            { className: 'book-stats' },
+            { className: 'book-addl-info' },
             React.createElement(
-              'span',
-              null,
-              'Rating: ',
-              this.state.avgRating
+              'div',
+              { className: 'book-stats' },
+              React.createElement(
+                'div',
+                null,
+                'Rating: ',
+                this.state.avgRating
+              ),
+              React.createElement(
+                'div',
+                null,
+                'Num ratings: ',
+                this.state.ratingsCount
+              ),
+              React.createElement(
+                'div',
+                null,
+                'Num pages: ',
+                this.state.numPages
+              ),
+              React.createElement(
+                'div',
+                null,
+                'Year: ',
+                this.state.origPubYear
+              )
             ),
-            React.createElement(
-              'span',
-              null,
-              'Num ratings: ',
-              this.state.ratingsCount
-            ),
-            React.createElement(
-              'span',
-              null,
-              'Num pages: ',
-              this.state.numPages
-            ),
-            React.createElement(
-              'span',
-              null,
-              'Year: ',
-              this.state.origPubYear
-            )
-          ),
-          React.createElement('div', { className: 'book-description', dangerouslySetInnerHTML: { __html: this.state.description } }),
-          this._renderGenres(),
-          this._renderSimilarBooks()
+            this._renderGenres(),
+            this._renderSimilarBooks()
+          )
         );
       }
       return React.createElement(

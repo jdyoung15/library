@@ -18,6 +18,7 @@ class Book extends React.Component {
       description: '',
       genres: [],
       similarBooks: [],
+      truncateDescription: true,
     };
   }
 
@@ -138,17 +139,20 @@ class Book extends React.Component {
     const author = this.props.author;
     let details;
     if (this.state.expanded) {
+      const truncatedDesc = this.state.description.substring(0, 1000) + '...';
       details = (
         <div className='book-details'>
-          <div className='book-stats'>
-            <span>Rating: {this.state.avgRating}</span>
-            <span>Num ratings: {this.state.ratingsCount}</span>
-            <span>Num pages: {this.state.numPages}</span>
-            <span>Year: {this.state.origPubYear}</span>
+          <div className='book-description' dangerouslySetInnerHTML={{__html: truncatedDesc}} />
+          <div className='book-addl-info'>
+            <div className='book-stats'>
+              <div>Rating: {this.state.avgRating}</div>
+              <div>Num ratings: {this.state.ratingsCount}</div>
+              <div>Num pages: {this.state.numPages}</div>
+              <div>Year: {this.state.origPubYear}</div>
+            </div>
+            {this._renderGenres()}
+            {this._renderSimilarBooks()}
           </div>
-          <div className='book-description' dangerouslySetInnerHTML={{__html: this.state.description}} />
-          {this._renderGenres()}
-          {this._renderSimilarBooks()}
         </div>
       );
     }

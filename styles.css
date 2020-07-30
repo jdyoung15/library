@@ -1,0 +1,19 @@
+.book-description {
+  display: inline-block;
+  vertical-align: top;
+  width: 500px;
+}
+
+.book-addl-info {
+  display: inline-block;
+  margin-left: 20px;
+  width: 300px;
+}
+
+.book-genres {
+  margin-top: 10px;
+}
+
+.similar-books {
+  margin-top: 10px;
+}
