@@ -12,6 +12,7 @@ var PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
 var EXCLUDED_SHELVES = ['to-read', 'currently-reading'];
 var NUM_GENRES = 3;
 var NUM_SIMILAR_BOOKS = 3;
+var DESC_TRUNCATION_LIMIT = 1000;
 
 var Book = function (_React$Component) {
   _inherits(Book, _React$Component);
@@ -192,7 +193,9 @@ var Book = function (_React$Component) {
       var author = this.props.author;
       var details = void 0;
       if (this.state.expanded) {
-        var truncatedDesc = this.state.description.substring(0, 1000) + '...';
+        var limit = this.state.truncateDescription ? DESC_TRUNCATION_LIMIT : Number.MAX_SAFE_INTEGER;
+        var ellipsis = this.state.description.length <= limit ? '' : '...';
+        var truncatedDesc = this.state.description.substring(0, limit) + ellipsis;
         details = React.createElement(
           'div',
           { className: 'book-details' },

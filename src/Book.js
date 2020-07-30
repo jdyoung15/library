@@ -4,6 +4,7 @@ const PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
 const EXCLUDED_SHELVES = ['to-read', 'currently-reading'];
 const NUM_GENRES = 3;
 const NUM_SIMILAR_BOOKS = 3;
+const DESC_TRUNCATION_LIMIT = 1000;
 
 class Book extends React.Component {
   constructor(props) {
@@ -139,7 +140,9 @@ class Book extends React.Component {
     const author = this.props.author;
     let details;
     if (this.state.expanded) {
-      const truncatedDesc = this.state.description.substring(0, 1000) + '...';
+      const limit = this.state.truncateDescription ? DESC_TRUNCATION_LIMIT : Number.MAX_SAFE_INTEGER;
+      const ellipsis = this.state.description.length <= limit ? '' : '...';
+      const truncatedDesc = this.state.description.substring(0, limit) + ellipsis;
       details = (
         <div className='book-details'>
           <div className='book-description' dangerouslySetInnerHTML={{__html: truncatedDesc}} />
