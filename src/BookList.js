@@ -7,7 +7,8 @@ class BookList extends React.Component {
     const books = [...this.props.books];
     this._shuffleArray(books);
     this.state = {
-      books: books
+      books: books,
+      query: '',
     }
   }
 
@@ -70,6 +71,12 @@ class BookList extends React.Component {
     });
   }
 
+  _handleSearchBoxChange(event) {
+    this.setState({
+      query: event.target.value.toLowerCase()
+    });
+  }
+
   render() {
     const self = this;
 
@@ -81,16 +88,21 @@ class BookList extends React.Component {
       this._sortByTitle(books);
     }
 
-    let bookList = this.state.books.map(book => {
-      const displayText = this._toDisplayText(book);
-      return (
-        <Book 
-          title={book.title} 
-          author={book.author} 
-          series={book.series} 
-          displayText={displayText}
-          key={displayText} 
-        />);
+    let bookList = this.state.books
+      .filter(book => {
+        const searchableWords = this._toDisplayText(book).toLowerCase();
+        return searchableWords.includes(this.state.query);
+      })
+      .map(book => {
+        const displayText = this._toDisplayText(book);
+        return (
+          <Book 
+            title={book.title} 
+            author={book.author} 
+            series={book.series} 
+            displayText={displayText}
+            key={displayText} 
+          />);
     });
       
     return (
@@ -104,6 +116,7 @@ class BookList extends React.Component {
         <button onClick={this._randomize.bind(this)}>
           Randomize 
         </button>
+        <input type='text' name='Search...' onChange={this._handleSearchBoxChange.bind(this)} />
         <ul className='book-list-items'>
           {bookList}
         </ul>

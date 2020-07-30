@@ -21,7 +21,8 @@ var BookList = function (_React$Component) {
     var books = [].concat(_toConsumableArray(_this.props.books));
     _this._shuffleArray(books);
     _this.state = {
-      books: books
+      books: books,
+      query: ''
     };
     return _this;
   }
@@ -96,6 +97,13 @@ var BookList = function (_React$Component) {
       });
     }
   }, {
+    key: '_handleSearchBoxChange',
+    value: function _handleSearchBoxChange(event) {
+      this.setState({
+        query: event.target.value.toLowerCase()
+      });
+    }
+  }, {
     key: 'render',
     value: function render() {
       var _this2 = this;
@@ -109,7 +117,10 @@ var BookList = function (_React$Component) {
         this._sortByTitle(books);
       }
 
-      var bookList = this.state.books.map(function (book) {
+      var bookList = this.state.books.filter(function (book) {
+        var searchableWords = _this2._toDisplayText(book).toLowerCase();
+        return searchableWords.includes(_this2.state.query);
+      }).map(function (book) {
         var displayText = _this2._toDisplayText(book);
         return React.createElement(Book, {
           title: book.title,
@@ -138,6 +149,7 @@ var BookList = function (_React$Component) {
           { onClick: this._randomize.bind(this) },
           'Randomize'
         ),
+        React.createElement('input', { type: 'text', name: 'Search...', onChange: this._handleSearchBoxChange.bind(this) }),
         React.createElement(
           'ul',
           { className: 'book-list-items' },
