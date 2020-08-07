@@ -11,7 +11,8 @@ class Book extends React.Component {
     super(props);
     this.state = {
       expanded: false,
-      fetched: false,
+      initiatedFetch: false,
+      receivedFetch: false,
       avgRating: '',
       ratingsCount: '',
       numPages: '',
@@ -28,14 +29,14 @@ class Book extends React.Component {
       expanded: !this.state.expanded
     });
 
-    if (this.state.fetched) {
+    if (this.state.initiatedFetch) {
       return;
     }
 
     this._fetchBookMetadata(title, author);
 
     this.setState({
-      fetched: true
+      initiatedFetch: true
     });
   }
 
@@ -50,6 +51,7 @@ class Book extends React.Component {
             let xml = parser.parseFromString(txt, 'text/xml');
             let bookXml = xml.getElementsByTagName('book')[0];
             this.setState({
+              receivedFetch: true,
               avgRating: this._getFirstValue(bookXml, 'average_rating'),
               ratingsCount: this._getFirstValue(bookXml, 'ratings_count'),
               numPages: this._getFirstValue(bookXml, 'num_pages'),
@@ -154,35 +156,46 @@ class Book extends React.Component {
     }
 
     const author = this.props.author;
-    let details;
+    let bookContent;
     if (this.state.expanded) {
-      const limit = this.state.truncateDescription ? DESC_TRUNCATION_LIMIT : Number.MAX_SAFE_INTEGER;
-      const ellipsis = this.state.description.length <= limit ? '' : '...';
-      const truncatedDesc = this.state.description.substring(0, limit) + ellipsis;
-      details = (
-        <div className='book-details'>
-          <div className='book-description' dangerouslySetInnerHTML={{__html: truncatedDesc}} />
-          <div className='book-addl-info'>
-            <table className='book-stats'>
-              <tbody>
-                <tr><td>Rating:</td><td>{this.state.avgRating}</td></tr>
-                <tr><td># Ratings:</td><td>{this._formatLargeNum(this.state.ratingsCount)}</td></tr>
-                <tr><td># Pages:</td><td>{this.state.numPages}</td></tr>
-                <tr><td>Year:</td><td>{this.state.origPubYear}</td></tr>
-              </tbody>
-            </table>
-            {this._renderGenres()}
-            {this._renderSimilarBooks()}
+      if (!this.state.receivedFetch) {
+        bookContent = (
+          <div className="spinner">
+            <div className="bounce1"></div>
+            <div className="bounce2"></div>
+            <div className="bounce3"></div>
           </div>
-        </div>
-      );
+        );
+      }
+      else {
+        const limit = this.state.truncateDescription ? DESC_TRUNCATION_LIMIT : Number.MAX_SAFE_INTEGER;
+        const ellipsis = this.state.description.length <= limit ? '' : '...';
+        const truncatedDesc = this.state.description.substring(0, limit) + ellipsis;
+        bookContent = (
+          <div className='book-details'>
+            <div className='book-description' dangerouslySetInnerHTML={{__html: truncatedDesc}} />
+            <div className='book-addl-info'>
+              <table className='book-stats'>
+                <tbody>
+                  <tr><td>Rating:</td><td>{this.state.avgRating}</td></tr>
+                  <tr><td># Ratings:</td><td>{this._formatLargeNum(this.state.ratingsCount)}</td></tr>
+                  <tr><td># Pages:</td><td>{this.state.numPages}</td></tr>
+                  <tr><td>Year:</td><td>{this.state.origPubYear}</td></tr>
+                </tbody>
+              </table>
+              {this._renderGenres()}
+              {this._renderSimilarBooks()}
+            </div>
+          </div>
+        );
+      }
     }
     return (
       <li className={`book-item${this.state.expanded ? ' expanded' : ''}`}>
         <div className='book-hdr' onClick={() => this._toggleExpanded(this.props.title, author)}>
           {this.props.displayText}
         </div>
-        {details}
+        {bookContent}
       </li>
     );
   }

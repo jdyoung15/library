@@ -24,7 +24,8 @@ var Book = function (_React$Component) {
 
     _this.state = {
       expanded: false,
-      fetched: false,
+      initiatedFetch: false,
+      receivedFetch: false,
       avgRating: '',
       ratingsCount: '',
       numPages: '',
@@ -44,14 +45,14 @@ var Book = function (_React$Component) {
         expanded: !this.state.expanded
       });
 
-      if (this.state.fetched) {
+      if (this.state.initiatedFetch) {
         return;
       }
 
       this._fetchBookMetadata(title, author);
 
       this.setState({
-        fetched: true
+        initiatedFetch: true
       });
     }
   }, {
@@ -68,6 +69,7 @@ var Book = function (_React$Component) {
           var xml = parser.parseFromString(txt, 'text/xml');
           var bookXml = xml.getElementsByTagName('book')[0];
           _this2.setState({
+            receivedFetch: true,
             avgRating: _this2._getFirstValue(bookXml, 'average_rating'),
             ratingsCount: _this2._getFirstValue(bookXml, 'ratings_count'),
             numPages: _this2._getFirstValue(bookXml, 'num_pages'),
@@ -208,86 +210,96 @@ var Book = function (_React$Component) {
       }
 
       var author = this.props.author;
-      var details = void 0;
+      var bookContent = void 0;
       if (this.state.expanded) {
-        var limit = this.state.truncateDescription ? DESC_TRUNCATION_LIMIT : Number.MAX_SAFE_INTEGER;
-        var ellipsis = this.state.description.length <= limit ? '' : '...';
-        var truncatedDesc = this.state.description.substring(0, limit) + ellipsis;
-        details = React.createElement(
-          'div',
-          { className: 'book-details' },
-          React.createElement('div', { className: 'book-description', dangerouslySetInnerHTML: { __html: truncatedDesc } }),
-          React.createElement(
+        if (!this.state.receivedFetch) {
+          bookContent = React.createElement(
             'div',
-            { className: 'book-addl-info' },
+            { className: 'spinner' },
+            React.createElement('div', { className: 'bounce1' }),
+            React.createElement('div', { className: 'bounce2' }),
+            React.createElement('div', { className: 'bounce3' })
+          );
+        } else {
+          var limit = this.state.truncateDescription ? DESC_TRUNCATION_LIMIT : Number.MAX_SAFE_INTEGER;
+          var ellipsis = this.state.description.length <= limit ? '' : '...';
+          var truncatedDesc = this.state.description.substring(0, limit) + ellipsis;
+          bookContent = React.createElement(
+            'div',
+            { className: 'book-details' },
+            React.createElement('div', { className: 'book-description', dangerouslySetInnerHTML: { __html: truncatedDesc } }),
             React.createElement(
-              'table',
-              { className: 'book-stats' },
+              'div',
+              { className: 'book-addl-info' },
               React.createElement(
-                'tbody',
-                null,
+                'table',
+                { className: 'book-stats' },
                 React.createElement(
-                  'tr',
+                  'tbody',
                   null,
                   React.createElement(
-                    'td',
+                    'tr',
                     null,
-                    'Rating:'
+                    React.createElement(
+                      'td',
+                      null,
+                      'Rating:'
+                    ),
+                    React.createElement(
+                      'td',
+                      null,
+                      this.state.avgRating
+                    )
                   ),
                   React.createElement(
-                    'td',
+                    'tr',
                     null,
-                    this.state.avgRating
-                  )
-                ),
-                React.createElement(
-                  'tr',
-                  null,
-                  React.createElement(
-                    'td',
-                    null,
-                    '# Ratings:'
+                    React.createElement(
+                      'td',
+                      null,
+                      '# Ratings:'
+                    ),
+                    React.createElement(
+                      'td',
+                      null,
+                      this._formatLargeNum(this.state.ratingsCount)
+                    )
                   ),
                   React.createElement(
-                    'td',
+                    'tr',
                     null,
-                    this._formatLargeNum(this.state.ratingsCount)
-                  )
-                ),
-                React.createElement(
-                  'tr',
-                  null,
-                  React.createElement(
-                    'td',
-                    null,
-                    '# Pages:'
+                    React.createElement(
+                      'td',
+                      null,
+                      '# Pages:'
+                    ),
+                    React.createElement(
+                      'td',
+                      null,
+                      this.state.numPages
+                    )
                   ),
                   React.createElement(
-                    'td',
+                    'tr',
                     null,
-                    this.state.numPages
-                  )
-                ),
-                React.createElement(
-                  'tr',
-                  null,
-                  React.createElement(
-                    'td',
-                    null,
-                    'Year:'
-                  ),
-                  React.createElement(
-                    'td',
-                    null,
-                    this.state.origPubYear
+                    React.createElement(
+                      'td',
+                      null,
+                      'Year:'
+                    ),
+                    React.createElement(
+                      'td',
+                      null,
+                      this.state.origPubYear
+                    )
                   )
                 )
-              )
-            ),
-            this._renderGenres(),
-            this._renderSimilarBooks()
-          )
-        );
+              ),
+              this._renderGenres(),
+              this._renderSimilarBooks()
+            )
+          );
+        }
       }
       return React.createElement(
         'li',
@@ -299,7 +311,7 @@ var Book = function (_React$Component) {
             } },
           this.props.displayText
         ),
-        details
+        bookContent
       );
     }
   }]);
