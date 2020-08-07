@@ -132,6 +132,22 @@ class Book extends React.Component {
     );
   }
 
+  _formatLargeNum(num) {
+    const units= ['', 'K', 'M', 'B', 'T'];
+    let result = num;
+    let i = 0;
+    while (result > 1000) {
+      i++;
+      result = (result / 1000).toFixed(i > 1 ? 1 : 0);
+    }
+
+    if (i >= units.length) {
+      return num;
+    }
+
+    return result.toString() + units[i];
+  }
+
   render() {
     if (this.props.hide) {
       return null;
@@ -149,8 +165,8 @@ class Book extends React.Component {
           <div className='book-addl-info'>
             <table className='book-stats'>
               <tr><td>Rating:</td><td>{this.state.avgRating}</td></tr>
-              <tr><td># Ratings:</td><td>{this.state.ratingsCount}</td></tr>
-              <tr><td># Pages:</td><td>{this.state.numPages}</td></tr>
+              <tr><td># Ratings:</td><td>{this._formatLargeNum(this.state.ratingsCount)}</td></tr>
+              <tr><td># Pages:</td><td>{this._formatLargeNum(this.state.numPages)}</td></tr>
               <tr><td>Year:</td><td>{this.state.origPubYear}</td></tr>
             </table>
             {this._renderGenres()}

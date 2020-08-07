@@ -182,6 +182,23 @@ var Book = function (_React$Component) {
       );
     }
   }, {
+    key: '_formatLargeNum',
+    value: function _formatLargeNum(num) {
+      var units = ['', 'K', 'M', 'B', 'T'];
+      var result = num;
+      var i = 0;
+      while (result > 1000) {
+        i++;
+        result = (result / 1000).toFixed(i > 1 ? 1 : 0);
+      }
+
+      if (i >= units.length) {
+        return num;
+      }
+
+      return result.toString() + units[i];
+    }
+  }, {
     key: 'render',
     value: function render() {
       var _this3 = this;
@@ -231,7 +248,7 @@ var Book = function (_React$Component) {
                 React.createElement(
                   'td',
                   null,
-                  this.state.ratingsCount
+                  this._formatLargeNum(this.state.ratingsCount)
                 )
               ),
               React.createElement(
@@ -245,7 +262,7 @@ var Book = function (_React$Component) {
                 React.createElement(
                   'td',
                   null,
-                  this.state.numPages
+                  this._formatLargeNum(this.state.numPages)
                 )
               ),
               React.createElement(
