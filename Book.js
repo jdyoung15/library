@@ -262,7 +262,7 @@ var Book = function (_React$Component) {
                 React.createElement(
                   'td',
                   null,
-                  this._formatLargeNum(this.state.numPages)
+                  this.state.numPages
                 )
               ),
               React.createElement(

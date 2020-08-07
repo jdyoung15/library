@@ -166,7 +166,7 @@ class Book extends React.Component {
             <table className='book-stats'>
               <tr><td>Rating:</td><td>{this.state.avgRating}</td></tr>
               <tr><td># Ratings:</td><td>{this._formatLargeNum(this.state.ratingsCount)}</td></tr>
-              <tr><td># Pages:</td><td>{this._formatLargeNum(this.state.numPages)}</td></tr>
+              <tr><td># Pages:</td><td>{this.state.numPages}</td></tr>
               <tr><td>Year:</td><td>{this.state.origPubYear}</td></tr>
             </table>
             {this._renderGenres()}
