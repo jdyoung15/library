@@ -8,6 +8,7 @@ class Library extends React.Component {
   render() {
     return (
       <div className='library'>
+        <h1>Books</h1>
         <BookList books={initialBookData} />
       </div>
     );

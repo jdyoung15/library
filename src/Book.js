@@ -111,7 +111,7 @@ class Book extends React.Component {
     let genres = this.state.genres.map(genre => (<li className='genre' key={genre}>{genre}</li>));
     return (
       <div className='book-genres'>
-        <span>Genres:</span>
+        <h3>Genres</h3>
         <ul className='genre-list'>
           {genres}
         </ul>
@@ -124,7 +124,7 @@ class Book extends React.Component {
       (<li className='similar-book' key={similarBook}>{similarBook}</li>));
     return (
       <div className='similar-books'>
-        <span>Similar books:</span>
+        <h3>Similar books</h3>
         <ul className='similar-books-list'>
           {similarBooks}
         </ul>
@@ -147,12 +147,12 @@ class Book extends React.Component {
         <div className='book-details'>
           <div className='book-description' dangerouslySetInnerHTML={{__html: truncatedDesc}} />
           <div className='book-addl-info'>
-            <div className='book-stats'>
-              <div>Rating: {this.state.avgRating}</div>
-              <div>Num ratings: {this.state.ratingsCount}</div>
-              <div>Num pages: {this.state.numPages}</div>
-              <div>Year: {this.state.origPubYear}</div>
-            </div>
+            <table className='book-stats'>
+              <tr><td>Rating:</td><td>{this.state.avgRating}</td></tr>
+              <tr><td># Ratings:</td><td>{this.state.ratingsCount}</td></tr>
+              <tr><td># Pages:</td><td>{this.state.numPages}</td></tr>
+              <tr><td>Year:</td><td>{this.state.origPubYear}</td></tr>
+            </table>
             {this._renderGenres()}
             {this._renderSimilarBooks()}
           </div>
@@ -160,10 +160,10 @@ class Book extends React.Component {
       );
     }
     return (
-      <li className='book-item'>
-        <span className='book-hdr' onClick={() => this._toggleExpanded(this.props.title, author)}>
+      <li className={`book-item${this.state.expanded ? ' expanded' : ''}`}>
+        <div className='book-hdr' onClick={() => this._toggleExpanded(this.props.title, author)}>
           {this.props.displayText}
-        </span>
+        </div>
         {details}
       </li>
     );

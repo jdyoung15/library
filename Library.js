@@ -23,6 +23,11 @@ var Library = function (_React$Component) {
       return React.createElement(
         'div',
         { className: 'library' },
+        React.createElement(
+          'h1',
+          null,
+          'Books'
+        ),
         React.createElement(BookList, { books: initialBookData })
       );
     }

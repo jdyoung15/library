@@ -145,9 +145,9 @@ var Book = function (_React$Component) {
         'div',
         { className: 'book-genres' },
         React.createElement(
-          'span',
+          'h3',
           null,
-          'Genres:'
+          'Genres'
         ),
         React.createElement(
           'ul',
@@ -170,9 +170,9 @@ var Book = function (_React$Component) {
         'div',
         { className: 'similar-books' },
         React.createElement(
-          'span',
+          'h3',
           null,
-          'Similar books:'
+          'Similar books'
         ),
         React.createElement(
           'ul',
@@ -204,31 +204,63 @@ var Book = function (_React$Component) {
             'div',
             { className: 'book-addl-info' },
             React.createElement(
-              'div',
+              'table',
               { className: 'book-stats' },
               React.createElement(
-                'div',
+                'tr',
                 null,
-                'Rating: ',
-                this.state.avgRating
+                React.createElement(
+                  'td',
+                  null,
+                  'Rating:'
+                ),
+                React.createElement(
+                  'td',
+                  null,
+                  this.state.avgRating
+                )
               ),
               React.createElement(
-                'div',
+                'tr',
                 null,
-                'Num ratings: ',
-                this.state.ratingsCount
+                React.createElement(
+                  'td',
+                  null,
+                  '# Ratings:'
+                ),
+                React.createElement(
+                  'td',
+                  null,
+                  this.state.ratingsCount
+                )
               ),
               React.createElement(
-                'div',
+                'tr',
                 null,
-                'Num pages: ',
-                this.state.numPages
+                React.createElement(
+                  'td',
+                  null,
+                  '# Pages:'
+                ),
+                React.createElement(
+                  'td',
+                  null,
+                  this.state.numPages
+                )
               ),
               React.createElement(
-                'div',
+                'tr',
                 null,
-                'Year: ',
-                this.state.origPubYear
+                React.createElement(
+                  'td',
+                  null,
+                  'Year:'
+                ),
+                React.createElement(
+                  'td',
+                  null,
+                  this.state.origPubYear
+                )
               )
             ),
             this._renderGenres(),
@@ -238,9 +270,9 @@ var Book = function (_React$Component) {
       }
       return React.createElement(
         'li',
-        { className: 'book-item' },
+        { className: 'book-item' + (this.state.expanded ? ' expanded' : '') },
         React.createElement(
-          'span',
+          'div',
           { className: 'book-hdr', onClick: function onClick() {
               return _this3._toggleExpanded(_this3.props.title, author);
             } },
