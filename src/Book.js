@@ -164,10 +164,12 @@ class Book extends React.Component {
           <div className='book-description' dangerouslySetInnerHTML={{__html: truncatedDesc}} />
           <div className='book-addl-info'>
             <table className='book-stats'>
-              <tr><td>Rating:</td><td>{this.state.avgRating}</td></tr>
-              <tr><td># Ratings:</td><td>{this._formatLargeNum(this.state.ratingsCount)}</td></tr>
-              <tr><td># Pages:</td><td>{this.state.numPages}</td></tr>
-              <tr><td>Year:</td><td>{this.state.origPubYear}</td></tr>
+              <tbody>
+                <tr><td>Rating:</td><td>{this.state.avgRating}</td></tr>
+                <tr><td># Ratings:</td><td>{this._formatLargeNum(this.state.ratingsCount)}</td></tr>
+                <tr><td># Pages:</td><td>{this.state.numPages}</td></tr>
+                <tr><td>Year:</td><td>{this.state.origPubYear}</td></tr>
+              </tbody>
             </table>
             {this._renderGenres()}
             {this._renderSimilarBooks()}

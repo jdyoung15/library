@@ -224,59 +224,63 @@ var Book = function (_React$Component) {
               'table',
               { className: 'book-stats' },
               React.createElement(
-                'tr',
+                'tbody',
                 null,
                 React.createElement(
-                  'td',
+                  'tr',
                   null,
-                  'Rating:'
+                  React.createElement(
+                    'td',
+                    null,
+                    'Rating:'
+                  ),
+                  React.createElement(
+                    'td',
+                    null,
+                    this.state.avgRating
+                  )
                 ),
                 React.createElement(
-                  'td',
+                  'tr',
                   null,
-                  this.state.avgRating
-                )
-              ),
-              React.createElement(
-                'tr',
-                null,
-                React.createElement(
-                  'td',
-                  null,
-                  '# Ratings:'
+                  React.createElement(
+                    'td',
+                    null,
+                    '# Ratings:'
+                  ),
+                  React.createElement(
+                    'td',
+                    null,
+                    this._formatLargeNum(this.state.ratingsCount)
+                  )
                 ),
                 React.createElement(
-                  'td',
+                  'tr',
                   null,
-                  this._formatLargeNum(this.state.ratingsCount)
-                )
-              ),
-              React.createElement(
-                'tr',
-                null,
-                React.createElement(
-                  'td',
-                  null,
-                  '# Pages:'
+                  React.createElement(
+                    'td',
+                    null,
+                    '# Pages:'
+                  ),
+                  React.createElement(
+                    'td',
+                    null,
+                    this.state.numPages
+                  )
                 ),
                 React.createElement(
-                  'td',
+                  'tr',
                   null,
-                  this.state.numPages
-                )
-              ),
-              React.createElement(
-                'tr',
-                null,
-                React.createElement(
-                  'td',
-                  null,
-                  'Year:'
-                ),
-                React.createElement(
-                  'td',
-                  null,
-                  this.state.origPubYear
+                  React.createElement(
+                    'td',
+                    null,
+                    'Year:'
+                  ),
+                  React.createElement(
+                    'td',
+                    null,
+                    this.state.origPubYear
+                  )
                 )
               )
             ),
