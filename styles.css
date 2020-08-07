@@ -5,7 +5,7 @@
 }
 
 .library h1 {
-  font-size: 24px;
+  font-size: 32px;
 }
 
 .book-list {
@@ -38,9 +38,7 @@
   cursor: pointer;
   display: inline-block;
   font-size: 16px;
-  font-variant: small-caps;
   margin-bottom: 10px;
-  text-decoration: underline;
 }
 
 .book-description {
