@@ -47,6 +47,10 @@
   width: 500px;
 }
 
+.book-description p {
+  margin-bottom: 10px;
+}
+
 .book-addl-info {
   display: inline-block;
   margin-left: 20px;
