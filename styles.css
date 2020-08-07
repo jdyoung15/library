@@ -31,6 +31,10 @@
   padding: 10px;
 }
 
+.book-details {
+  line-height: 1.3;
+}
+
 .book-hdr {
   cursor: pointer;
   display: inline-block;
