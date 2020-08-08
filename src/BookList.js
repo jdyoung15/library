@@ -113,7 +113,7 @@ class BookList extends React.Component {
           Sort by Title 
         </button>
         <button onClick={this._randomize.bind(this)}>
-          Shuffle 
+          Shuffle all
         </button>
         <input type='text' placeholder='Search...' size="70" onChange={this._handleSearchBoxChange.bind(this)} />
         <ul className='book-list-items'>
