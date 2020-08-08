@@ -311,7 +311,12 @@ var Book = function (_React$Component) {
           { className: 'book-hdr', onClick: function onClick() {
               return _this3._toggleExpanded(_this3.props.title, author);
             } },
-          this.props.displayText
+          React.createElement(
+            'span',
+            null,
+            this.props.displayText
+          ),
+          React.createElement('i', { className: 'arrow ' + (this.state.expanded ? 'down' : 'up') })
         ),
         bookContent
       );

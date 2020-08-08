@@ -195,7 +195,8 @@ class Book extends React.Component {
     return (
       <li className={`book-item${this.state.expanded ? ' expanded' : ''}`}>
         <div className='book-hdr' onClick={() => this._toggleExpanded(this.props.title, author)}>
-          {this.props.displayText}
+          <span>{this.props.displayText}</span>
+          <i className={`arrow ${this.state.expanded ? 'down' : 'up'}`} />
         </div>
         {bookContent}
       </li>
