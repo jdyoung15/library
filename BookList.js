@@ -117,9 +117,6 @@ var BookList = function (_React$Component) {
     key: '_matchesAllQueryTerms',
     value: function _matchesAllQueryTerms(s) {
       var terms = this._toTerms(s);
-      if (s.includes('Sebold')) {
-        console.log(terms);
-      }
 
       var _loop = function _loop(queryTerm) {
         var matches = terms.filter(function (term) {

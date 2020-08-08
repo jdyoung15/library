@@ -87,9 +87,6 @@ class BookList extends React.Component {
 
   _matchesAllQueryTerms(s) {
     const terms = this._toTerms(s);
-    if (s.includes('Sebold')) {
-      console.log(terms);
-    }
     for (const queryTerm of this.state.queryTerms) {
       const matches = terms.filter(term => term.startsWith(queryTerm)).length > 0;
       if (!matches) {
