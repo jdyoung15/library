@@ -115,7 +115,7 @@ class BookList extends React.Component {
         <button onClick={this._randomize.bind(this)}>
           Shuffle 
         </button>
-        <input type='text' name='Search...' onChange={this._handleSearchBoxChange.bind(this)} />
+        <input type='text' placeholder='Search...' size="70" onChange={this._handleSearchBoxChange.bind(this)} />
         <ul className='book-list-items'>
           {bookList}
         </ul>

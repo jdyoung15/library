@@ -149,7 +149,7 @@ var BookList = function (_React$Component) {
           { onClick: this._randomize.bind(this) },
           'Shuffle'
         ),
-        React.createElement('input', { type: 'text', name: 'Search...', onChange: this._handleSearchBoxChange.bind(this) }),
+        React.createElement('input', { type: 'text', placeholder: 'Search...', size: '70', onChange: this._handleSearchBoxChange.bind(this) }),
         React.createElement(
           'ul',
           { className: 'book-list-items' },
