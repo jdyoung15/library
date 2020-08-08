@@ -57,6 +57,7 @@ class Book extends React.Component {
               numPages: this._getFirstValue(bookXml, 'num_pages'),
               origPubYear: this._getFirstValue(bookXml, 'original_publication_year'),
               description: this._getFirstValue(bookXml, 'description'),
+              url: this._getFirstValue(bookXml, 'url'),
               genres: this._extractGenres(bookXml),
               similarBooks: this._extractSimilarBooks(bookXml),
             });
@@ -170,7 +171,8 @@ class Book extends React.Component {
       else {
         const limit = this.state.truncateDescription ? DESC_TRUNCATION_LIMIT : Number.MAX_SAFE_INTEGER;
         const ellipsis = this.state.description.length <= limit ? '' : '...';
-        const truncatedDesc = this.state.description.substring(0, limit) + ellipsis;
+        const link = `<a href=${this.state.url} target='_blank'>Goodreads page</a>`;
+        const truncatedDesc = `${this.state.description.substring(0, limit)}${ellipsis}<br><br>${link}` 
         bookContent = (
           <div className='book-details'>
             <div className='book-description' dangerouslySetInnerHTML={{__html: truncatedDesc}} />

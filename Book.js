@@ -75,6 +75,7 @@ var Book = function (_React$Component) {
             numPages: _this2._getFirstValue(bookXml, 'num_pages'),
             origPubYear: _this2._getFirstValue(bookXml, 'original_publication_year'),
             description: _this2._getFirstValue(bookXml, 'description'),
+            url: _this2._getFirstValue(bookXml, 'url'),
             genres: _this2._extractGenres(bookXml),
             similarBooks: _this2._extractSimilarBooks(bookXml)
           });
@@ -223,7 +224,8 @@ var Book = function (_React$Component) {
         } else {
           var limit = this.state.truncateDescription ? DESC_TRUNCATION_LIMIT : Number.MAX_SAFE_INTEGER;
           var ellipsis = this.state.description.length <= limit ? '' : '...';
-          var truncatedDesc = this.state.description.substring(0, limit) + ellipsis;
+          var link = '<a href=' + this.state.url + ' target=\'_blank\'>Goodreads page</a>';
+          var truncatedDesc = '' + this.state.description.substring(0, limit) + ellipsis + '<br><br>' + link;
           bookContent = React.createElement(
             'div',
             { className: 'book-details' },

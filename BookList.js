@@ -147,7 +147,7 @@ var BookList = function (_React$Component) {
         React.createElement(
           'button',
           { onClick: this._randomize.bind(this) },
-          'Randomize'
+          'Shuffle'
         ),
         React.createElement('input', { type: 'text', name: 'Search...', onChange: this._handleSearchBoxChange.bind(this) }),
         React.createElement(
