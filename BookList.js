@@ -1,5 +1,7 @@
 'use strict';
 
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
@@ -22,7 +24,7 @@ var BookList = function (_React$Component) {
     _this._shuffleArray(books);
     _this.state = {
       books: books,
-      query: ''
+      queryTerms: []
     };
     return _this;
   }
@@ -99,9 +101,65 @@ var BookList = function (_React$Component) {
   }, {
     key: '_handleSearchBoxChange',
     value: function _handleSearchBoxChange(event) {
+      var query = event.target.value;
       this.setState({
-        query: event.target.value.toLowerCase()
+        queryTerms: this._toTerms(query)
       });
+    }
+  }, {
+    key: '_toTerms',
+    value: function _toTerms(s) {
+      return s.trim().toLowerCase().split(' ').map(function (term) {
+        return term.trim().replace(/[\W_]+/g, '');
+      });
+    }
+  }, {
+    key: '_matchesAllQueryTerms',
+    value: function _matchesAllQueryTerms(s) {
+      var terms = this._toTerms(s);
+      if (s.includes('Sebold')) {
+        console.log(terms);
+      }
+
+      var _loop = function _loop(queryTerm) {
+        var matches = terms.filter(function (term) {
+          return term.startsWith(queryTerm);
+        }).length > 0;
+        if (!matches) {
+          return {
+            v: false
+          };
+        }
+      };
+
+      var _iteratorNormalCompletion = true;
+      var _didIteratorError = false;
+      var _iteratorError = undefined;
+
+      try {
+        for (var _iterator = this.state.queryTerms[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+          var queryTerm = _step.value;
+
+          var _ret = _loop(queryTerm);
+
+          if ((typeof _ret === 'undefined' ? 'undefined' : _typeof(_ret)) === "object") return _ret.v;
+        }
+      } catch (err) {
+        _didIteratorError = true;
+        _iteratorError = err;
+      } finally {
+        try {
+          if (!_iteratorNormalCompletion && _iterator.return) {
+            _iterator.return();
+          }
+        } finally {
+          if (_didIteratorError) {
+            throw _iteratorError;
+          }
+        }
+      }
+
+      return true;
     }
   }, {
     key: 'render',
@@ -119,8 +177,7 @@ var BookList = function (_React$Component) {
 
       var bookList = this.state.books.map(function (book) {
         var displayText = _this2._toDisplayText(book);
-        var searchableTerms = displayText.toLowerCase();
-        var hide = !searchableTerms.includes(_this2.state.query);
+        var hide = !_this2._matchesAllQueryTerms(displayText);
         return React.createElement(Book, {
           title: book.title,
           author: book.author,

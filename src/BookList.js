@@ -8,7 +8,7 @@ class BookList extends React.Component {
     this._shuffleArray(books);
     this.state = {
       books: books,
-      query: '',
+      queryTerms: [],
     }
   }
 
@@ -72,9 +72,31 @@ class BookList extends React.Component {
   }
 
   _handleSearchBoxChange(event) {
+    const query = event.target.value;
     this.setState({
-      query: event.target.value.toLowerCase()
+      queryTerms: this._toTerms(query)
     });
+  }
+
+  _toTerms(s) {
+    return s.trim().toLowerCase().split(' ').map(term => {
+      return term.trim().replace(/[\W_]+/g, '');
+    });
+
+  }
+
+  _matchesAllQueryTerms(s) {
+    const terms = this._toTerms(s);
+    if (s.includes('Sebold')) {
+      console.log(terms);
+    }
+    for (const queryTerm of this.state.queryTerms) {
+      const matches = terms.filter(term => term.startsWith(queryTerm)).length > 0;
+      if (!matches) {
+        return false;
+      }
+    }
+    return true;
   }
 
   render() {
@@ -91,8 +113,7 @@ class BookList extends React.Component {
     let bookList = this.state.books
       .map(book => {
         const displayText = this._toDisplayText(book);
-        const searchableTerms = displayText.toLowerCase();
-        const hide = !searchableTerms.includes(this.state.query);
+        const hide = !this._matchesAllQueryTerms(displayText);
         return (
           <Book 
             title={book.title} 

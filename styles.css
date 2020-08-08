@@ -41,6 +41,10 @@
   margin-bottom: 10px;
 }
 
+.expanded .book-hdr {
+  text-decoration: underline;
+}
+
 /* https://www.w3schools.com/howto/howto_css_arrows.asp */
 .arrow {
   border: solid black;
