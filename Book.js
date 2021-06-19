@@ -60,24 +60,54 @@ var Book = function (_React$Component) {
     value: function _fetchBookMetadata(title, author) {
       var _this2 = this;
 
+      var url = 'https://www.googleapis.com/books/v1/volumes?q=+inauthor:' + author.firstName + '+' + author.lastName + '+intitle:' + title;
+      //const url = `https://www.goodreads.com/book/show/${bookId}.xml?key=${config.GOODREADS_API_KEY}`;
+      console.log(url);
+      return this._fetch(url).then(function (response) {
+        return response.json();
+      }).then(function (json) {
+        if (json.totalItems === 0) {
+          console.log('No books found');
+        }
+
+        var info = json.items[0].volumeInfo;
+        console.log(json.items[0]);
+        _this2.setState({
+          receivedFetch: true,
+          avgRating: info.averageRating,
+          ratingsCount: info.ratingsCount,
+          numPages: info.pageCount,
+          origPubYear: info.publishedDate,
+          description: info.description || '',
+          goodreadsUrl: info.canonicalVolumeLink,
+          genres: info.categories,
+          similarBooks: []
+        });
+      });
+    }
+  }, {
+    key: '_fetchBookMetadataOld',
+    value: function _fetchBookMetadataOld(title, author) {
+      var _this3 = this;
+
       return this._fetchBookId(title, author).then(function (bookId) {
         var url = 'https://www.goodreads.com/book/show/' + bookId + '.xml?key=' + config.GOODREADS_API_KEY;
-        return _this2._fetch(url).then(function (response) {
+        return _this3._fetch(url).then(function (response) {
           return response.text();
         }).then(function (txt) {
           var parser = new DOMParser();
           var xml = parser.parseFromString(txt, 'text/xml');
           var bookXml = xml.getElementsByTagName('book')[0];
-          _this2.setState({
+          _this3.setState({
             receivedFetch: true,
-            avgRating: _this2._getFirstValue(bookXml, 'average_rating'),
-            ratingsCount: _this2._getFirstValue(bookXml, 'ratings_count'),
-            numPages: _this2._getFirstValue(bookXml, 'num_pages'),
-            origPubYear: _this2._getFirstValue(bookXml, 'original_publication_year'),
-            description: _this2._getFirstValue(bookXml, 'description'),
-            goodreadsUrl: _this2._getFirstValue(bookXml, 'url'),
-            genres: _this2._extractGenres(bookXml),
-            similarBooks: _this2._extractSimilarBooks(bookXml)
+            avgRating: _this3._getFirstValue(bookXml, 'average_rating'),
+            ratingsCount: _this3._getFirstValue(bookXml, 'ratings_count'),
+            numPages: _this3._getFirstValue(bookXml, 'num_pages'),
+            origPubYear: _this3._getFirstValue(bookXml, 'original_publication_year'),
+            description: _this3._getFirstValue(bookXml, 'description'),
+            goodreadsUrl: _this3._getFirstValue(bookXml, 'url'),
+            genres: _this3._extractGenres(bookXml),
+            similarBooks: _this3._extractSimilarBooks(bookXml)
           });
         });
       });
@@ -107,7 +137,8 @@ var Book = function (_React$Component) {
   }, {
     key: '_fetch',
     value: function _fetch(url) {
-      return fetch(PROXY_URL + url);
+      //return fetch(PROXY_URL + url);
+      return fetch(url);
     }
   }, {
     key: '_getFirstValue',
@@ -204,7 +235,7 @@ var Book = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _this3 = this;
+      var _this4 = this;
 
       if (this.props.hide) {
         return null;
@@ -224,7 +255,7 @@ var Book = function (_React$Component) {
         } else {
           var limit = this.state.truncateDescription ? DESC_TRUNCATION_LIMIT : Number.MAX_SAFE_INTEGER;
           var ellipsis = this.state.description.length <= limit ? '' : '...';
-          var goodreadsLink = '<a href=' + this.state.goodreadsUrl + ' target=\'_blank\'>Goodreads page</a>';
+          var goodreadsLink = '<a href=' + this.state.goodreadsUrl + ' target=\'_blank\'>Google Books page</a>';
           var truncatedDesc = '' + this.state.description.substring(0, limit) + ellipsis + '<br><br>' + goodreadsLink;
           bookContent = React.createElement(
             'div',
@@ -309,7 +340,7 @@ var Book = function (_React$Component) {
         React.createElement(
           'div',
           { className: 'book-hdr', onClick: function onClick() {
-              return _this3._toggleExpanded(_this3.props.title, author);
+              return _this4._toggleExpanded(_this4.props.title, author);
             } },
           React.createElement(
             'span',

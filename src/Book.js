@@ -41,6 +41,33 @@ class Book extends React.Component {
   }
 
   _fetchBookMetadata(title, author) {
+    const url = `https://www.googleapis.com/books/v1/volumes?q=+inauthor:${author.firstName}+${author.lastName}+intitle:${title}`;
+    //const url = `https://www.goodreads.com/book/show/${bookId}.xml?key=${config.GOODREADS_API_KEY}`;
+    console.log(url);
+    return this._fetch(url)
+      .then(response => response.json())
+      .then(json => {
+        if (json.totalItems === 0) {
+          console.log('No books found');
+        }
+        
+        const info = json.items[0].volumeInfo;
+        console.log(json.items[0]);
+        this.setState({
+          receivedFetch: true,
+          avgRating: info.averageRating,
+          ratingsCount: info.ratingsCount,
+          numPages: info.pageCount,
+          origPubYear: info.publishedDate,
+          description: info.description || '',
+          goodreadsUrl: info.canonicalVolumeLink,
+          genres: info.categories,
+          similarBooks: [],
+        });
+      });
+  }
+
+  _fetchBookMetadataOld(title, author) {
     return this._fetchBookId(title, author)
       .then(bookId => {
         const url = `https://www.goodreads.com/book/show/${bookId}.xml?key=${config.GOODREADS_API_KEY}`;
@@ -87,7 +114,8 @@ class Book extends React.Component {
   }
 
   _fetch(url) {
-    return fetch(PROXY_URL + url);
+    //return fetch(PROXY_URL + url);
+    return fetch(url);
   }
 
   _getFirstValue(xml, tagName) {
@@ -171,7 +199,7 @@ class Book extends React.Component {
       else {
         const limit = this.state.truncateDescription ? DESC_TRUNCATION_LIMIT : Number.MAX_SAFE_INTEGER;
         const ellipsis = this.state.description.length <= limit ? '' : '...';
-        const goodreadsLink = `<a href=${this.state.goodreadsUrl} target='_blank'>Goodreads page</a>`;
+        const goodreadsLink = `<a href=${this.state.goodreadsUrl} target='_blank'>Google Books page</a>`;
         const truncatedDesc = `${this.state.description.substring(0, limit)}${ellipsis}<br><br>${goodreadsLink}` 
         bookContent = (
           <div className='book-details'>
