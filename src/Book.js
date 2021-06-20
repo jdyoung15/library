@@ -41,20 +41,55 @@ class Book extends React.Component {
   }
 
   _fetchBookMetadata(title, author) {
-    const url = `https://www.googleapis.com/books/v1/volumes?q=+inauthor:${author.firstName}+${author.lastName}+intitle:${title}`;
-    //const url = `https://www.goodreads.com/book/show/${bookId}.xml?key=${config.GOODREADS_API_KEY}`;
+    const authorUrl = (author.firstName + ' ' +  author.lastName).replaceAll(' ', '+');
+    const titleUrl = title.replaceAll(' ', '+');
+    const url = `https://www.googleapis.com/books/v1/volumes?q=intitle:"${titleUrl}"+inauthor:${authorUrl}`;
     console.log(url);
     return this._fetch(url)
       .then(response => response.json())
       .then(json => {
-        if (json.totalItems === 0) {
-          console.log('No books found');
-        }
-        
-        const info = json.items[0].volumeInfo;
-        console.log(json.items[0]);
         this.setState({
           receivedFetch: true,
+        });
+
+        if (json.totalItems === 0) {
+          console.log('No books found');
+          return;
+        }
+
+        json.items.forEach(item => {
+          const vi = item.volumeInfo;
+          console.log(`Title: ${vi.title}\nSubtitle: ${vi.subtitle}\nDate: ${vi.publishedDate}\nAvg rating: ${vi.averageRating}\nRating count: ${vi.ratingsCount}\nLink: ${vi.canonicalVolumeLink}\n`);
+        });
+
+        let candidates = json.items;
+        // filter exact title matches 
+        const titleMatches = json.items.filter(item => item.volumeInfo.title.toLowerCase() === title.toLowerCase());
+        // if none, consider all 
+        if (titleMatches.length > 0) {
+          candidates = titleMatches;
+        }
+
+        // filter items with books.google.com link
+        const googleLinkMatches = candidates.filter(item => item.volumeInfo.canonicalVolumeLink.includes('books.google.com'));
+        // if none, consider all
+        if (googleLinkMatches.length > 0) {
+          candidates = googleLinkMatches;
+        }
+
+        // sort by descending number of reviews
+        candidates.sort((c1, c2) => (c2.volumeInfo.ratingsCount || 0) - (c1.volumeInfo.ratingsCount || 0));
+
+        console.log('\n\n#################################################################################\n\n');
+        // if multiple, use earliest publishedDate and highest ratingCount
+        candidates.forEach(item => {
+          const vi = item.volumeInfo;
+          console.log(`Title: ${vi.title}\nSubtitle: ${vi.subtitle}\nDate: ${vi.publishedDate}\nAvg rating: ${vi.averageRating}\nRating count: ${vi.ratingsCount}\nLink: ${vi.canonicalVolumeLink}\n`);
+        });
+        
+        //console.log(json);
+        const info = candidates[0].volumeInfo;
+        this.setState({
           avgRating: info.averageRating,
           ratingsCount: info.ratingsCount,
           numPages: info.pageCount,

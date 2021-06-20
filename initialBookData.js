@@ -3397,7 +3397,7 @@ const initialBookData = [
       "lastName": "Lee", 
       "firstName": "Harper"
     }, 
-    "title": "To Kill a Mockingbird`"
+    "title": "To Kill a Mockingbird"
   }, 
   {
     "series": "1", 

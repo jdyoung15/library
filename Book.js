@@ -60,20 +60,61 @@ var Book = function (_React$Component) {
     value: function _fetchBookMetadata(title, author) {
       var _this2 = this;
 
-      var url = 'https://www.googleapis.com/books/v1/volumes?q=+inauthor:' + author.firstName + '+' + author.lastName + '+intitle:' + title;
-      //const url = `https://www.goodreads.com/book/show/${bookId}.xml?key=${config.GOODREADS_API_KEY}`;
+      var authorUrl = (author.firstName + ' ' + author.lastName).replaceAll(' ', '+');
+      var titleUrl = title.replaceAll(' ', '+');
+      var url = 'https://www.googleapis.com/books/v1/volumes?q=intitle:"' + titleUrl + '"+inauthor:' + authorUrl;
       console.log(url);
       return this._fetch(url).then(function (response) {
         return response.json();
       }).then(function (json) {
+        _this2.setState({
+          receivedFetch: true
+        });
+
         if (json.totalItems === 0) {
           console.log('No books found');
+          return;
         }
 
-        var info = json.items[0].volumeInfo;
-        console.log(json.items[0]);
+        json.items.forEach(function (item) {
+          var vi = item.volumeInfo;
+          console.log('Title: ' + vi.title + '\nSubtitle: ' + vi.subtitle + '\nDate: ' + vi.publishedDate + '\nAvg rating: ' + vi.averageRating + '\nRating count: ' + vi.ratingsCount + '\nLink: ' + vi.canonicalVolumeLink + '\n');
+        });
+
+        var candidates = json.items;
+        // filter exact title matches 
+        var titleMatches = json.items.filter(function (item) {
+          return item.volumeInfo.title.toLowerCase() === title.toLowerCase();
+        });
+        // if none, consider all 
+        if (titleMatches.length > 0) {
+          candidates = titleMatches;
+        }
+
+        // filter items with books.google.com link
+        var googleLinkMatches = candidates.filter(function (item) {
+          return item.volumeInfo.canonicalVolumeLink.includes('books.google.com');
+        });
+        // if none, consider all
+        if (googleLinkMatches.length > 0) {
+          candidates = googleLinkMatches;
+        }
+
+        // sort by descending number of reviews
+        candidates.sort(function (c1, c2) {
+          return (c2.volumeInfo.ratingsCount || 0) - (c1.volumeInfo.ratingsCount || 0);
+        });
+
+        console.log('\n\n#################################################################################\n\n');
+        // if multiple, use earliest publishedDate and highest ratingCount
+        candidates.forEach(function (item) {
+          var vi = item.volumeInfo;
+          console.log('Title: ' + vi.title + '\nSubtitle: ' + vi.subtitle + '\nDate: ' + vi.publishedDate + '\nAvg rating: ' + vi.averageRating + '\nRating count: ' + vi.ratingsCount + '\nLink: ' + vi.canonicalVolumeLink + '\n');
+        });
+
+        //console.log(json);
+        var info = candidates[0].volumeInfo;
         _this2.setState({
-          receivedFetch: true,
           avgRating: info.averageRating,
           ratingsCount: info.ratingsCount,
           numPages: info.pageCount,
