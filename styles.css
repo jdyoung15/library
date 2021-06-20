@@ -88,22 +88,12 @@
   margin-top: 10px;
 }
 
-.similar-books {
-  margin-top: 10px;
-}
-
-.book-genres h3,
-.similar-books h3 {
+.book-genres h3 {
   text-decoration: underline;
   margin-bottom: 5px;
 }
 
-.book-genres li,
-.similar-books li {
+.book-genres li {
   list-style-type: square;
   margin-left: 20px;
-}
-
-.similar-books li {
-  font-style: italic;
 }

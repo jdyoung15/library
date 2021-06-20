@@ -8,10 +8,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
-var EXCLUDED_SHELVES = ['to-read', 'currently-reading'];
-var NUM_GENRES = 3;
-var NUM_SIMILAR_BOOKS = 3;
 var DESC_TRUNCATION_LIMIT = 1000;
 
 var Book = function (_React$Component) {
@@ -29,10 +25,8 @@ var Book = function (_React$Component) {
       avgRating: '',
       ratingsCount: '',
       numPages: '',
-      origPubYear: '',
       description: '',
       genres: [],
-      similarBooks: [],
       truncateDescription: true
     };
     return _this;
@@ -64,7 +58,7 @@ var Book = function (_React$Component) {
       var titleUrl = title.replaceAll(' ', '+');
       var url = 'https://www.googleapis.com/books/v1/volumes?q=intitle:"' + titleUrl + '"+inauthor:' + authorUrl;
       console.log(url);
-      return this._fetch(url).then(function (response) {
+      return fetch(url).then(function (response) {
         return response.json();
       }).then(function (json) {
         _this2.setState({
@@ -112,99 +106,16 @@ var Book = function (_React$Component) {
           console.log('Title: ' + vi.title + '\nSubtitle: ' + vi.subtitle + '\nDate: ' + vi.publishedDate + '\nAvg rating: ' + vi.averageRating + '\nRating count: ' + vi.ratingsCount + '\nLink: ' + vi.canonicalVolumeLink + '\n');
         });
 
-        //console.log(json);
         var info = candidates[0].volumeInfo;
         _this2.setState({
           avgRating: info.averageRating,
           ratingsCount: info.ratingsCount,
           numPages: info.pageCount,
-          origPubYear: info.publishedDate,
           description: info.description || '',
-          goodreadsUrl: info.canonicalVolumeLink,
-          genres: info.categories,
-          similarBooks: []
+          googleBooksUrl: info.canonicalVolumeLink,
+          genres: info.categories
         });
       });
-    }
-  }, {
-    key: '_fetchBookMetadataOld',
-    value: function _fetchBookMetadataOld(title, author) {
-      var _this3 = this;
-
-      return this._fetchBookId(title, author).then(function (bookId) {
-        var url = 'https://www.goodreads.com/book/show/' + bookId + '.xml?key=' + config.GOODREADS_API_KEY;
-        return _this3._fetch(url).then(function (response) {
-          return response.text();
-        }).then(function (txt) {
-          var parser = new DOMParser();
-          var xml = parser.parseFromString(txt, 'text/xml');
-          var bookXml = xml.getElementsByTagName('book')[0];
-          _this3.setState({
-            receivedFetch: true,
-            avgRating: _this3._getFirstValue(bookXml, 'average_rating'),
-            ratingsCount: _this3._getFirstValue(bookXml, 'ratings_count'),
-            numPages: _this3._getFirstValue(bookXml, 'num_pages'),
-            origPubYear: _this3._getFirstValue(bookXml, 'original_publication_year'),
-            description: _this3._getFirstValue(bookXml, 'description'),
-            goodreadsUrl: _this3._getFirstValue(bookXml, 'url'),
-            genres: _this3._extractGenres(bookXml),
-            similarBooks: _this3._extractSimilarBooks(bookXml)
-          });
-        });
-      });
-    }
-  }, {
-    key: '_fetchBookId',
-    value: function _fetchBookId(title, author) {
-      var url = 'https://www.goodreads.com/search.xml?key=' + config.GOODREADS_API_KEY + '&q=' + title;
-      var self = this;
-      return this._fetch(url).then(function (response) {
-        return response.text();
-      }).then(function (txt) {
-        var parser = new DOMParser();
-        var xml = parser.parseFromString(txt, 'text/xml');
-        var results = Array.from(xml.getElementsByTagName('best_book'));
-
-        var matches = results.filter(function (result) {
-          var resultTitle = self._getFirstValue(result, 'title');
-          var resultAuthor = self._getFirstValue(result, 'name');
-          return resultTitle === title || resultAuthor.includes(author.lastName) && resultAuthor.includes(author.firstName);
-        });
-
-        var selected = matches.length > 0 ? matches[0] : results[0];
-        return self._getFirstValue(selected, 'id');
-      });
-    }
-  }, {
-    key: '_fetch',
-    value: function _fetch(url) {
-      //return fetch(PROXY_URL + url);
-      return fetch(url);
-    }
-  }, {
-    key: '_getFirstValue',
-    value: function _getFirstValue(xml, tagName) {
-      return xml.getElementsByTagName(tagName)[0].childNodes[0].nodeValue;
-    }
-  }, {
-    key: '_extractGenres',
-    value: function _extractGenres(bookXml) {
-      var genres = Array.from(bookXml.getElementsByTagName('shelf')).map(function (shelf) {
-        return shelf.getAttribute('name');
-      }).filter(function (name) {
-        return !EXCLUDED_SHELVES.includes(name);
-      });
-
-      return genres.slice(0, Math.min(genres.length, NUM_GENRES));
-    }
-  }, {
-    key: '_extractSimilarBooks',
-    value: function _extractSimilarBooks(bookXml) {
-      var similarBooks = Array.from(bookXml.getElementsByTagName('similar_books')[0].getElementsByTagName('title_without_series')).map(function (title) {
-        return title.childNodes[0].nodeValue;
-      });
-
-      return similarBooks.slice(0, Math.min(similarBooks.length, NUM_SIMILAR_BOOKS));
     }
   }, {
     key: '_renderGenres',
@@ -232,31 +143,6 @@ var Book = function (_React$Component) {
       );
     }
   }, {
-    key: '_renderSimilarBooks',
-    value: function _renderSimilarBooks() {
-      var similarBooks = this.state.similarBooks.map(function (similarBook) {
-        return React.createElement(
-          'li',
-          { className: 'similar-book', key: similarBook },
-          similarBook
-        );
-      });
-      return React.createElement(
-        'div',
-        { className: 'similar-books' },
-        React.createElement(
-          'h3',
-          null,
-          'Similar books'
-        ),
-        React.createElement(
-          'ul',
-          { className: 'similar-books-list' },
-          similarBooks
-        )
-      );
-    }
-  }, {
     key: '_formatLargeNum',
     value: function _formatLargeNum(num) {
       var units = ['', 'K', 'M', 'B', 'T'];
@@ -276,7 +162,7 @@ var Book = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _this4 = this;
+      var _this3 = this;
 
       if (this.props.hide) {
         return null;
@@ -296,8 +182,8 @@ var Book = function (_React$Component) {
         } else {
           var limit = this.state.truncateDescription ? DESC_TRUNCATION_LIMIT : Number.MAX_SAFE_INTEGER;
           var ellipsis = this.state.description.length <= limit ? '' : '...';
-          var goodreadsLink = '<a href=' + this.state.goodreadsUrl + ' target=\'_blank\'>Google Books page</a>';
-          var truncatedDesc = '' + this.state.description.substring(0, limit) + ellipsis + '<br><br>' + goodreadsLink;
+          var googleBooksLink = '<a href=' + this.state.googleBooksUrl + ' target=\'_blank\'>Google Books page</a>';
+          var truncatedDesc = '' + this.state.description.substring(0, limit) + ellipsis + '<br><br>' + googleBooksLink;
           bookContent = React.createElement(
             'div',
             { className: 'book-details' },
@@ -352,25 +238,10 @@ var Book = function (_React$Component) {
                       null,
                       this.state.numPages
                     )
-                  ),
-                  React.createElement(
-                    'tr',
-                    null,
-                    React.createElement(
-                      'td',
-                      null,
-                      'Year:'
-                    ),
-                    React.createElement(
-                      'td',
-                      null,
-                      this.state.origPubYear
-                    )
                   )
                 )
               ),
-              this._renderGenres(),
-              this._renderSimilarBooks()
+              this._renderGenres()
             )
           );
         }
@@ -381,7 +252,7 @@ var Book = function (_React$Component) {
         React.createElement(
           'div',
           { className: 'book-hdr', onClick: function onClick() {
-              return _this4._toggleExpanded(_this4.props.title, author);
+              return _this3._toggleExpanded(_this3.props.title, author);
             } },
           React.createElement(
             'span',
