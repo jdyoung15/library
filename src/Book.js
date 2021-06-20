@@ -18,6 +18,7 @@ class Book extends React.Component {
     };
   }
 
+  /** Handles when this book component is expanded or collapsed. /*/
   _toggleExpanded(title, author) {
     this.setState({
       expanded: !this.state.expanded
@@ -34,6 +35,7 @@ class Book extends React.Component {
     });
   }
 
+  /** Fetches the relevant info for this book and updates the state. */
   _fetchBookMetadata(title, author) {
     const authorUrl = (author.firstName + ' ' +  author.lastName).replaceAll(' ', '+');
     const titleUrl = title.replaceAll(' ', '+');
@@ -64,35 +66,61 @@ class Book extends React.Component {
           candidates = titleMatches;
         }
 
-        // filter items with books.google.com link
-        const googleLinkMatches = candidates.filter(item => item.volumeInfo.canonicalVolumeLink.includes('books.google.com'));
-        // if none, consider all
-        if (googleLinkMatches.length > 0) {
-          candidates = googleLinkMatches;
-        }
-
         // sort by descending number of reviews
         candidates.sort((c1, c2) => (c2.volumeInfo.ratingsCount || 0) - (c1.volumeInfo.ratingsCount || 0));
 
-        console.log('\n\n#################################################################################\n\n');
+        console.log('\n\n##########################################\n\n');
         // if multiple, use earliest publishedDate and highest ratingCount
         candidates.forEach(item => {
           const vi = item.volumeInfo;
           console.log(`Title: ${vi.title}\nSubtitle: ${vi.subtitle}\nDate: ${vi.publishedDate}\nAvg rating: ${vi.averageRating}\nRating count: ${vi.ratingsCount}\nLink: ${vi.canonicalVolumeLink}\n`);
         });
         
-        const info = candidates[0].volumeInfo;
+        //const info = candidates[0].volumeInfo;
         this.setState({
-          avgRating: info.averageRating,
-          ratingsCount: info.ratingsCount,
-          numPages: info.pageCount,
-          description: info.description || '',
-          googleBooksUrl: info.canonicalVolumeLink,
-          genres: info.categories,
+          // Assumes averageRating and ratingsCount are either both non-null or both null for a given book info
+          avgRating: this._find(candidates, 'averageRating'),
+          ratingsCount: this._find(candidates, 'ratingsCount'),
+          numPages: this._find(candidates, 'pageCount'),
+          description: this._find(candidates, 'description') || '',
+          googleBooksUrl: this._findGoogleBooksUrl(candidates),
+          genres: this._findGenres(candidates),
         });
+
+        console.log('\n\n#################################################################################\n\n');
       });
   }
 
+  /**
+   * Given an array of book info objects retrieved via the Google Books API,
+   * returns the first-encountered truthy value corresponding to the given property.
+   * If none are found, returns undefined. 
+   */
+  _find(bookInfos, property) {
+    return bookInfos.map(bi => bi.volumeInfo[property]).find(p => p);
+  }
+
+  /**
+   * Given an array of book info objects retrieved via the Google Books API,
+   * returns the first-encountered Google Books url.
+   * If none are found, returns undefined. 
+   */
+  _findGoogleBooksUrl(bookInfos) {
+    return bookInfos.map(bi => bi.volumeInfo.canonicalVolumeLink).filter(cvi => cvi && cvi.includes('books.google.com')).find(cvi => cvi);
+  }
+
+  /**
+   * Given an array of book info objects retrieved via the Google Books API,
+   * returns an array containing the aggregated genres across all the book info objects.
+   */
+  _findGenres(bookInfos) {
+    const allGenres = bookInfos.map(bi => bi.volumeInfo.categories).reduce((acc, curr) => acc.concat(curr), []);
+    const truthyOnly = allGenres.filter(g => g);
+    const deduplicated = [...new Set(truthyOnly)];
+    return deduplicated;
+  }
+
+  /** Renders the UI for the genres associated with this book. */
   _renderGenres() {
     let genres = this.state.genres.map(genre => (<li className='genre' key={genre}>{genre}</li>));
     return (
@@ -105,6 +133,10 @@ class Book extends React.Component {
     );
   }
 
+  /** 
+   * Returns a string representing the given number in rounded and abbreviated form. E.g. 3384 -> '3K'. 
+   * Smaller numbers will not be rounded/abbreviated. 
+   */
   _formatLargeNum(num) {
     const units= ['', 'K', 'M', 'B', 'T'];
     let result = num;
@@ -115,7 +147,7 @@ class Book extends React.Component {
     }
 
     if (i >= units.length) {
-      return num;
+      return num.toString();
     }
 
     return result.toString() + units[i];

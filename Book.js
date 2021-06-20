@@ -2,6 +2,8 @@
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -32,6 +34,9 @@ var Book = function (_React$Component) {
     return _this;
   }
 
+  /** Handles when this book component is expanded or collapsed. /*/
+
+
   _createClass(Book, [{
     key: '_toggleExpanded',
     value: function _toggleExpanded(title, author) {
@@ -49,6 +54,9 @@ var Book = function (_React$Component) {
         initiatedFetch: true
       });
     }
+
+    /** Fetches the relevant info for this book and updates the state. */
+
   }, {
     key: '_fetchBookMetadata',
     value: function _fetchBookMetadata(title, author) {
@@ -85,38 +93,89 @@ var Book = function (_React$Component) {
           candidates = titleMatches;
         }
 
-        // filter items with books.google.com link
-        var googleLinkMatches = candidates.filter(function (item) {
-          return item.volumeInfo.canonicalVolumeLink.includes('books.google.com');
-        });
-        // if none, consider all
-        if (googleLinkMatches.length > 0) {
-          candidates = googleLinkMatches;
-        }
-
         // sort by descending number of reviews
         candidates.sort(function (c1, c2) {
           return (c2.volumeInfo.ratingsCount || 0) - (c1.volumeInfo.ratingsCount || 0);
         });
 
-        console.log('\n\n#################################################################################\n\n');
+        console.log('\n\n##########################################\n\n');
         // if multiple, use earliest publishedDate and highest ratingCount
         candidates.forEach(function (item) {
           var vi = item.volumeInfo;
           console.log('Title: ' + vi.title + '\nSubtitle: ' + vi.subtitle + '\nDate: ' + vi.publishedDate + '\nAvg rating: ' + vi.averageRating + '\nRating count: ' + vi.ratingsCount + '\nLink: ' + vi.canonicalVolumeLink + '\n');
         });
 
-        var info = candidates[0].volumeInfo;
+        //const info = candidates[0].volumeInfo;
         _this2.setState({
-          avgRating: info.averageRating,
-          ratingsCount: info.ratingsCount,
-          numPages: info.pageCount,
-          description: info.description || '',
-          googleBooksUrl: info.canonicalVolumeLink,
-          genres: info.categories
+          // Assumes averageRating and ratingsCount are either both non-null or both null for a given book info
+          avgRating: _this2._find(candidates, 'averageRating'),
+          ratingsCount: _this2._find(candidates, 'ratingsCount'),
+          numPages: _this2._find(candidates, 'pageCount'),
+          description: _this2._find(candidates, 'description') || '',
+          googleBooksUrl: _this2._findGoogleBooksUrl(candidates),
+          genres: _this2._findGenres(candidates)
         });
+
+        console.log('\n\n#################################################################################\n\n');
       });
     }
+
+    /**
+     * Given an array of book info objects retrieved via the Google Books API,
+     * returns the first-encountered truthy value corresponding to the given property.
+     * If none are found, returns undefined. 
+     */
+
+  }, {
+    key: '_find',
+    value: function _find(bookInfos, property) {
+      return bookInfos.map(function (bi) {
+        return bi.volumeInfo[property];
+      }).find(function (p) {
+        return p;
+      });
+    }
+
+    /**
+     * Given an array of book info objects retrieved via the Google Books API,
+     * returns the first-encountered Google Books url.
+     * If none are found, returns undefined. 
+     */
+
+  }, {
+    key: '_findGoogleBooksUrl',
+    value: function _findGoogleBooksUrl(bookInfos) {
+      return bookInfos.map(function (bi) {
+        return bi.volumeInfo.canonicalVolumeLink;
+      }).filter(function (cvi) {
+        return cvi && cvi.includes('books.google.com');
+      }).find(function (cvi) {
+        return cvi;
+      });
+    }
+
+    /**
+     * Given an array of book info objects retrieved via the Google Books API,
+     * returns an array containing the aggregated genres across all the book info objects.
+     */
+
+  }, {
+    key: '_findGenres',
+    value: function _findGenres(bookInfos) {
+      var allGenres = bookInfos.map(function (bi) {
+        return bi.volumeInfo.categories;
+      }).reduce(function (acc, curr) {
+        return acc.concat(curr);
+      }, []);
+      var truthyOnly = allGenres.filter(function (g) {
+        return g;
+      });
+      var deduplicated = [].concat(_toConsumableArray(new Set(truthyOnly)));
+      return deduplicated;
+    }
+
+    /** Renders the UI for the genres associated with this book. */
+
   }, {
     key: '_renderGenres',
     value: function _renderGenres() {
@@ -142,6 +201,12 @@ var Book = function (_React$Component) {
         )
       );
     }
+
+    /** 
+     * Returns a string representing the given number in rounded and abbreviated form. E.g. 3384 -> '3K'. 
+     * Smaller numbers will not be rounded/abbreviated. 
+     */
+
   }, {
     key: '_formatLargeNum',
     value: function _formatLargeNum(num) {
@@ -154,7 +219,7 @@ var Book = function (_React$Component) {
       }
 
       if (i >= units.length) {
-        return num;
+        return num.toString();
       }
 
       return result.toString() + units[i];
