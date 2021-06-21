@@ -83,7 +83,7 @@ class Book extends React.Component {
           ratingsCount: this._find(candidates, 'ratingsCount'),
           numPages: this._find(candidates, 'pageCount'),
           description: this._find(candidates, 'description') || '',
-          googleBooksUrl: this._findGoogleBooksUrl(candidates),
+          googleBooksUrl: this._findUrl(candidates, 'books.google.com') || this._findUrl(candidates, 'play.google.com'),
           genres: this._findGenres(candidates),
         });
 
@@ -102,11 +102,11 @@ class Book extends React.Component {
 
   /**
    * Given an array of book info objects retrieved via the Google Books API,
-   * returns the first-encountered Google Books url.
+   * returns the first-encountered url that matches the given url.
    * If none are found, returns undefined. 
    */
-  _findGoogleBooksUrl(bookInfos) {
-    return bookInfos.map(bi => bi.volumeInfo.canonicalVolumeLink).filter(cvi => cvi && cvi.includes('books.google.com')).find(cvi => cvi);
+  _findUrl(bookInfos, url) {
+    return bookInfos.map(bi => bi.volumeInfo.canonicalVolumeLink).filter(cvi => cvi && cvi.includes(url)).find(cvi => cvi);
   }
 
   /**

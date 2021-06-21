@@ -112,7 +112,7 @@ var Book = function (_React$Component) {
           ratingsCount: _this2._find(candidates, 'ratingsCount'),
           numPages: _this2._find(candidates, 'pageCount'),
           description: _this2._find(candidates, 'description') || '',
-          googleBooksUrl: _this2._findGoogleBooksUrl(candidates),
+          googleBooksUrl: _this2._findUrl(candidates, 'books.google.com') || _this2._findUrl(candidates, 'play.google.com'),
           genres: _this2._findGenres(candidates)
         });
 
@@ -138,17 +138,17 @@ var Book = function (_React$Component) {
 
     /**
      * Given an array of book info objects retrieved via the Google Books API,
-     * returns the first-encountered Google Books url.
+     * returns the first-encountered url that matches the given url.
      * If none are found, returns undefined. 
      */
 
   }, {
-    key: '_findGoogleBooksUrl',
-    value: function _findGoogleBooksUrl(bookInfos) {
+    key: '_findUrl',
+    value: function _findUrl(bookInfos, url) {
       return bookInfos.map(function (bi) {
         return bi.volumeInfo.canonicalVolumeLink;
       }).filter(function (cvi) {
-        return cvi && cvi.includes('books.google.com');
+        return cvi && cvi.includes(url);
       }).find(function (cvi) {
         return cvi;
       });
